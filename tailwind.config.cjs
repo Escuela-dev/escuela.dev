@@ -23,14 +23,14 @@ module.exports = {
     textColor: {
       skin: {
         base: withOpacity("--color-text-base"),
-        accent: withOpacity("--color-accent"),
+        accent: withOpacity("--color-puerto-rico-600"),
         inverted: withOpacity("--color-fill"),
       },
     },
     backgroundColor: {
       skin: {
         fill: withOpacity("--color-fill"),
-        accent: withOpacity("--color-accent"),
+        accent: withOpacity("--color-puerto-rico-600"),
         inverted: withOpacity("--color-text-base"),
         card: withOpacity("--color-card"),
         "card-muted": withOpacity("--color-card-muted"),
@@ -38,20 +38,20 @@ module.exports = {
     },
     outlineColor: {
       skin: {
-        fill: withOpacity("--color-accent"),
+        fill: withOpacity("--color-puerto-rico-600"),
       },
     },
     borderColor: {
       skin: {
         line: withOpacity("--color-border"),
         fill: withOpacity("--color-text-base"),
-        accent: withOpacity("--color-accent"),
+        accent: withOpacity("--color-puerto-rico-600"),
       },
     },
     fill: {
       skin: {
         base: withOpacity("--color-text-base"),
-        accent: withOpacity("--color-accent"),
+        accent: withOpacity("--color-puerto-rico-600"),
       },
       transparent: "transparent",
     },

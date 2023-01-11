@@ -1,12 +1,17 @@
 ---
-const today = new Date();
+import Hr from "./Hr.astro";
+const currentYear = new Date().getFullYear();
 ---
 
 <footer>
-  &copy; {today.getFullYear()} Gianfranco Palumbo. All rights reserved.
+  <div class="mb-3">
+    <Hr noPadding />
+  </div>
+  &copy; {currentYear} G. Palumbo. All rights reserved.
 </footer>
 <style>
   footer {
+    @apply w-full;
     padding: 25px;
     text-align: center;
   }

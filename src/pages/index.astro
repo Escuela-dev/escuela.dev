@@ -1,14 +1,14 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Card from "@components/Card.astro";
-import Datetime from "@components/Datetime";
+// import Datetime from "@components/Datetime";
 import Header from "@components/Header.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Welcome to Code with Gian">
   <Header activeNav="posts" />
   <main>
-    <h1>Welcome to <span class="text-gradient">Astro</span></h1>
+    <h1 class="text-center"><span class="text-gradient">Welcome</span></h1>
     <p class="instructions">
       To get started, open the directory <code>src/pages</code> in your project.<br
       />
@@ -35,7 +35,7 @@ import Header from "@components/Header.astro";
         title="Community"
         body="Come say hi to our amazing Discord community. ❤️"
       />
-      <Datetime datetime={"2022-12-01"} />
+      <!-- <Datetime datetime={"2022-12-01"} /> -->
     </ul>
   </main>
 </Layout>
@@ -44,7 +44,6 @@ import Header from "@components/Header.astro";
   main {
     margin: auto;
     padding: 1.5rem;
-    max-width: 60ch;
   }
   h1 {
     font-size: 3rem;
