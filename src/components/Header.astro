@@ -41,6 +41,23 @@ import { SITE } from "../config";
   h2 {
     margin: 0.5em 0;
   }
+  #theme-btn {
+    @apply p-3 sm:p-1;
+  }
+  #theme-btn svg {
+    @apply hover:rotate-12 transition scale-125 sm:scale-100;
+  }
+  #sun-svg,
+  html[data-theme="dark"] #moon-svg {
+    display: none;
+  }
+  #moon-svg,
+  html[data-theme="dark"] #sun-svg {
+    display: block;
+  }
+  nav {
+    @apply w-full sm:py-0 sm:ml-2 flex flex-col items-center sm:justify-end sm:flex-row sm:space-x-4 bg-skin-fill;
+  }
   nav button {
     @apply p-1;
   }
