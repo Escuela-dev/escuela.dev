@@ -2,16 +2,24 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import "../styles/base.css";
+import { SITE } from "@config";
 
 export interface Props {
   title: string;
   description: string;
   image?: string;
+  author?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
+const {
+  title = SITE.title,
+  author = SITE.author,
+  description = SITE.desc,
+  ogImage = SITE.ogImage,
+  image = "/placeholder-social.jpg",
+} = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -19,6 +27,8 @@ const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
+
+<meta name="author" content={author} />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
@@ -33,7 +43,7 @@ const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={new URL(image, Astro.url)} />
+<!-- <meta property="og:image" content={new URL(image, Astro.url)} /> -->
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
@@ -41,5 +51,12 @@ const { title, description, image = "/placeholder-social.jpg" } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
+/>
 
 <script is:inline src="/toggle-theme.js"></script>

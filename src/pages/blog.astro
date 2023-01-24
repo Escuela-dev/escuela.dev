@@ -7,6 +7,7 @@ import type { MarkdownLayoutProps } from "astro";
 import getSortedPosts from "@utils/getSortedPosts";
 
 import type { Frontmatter } from "../types";
+import Layout from "@layouts/Layout.astro";
 
 type Props = MarkdownLayoutProps<{
   // Define frontmatter props here
@@ -19,6 +20,7 @@ const { title } = Astro.props.frontmatter || Astro.props;
 
 // const { frontmatter } = Astro.props;
 const posts = await Astro.glob<Frontmatter>("./blog/**/*.md");
+
 export async function getStaticPaths() {
   return posts.map((post) => ({
     params: {
@@ -35,54 +37,29 @@ const sortedPosts = getSortedPosts(posts);
 const headTitle = `${title} - ${SITE.title}`;
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <BaseHead title={headTitle} description={SITE.desc} />
-  </head>
-  <body>
-    <Header />
-    <main>
-      <section id="recent-posts">
-        <ul>
-          {
-            sortedPosts.map((post) => (
-              <li>
-                <time datetime={post.frontmatter.publishDate}>
-                  {new Date(post.frontmatter.publishDate).toLocaleDateString(
-                    "en-us",
-                    {
-                      year: "numeric",
-                      month: "short",
-                      day: "numeric",
-                    }
-                  )}
-                </time>
-                <a href={post.url}>{post.frontmatter.title}</a>
-              </li>
-            ))
-          }
-        </ul>
-      </section>
-    </main>
-    <Footer />
-    <style is:global>
-      :root {
-        --accent: 124, 58, 237;
-        --accent-gradient: linear-gradient(
-          45deg,
-          rgb(var(--accent)),
-          #da62c4 30%,
-          white 60%
-        );
-      }
-      html {
-        font-family: system-ui, sans-serif;
-      }
-      code {
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-      }
-    </style>
-  </body><!--  -->
-</html>
+<Layout title={headTitle}>
+  <main>
+    <section id="recent-posts">
+      <ul>
+        {
+          sortedPosts.map((post) => (
+            <li>
+              <time datetime={post.frontmatter.publishDate}>
+                {new Date(post.frontmatter.publishDate).toLocaleDateString(
+                  "en-us",
+                  {
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+                  }
+                )}
+              </time>
+              <a href={post.url}>{post.frontmatter.title}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </main>
+  <Footer />
+</Layout>
