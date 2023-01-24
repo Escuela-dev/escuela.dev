@@ -6,8 +6,8 @@ const getSortedPosts = (posts: MarkdownInstance<Frontmatter>[]) =>
     .filter(({ frontmatter }) => !frontmatter.draft)
     .sort(
       (a, b) =>
-        Math.floor(new Date(b.frontmatter.datetime).getTime() / 1000) -
-        Math.floor(new Date(a.frontmatter.datetime).getTime() / 1000)
+        Math.floor(new Date(b.frontmatter.publishDate).getTime() / 1000) -
+        Math.floor(new Date(a.frontmatter.publishDate).getTime() / 1000)
     );
 
 export default getSortedPosts;
