@@ -10,7 +10,7 @@
     --color-card: 230, 230, 230;
     --color-card-muted: 205, 205, 205;
     --color-border: 236, 233, 233;
-    --accent: 124, 58, 237;
+    --accent: 0, 108, 172;
     --accent-gradient: linear-gradient(
       45deg,
       rgb(var(--accent)),
