@@ -1,8 +1,8 @@
 export const SITE = {
-    websiteUrl: "https://gian.cool/",
+    // websiteUrl: "https://escuela.dev/",
     author: "Gianfranco Palumbo",
-    desc: "Your Web Developer Tutor and Bootcamp Instructor (en Español tambien)",
-    title: "Code with Gian",
+    desc: "A Coding school in Malaga, Spain coming soon - Escuela de Programación y Desarrollo Web",
+    title: "Escuela.dev",
     ogImage: "codecamp-og.jpg",
     lightAndDarkMode: true,
     postPerPage: 3,

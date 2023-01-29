@@ -1,4 +1,8 @@
 {
-  "recommendations": ["astro-build.astro-vscode"],
+  "recommendations": [
+    "astro-build.astro-vscode",
+    "yzhang.markdown-all-in-one",
+    "esbenp.prettier-vscode"
+  ],
   "unwantedRecommendations": []
 }

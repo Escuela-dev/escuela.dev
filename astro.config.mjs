@@ -6,7 +6,7 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://gian.cool",
+  site: "https://escuela.dev",
   integrations: [
     tailwind({
       config: {
