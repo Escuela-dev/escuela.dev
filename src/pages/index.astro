@@ -1,40 +1,23 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import Card from "@components/Card.astro";
-// import Datetime from "@components/Datetime";
 ---
 
 <Layout>
   <main>
-    <h1 class="text-center"><span class="text-gradient">Welcome</span></h1>
+    <h1 class="text-center">
+      <span class="text-gradient"
+        >Welcome Escuela.dev<br />Coding school starting in March 2023</span
+      >
+    </h1>
     <p class="instructions">
-      To get started, open the directory <code>src/pages</code> in your project.<br
-      />
-      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+      Wether you have tried before or it's the first time you want to learn how
+      to code, this is right place<br />
+      <strong>Fill the form below to learn more</strong>
     </p>
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="https://docs.astro.build/"
-        title="Documentation"
-        body="Learn how Astro works and explore the official API docs."
-      />
-      <Card
-        href="https://astro.build/integrations/"
-        title="Integrations"
-        body="Supercharge your project with new frameworks and libraries."
-      />
-      <Card
-        href="https://astro.build/themes/"
-        title="Themes"
-        body="Explore a galaxy of community-built starter themes."
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-      <!-- <Datetime datetime={"2022-12-01"} /> -->
-    </ul>
+    <embed
+      src="https://blocksurvey.io/survey/t/4c0715c3-e28d-4dc8-b80f-a3f8210f1f24"
+      style="width:100%; height:100vh;"
+    />
   </main>
 </Layout>
 
