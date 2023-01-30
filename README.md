@@ -1,11 +1,18 @@
-# Welcome to [Escuela.dev](https://escuela.dev) - An upcoming coding school in Malaga, Spain
+# Welcome to [Escuela.dev](https://escuela.dev) - A coding school in Malaga, Spain starting in March 2023
 
 *Want to know when we launch?*
 
 Sign up for updates on: <br/>
-<https://escuela.dev/contact>
+<https://escuela.dev>
 
-- [Welcome to Escuela.dev - An upcoming coding school in Malaga, Spain](#welcome-to-escueladev---an-upcoming-coding-school-in-malaga-spain)
+<!-- ## Follow us
+
+[![Twitter @escuela_dev_](https://img.shields.io/twitter/follow/escuela_dev_?style=social)](https://twitter.com/escuela_dev_)
+[![Linkedin](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/company/escuela-dev/)](https://www.linkedin.com/company/escuela-dev/) -->
+
+---
+
+- [Welcome to Escuela.dev - A coding school in Malaga, Spain starting in March 2023](#welcome-to-escueladev---a-coding-school-in-malaga-spain-starting-in-march-2023)
   - [FAQ about Escuela.dev](#faq-about-escueladev)
     - [Why I'm building this?](#why-im-building-this)
     - [What is our mission?](#what-is-our-mission)
@@ -28,7 +35,6 @@ Sign up for updates on: <br/>
   - [🚀 Website Project Structure](#-website-project-structure)
   - [🧞 Commands](#-commands)
   - [👀 Want to learn more?](#-want-to-learn-more)
-  - [Follow us](#follow-us)
 
 ## FAQ about Escuela.dev
 
@@ -113,8 +119,3 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Email Gianfranco at <gianpa@gmail.com> or visit [Escuela.dev](https://escuela.dev)
-
-## Follow us
-
-[![Twitter @escuela_dev](https://img.shields.io/twitter/follow/escuela_dev?style=social)](https://twitter.com/escuela_dev)
-[![Linkedin](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/company/escuela-dev/)](https://www.linkedin.com/company/escuela-dev/)

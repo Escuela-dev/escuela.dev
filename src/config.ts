@@ -1,7 +1,7 @@
 export const SITE = {
     // websiteUrl: "https://escuela.dev/",
     author: "Gianfranco Palumbo",
-    desc: "A Coding school in Malaga, Spain coming soon - Escuela de Programación y Desarrollo Web",
+    desc: "A Coding school in Malaga, Spain starting in March 2023 - Escuela de Programación y Desarrollo Web",
     title: "Escuela.dev",
     ogImage: "codecamp-og.jpg",
     lightAndDarkMode: true,
