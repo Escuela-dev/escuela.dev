@@ -4,7 +4,7 @@ import { SITE } from "../config";
 import Hr from "./Hr.astro";
 ---
 
-<header>
+<header class="z-10">
   <div class="nav-container">
     <div class="top-nav-wrap">
       <a href="/">
@@ -106,7 +106,7 @@ import Hr from "./Hr.astro";
     display: block;
   }
   nav {
-    @apply w-full sm:py-0 sm:ml-2 flex flex-col items-center sm:justify-end sm:flex-row sm:space-x-4 bg-skin-fill;
+    @apply w-full sm:py-0 sm:ml-2 flex flex-col items-center sm:justify-end sm:flex-row sm:space-x-4;
   }
   nav button {
     @apply p-1;
