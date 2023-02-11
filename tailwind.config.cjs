@@ -8,7 +8,10 @@ function withOpacity(variableName) {
 }
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{astro,html,md,mdx,ts,tsx}"],
+  content: [
+    "./src/**/*.{astro,html,md,mdx,ts,tsx}",
+    "./node_modules/flowbite/**/*.js",
+  ],
   theme: {
     // Remove the following screen breakpoint or add other breakpoints
     // if one breakpoint is not enough for you

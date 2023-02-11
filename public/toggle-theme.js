@@ -25,6 +25,12 @@ function setPreference() {
 
 function reflectPreference() {
   document.firstElementChild.setAttribute("data-theme", themeValue);
+  if (themeValue === "dark") {
+    document.documentElement.classList.remove("light");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+  document.documentElement.classList.add(themeValue);
 
   document.querySelector("#theme-btn")?.setAttribute("aria-label", themeValue);
 }
