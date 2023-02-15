@@ -2,8 +2,10 @@ Header/navbar: fix responsiveness {cm:2023-01-29}
 Deploy website on GitHub Pages {cm:2023-01-29}
 Fix accent / hover text color {cm:2023-01-29}
 (A) Fix Stripe Integration on BlockSurvey {cm:2023-02-06}
+(A) Add pricing table {cm:2023-02-11}
+(A) Add WhatsApp button {cm:2023-02-15}
 
-(A) Add pricing table without JS - accordion. Can the FAQ be stored as a MD file?
+(B) fix pricing table responsiveness
 (A) Add Privacy Policy
 (A) Add Terms of Service
 (A) Add testimonials

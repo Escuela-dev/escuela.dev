@@ -17,7 +17,7 @@ specifiers:
   tailwindcss: ^3.2.4
 
 dependencies:
-  '@astrojs/mdx': 0.14.0
+  '@astrojs/mdx': 0.14.0_rollup@3.15.0
   '@astrojs/react': 1.2.2_fxtgt6bjwd6p4cwoordejim2zi
   '@astrojs/sitemap': 1.0.0
   '@astrojs/tailwind': 2.1.3_tailwindcss@3.2.4
