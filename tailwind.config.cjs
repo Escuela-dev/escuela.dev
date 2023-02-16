@@ -24,7 +24,7 @@ module.exports = {
       "2xl": "1536px",
     },
     colors: ({ colors }) => ({
-      ...colors,
+      // ...colors,
       primary: "#9333EA",
       secondary: "#ff7e33",
       info: "#0C63E7",

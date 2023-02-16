@@ -9,9 +9,9 @@ function CheckIcon() {
     >
       <title>Check icon</title>
       <path
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-        clip-rule="evenodd"
+        clipRule="evenodd"
       ></path>
     </svg>
   );
@@ -58,10 +58,9 @@ const plans = [
   },
   {
     title: "2-day Workshop",
-    price: 199,
-    priceDescription: "/person",
-    link: "https://cal.com/escuela",
-    buttonText: "Enquire",
+    priceDescription: "Custom pricing",
+    link: "gianfranco@escuela.dev",
+    buttonText: "Contact us",
     features: [
       {
         title: "In person (in Malaga)",
@@ -81,48 +80,60 @@ const plans = [
 
 export default function PricingTable() {
   return (
-    <div className="flex flex-row justify-center">
-      {plans.map((plan) => (
-        <div
-          key={plan.title}
-          className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
-        >
-          <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
-            {plan.title}
-          </h5>
-          <div className="flex items-baseline text-gray-900 dark:text-white">
-            <span className="text-3xl font-semibold">€</span>
-            <span className="text-5xl font-extrabold tracking-tight">
-              {plan.price}
-            </span>
-            <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">
-              {plan.priceDescription}
-            </span>
-          </div>
-          <ul role="list" className="space-y-5 my-7">
-            {plan.features.map((feature) => (
-              <li className="flex space-x-3">
-                <CheckIcon />
-                {feature.isAvailable ? (
-                  <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
-                    {feature.title}
-                  </span>
-                ) : (
-                  <span className="text-base font-normal leading-tight text-gray-500 line-through decoration-gray-500">
-                    {feature.title}
-                  </span>
-                )}
-              </li>
-            ))}
-          </ul>
-          <a
-            href={plan.link}
-            className="block w-full px-4 py-2 text-base font-medium leading-6 text-center text-white transition duration-200 ease-in mr-2 mb-2 bg-blue-600 border border-transparent rounded-md shadow-sm hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+    <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+        {plans.map((plan) => (
+          <div
+            key={plan.title}
+            className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
           >
-            {plan.buttonText}
-          </a>
-        </div>
-      ))}
+            <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
+              {plan.title}
+            </h5>
+            <div className="flex items-baseline text-gray-900 dark:text-white">
+              {plan.price ? (
+                <span className="text-3xl font-semibold">€</span>
+              ) : (
+                plan.priceDescription && (
+                  <span className="text-3xl font-semibold">
+                    {plan.priceDescription}
+                  </span>
+                )
+              )}
+              <span className="text-5xl font-extrabold tracking-tight">
+                {plan.price}
+              </span>
+              {plan.price && plan.priceDescription && (
+                <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">
+                  {plan.priceDescription}
+                </span>
+              )}
+            </div>
+            <ul role="list" className="space-y-5 my-7">
+              {plan.features.map((feature, i) => (
+                <li key={i} className="flex space-x-3">
+                  <CheckIcon />
+                  {feature.isAvailable ? (
+                    <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
+                      {feature.title}
+                    </span>
+                  ) : (
+                    <span className="text-base font-normal leading-tight text-gray-500 line-through decoration-gray-500">
+                      {feature.title}
+                    </span>
+                  )}
+                </li>
+              ))}
+            </ul>
+            <a
+              href={plan.link.includes("@") ? `mailto:${plan.link}` : plan.link}
+              className="block w-full px-4 py-2 text-base font-medium leading-6 text-center text-white transition duration-200 ease-in mr-2 mb-2 bg-blue-600 border border-transparent rounded-md shadow-sm hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            >
+              {plan.buttonText}
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

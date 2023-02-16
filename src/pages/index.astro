@@ -14,11 +14,13 @@ import Layout from "@layouts/Layout.astro";
     <div class="mt-8">
       <PricingTable />
     </div>
-    <p class="instructions">
-      Whether you have tried coding before, or it's the first time you want to
-      learn how to code, this is the right place <br />
-      <strong>Fill the form below to learn more</strong>
-    </p>
+    <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+      <h2
+        class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+      >
+        Fill the form below to learn more
+      </h2>
+    </div>
     <embed
       src="https://blocksurvey.io/survey/t/4c0715c3-e28d-4dc8-b80f-a3f8210f1f24"
       style="width:100%; height:100vh;"
@@ -36,6 +38,13 @@ import Layout from "@layouts/Layout.astro";
     font-weight: 800;
     margin: 0;
   }
+
+  @media (max-width: 640px) {
+    h1 {
+      line-height: 1.2;
+    }
+  }
+
   .text-gradient {
     background-image: var(--accent-gradient);
     -webkit-background-clip: text;
