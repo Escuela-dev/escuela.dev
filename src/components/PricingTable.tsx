@@ -1,8 +1,12 @@
-function CheckIcon() {
+function CheckIcon({ isAvailable = true }: { isAvailable?: boolean }) {
   return (
     <svg
       aria-hidden="true"
-      className="flex-shrink-0 w-5 h-5 text-blue-600 dark:text-blue-500"
+      className={`flex-shrink-0 w-5 h-5 ${
+        isAvailable
+          ? "text-blue-600 dark:text-blue-500"
+          : "text-gray-600 dark:text-gray-500"
+      }`}
       fill="currentColor"
       viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +30,11 @@ const plans = [
     buttonText: "Enquire",
     features: [
       {
-        title: "Online or in person (in Malaga)",
+        title: "Online",
+        isAvailable: true,
+      },
+      {
+        title: "In person (in Malaga)",
         isAvailable: true,
       },
       {
@@ -38,10 +46,14 @@ const plans = [
   {
     title: "Group class",
     price: 29,
-    priceDescription: "/month",
+    priceDescription: "/hour (€87 per week)",
     link: "https://cal.com/escuela",
     buttonText: "Enquire",
     features: [
+      {
+        title: "Online",
+        isAvailable: false,
+      },
       {
         title: "In person (in Malaga)",
         isAvailable: true,
@@ -54,6 +66,10 @@ const plans = [
         title: "up to 4 people",
         isAvailable: true,
       },
+      {
+        title: "6-week course (€522 per person)",
+        isAvailable: true,
+      },
     ],
   },
   {
@@ -62,6 +78,10 @@ const plans = [
     link: "gianfranco@escuela.dev",
     buttonText: "Contact us",
     features: [
+      {
+        title: "Online",
+        isAvailable: false,
+      },
       {
         title: "In person (in Malaga)",
         isAvailable: true,
@@ -112,15 +132,20 @@ export default function PricingTable() {
             <ul role="list" className="space-y-5 my-7">
               {plan.features.map((feature, i) => (
                 <li key={i} className="flex space-x-3">
-                  <CheckIcon />
                   {feature.isAvailable ? (
-                    <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
-                      {feature.title}
-                    </span>
+                    <>
+                      <CheckIcon />
+                      <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
+                        {feature.title}
+                      </span>
+                    </>
                   ) : (
-                    <span className="text-base font-normal leading-tight text-gray-500 line-through decoration-gray-500">
-                      {feature.title}
-                    </span>
+                    <>
+                      <CheckIcon isAvailable={false} />
+                      <span className="text-base font-normal leading-tight text-gray-500 line-through decoration-gray-500">
+                        {feature.title}
+                      </span>
+                    </>
                   )}
                 </li>
               ))}
