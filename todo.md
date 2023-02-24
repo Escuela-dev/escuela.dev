@@ -6,6 +6,7 @@ Fix accent / hover text color {cm:2023-01-29}
 (A) Add WhatsApp button {cm:2023-02-15}
 (B) fix pricing table responsiveness {cm:2023-02-16}
 
+(B) Fix blog responsiveness
 (A) Add Privacy Policy
 (A) Add Terms of Service
 (A) Add testimonials

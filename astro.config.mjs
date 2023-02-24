@@ -6,7 +6,9 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://escuela.dev",
+  // Building a static site to be deploy to any static host.
+  output: "static",
+  site: "https://escuela.dev/",
   integrations: [
     tailwind({
       config: {
