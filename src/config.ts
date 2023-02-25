@@ -3,7 +3,7 @@ export const SITE = {
     author: "Gianfranco Palumbo",
     desc: "A Coding school in Malaga, Spain - Enroll to the next batch in April 2023 - Escuela de Programación y Desarrollo Web",
     title: "Escuela.dev - Coding school",
-    ogImage: "codecamp-og.jpg",
+    ogImage: "escuela.dev-coding-school.png",
     lightAndDarkMode: true,
     postPerPage: 3,
 };
