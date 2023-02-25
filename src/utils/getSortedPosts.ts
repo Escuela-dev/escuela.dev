@@ -1,13 +1,12 @@
-import type { MarkdownInstance } from "astro";
-import type { Frontmatter } from "../types";
+import type { CollectionEntry } from "astro:content";
 
-const getSortedPosts = (posts: MarkdownInstance<Frontmatter>[]) =>
+const getSortedPosts = (posts: CollectionEntry<"blog">[]) =>
   posts
-    .filter(({ frontmatter }) => !frontmatter.draft)
+    .filter(({ data }) => !data.draft)
     .sort(
       (a, b) =>
-        Math.floor(new Date(b.frontmatter.publishDate).getTime() / 1000) -
-        Math.floor(new Date(a.frontmatter.publishDate).getTime() / 1000)
+        Math.floor(new Date(b.data.publishDate).getTime() / 1000) -
+        Math.floor(new Date(a.data.publishDate).getTime() / 1000)
     );
 
 export default getSortedPosts;

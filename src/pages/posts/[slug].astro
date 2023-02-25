@@ -1,0 +1,65 @@
+---
+import { CollectionEntry, getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+
+export interface Props {
+  post: CollectionEntry<"blog">;
+}
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  const postResult = posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+  // const pagePaths = getPageNumbers(posts.length).map(pageNum => ({
+  //   params: { slug: String(pageNum) },
+  // }));
+  // return [...postResult, ...pagePaths];
+  return [...postResult];
+}
+
+const { slug } = Astro.params;
+const { post } = Astro.props;
+const { title, author, description, ogImage, heroImage, publishDate, tags } =
+  post.data;
+
+const { Content } = await post.render();
+
+const ogUrl = new URL(ogImage ? ogImage : `${title}.svg`, Astro.url.origin)
+  .href;
+console.log("ogUrl", ogUrl);
+---
+
+<Layout title={title} description={description} ogImage={ogUrl}>
+  <style>
+    .title {
+      font-size: 2em;
+      margin: 0.25em 0 0;
+    }
+    hr {
+      border-top: 1px solid #ddd;
+      margin: 1rem 0;
+    }
+    time {
+      color: #a0a0a0;
+    }
+  </style>
+  <article id="article" role="article" class="mx-auto max-w-3xl mt-8 prose">
+    {heroImage && <img src={heroImage} alt="" />}
+    <h1 class="title">{title}</h1>
+    {publishDate && <time>{publishDate}</time>}
+    {
+      publishDate && (
+        <div>
+          Last updated on <time>{publishDate}</time>
+        </div>
+      )
+    }
+    <hr />
+    <Content />
+    <!-- <ul class="tags-container">
+      {tags.map(tag => <Tag name={tag} />)}
+    </ul> -->
+  </article>
+</Layout>

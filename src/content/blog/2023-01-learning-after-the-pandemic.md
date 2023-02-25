@@ -1,9 +1,9 @@
 ---
-layout: ../../layouts/BlogPost.astro
+# title: 'Escuela.dev - Coding school'
 title: 'Co-learning spaces - Learning after the pandemic'
-slug: '2023-01-learning-after-the-pandemic'
+description: 'This is my first post written in MDX'
+blogSlug: '2023-01-learning-after-the-pandemic'
 publishDate: '21 January 2023'
-heroImage: "/placeholder-hero.jpg"
 featured: false
 tags:
   - docs

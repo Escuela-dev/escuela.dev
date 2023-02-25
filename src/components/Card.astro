@@ -1,63 +1,48 @@
 ---
+// import dayjs from 'dayjs'
+import type { BlogFrontmatter } from "@content/_schemas";
 export interface Props {
-  title: string;
-  body: string;
-  href: string;
+  href?: string;
+  frontmatter: BlogFrontmatter;
+  secHeading?: boolean;
 }
-
-const { href, title, body } = Astro.props;
+const { frontmatter: post } = Astro.props;
+if (post.publishDate) {
+  post.publishDate = new Date(post.publishDate).toLocaleDateString("en-us", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+}
 ---
 
-<li class="link-card">
-  <a href={href}>
-    <h2>
-      {title}
-      <span>&rarr;</span>
+<a
+  href={`/posts/${post.blogSlug}`}
+  class="transition-all duration-75 ease-in-out h-full block relative top-0 hover:-top-2 shadow-lg hover:shadow-xl bg-white rounded-xl overflow-hidden"
+  data-test="article-card"
+>
+  <img
+    class="squiggle"
+    src={post.heroImage}
+    alt={post.title}
+    width="360"
+    height="192"
+  />
+  <div class="py-6 px-8">
+    <h2 class="font-bold text-2xl leading-tight">
+      {post.title}
     </h2>
-    <p>
-      {body}
+    <p class="text-xs text-gray-600 mt-4 flex items-center">
+      {post.publishDate}
+      <!-- {dayjs(post.pubDate).format('MM-DD-YYYY')} -->
     </p>
-  </a>
-</li>
-<style>
-  .link-card {
-    list-style: none;
-    display: flex;
-    padding: 0.15rem;
-    background-color: white;
-    background-image: var(--accent-gradient);
-    background-size: 400%;
-    border-radius: 0.5rem;
-    background-position: 100%;
-    transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-      0 2px 4px -2px rgba(0, 0, 0, 0.1);
-  }
+  </div>
+</a>
 
-  .link-card > a {
+<style>
+  img {
     width: 100%;
-    text-decoration: none;
-    line-height: 1.4;
-    padding: 1rem 1.3rem;
-    border-radius: 0.35rem;
-    color: rgb(var(--color-accent));
-    background-color: rgb(var(--color-fill));
-    opacity: 0.8;
-  }
-  h2 {
-    margin: 0;
-    font-size: 1.25rem;
-    transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-  }
-  p {
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-    color: #444;
-  }
-  .link-card:is(:hover, :focus-within) {
-    background-position: 0;
-  }
-  .link-card:is(:hover, :focus-within) h2 {
-    color: rgb(var(--accent));
+    aspect-ratio: 15/7;
+    object-fit: cover;
   }
 </style>

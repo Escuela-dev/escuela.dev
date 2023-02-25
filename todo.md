@@ -26,4 +26,5 @@ Add i18 localization {f} {f}
     Add Google Tag Manager
     Add Facebook Pixel
     Add Bing Webmaster Tools
+    Google Site Verification
 Change favicon

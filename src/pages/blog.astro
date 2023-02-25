@@ -1,70 +1,45 @@
 ---
-import type { MarkdownLayoutProps } from "astro";
+import { getCollection } from "astro:content";
 
 import Layout from "@layouts/Layout.astro";
-import Footer from "@components/Footer.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 
 import { SITE } from "../config";
-import type { Frontmatter } from "../types";
+import Card from "@components/Card.astro";
 
-type Props = MarkdownLayoutProps<{
-  // Define frontmatter props here
-  title: string;
-  author: string;
-  date: string;
-}>;
-
-const { title } = Astro.props.frontmatter || Astro.props;
-
-// const { frontmatter } = Astro.props;
-const posts = await Astro.glob<Frontmatter>("./blog/**/*.md");
+const posts = await getCollection("blog");
+// const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 
 export async function getStaticPaths() {
   return posts.map((post) => ({
     params: {
-      slug: post.frontmatter.slug,
+      slug: post.slug,
     },
     props: {
       post,
     },
   }));
 }
-// Use Astro.glob() to fetch all posts, and then sort them by date.
 const sortedPosts = getSortedPosts(posts);
 
-const headTitle = `${title} - ${SITE.title}`;
+const headTitle = `Blog - ${SITE.title}`;
 ---
 
 <Layout title={headTitle}>
   <main>
-    <section id="recent-posts">
-      <ul>
-        {
-          sortedPosts.map((post) => (
-            <li>
-              <time datetime={post.frontmatter.publishDate}>
-                {new Date(post.frontmatter.publishDate).toLocaleDateString(
-                  "en-us",
-                  {
-                    year: "numeric",
-                    month: "short",
-                    day: "numeric",
-                  }
-                )}
-              </time>
-              <a href={post.url}>{post.frontmatter.title}</a>
-            </li>
-          ))
-        }
-      </ul>
+    <section
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8"
+      data-test="articles-section"
+    >
+      {
+        sortedPosts.map(({ data }) => (
+          <div class="col-span-1">
+            {/*<Card post={p} />*/}
+            <Card frontmatter={data} />
+          </div>
+        ))
+      }
     </section>
   </main>
-  <style>
-    #recent-posts {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  </style>
+  <style></style>
 </Layout>
