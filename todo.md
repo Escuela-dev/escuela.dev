@@ -5,17 +5,17 @@ Fix accent / hover text color {cm:2023-01-29}
 (A) Add pricing table {cm:2023-02-11}
 (A) Add WhatsApp button {cm:2023-02-15}
 (B) fix pricing table responsiveness {cm:2023-02-16}
+(B) Fix blog responsiveness {cm:2023-02-25}
 
-(B) Fix blog responsiveness
 (A) Add Privacy Policy
 (A) Add Terms of Service
 (A) Add testimonials
 Add i18 localization {f} {f}
     Add language switcher
 (Z) Improve SEO
-    Add meta tags
-    Add OpenGraph
-    Add Twitter Cards
+    Add meta tags {cm:2023-02-25}
+    Add OpenGraph {cm:2023-02-25}
+    Add Twitter Cards {cm:2023-02-25}
     Add sitemap generation
     Add robots.txt
     Add canonical links

@@ -26,20 +26,23 @@ const headTitle = `Blog - ${SITE.title}`;
 ---
 
 <Layout title={headTitle}>
-  <main>
-    <section
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8"
-      data-test="articles-section"
-    >
-      {
-        sortedPosts.map(({ data }) => (
-          <div class="col-span-1">
-            {/*<Card post={p} />*/}
-            <Card frontmatter={data} />
-          </div>
-        ))
-      }
-    </section>
+  <main class="py-12 lg:py-20">
+    <article class="max-w-6xl mx-auto px-3">
+      <section
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8"
+        data-test="articles-section"
+      >
+        {
+          sortedPosts.map(({ data }) => (
+            <div class="col-span-1">
+              {/*<Card post={p} />*/}
+              <Card frontmatter={data} />
+            </div>
+          ))
+        }
+      </section>
+    </article>
+
+    <style></style>
   </main>
-  <style></style>
 </Layout>
