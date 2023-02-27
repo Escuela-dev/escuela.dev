@@ -5,7 +5,9 @@ import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 import prefetch from "@astrojs/prefetch";
 import critters from "astro-critters";
+import robotsTxt from "astro-robots-txt";
 
+// https://astro.build/config
 export default defineConfig({
   // Building a static site to be deploy to any static host.
   output: "static",
@@ -21,5 +23,8 @@ export default defineConfig({
     mdx(),
     prefetch(),
     critters(),
+    robotsTxt({
+      sitemap: false,
+    }),
   ],
 });

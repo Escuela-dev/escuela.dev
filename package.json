@@ -22,6 +22,7 @@
     "@types/react-dom": "^18.0.11",
     "astro": "^2.0.15",
     "astro-critters": "^1.1.31",
+    "astro-robots-txt": "^0.4.0",
     "flowbite": "^1.6.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
