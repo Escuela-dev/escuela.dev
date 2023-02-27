@@ -4,7 +4,7 @@ import Layout from "@layouts/Layout.astro";
 import LinkButton from "@components/LinkButton.astro";
 ---
 
-<Layout title={`404 Not Found | ${SITE.title}`}>
+<Layout headProps={{ title: `404 Not Found | ${SITE.title}` }}>
   <main>
     <div class="not-found-wrapper">
       <h1 aria-label="404 Not Found">404</h1>

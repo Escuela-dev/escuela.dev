@@ -22,10 +22,10 @@ export async function getStaticPaths() {
 }
 const sortedPosts = getSortedPosts(posts);
 
-const headTitle = `Blog - ${SITE.title}`;
+const title = `Blog - ${SITE.title}`;
 ---
 
-<Layout title={headTitle}>
+<Layout headProps={{ title }}>
   <main class="py-12 lg:py-20">
     <article class="max-w-6xl mx-auto px-3">
       <section
