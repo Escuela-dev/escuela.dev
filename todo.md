@@ -1,17 +1,17 @@
-Header/navbar: fix responsiveness {cm:2023-01-29}
-Deploy website on GitHub Pages {cm:2023-01-29}
-Fix accent / hover text color {cm:2023-01-29}
-(A) Fix Stripe Integration on BlockSurvey {cm:2023-02-06}
-(A) Add pricing table {cm:2023-02-11}
-(A) Add WhatsApp button {cm:2023-02-15}
-(B) fix pricing table responsiveness {cm:2023-02-16}
-(B) Fix blog responsiveness {cm:2023-02-25}
-
+(A) Add testimonials
+    Ask for testimonial to Genevieve
+        Waiting for response
+    Ask for testimonial to Alex F
+    Ask for testimonial to Logan
+    Ask for testimonial to Bruce
+(A) RSS feed
+    Add RSS feed to <https://app.daily.dev/>
 (A) Add Privacy Policy
 (A) Add Terms of Service
-(A) Add testimonials
-Add i18 localization {f} {f}
+(A) Add Español? button -> opens a modal with a form to request info in Spanish
+(A) Add i18 localization <https://github.com/yassinedoghri/astro-i18next>
     Add language switcher
+(B) Fix <https://pagespeed.web.dev/report?url=https%3A%2F%2Fescuela.dev>
 (Z) Improve SEO
     Add meta tags {cm:2023-02-25}
     Add OpenGraph {cm:2023-02-25}
