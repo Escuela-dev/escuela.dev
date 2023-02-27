@@ -1,9 +1,16 @@
 ---
+import lozad from "lozad";
+
 // import FAQSection from "@components/FAQSection";
 import Embed from "@components/Embed";
 import PricingTable from "@components/PricingTable";
 // import Testimonials from "@components/Testimonials";
 import Layout from "@layouts/Layout.astro";
+
+if (typeof window !== "undefined") {
+  const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+  observer.observe();
+}
 ---
 
 <Layout>
@@ -27,8 +34,11 @@ import Layout from "@layouts/Layout.astro";
         Fill the form below to learn more
       </h2>
     </div>
-    <Embed
+    <!-- <Embed
       client:visible
+      /> -->
+    <embed
+      class="lozad"
       src="https://blocksurvey.io/survey/t/4c0715c3-e28d-4dc8-b80f-a3f8210f1f24"
       style={{ width: "100%", height: "100vh" }}
     />
