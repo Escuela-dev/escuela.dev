@@ -1,9 +1,13 @@
 ---
+// import FAQSection from "@components/FAQSection";
+import Embed from "@components/Embed";
 import PricingTable from "@components/PricingTable";
+// import Testimonials from "@components/Testimonials";
 import Layout from "@layouts/Layout.astro";
 ---
 
 <Layout>
+  <link rel="dns-prefetch" href="https://blocksurvey.io" />
   <main>
     <h1 class="text-center">
       <span class="text-gradient"
@@ -12,6 +16,8 @@ import Layout from "@layouts/Layout.astro";
       >
     </h1>
     <div class="mt-8">
+      <!-- <Testimonials client:only /> -->
+      <!-- <FAQSection /> -->
       <PricingTable />
     </div>
     <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
@@ -21,9 +27,10 @@ import Layout from "@layouts/Layout.astro";
         Fill the form below to learn more
       </h2>
     </div>
-    <embed
+    <Embed
+      client:visible
       src="https://blocksurvey.io/survey/t/4c0715c3-e28d-4dc8-b80f-a3f8210f1f24"
-      style="width:100%; height:100vh;"
+      style={{ width: "100%", height: "100vh" }}
     />
   </main>
 </Layout>
