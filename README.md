@@ -1,4 +1,4 @@
-# Welcome to [Escuela.dev](https://escuela.dev) - A Coding school in Malaga, Spain - Enroll to the next batch in March 2023
+# Welcome to [Escuela.dev](https://escuela.dev) - A Coding school in Malaga, Spain - Enroll to the next batch in April 2023
 
 *Want to know when we launch?*
 
