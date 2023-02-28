@@ -2,10 +2,12 @@
 import { getCollection } from "astro:content";
 
 import Layout from "@layouts/Layout.astro";
+import Card from "@components/Card.astro";
+
 import getSortedPosts from "@utils/getSortedPosts";
+import getGithubEditUrl from "@utils/getGithubEditUrl";
 
 import { SITE } from "../config";
-import Card from "@components/Card.astro";
 
 const posts = await getCollection("blog");
 // const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
@@ -25,7 +27,10 @@ const sortedPosts = getSortedPosts(posts);
 const title = `Blog - ${SITE.title}`;
 ---
 
-<Layout headProps={{ title }}>
+<Layout
+  githubEditUrl={getGithubEditUrl("/src/pages/blog.astro")}
+  headProps={{ title }}
+>
   <main class="py-12 lg:py-20">
     <article class="max-w-6xl mx-auto px-3">
       <section

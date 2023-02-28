@@ -2,11 +2,12 @@
 // import FAQSection from "@components/FAQSection";
 import Embed from "@components/Embed";
 import PricingTable from "@components/PricingTable";
-// import Testimonials from "@components/Testimonials";
 import Layout from "@layouts/Layout.astro";
+// import Testimonials from "@components/Testimonials";
+import getGithubEditUrl from "@utils/getGithubEditUrl";
 ---
 
-<Layout>
+<Layout githubEditUrl={getGithubEditUrl("/src/pages/index.astro")}>
   <link rel="dns-prefetch" href="https://blocksurvey.io" />
   <main>
     <h1 class="text-center">

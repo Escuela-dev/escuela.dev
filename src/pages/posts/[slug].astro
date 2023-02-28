@@ -2,7 +2,7 @@
 import { CollectionEntry, getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import getReadingTime from "@utils/getReadingTime";
-import Hr from "@components/Hr.astro";
+import getGithubEditUrl from "@utils/getGithubEditUrl";
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -43,6 +43,7 @@ const ogUrl = new URL(ogImage ? ogImage : `${title}.svg`, Astro.url.origin)
     publishDate,
     author,
   }}
+  githubEditUrl={getGithubEditUrl("/src/pages/posts/[slug].astro")}
 >
   <style>
     .title {

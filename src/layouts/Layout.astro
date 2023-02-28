@@ -10,8 +10,9 @@ import WhatsAppButton from "@components/WhatsAppButton.astro";
 export interface Props {
   headProps?: HeadProps;
   showWhatApp?: boolean;
+  githubEditUrl?: string;
 }
-const { showWhatApp = true } = Astro.props;
+const { showWhatApp = true, githubEditUrl } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -22,7 +23,7 @@ const { showWhatApp = true } = Astro.props;
   <body>
     <Header activeNav="posts" />
     <slot />
-    <Footer />
+    <Footer githubEditUrl={githubEditUrl} />
     <style is:global>
       html {
         font-family: system-ui, sans-serif;
