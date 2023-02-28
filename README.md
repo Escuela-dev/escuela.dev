@@ -12,7 +12,7 @@ Sign up for updates on: <br/>
 
 ---
 
-- [Welcome to Escuela.dev - A Coding school in Malaga, Spain - Enroll to the next batch in March 2023](#welcome-to-escueladev---a-coding-school-in-malaga-spain---enroll-to-the-next-batch-in-march-2023)
+- [Welcome to Escuela.dev - A Coding school in Malaga, Spain - Enroll to the next batch in April 2023](#welcome-to-escueladev---a-coding-school-in-malaga-spain---enroll-to-the-next-batch-in-april-2023)
   - [FAQ about Escuela.dev](#faq-about-escueladev)
     - [Why I'm building this?](#why-im-building-this)
     - [What is our mission?](#what-is-our-mission)
