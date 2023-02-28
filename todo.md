@@ -1,3 +1,4 @@
+(A) Add FAQ
 (A) Add testimonials
     Ask for testimonial to Genevieve
         Waiting for response
@@ -28,3 +29,41 @@
     Add Bing Webmaster Tools
     Google Site Verification
 Change favicon
+Add logo?
+    Logo with the letter 'E'?
+
+Coding school in London my mom went to: <https://www.londonappbrewery.com/>
+
+Coding school in Paris: <https://www.42.fr/>
+Coding school in Paris: <https://www.42lyon.fr/>
+Coding school in London my friend went to: <https://www.lighthouselabs.ca/>
+Coding school in London: <https://www.hackyourfuture.net/>
+Coding school in London: <https://www.hackreactor.com/>
+Coding school in London: <https://www.hackwagon.com/>
+Coding school in London: <https://www.hackbrightacademy.com/>
+Coding school in Paris: <https://www.wildcodeschool.com/fr-FR>
+Coding school in Paris: <https://www.lereacteur.io/>
+Coding school in London: <https://www.lewagon.com/>
+Coding school in London: <https://www.makers.tech/>
+Coding school in London: <https://www.thefoundersfactory.com/>
+Coding school in London: <https://www.thinkful.com/>
+Coding school in London: <https://www.codingnomads.co/>
+Coding school in London: <https://www.codingbootcamp.co.uk/>
+Coding school in London: <https://www.codingdojo.com/>
+Coding school in London: <https://www.codinghouse.co.uk/>
+Coding school in Madrid: <https://www.ironhack.com/en>
+Coding school in Madrid: <https://www.neoland.es/>
+Coding school in Madrid: <https://www.soyhenry.com/>
+Coding school in Madrid: <https://www.acamica.com/>
+Coding school in Madrid: <https://www.bedu.org/>
+Coding school in Madrid: <https://www.4geeksacademy.co/>
+Coding school in Madrid: <https://www.campusmvp.es/>
+Coding school in Barcelona: <https://www.soyhenry.com/>
+Coding school in Milan: <https://www.boolean.careers/>
+Coding school in Milan: <https://www.lamolisana.it/>
+Coding school in Europe: <https://www.coding-academy.org/>
+Coding school in Italy: <https://www.unicampania.it/>
+Coding school in Italy: <https://www.unicam.it/>
+
+School my kids go to: <https://www.lespetitschamps.com/>
+School my mom works at: <https://www.ecole-lespetitschamps.com/>
