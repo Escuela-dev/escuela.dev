@@ -4,6 +4,7 @@ import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 import prefetch from "@astrojs/prefetch";
+import cloudflare from "@astrojs/cloudflare";
 import critters from "astro-critters";
 import robotsTxt from "astro-robots-txt";
 
@@ -27,4 +28,5 @@ export default defineConfig({
       sitemap: false,
     }),
   ],
+  adapter: cloudflare(),
 });
