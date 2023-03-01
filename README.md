@@ -1,5 +1,7 @@
 # Welcome to [Escuela.dev](https://escuela.dev) - A Coding school in Malaga, Spain - Enroll to the next batch in April 2023
 
+![badge](https://img.shields.io/endpoint?url=https://cloudflare-pages-badges.carrotbot.workers.dev/?projectName=escuela-dev)
+
 *Want to know when we launch?*
 
 Sign up for updates on: <br/>
@@ -35,6 +37,7 @@ Sign up for updates on: <br/>
   - [🚀 Website Project Structure](#-website-project-structure)
   - [🧞 Commands](#-commands)
   - [👀 Want to learn more?](#-want-to-learn-more)
+  - [Deploy wragler on Cloudflare Pages](#deploy-wragler-on-cloudflare-pages)
 
 ## FAQ about Escuela.dev
 
@@ -118,4 +121,12 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 Want to learn more?
 
-Email Gianfranco at <gianpa@gmail.com> or visit [Escuela.dev](https://escuela.dev)
+Email Gianfranco at <gianfranco@escuela.com> or visit [Escuela.dev](https://escuela.dev)
+
+## Deploy wragler on Cloudflare Pages
+
+> This is for the `cloudflare-pages-badges`
+
+```bash
+wrangler publish
+```
