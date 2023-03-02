@@ -46,9 +46,9 @@ const plans = [
   {
     title: "Group class",
     price: 29,
-    priceDescription: "/hour (€87 per week)",
-    link: "https://cal.com/escuela",
-    buttonText: "Enquire",
+    priceDescription: "/hour \n (€87 per week)",
+    link: "https://blocksurvey.io/survey/t/f7c0b935-02a0-40ec-9399-00e885fcd423/r/l",
+    buttonText: "Enroll",
     features: [
       {
         title: "Online",
@@ -98,7 +98,37 @@ const plans = [
   },
 ];
 
+function renderFeatures(features: { title: string; isAvailable: boolean }[]) {
+  return (
+    <ul role="list" className="space-y-5 my-7">
+      {features.map((feature, i) => (
+        <li key={i} className="flex space-x-3">
+          {feature.isAvailable ? (
+            <>
+              <CheckIcon />
+              <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
+                {feature.title}
+              </span>
+            </>
+          ) : (
+            <>
+              <CheckIcon isAvailable={false} />
+              <span className="text-base font-normal leading-tight text-gray-500 line-through decoration-gray-500">
+                {feature.title}
+              </span>
+            </>
+          )}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export default function PricingTable() {
+  const priceContainer = {
+    height: 100,
+  };
+
   return (
     <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
@@ -110,52 +140,33 @@ export default function PricingTable() {
             <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
               {plan.title}
             </h5>
-            <div className="flex items-baseline text-gray-900 dark:text-white">
-              {plan.price ? (
-                <span className="text-3xl font-semibold">€</span>
-              ) : (
-                plan.priceDescription && (
-                  <span className="text-3xl font-semibold">
-                    {plan.priceDescription}
-                  </span>
-                )
-              )}
+            <div
+              style={priceContainer}
+              className="flex items-baseline text-gray-900 dark:text-white"
+            >
+              <span className="text-3xl font-semibold whitespace-pre-line">
+                {plan.price ? (
+                  <>&euro;</>
+                ) : (
+                  plan.priceDescription && <>{plan.priceDescription}</>
+                )}
+              </span>
               <span className="text-5xl font-extrabold tracking-tight">
                 {plan.price}
               </span>
               {plan.price && plan.priceDescription && (
-                <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">
+                <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400 whitespace-pre-line">
                   {plan.priceDescription}
                 </span>
               )}
             </div>
-            <ul role="list" className="space-y-5 my-7">
-              {plan.features.map((feature, i) => (
-                <li key={i} className="flex space-x-3">
-                  {feature.isAvailable ? (
-                    <>
-                      <CheckIcon />
-                      <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
-                        {feature.title}
-                      </span>
-                    </>
-                  ) : (
-                    <>
-                      <CheckIcon isAvailable={false} />
-                      <span className="text-base font-normal leading-tight text-gray-500 line-through decoration-gray-500">
-                        {feature.title}
-                      </span>
-                    </>
-                  )}
-                </li>
-              ))}
-            </ul>
             <a
               href={plan.link.includes("@") ? `mailto:${plan.link}` : plan.link}
               className="block w-full px-4 py-2 text-base font-medium leading-6 text-center text-white transition duration-200 ease-in mr-2 mb-2 bg-blue-600 border border-transparent rounded-md shadow-sm hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             >
               {plan.buttonText}
             </a>
+            {renderFeatures(plan.features)}
           </div>
         ))}
       </div>

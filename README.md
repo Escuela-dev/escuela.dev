@@ -7,14 +7,16 @@
 Sign up for updates on: <br/>
 <https://escuela.dev>
 
-<!-- ## Follow us
+## Follow us -->
 
 [![Twitter @escuela_dev_](https://img.shields.io/twitter/follow/escuela_dev_?style=social)](https://twitter.com/escuela_dev_)
-[![Linkedin](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/company/escuela-dev/)](https://www.linkedin.com/company/escuela-dev/) -->
+
+<!--[![Linkedin](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/company/escuela-dev/)](https://www.linkedin.com/company/escuela-dev/) -->
 
 ---
 
 - [Welcome to Escuela.dev - A Coding school in Malaga, Spain - Enroll to the next batch in April 2023](#welcome-to-escueladev---a-coding-school-in-malaga-spain---enroll-to-the-next-batch-in-april-2023)
+  - [Follow us --\>](#follow-us---)
   - [FAQ about Escuela.dev](#faq-about-escueladev)
     - [Why I'm building this?](#why-im-building-this)
     - [What is our mission?](#what-is-our-mission)
@@ -92,7 +94,7 @@ Or maybe you're who want to change your career and better your job opportunities
 
 No, but what you get is better! Companies who look for software developers do not care about certificates; they care about projects and looking at your code.
 
-You  will be able to show your portfolio to potential employers and get a job. 
+You  will be able to show your portfolio to potential employers and get a job.
 
 You will have a portfolio on GitHub with several Web projects! They will be able to see and understand better your proficiency level and gage if you might be a fit in their team 🤜🤛
 
