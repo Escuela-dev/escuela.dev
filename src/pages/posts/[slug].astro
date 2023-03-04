@@ -59,9 +59,8 @@ const ogUrl = new URL(ogImage ? ogImage : `${title}.svg`, Astro.url.origin)
     }
   </style>
   <article
-    id="article"
     role="article"
-    class="mx-auto max-w-3xl mt-8 prose sm:px-0 px-3"
+    class="mx-auto max-w-3xl mt-8 mb-4 prose sm:px-0 px-3"
   >
     {heroImage && <img src={heroImage} alt="" />}
     <h1 class="title">{title}</h1>
@@ -69,7 +68,6 @@ const ogUrl = new URL(ogImage ? ogImage : `${title}.svg`, Astro.url.origin)
       {publishDate && <time>{publishDate}</time>}
       <span>{readingTime} minutes to read</span>
     </div>
-    <hr />
     <hr />
     <Content />
     <!-- <ul class="tags-container">
