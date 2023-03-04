@@ -1,5 +1,5 @@
 declare interface HeadProps {
-  title?: string;
+  seoTitle?: string;
   author?: string;
   description?: string;
   ogImage?: string;
