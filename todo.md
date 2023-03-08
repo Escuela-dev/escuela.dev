@@ -1,4 +1,5 @@
 (A) Add FAQ
+(A) fix responsiveness in 1024px wide screens
 (A) Add testimonials
     Ask for testimonial to Genevieve
         Waiting for response

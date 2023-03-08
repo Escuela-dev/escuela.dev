@@ -1,6 +1,6 @@
 # Welcome to [Escuela.dev](https://escuela.dev) - A Coding school in Malaga, Spain - Enroll to the next batch in April 2023
 
-![badge](https://img.shields.io/endpoint?url=https://cloudflare-pages-badges.carrotbot.workers.dev/?projectName=escuela-dev)
+![cloudflare-pages](https://img.shields.io/endpoint?url=https://cloudflare-pages-badges.carrotbot.workers.dev/?projectName=escuela-dev) [![codeclimate](https://api.codeclimate.com/v1/badges/56ab88408d27c9d93190/maintainability)](https://codeclimate.com/github/Escuela-dev/escuela.dev/maintainability)
 
 *Want to know when we launch?*
 
