@@ -45,9 +45,9 @@ const plans = [
   },
   {
     title: "Group class",
-    price: 29,
-    priceDescription: "/hour \n (€87 per week)",
-    link: "https://blocksurvey.io/survey/t/f7c0b935-02a0-40ec-9399-00e885fcd423/r/l",
+    price: 340,
+    priceDescription: "/course \n (€85 per week)",
+    link: "https://maven.com/escuela-dev/web-hybrid-malaga",
     buttonText: "Enroll",
     features: [
       {
@@ -67,7 +67,7 @@ const plans = [
         isAvailable: true,
       },
       {
-        title: "6-week course (€522 per person)",
+        title: "4-week course",
         isAvailable: true,
       },
     ],

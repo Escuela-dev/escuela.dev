@@ -1,6 +1,6 @@
 ---
 // import FAQSection from "@components/FAQSection";
-import Embed from "@components/Embed";
+// import Embed from "@components/Embed";
 import PricingTable from "@components/PricingTable";
 import Layout from "@layouts/Layout.astro";
 // import Testimonials from "@components/Testimonials";
@@ -8,12 +8,12 @@ import getGithubEditUrl from "@utils/getGithubEditUrl";
 ---
 
 <Layout githubEditUrl={getGithubEditUrl("/src/pages/index.astro")}>
-  <link rel="dns-prefetch" href="https://blocksurvey.io" />
+  <!-- <link rel="dns-prefetch" href="https://blocksurvey.io" /> -->
   <main>
     <h1 class="text-center">
       <span class="text-gradient"
-        >Welcome to Escuela.dev<br />A Coding school in Malaga, Spain<br />Enroll
-        for the next batch in April 2023</span
+        >Welcome to Escuela.dev<br />A Coding school in Malaga, Spain<br
+        />Enroll for the next batch in April 2023</span
       >
     </h1>
     <div class="mt-8">
@@ -28,11 +28,11 @@ import getGithubEditUrl from "@utils/getGithubEditUrl";
         Fill the form below to learn more
       </h2>
     </div>
-    <Embed
+    <!-- <Embed
       client:visible
       src="https://blocksurvey.io/survey/t/4c0715c3-e28d-4dc8-b80f-a3f8210f1f24"
       style={{ width: "100%", height: "100vh" }}
-    />
+    /> -->
   </main>
 </Layout>
 
