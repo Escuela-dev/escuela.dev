@@ -83,13 +83,24 @@ import Hr from "./Hr.astro";
 </header>
 <style>
   .nav-container {
-    @apply max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center;
+    @apply max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center p-2 sm:p-0;
   }
   .top-nav-wrap {
-    @apply relative w-full sm:py-8 flex justify-between items-start sm:items-center;
+    @apply relative w-full sm:py-8 flex justify-between items-baseline sm:items-center;
   }
   .title {
-    @apply absolute sm:static font-semibold text-xl sm:text-2xl py-1 whitespace-nowrap;
+    @apply absolute sm:static font-semibold text-lg text-center sm:text-2xl whitespace-nowrap;
+  }
+  /* sm */
+  @media screen and (max-width: 640px) {
+    a {
+      padding-bottom: 1px;
+    }
+    .title {
+      max-width: 90%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
   }
   #theme-btn {
     @apply p-3 sm:p-1;
@@ -137,7 +148,7 @@ import Hr from "./Hr.astro";
     @apply border-b-2 border-skin-accent text-skin-accent;
   }
   .hamburger-menu {
-    @apply self-end p-2 sm:hidden;
+    @apply self-end sm:hidden;
   }
   .hamburger-menu svg {
     @apply fill-skin-base w-6 h-6 scale-125;

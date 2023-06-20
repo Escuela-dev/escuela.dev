@@ -10,13 +10,13 @@ import getGithubEditUrl from "@utils/getGithubEditUrl";
 <Layout githubEditUrl={getGithubEditUrl("/src/pages/index.astro")}>
   <!-- <link rel="dns-prefetch" href="https://blocksurvey.io" /> -->
   <main>
-    <h1 class="text-center">
+    <h1 class="text-center my-10 sm:my-20">
       <span class="text-gradient"
         >Welcome to Escuela.dev<br />A Coding school in Malaga, Spain<br
         />Enroll for the next batch in April 2023</span
       >
     </h1>
-    <div class="mt-8">
+    <div>
       <!-- <Testimonials client:only /> -->
       <!-- <FAQSection /> -->
       <PricingTable />
@@ -36,20 +36,23 @@ import getGithubEditUrl from "@utils/getGithubEditUrl";
   </main>
 </Layout>
 
-<style>
+<style scoped>
   main {
     margin: auto;
     padding: 1.5rem;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 3rem !important;
     font-weight: 800;
+    line-height: 1.5;
     margin: 0;
   }
 
   @media (max-width: 640px) {
     h1 {
-      line-height: 1.2;
+      font-size: 2rem !important;
+      line-height: 1.8;
+      font-weight: 900 !important;
     }
   }
 
