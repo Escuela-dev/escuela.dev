@@ -5,6 +5,13 @@ import PricingTable from "@components/PricingTable";
 import Layout from "@layouts/Layout.astro";
 // import Testimonials from "@components/Testimonials";
 import getGithubEditUrl from "@utils/getGithubEditUrl";
+
+const nextMonth = new Date(
+  new Date().getFullYear(),
+  new Date().getMonth() + 1,
+  1
+);
+const nextMonthName = nextMonth.toLocaleDateString("en-GB", { month: "long" });
 ---
 
 <Layout githubEditUrl={getGithubEditUrl("/src/pages/index.astro")}>
@@ -13,7 +20,8 @@ import getGithubEditUrl from "@utils/getGithubEditUrl";
     <h1 class="text-center my-10 sm:my-20">
       <span class="text-gradient"
         >Welcome to Escuela.dev<br />A Coding school in Malaga, Spain<br
-        />Enroll for the next batch in April 2023</span
+        />Enroll for the next batch in {nextMonthName}
+        {new Date().getFullYear()}</span
       >
     </h1>
     <div>
