@@ -1,5 +1,12 @@
 (A) Add FAQ
 (A) fix responsiveness in 1024px wide screens
+(B) format blog articles in large desktop like openai.com (<https://openai.com/research/language-models-can-explain-neurons-in-language-models>)
+(A) Add book tech call free call for Startup Entrepreneurs
+    Should you build a mobile app or web app? Should you hire a consultancy agency?
+    Should you hire a contractor? How do I fix my WordPress, Webflow or Shopify website myself?
+    Emporement for entrepreneurs
+(A) Add Español? button -> opens a modal with a form to request info in Spanish
+    Keywords en Español: aprendisaje
 (A) Add testimonials
     Ask for testimonial to Genevieve
         Waiting for response
@@ -10,7 +17,6 @@
     Add RSS feed to <https://app.daily.dev/>
 (A) Add Privacy Policy
 (A) Add Terms of Service
-(A) Add Español? button -> opens a modal with a form to request info in Spanish
 (A) Add i18 localization <https://github.com/yassinedoghri/astro-i18next>
     Add language switcher
 (B) Fix <https://pagespeed.web.dev/report?url=https%3A%2F%2Fescuela.dev>

@@ -7,7 +7,7 @@ import Hr from "./Hr.astro";
 <header class="z-10">
   <div class="nav-container">
     <div class="top-nav-wrap">
-      <a href="/">
+      <a class="logo" href="/">
         <h2 class="title">
           {SITE.title}
         </h2>
@@ -83,23 +83,24 @@ import Hr from "./Hr.astro";
 </header>
 <style>
   .nav-container {
-    @apply max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center p-2 sm:p-0;
+    @apply max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center;
   }
   .top-nav-wrap {
     @apply relative w-full sm:py-8 flex justify-between items-baseline sm:items-center;
+    padding: 0.75rem;
   }
   .title {
     @apply absolute sm:static font-semibold text-lg text-center sm:text-2xl whitespace-nowrap;
   }
   /* sm */
   @media screen and (max-width: 640px) {
-    a {
-      padding-bottom: 1px;
-    }
-    .title {
-      max-width: 90%;
-      text-overflow: ellipsis;
-      overflow: hidden;
+    .logo {
+      position: absolute;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      font-weight: 600;
     }
   }
   #theme-btn {
