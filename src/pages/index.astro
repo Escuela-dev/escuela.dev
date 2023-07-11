@@ -17,17 +17,54 @@ const nextMonthName = nextMonth.toLocaleDateString("en-GB", { month: "long" });
 <Layout githubEditUrl={getGithubEditUrl("/src/pages/index.astro")}>
   <!-- <link rel="dns-prefetch" href="https://blocksurvey.io" /> -->
   <main>
-    <h1 class="text-center my-10 sm:my-20">
-      <span class="text-gradient"
-        >Welcome to Escuela.dev<br />A Coding school in Malaga, Spain<br
-        />Enroll for the next batch in {nextMonthName}
-        {new Date().getFullYear()}</span
-      >
+    <h1 class="text-center my-10 sm:my-20 text-gradient">
+      Welcome to Escuela.dev<br />A Coding school in Malaga, Spain<br />Enroll
+      for the next batch in {nextMonthName}
+      {new Date().getFullYear()}
     </h1>
     <div>
       <!-- <Testimonials client:only /> -->
       <!-- <FAQSection /> -->
       <PricingTable />
+    </div>
+    <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+      <h2
+        class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+      >
+        📜 Will I receive a certificate of completion?
+      </h2>
+      <p class="leading-9 font-sans">
+        No, instead of a certificate, we offer something more valuable.
+        Companies hiring software developers prioritise projects and code
+        samples over certificates. With our program, you'll build a robust
+        portfolio on GitHub, showcasing various web projects. This portfolio
+        will demonstrate your proficiency, enable potential employers to assess
+        your skills effectively and determine if you're a good fit for their
+        teams. 🤜🤛
+      </p>
+    </div>
+    <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+      <h2
+        class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+      >
+        🛠️ What kind of projects will I learn how to build?
+      </h2>
+      <p class="leading-9 font-sans">
+        1. 📚 <b>Interactive Quiz</b>: Build an interactive quiz application
+        with multiple-choice questions. Users can select their answers, and you
+        can provide instant feedback on their choices. JavaScript can be used to
+        manage the quiz and track scores.
+      </p>
+      <p class="leading-9 font-sans">
+        2. ✨ <b>Animated Landing Page</b>: Design a visually appealing landing
+        page with animations and transitions. Use CSS animations or libraries
+        like Animate.css to add engaging effects.
+      </p>
+      <p class="leading-9 font-sans">
+        3. 🎹 <b>Virtual Piano</b>: Create a virtual piano keyboard where users
+        can play musical notes and chords by clicking or pressing keys. You can
+        use JavaScript to handle the sound and interactivity.
+      </p>
     </div>
     <!-- <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
       <h2
