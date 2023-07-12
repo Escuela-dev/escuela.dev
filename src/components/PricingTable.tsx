@@ -131,11 +131,11 @@ export default function PricingTable() {
 
   return (
     <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-      <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-        {plans.map((plan) => (
+      <div className="space-y-8 grid lg:grid-cols-3 md:grid-cols-2 sm:gap-6 xl:gap-10 lg:space-y-0 items-baseline">
+        {plans.map((plan) => (  
           <div
             key={plan.title}
-            className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+            className="plan-item w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
           >
             <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
               {plan.title}
@@ -155,7 +155,7 @@ export default function PricingTable() {
                 {plan.price}
               </span>
               {plan.price && plan.priceDescription && (
-                <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400 whitespace-pre-line">
+                <span className="ml-1 sm:text-xl text-l font-normal text-gray-500 dark:text-gray-400 whitespace-pre-line">
                   {plan.priceDescription}
                 </span>
               )}
