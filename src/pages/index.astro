@@ -17,7 +17,9 @@ const nextMonthName = nextMonth.toLocaleDateString("en-GB", { month: "long" });
 <Layout githubEditUrl={getGithubEditUrl("/src/pages/index.astro")}>
   <!-- <link rel="dns-prefetch" href="https://blocksurvey.io" /> -->
   <main>
-    <h1 class="text-center my-10 sm:my-20 text-gradient sm:tracking-tight sm:leading-12 leading-10">
+    <h1
+      class="text-gradient sm:leading-12 my-10 text-center leading-10 sm:my-20 sm:tracking-tight"
+    >
       Welcome to Escuela.dev<br />A Coding school in Malaga, Spain<br />Enroll
       for the next batch in {nextMonthName}
       {new Date().getFullYear()}
@@ -27,13 +29,13 @@ const nextMonthName = nextMonth.toLocaleDateString("en-GB", { month: "long" });
       <!-- <FAQSection /> -->
       <PricingTable />
     </div>
-    <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+    <div class="mx-auto mb-8 max-w-screen-md text-center lg:mb-12">
       <h2
-        class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+        class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white"
       >
         📜 Will I receive a certificate of completion?
       </h2>
-      <p class="leading-9 font-sans">
+      <p class="font-sans leading-9">
         No, instead of a certificate, we offer something more valuable.
         Companies hiring software developers prioritise projects and code
         samples over certificates. With our program, you'll build a robust
@@ -43,24 +45,24 @@ const nextMonthName = nextMonth.toLocaleDateString("en-GB", { month: "long" });
         teams. 🤜🤛
       </p>
     </div>
-    <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+    <div class="mx-auto mb-8 max-w-screen-md text-center lg:mb-12">
       <h2
-        class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+        class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white"
       >
         🛠️ What kind of projects will I learn how to build?
       </h2>
-      <p class="leading-9 font-sans">
+      <p class="font-sans leading-9">
         1. 📚 <b>Interactive Quiz</b>: Build an interactive quiz application
         with multiple-choice questions. Users can select their answers, and you
         can provide instant feedback on their choices. JavaScript can be used to
         manage the quiz and track scores.
       </p>
-      <p class="leading-9 font-sans">
+      <p class="font-sans leading-9">
         2. ✨ <b>Animated Landing Page</b>: Design a visually appealing landing
         page with animations and transitions. Use CSS animations or libraries
         like Animate.css to add engaging effects.
       </p>
-      <p class="leading-9 font-sans">
+      <p class="font-sans leading-9">
         3. 🎹 <b>Virtual Piano</b>: Create a virtual piano keyboard where users
         can play musical notes and chords by clicking or pressing keys. You can
         use JavaScript to handle the sound and interactivity.

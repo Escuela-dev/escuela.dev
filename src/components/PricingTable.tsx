@@ -2,7 +2,7 @@ function CheckIcon({ isAvailable = true }: { isAvailable?: boolean }) {
   return (
     <svg
       aria-hidden="true"
-      className={`flex-shrink-0 w-5 h-5 ${
+      className={`h-5 w-5 flex-shrink-0 ${
         isAvailable
           ? "text-blue-600 dark:text-blue-500"
           : "text-gray-600 dark:text-gray-500"
@@ -100,7 +100,7 @@ const plans = [
 
 function renderFeatures(features: { title: string; isAvailable: boolean }[]) {
   return (
-    <ul role="list" className="space-y-5 my-7">
+    <ul role="list" className="my-7 space-y-5">
       {features.map((feature, i) => (
         <li key={i} className="flex space-x-3">
           {feature.isAvailable ? (
@@ -130,12 +130,12 @@ export default function PricingTable() {
   };
 
   return (
-    <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-      <div className="space-y-8 grid lg:grid-cols-3 md:grid-cols-2 sm:gap-6 xl:gap-10 lg:space-y-0 items-baseline">
-        {plans.map((plan) => (  
+    <div className="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16">
+      <div className="grid items-baseline space-y-8 sm:gap-6 md:grid-cols-2 lg:grid-cols-3 lg:space-y-0 xl:gap-10">
+        {plans.map((plan) => (
           <div
             key={plan.title}
-            className="plan-item w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+            className="plan-item w-full max-w-sm rounded-lg border border-gray-200 bg-white p-4 shadow dark:border-gray-700 dark:bg-gray-800 sm:p-8"
           >
             <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
               {plan.title}
@@ -144,7 +144,7 @@ export default function PricingTable() {
               style={priceContainer}
               className="flex items-baseline text-gray-900 dark:text-white"
             >
-              <span className="text-3xl font-semibold whitespace-pre-line">
+              <span className="whitespace-pre-line text-3xl font-semibold">
                 {plan.price ? (
                   <>&euro;</>
                 ) : (
@@ -155,7 +155,7 @@ export default function PricingTable() {
                 {plan.price}
               </span>
               {plan.price && plan.priceDescription && (
-                <span className="ml-1 sm:text-xl text-l font-normal text-gray-500 dark:text-gray-400 whitespace-pre-line">
+                <span className="text-l ml-1 whitespace-pre-line font-normal text-gray-500 dark:text-gray-400 sm:text-xl">
                   {plan.priceDescription}
                 </span>
               )}

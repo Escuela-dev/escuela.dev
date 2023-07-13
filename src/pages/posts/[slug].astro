@@ -60,7 +60,7 @@ const ogUrl = new URL(ogImage ? ogImage : `${title}.svg`, Astro.url.origin)
   </style>
   <article
     role="article"
-    class="mx-auto max-w-3xl mt-8 mb-4 prose sm:px-0 px-3"
+    class="prose mx-auto mb-4 mt-8 max-w-3xl px-3 sm:px-0"
   >
     {heroImage && <img src={heroImage} alt="" />}
     <h1 class="title">{title}</h1>
