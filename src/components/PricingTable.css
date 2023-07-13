@@ -1,4 +1,4 @@
-.button {
+.gradient-border {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -56,6 +56,12 @@
 
   height: calc(100% + 3px * 2);
   width: calc(100% + 3px * 2);
+}
+@media screen and (max-width: 640px) {
+  .gradient-border:after {
+    height: calc(100% + 3px * 2);
+    width: calc(100% + 3px * 2);
+  }
 }
 
 @keyframes animatedgradient {
