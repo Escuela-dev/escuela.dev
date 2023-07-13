@@ -1,0 +1,71 @@
+.button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: 0;
+  white-space: nowrap;
+  margin: 5px;
+  padding: 0 26px;
+  font-size: 16px;
+  height: 46px;
+  line-height: 46px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 3px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.075s;
+}
+
+:is(.dark) .button {
+  background-color: #050505;
+}
+
+.gradient-border:after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * 3px);
+  left: calc(-1 * 3px);
+  width: 0;
+  height: 0;
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  border-radius: 3px;
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  animation-play-state: paused;
+  background-size: 300% 300%;
+  transition: all 0.075s;
+}
+
+.gradient-border:hover {
+  border: none;
+}
+.gradient-border:hover:after {
+  animation-play-state: running;
+
+  height: calc(100% + 3px * 2);
+  width: calc(100% + 3px * 2);
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,3 +1,5 @@
+import "./PricingTable.css";
+
 function CheckIcon({ isAvailable = true }: { isAvailable?: boolean }) {
   return (
     <svg
@@ -130,12 +132,12 @@ export default function PricingTable() {
   };
 
   return (
-    <div className="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16">
+    <div className="mx-auto max-w-screen-xl px-4 py-8 font-sans lg:px-6 lg:py-16">
       <div className="grid items-baseline space-y-8 sm:gap-6 md:grid-cols-2 lg:grid-cols-3 lg:space-y-0 xl:gap-10">
         {plans.map((plan) => (
           <div
             key={plan.title}
-            className="plan-item w-full max-w-sm rounded-lg border border-gray-200 bg-white p-4 shadow dark:border-gray-700 dark:bg-gray-800 sm:p-8"
+            className="plan-item z-10 w-full max-w-sm rounded-lg border border-gray-200 bg-white p-4 shadow dark:border-gray-700 dark:bg-gray-800 sm:p-8"
           >
             <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
               {plan.title}
@@ -162,7 +164,7 @@ export default function PricingTable() {
             </div>
             <a
               href={plan.link.includes("@") ? `mailto:${plan.link}` : plan.link}
-              className="block w-full px-4 py-2 text-base font-medium leading-6 text-center text-white transition duration-200 ease-in mr-2 mb-2 bg-blue-600 border border-transparent rounded-md shadow-sm hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              className="button gradient-border dark:text-white"
             >
               {plan.buttonText}
             </a>
