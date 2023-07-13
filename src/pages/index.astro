@@ -18,7 +18,7 @@ const nextMonthName = nextMonth.toLocaleDateString("en-GB", { month: "long" });
   <!-- <link rel="dns-prefetch" href="https://blocksurvey.io" /> -->
   <main>
     <h1
-      class="text-gradient sm:leading-12 my-10 text-center leading-10 sm:my-20 sm:tracking-tight"
+      class="text-gradient sm:leading-12 leading-11 my-10 text-center text-5xl sm:my-20 sm:tracking-tight"
     >
       Welcome to Escuela.dev<br />A Coding school in Malaga, Spain<br />Enroll
       for the next batch in {nextMonthName}
@@ -89,18 +89,7 @@ const nextMonthName = nextMonth.toLocaleDateString("en-GB", { month: "long" });
     padding: 1.5rem;
   }
   h1 {
-    font-size: 3rem !important;
-    font-weight: 800;
-    line-height: 1.5;
     margin: 0;
-  }
-
-  @media (max-width: 640px) {
-    h1 {
-      font-size: 2rem !important;
-      line-height: 1.8;
-      font-weight: 900 !important;
-    }
   }
 
   .text-gradient {

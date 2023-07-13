@@ -19,7 +19,7 @@
 }
 
 :is(.dark) .button {
-  background-color: #050505;
+  background-color: rgb(15, 21, 28);
 }
 
 .gradient-border:after {
@@ -42,7 +42,7 @@
   );
   border-radius: 3px;
   z-index: -1;
-  animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 1.5s ease alternate infinite;
   animation-play-state: paused;
   background-size: 300% 300%;
   transition: all 0.075s;
@@ -60,12 +60,9 @@
 
 @keyframes animatedgradient {
   0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
+    background-position-x: 0%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position-x: 100%;
   }
 }

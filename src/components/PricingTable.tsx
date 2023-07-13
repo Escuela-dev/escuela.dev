@@ -133,7 +133,7 @@ export default function PricingTable() {
 
   return (
     <div className="mx-auto max-w-screen-xl px-4 py-8 font-sans lg:px-6 lg:py-16">
-      <div className="grid items-baseline space-y-8 sm:gap-6 md:grid-cols-2 lg:grid-cols-3 lg:space-y-0 xl:gap-10">
+      <div className="grid space-y-8 sm:gap-6 md:grid-cols-2 lg:grid-cols-3 lg:space-y-0 xl:gap-10">
         {plans.map((plan) => (
           <div
             key={plan.title}
