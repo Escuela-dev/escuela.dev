@@ -1,13 +1,18 @@
-# Welcome to [Escuela.dev](https://escuela.dev) - A Coding school in Malaga, Spain - Enroll to the next batch
+# Welcome to [Escuela.dev](https://escuela.dev) - Bootcamp de programación presencial en Malaga, España 🌞 ✨
+
+<img src="https://github.com/Escuela-dev/.github/blob/main/coding-school-chatgpt-dec-28-small.jpeg" style="width:100%, height: auto" />
+
+> Quieres dominar las tecnologías y metodologías necesarias para crear una pagina web?! Quieres aprender los fundamentos de programación para iniciar tu carrera como programador web? Con nuestro bootcamp presencial aprenderás a programación web (front-end y back-end) mediante un recorrido educativo con temario propio, con un profesorado experto en programación, instrucción presencial individualizada y recursos educativos disponibles antes, durante y después del curso. ¡Apúntate ya a nuestras próximas convocatorias en Málaga!
+
+## Abril 2024 - Proxima convocatoria
+
+De lunes a viernes de 9 a 18 horas (+4 horas de prácticas diarias) y **challenge** de fin de semana
+
+---
 
 ![cloudflare-pages](https://img.shields.io/endpoint?url=https://cloudflare-pages-badges.carrotbot.workers.dev/?projectName=escuela-dev) [![codeclimate](https://api.codeclimate.com/v1/badges/56ab88408d27c9d93190/maintainability)](https://codeclimate.com/github/Escuela-dev/escuela.dev/maintainability)
 
-*Want to know when we launch?*
-
-Sign up for updates on: <br/>
-<https://escuela.dev>
-
-[![Twitter @escuela_dev_](https://img.shields.io/twitter/follow/escuela_dev_?style=social)](https://twitter.com/escuela_dev_)
+<!-- [![Twitter @escuela_dev_](https://img.shields.io/twitter/follow/escuela_dev_?style=social)](https://twitter.com/escuela_dev_) -->
 
 <!--[![Linkedin](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/company/escuela-dev/)](https://www.linkedin.com/company/escuela-dev/) -->
 
