@@ -39,6 +39,11 @@ Change favicon
 Add logo?
     Logo with the letter 'E'?
 
+Project ideas
+
+- <https://css-tricks.com/how-to-animate-a-svg-with-border-image/>
+- 
+
 Coding school in London my mom went to: <https://www.londonappbrewery.com/>
 
 Coding school in Paris: <https://www.42.fr/>

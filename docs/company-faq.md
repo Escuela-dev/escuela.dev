@@ -4,7 +4,6 @@
 
 ## What is our sales plan?
 
-
 ## What is our teaching methodology?
 
 <!-- ## What is our teaching philosophy? -->
