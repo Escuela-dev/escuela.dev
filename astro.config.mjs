@@ -3,7 +3,6 @@ import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
-import prefetch from "@astrojs/prefetch";
 import critters from "astro-critters";
 import robotsTxt from "astro-robots-txt";
 
@@ -21,10 +20,10 @@ export default defineConfig({
     react(),
     sitemap(),
     mdx(),
-    prefetch(),
     critters(),
     robotsTxt({
       sitemap: false,
     }),
   ],
+  prefetch: true,
 });
