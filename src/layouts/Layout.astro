@@ -5,14 +5,14 @@ import { SITE } from "@config";
 import BaseHead from "@components/BaseHead.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
-import WhatsAppButton from "@components/WhatsAppButton.astro";
+// import WhatsAppButton from "@components/WhatsAppButton.astro";
 
 export interface Props {
   headProps?: HeadProps;
   showWhatApp?: boolean;
   githubEditUrl?: string;
 }
-const { showWhatApp = true, githubEditUrl } = Astro.props;
+const { showWhatApp = false, githubEditUrl } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -33,6 +33,6 @@ const { showWhatApp = true, githubEditUrl } = Astro.props;
           DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
       }
     </style>
-    {showWhatApp && <WhatsAppButton />}
+    <!-- {showWhatApp && <WhatsAppButton />} -->
   </body>
 </html>

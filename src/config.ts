@@ -10,7 +10,7 @@ export const SITE = {
   author: "Gianfranco Palumbo",
   desc: `A Coding school in Malaga, Spain - Enroll to the next batch in ${nextMonthName} ${new Date().getFullYear()} - Escuela de Programación y Desarrollo Web`,
   seoTitle: "Escuela.dev - Coding school",
-  title: "Escuela.dev - Coding school",
+  title: "Escuela.dev",
   ogImage: "escuela.dev-coding-school.png",
   lightAndDarkMode: true,
   postPerPage: 3,
