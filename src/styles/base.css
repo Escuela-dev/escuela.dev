@@ -35,6 +35,7 @@
   body {
     @apply flex min-h-screen flex-col bg-skin-fill font-mono text-skin-base 
       selection:bg-skin-accent selection:bg-opacity-70 selection:text-skin-accent;
+    transition: background .4s ease;
   }
   .prose {
     @apply prose-headings:!mb-3 prose-headings:!text-skin-base 
