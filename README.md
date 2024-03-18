@@ -1,12 +1,8 @@
-# Welcome to [Escuela.dev](https://escuela.dev) - Bootcamp de programación presencial en Malaga, España 🌞 ✨
+# Welcome to [Escuela.dev](https://escuela.dev) - Escuela de programación presencial en Malaga, España 🌞 ✨
 
 <img src="https://github.com/Escuela-dev/.github/blob/main/coding-school-chatgpt-dec-28-small.jpeg" style="width:100%, height: auto" />
 
 > Quieres dominar las tecnologías y metodologías necesarias para crear una pagina web?! Quieres aprender los fundamentos de programación para iniciar tu carrera como programador web? Con nuestro bootcamp presencial aprenderás a programación web (front-end y back-end) mediante un recorrido educativo con temario propio, con un profesorado experto en programación, instrucción presencial individualizada y recursos educativos disponibles antes, durante y después del curso. ¡Apúntate ya a nuestras próximas convocatorias en Málaga!
-
-## Abril 2024 - Proxima convocatoria
-
-De lunes a viernes de 9 a 18 horas (+4 horas de prácticas diarias) y **challenge** de fin de semana
 
 ---
 
@@ -41,14 +37,14 @@ De lunes a viernes de 9 a 18 horas (+4 horas de prácticas diarias) y **challeng
   - [🚀 Website Project Structure](#-website-project-structure)
   - [🧞 Commands](#-commands)
   - [👀 Want to learn more?](#-want-to-learn-more)
-  - [Deploy wragler on Cloudflare Pages](#deploy-wragler-on-cloudflare-pages)
+  - [Deploy wrangler on Cloudflare Pages](#deploy-wrangler-on-cloudflare-pages)
 
 ## FAQ about Escuela.dev
 
 ### Why I'm building this?
 
 After more than ten years working in the tech industry, I thought many students were doing one-on-one classes as mentors in Thinkful, an international online bootcamp.
-After moving to Malaga in Spain at the end of 2022, I want to do what I'm passionate about, teaching and helping people to better their lives through education.
+After moving to Malaga, Spain, at the end of 2022, I want to do what I'm passionate about: teaching and helping people better their lives through education.
 
 ### What is our mission?
 
@@ -78,9 +74,9 @@ Hablas español? Tambien tenemos classes para ti!
 
 You could be 15 or 90, as long as you have the passion to learn and the desire to change your life.
 
-Successful students are those who are willing to put in the work and effort to learn.
+Successful students are willing to put in the work and effort to learn.
 
-Example, I tought young adults who wanted to learn how to code but didn't want to do a 4-year computer science degree.
+For example, I interviewed young adults who wanted to learn how to code but didn't want to pursue a four-year computer science degree.
 
 Or maybe you're who want to change your career and better your job opportunities
 
@@ -96,7 +92,7 @@ Or maybe you're who want to change your career and better your job opportunities
 
 No, but what you get is better! Companies who look for software developers do not care about certificates; they care about projects and looking at your code.
 
-You  will be able to show your portfolio to potential employers and get a job.
+You can show your portfolio to potential employers and get a job.
 
 You will have a portfolio on GitHub with several Web projects! They will be able to see and understand better your proficiency level and gage if you might be a fit in their team 🤜🤛
 
@@ -112,7 +108,7 @@ You will have a portfolio on GitHub with several Web projects! They will be able
 
 ## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+All commands are run from the root of the project from a terminal:
 
 | Command                 | Action                                             |
 | :---------------------- | :------------------------------------------------- |
@@ -127,7 +123,7 @@ All commands are run from the root of the project, from a terminal:
 
 Email Gianfranco at <gianfranco@escuela.com> or visit [Escuela.dev](https://escuela.dev)
 
-## Deploy wragler on Cloudflare Pages
+## Deploy wrangler on Cloudflare Pages
 
 > This is for the `cloudflare-pages-badges`
 
