@@ -83,14 +83,14 @@ import Hr from "./Hr.astro";
 </header>
 <style>
   .nav-container {
-    @apply max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center;
+    @apply mx-auto flex max-w-4xl flex-col items-center justify-between sm:flex-row;
   }
   .top-nav-wrap {
-    @apply relative w-full sm:py-8 flex justify-between items-baseline sm:items-center;
+    @apply relative flex w-full items-baseline justify-between sm:items-center sm:py-8;
     padding: 0.75rem;
   }
   .title {
-    @apply absolute sm:static font-semibold text-lg text-center sm:text-2xl whitespace-nowrap;
+    @apply absolute whitespace-nowrap text-center text-lg font-semibold sm:static sm:text-2xl;
   }
   /* sm */
   @media screen and (max-width: 640px) {
@@ -107,7 +107,7 @@ import Hr from "./Hr.astro";
     @apply p-3 sm:p-1;
   }
   #theme-btn svg {
-    @apply hover:rotate-12 transition scale-125 sm:scale-100;
+    @apply scale-125 transition hover:rotate-12 sm:scale-100;
   }
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
@@ -118,29 +118,29 @@ import Hr from "./Hr.astro";
     display: block;
   }
   nav {
-    @apply w-full sm:py-0 sm:ml-2 flex flex-col items-center sm:justify-end sm:flex-row sm:space-x-4;
+    @apply flex w-full flex-col items-center sm:ml-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0;
   }
   nav button {
     @apply p-1;
   }
   nav button svg {
-    @apply w-6 h-6 fill-skin-base hover:fill-skin-accent;
+    @apply h-6 w-6 fill-skin-base hover:fill-skin-accent;
   }
   nav ul {
     /* add transition - display? */
-    @apply mt-4 w-44 grid grid-rows-4 grid-cols-2 gap-y-2 gap-x-2 sm:gap-y-0 sm:mt-0 sm:ml-0 sm:w-auto sm:gap-x-5;
+    @apply mt-4 grid w-44 auto-rows-fr grid-cols-1 gap-x-2 gap-y-2 sm:ml-0 sm:mt-0 sm:flex sm:w-auto sm:gap-x-5 sm:gap-y-0;
   }
   nav ul li {
-    @apply col-span-2 flex justify-center items-center;
+    @apply col-span-2 flex items-center justify-center;
   }
   nav ul li a {
-    @apply px-4 py-3 w-full text-center sm:px-2 sm:py-1 sm:my-0 font-medium hover:text-skin-accent;
+    @apply w-full px-4 py-3 text-center font-medium hover:text-skin-accent sm:my-0 sm:px-2 sm:py-1;
   }
   nav ul li:nth-child(4) a {
     @apply w-auto;
   }
   nav a.active {
-    @apply underline underline-offset-4 decoration-wavy decoration-2;
+    @apply underline decoration-wavy decoration-2 underline-offset-4;
   }
   nav a.active svg {
     @apply fill-skin-accent;
@@ -152,13 +152,13 @@ import Hr from "./Hr.astro";
     @apply self-end sm:hidden;
   }
   .hamburger-menu svg {
-    @apply fill-skin-base w-6 h-6 scale-125;
+    @apply h-6 w-6 scale-125 fill-skin-base;
   }
   .icon-container {
-    @apply w-6 h-5 flex-col justify-between items-end;
+    @apply h-5 w-6 flex-col items-end justify-between;
   }
   .icon-container div {
-    @apply bg-skin-inverted h-0.5 transition-all;
+    @apply h-0.5 bg-skin-inverted transition-all;
   }
   #first-line {
     @apply w-full;
