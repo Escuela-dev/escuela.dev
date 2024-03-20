@@ -3,7 +3,8 @@ import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
-import critters from "astro-critters";
+// FIXME: background-color in .button in PricingTable.css is not dark in dark mode
+// import critters from "astro-critters";
 import robotsTxt from "astro-robots-txt";
 
 // https://astro.build/config
@@ -20,7 +21,7 @@ export default defineConfig({
     react(),
     sitemap(),
     mdx(),
-    critters(),
+    // critters(),
     robotsTxt({
       sitemap: false,
     }),
