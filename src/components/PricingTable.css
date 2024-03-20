@@ -29,17 +29,15 @@
   left: calc(-1 * 3px);
   width: 0;
   height: 0;
-  background: linear-gradient(
-    60deg,
-    #f79533,
-    #f37055,
-    #ef4e7b,
-    #a166ab,
-    #5073b8,
-    #1098ad,
-    #07b39b,
-    #6fba82
-  );
+  background: linear-gradient(60deg,
+      #f79533,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82);
   border-radius: 3px;
   z-index: -1;
   animation: animatedgradient 1.5s ease alternate infinite;
@@ -51,12 +49,14 @@
 .gradient-border:hover {
   border: none;
 }
+
 .gradient-border:hover:after {
   animation-play-state: running;
 
   height: calc(100% + 3px * 2);
   width: calc(100% + 3px * 2);
 }
+
 @media screen and (max-width: 640px) {
   .gradient-border:after {
     height: calc(100% + 3px * 2);
@@ -68,6 +68,7 @@
   0% {
     background-position-x: 0%;
   }
+
   100% {
     background-position-x: 100%;
   }
