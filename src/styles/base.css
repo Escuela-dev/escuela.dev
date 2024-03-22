@@ -80,9 +80,6 @@
 }
 
 @layer components {
-  .display-none {
-    @apply hidden;
-  }
   .focus-outline {
     @apply outline-2 outline-offset-1 outline-skin-fill focus-visible:no-underline focus-visible:outline-dashed;
   }
@@ -100,6 +97,7 @@ body {
   overflow-wrap: break-word;
   line-height: 1.5;
 }
+
 /* h1,
 h2,
 h3,
@@ -114,29 +112,37 @@ textarea {
   width: 100%;
   font-size: 16px;
 }
+
 input {
   font-size: 16px;
 }
+
 content {
   line-height: 1.6;
 }
+
 table {
   width: 100%;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 code {
   padding: 2px 5px;
   background-color: #f2f2f2;
 }
+
 pre {
   padding: 1rem;
 }
-pre > code {
+
+pre>code {
   all: unset;
 }
+
 blockquote {
   border: 1px solid #999;
   color: #222;

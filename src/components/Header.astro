@@ -25,7 +25,7 @@ import Hr from "./Hr.astro";
             <div id="third-line"></div>
           </div>
         </button>
-        <ul id="menu-items" class="display-none sm:flex">
+        <ul id="menu-items" class="hidden sm:flex">
           <li>
             <HeaderLink href="/">Home</HeaderLink>
           </li>
@@ -127,7 +127,7 @@ import Hr from "./Hr.astro";
   }
   nav ul {
     /* add transition - display? */
-    @apply mt-4 grid w-44 auto-rows-fr grid-cols-1 gap-x-2 gap-y-2 sm:ml-0 sm:mt-0 sm:flex sm:w-auto sm:gap-x-5 sm:gap-y-0;
+    @apply mt-4 w-44 auto-rows-fr grid-cols-1 gap-x-2 gap-y-2 sm:ml-0 sm:mt-0 sm:flex sm:w-auto sm:gap-x-5 sm:gap-y-0;
   }
   nav ul li {
     @apply col-span-2 flex items-center justify-center;
@@ -182,28 +182,28 @@ import Hr from "./Hr.astro";
 
   menuBtn!.addEventListener("click", function () {
     const menuExpanded = menuBtn?.getAttribute("aria-expanded");
-    console.log(menuExpanded);
     if (menuExpanded === "false") {
       menuBtn?.setAttribute("aria-expanded", "true");
       menuBtn?.setAttribute("aria-label", "Close Menu");
-      menuItems?.remove("display-none");
+      menuItems?.remove("hidden")
+      menuItems?.add("grid")
 
       // icon animation
       iconContainer?.remove("flex");
       iconContainer?.add("relative");
       firstLine?.add("rotate-45", "absolute", "bottom-1/2");
-      thirdLine?.add("display-none");
+      thirdLine?.add("hidden");
       secondLine?.add("!w-full", "-rotate-45", "absolute", "bottom-1/2");
     } else {
       menuBtn?.setAttribute("aria-expanded", "false");
       menuBtn?.setAttribute("aria-label", "Open Menu");
-      menuItems?.add("display-none");
+      menuItems?.add("hidden").remove("flex");
 
       // icon animation
       iconContainer?.add("flex");
       iconContainer?.remove("relative");
       firstLine?.remove("rotate-45", "absolute", "bottom-1/2");
-      thirdLine?.remove("display-none");
+      thirdLine?.remove("hidden");
       secondLine?.remove("!w-full", "-rotate-45", "absolute", "bottom-1/2");
     }
   });
