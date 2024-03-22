@@ -197,7 +197,8 @@ import Hr from "./Hr.astro";
     } else {
       menuBtn?.setAttribute("aria-expanded", "false");
       menuBtn?.setAttribute("aria-label", "Open Menu");
-      menuItems?.add("hidden").remove("flex");
+      menuItems?.add("hidden")
+      menuItems?.remove("flex");
 
       // icon animation
       iconContainer?.add("flex");
