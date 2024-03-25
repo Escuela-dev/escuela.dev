@@ -1,25 +1,26 @@
+# TODO
+
+- try view transitions for /blog to individual blog posts <https://developer.chrome.com/docs/web-platform/view-transitions>
+(A) Add i18 localization <https://github.com/yassinedoghri/astro-i18next>
+    Add language switcher
 (A) Add FAQ
 (A) fix responsiveness in 1024px wide screens
-(B) format blog articles in large desktop like openai.com (<https://openai.com/research/language-models-can-explain-neurons-in-language-models>)
 (A) Add book tech call free call for Startup Entrepreneurs
     Should you build a mobile app or web app? Should you hire a consultancy agency?
     Should you hire a contractor? How do I fix my WordPress, Webflow or Shopify website myself?
-    Emporement for entrepreneurs
+    Empowerment for entrepreneurs
 (A) Add Español? button -> opens a modal with a form to request info in Spanish
     Keywords en Español: aprendisaje
 (A) Add testimonials
-    Ask for testimonial to Genevieve
+    Ask for testimonial from Genevieve
         Waiting for response
-    Ask for testimonial to Alex F
-    Ask for testimonial to Logan
-    Ask for testimonial to Bruce
-(A) RSS feed
+    Ask for testimonial from Alex F
+    Ask for testimonial from Logan
+    Ask for testimonial from Bruce
+(B) format blog articles for large desktop like openai.com (<https://openai.com/research/language-models-can-explain-neurons-in-language-models>)
+(B) RSS feed
     Add RSS feed to <https://app.daily.dev/>
-(A) Add Privacy Policy
-(A) Add Terms of Service
-(A) Add i18 localization <https://github.com/yassinedoghri/astro-i18next>
-    Add language switcher
-(B) Fix <https://pagespeed.web.dev/report?url=https%3A%2F%2Fescuela.dev>
+(B) Fix speed <https://pagespeed.web.dev/report?url=https%3A%2F%2Fescuela.dev>
 (Z) Improve SEO
     Add meta tags {cm:2023-02-25}
     Add OpenGraph {cm:2023-02-25}
