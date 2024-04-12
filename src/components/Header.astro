@@ -185,8 +185,8 @@ import Hr from "./Hr.astro";
     if (menuExpanded === "false") {
       menuBtn?.setAttribute("aria-expanded", "true");
       menuBtn?.setAttribute("aria-label", "Close Menu");
-      menuItems?.remove("hidden")
-      menuItems?.add("grid")
+      menuItems?.remove("hidden");
+      menuItems?.add("grid");
 
       // icon animation
       iconContainer?.remove("flex");
@@ -197,7 +197,7 @@ import Hr from "./Hr.astro";
     } else {
       menuBtn?.setAttribute("aria-expanded", "false");
       menuBtn?.setAttribute("aria-label", "Open Menu");
-      menuItems?.add("hidden")
+      menuItems?.add("hidden");
       menuItems?.remove("flex");
 
       // icon animation

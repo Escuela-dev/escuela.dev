@@ -20,7 +20,7 @@ const socialImageURL = new URL(
   // ogImage can be an empty string
   // ogImage ? ogImage : SITE.ogImage,
   ogImage,
-  Astro.url.origin
+  Astro.url.origin,
 ).href;
 const fallbackImageURL = new URL(SITE.ogImage, Astro.url.origin).href;
 ---

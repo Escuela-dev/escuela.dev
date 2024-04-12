@@ -1,4 +1,3 @@
-
 import { getCollection } from "astro:content";
 import generateOgImage from "@utils/generateOgImage";
 import type { APIRoute } from "astro/dist/@types/astro";

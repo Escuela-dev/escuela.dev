@@ -1,9 +1,9 @@
 ---
 # title: 'Escuela.dev - Coding school'
-title: 'Co-learning spaces - Learning after the pandemic'
-description: 'This is my first post written in MDX'
-blogSlug: '2023-01-learning-after-the-pandemic'
-publishDate: '21 January 2023'
+title: "Co-learning spaces - Learning after the pandemic"
+description: "This is my first post written in MDX"
+blogSlug: "2023-01-learning-after-the-pandemic"
+publishDate: "21 January 2023"
 featured: false
 tags:
   - docs
@@ -20,6 +20,7 @@ People stayed home. Some tried to learn to make bread. Others struggled with try
 While now after the pandemic we can go back to offices and schools, a lot of things have changed. Not only how we work and study but our own expectations of how 'work' and 'study' should look like.
 
 (As this HBR article mentions..)
+
 > _quote goes here_
 
 In the office, the concept of a asynchronous and synchronous communication is more widely known.
@@ -56,4 +57,4 @@ I haven't thought this for a long time so I would welcome for feedback and discu
 
 Note: this is a blog and thought exercise for me to write in English and Spanish, and soon Italian too.
 
-One blog post per week initially written in one language about education, the future and probably tech. I'm a software developer by trade after all. "He stares a black screen with text all day" – says my fiancée :smile: 
+One blog post per week initially written in one language about education, the future and probably tech. I'm a software developer by trade after all. "He stares a black screen with text all day" – says my fiancée :smile:

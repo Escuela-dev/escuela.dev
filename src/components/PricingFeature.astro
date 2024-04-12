@@ -1,30 +1,33 @@
 ---
 type Props = {
-  features: { title: string; isAvailable: boolean }[]
-}
+  features: { title: string; isAvailable: boolean }[];
+};
 
 const { features } = Astro.props;
 
 import CheckIcon from "./CheckIcon.astro";
 ---
+
 <ul class="my-7 space-y-5">
-  {features.map((feature, i) => (
-    <li class="flex space-x-3">
-      {feature.isAvailable ? (
-        <>
-          <CheckIcon />
-          <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
-            {feature.title}
-          </span>
-        </>
-      ) : (
-        <>
-          <CheckIcon isAvailable={false} />
-          <span class="text-base font-normal leading-tight text-gray-500 line-through decoration-gray-500">
-            {feature.title}
-          </span>
-        </>
-      )}
-    </li>
-  ))}
+  {
+    features.map((feature, i) => (
+      <li class="flex space-x-3">
+        {feature.isAvailable ? (
+          <>
+            <CheckIcon />
+            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
+              {feature.title}
+            </span>
+          </>
+        ) : (
+          <>
+            <CheckIcon isAvailable={false} />
+            <span class="text-base font-normal leading-tight text-gray-500 line-through decoration-gray-500">
+              {feature.title}
+            </span>
+          </>
+        )}
+      </li>
+    ))
+  }
 </ul>

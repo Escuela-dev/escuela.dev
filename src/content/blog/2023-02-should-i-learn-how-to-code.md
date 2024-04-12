@@ -1,7 +1,7 @@
 ---
-title: 'Should You Learn How to Code?'
-blogSlug: '2023-02-should-i-learn-how-to-code'
-publishDate: '24 Feb 2023'
+title: "Should You Learn How to Code?"
+blogSlug: "2023-02-should-i-learn-how-to-code"
+publishDate: "24 Feb 2023"
 heroImage: "/blog-imgs/2023-02-should-i-learn-how-to-code.jpg"
 ogImage: "/blog-imgs/2023-02-should-i-learn-how-to-code.jpg"
 description: "Learning to code can lead to high-paying jobs and be a fun hobby, but it comes with challenges. It's important to weigh the pros and cons carefully before diving in"

@@ -1,7 +1,7 @@
 const nextMonth = new Date(
   new Date().getFullYear(),
   new Date().getMonth() + 1,
-  1
+  1,
 );
 const nextMonthName = nextMonth.toLocaleDateString("en-GB", { month: "long" });
 

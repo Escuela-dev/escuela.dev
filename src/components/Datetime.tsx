@@ -6,7 +6,7 @@ export interface Props {
 
 export default function Datetime({ datetime, size = "sm", className }: Props) {
   return (
-    <div className={`opacity-80 flex items-center space-x-2 ${className}`}>
+    <div className={`flex items-center space-x-2 opacity-80 ${className}`}>
       {/* <svg
         xmlns="http://www.w3.org/2000/svg"
         className={`${

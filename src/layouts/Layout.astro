@@ -15,7 +15,7 @@ export interface Props {
 const { showWhatApp = false, githubEditUrl } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <BaseHead headProps={Astro.props.headProps} />
@@ -29,8 +29,15 @@ const { showWhatApp = false, githubEditUrl } = Astro.props;
         font-family: system-ui, sans-serif;
       }
       code {
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+        font-family:
+          Menlo,
+          Monaco,
+          Lucida Console,
+          Liberation Mono,
+          DejaVu Sans Mono,
+          Bitstream Vera Sans Mono,
+          Courier New,
+          monospace;
       }
     </style>
     <!-- {showWhatApp && <WhatsAppButton />} -->
