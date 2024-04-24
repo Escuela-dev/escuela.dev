@@ -6,7 +6,7 @@
 
 ---
 
-![cloudflare-pages](https://img.shields.io/endpoint?url=https://cloudflare-pages-badges.carrotbot.workers.dev/?projectName=escuela-dev) [![codeclimate](https://api.codeclimate.com/v1/badges/56ab88408d27c9d93190/maintainability)](https://codeclimate.com/github/Escuela-dev/escuela.dev/maintainability)
+![cloudflare-pages](https://img.shields.io/endpoint?url=https://cloudflare-pages-badges.carrotbot.workers.dev/?projectName=escuela-dev) [![codeclimate](https://api.codeclimate.com/v1/badges/56ab88408d27c9d93190/maintainability)](https://codeclimate.com/github/Escuela-dev/escuela.dev/maintainability) [![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/15k07.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
 
 <!-- [![Twitter @escuela_dev_](https://img.shields.io/twitter/follow/escuela_dev_?style=social)](https://twitter.com/escuela_dev_) -->
 
