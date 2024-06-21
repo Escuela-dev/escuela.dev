@@ -1,0 +1,14 @@
+{
+  "name": "Node.js",
+  "image": "ghcr.io/devcontainers/templates/typescript-node:3.2.0",
+  "updateContentCommand": "pnpm install",
+  "postCreateCommand": "pnpm install",
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": ["GitHub.copilot"]
+    }
+  }
+}
