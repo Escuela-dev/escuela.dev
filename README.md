@@ -14,19 +14,24 @@
 
 ---
 
-- [Welcome to Escuela.dev - A Coding school in Malaga, Spain - Enroll to the next batch in April 2023](#welcome-to-escueladev---a-coding-school-in-malaga-spain---enroll-to-the-next-batch)
+- [Welcome to Escuela.dev - Escuela de programación presencial en Malaga, España 🌞 ✨](#welcome-to-escueladev---escuela-de-programación-presencial-en-malaga-españa--)
   - [FAQ about Escuela.dev](#faq-about-escueladev)
-    - [Why I'm building this?](#why-im-building-this)
-    - [What is our mission?](#what-is-our-mission)
-    - [What is our team?](#what-is-our-team)
+    - [Why I'm building this? / ¿Por qué estoy haciendo esto?](#why-im-building-this--por-qué-estoy-haciendo-esto)
     - [What is our curriculum?](#what-is-our-curriculum)
+      - [Web Development Foundations course](#web-development-foundations-course)
+      - [Developer Tools](#developer-tools)
+      - [Introduction to Media Queries](#introduction-to-media-queries)
+      - [Mobile First Development](#mobile-first-development)
+      - [Deeper with Flexbox](#deeper-with-flexbox)
+      - [Navigation](#navigation)
+      - [HTML Forms](#html-forms)
+      - [Fundamental Web Design Concepts](#fundamental-web-design-concepts)
+      - [Overall](#overall)
+      - [Extra](#extra)
+      - [Introduction to Python for Web Development](#introduction-to-python-for-web-development)
   - [Courses](#courses)
     - [Web Development 101](#web-development-101)
   - [Course FAQ](#course-faq)
-    - [How long is the course?](#how-long-is-the-course)
-    - [What is the cost?](#what-is-the-cost)
-    - [What is the schedule?](#what-is-the-schedule)
-    - [What is the curriculum?](#what-is-the-curriculum)
     - [What is the minimum age?](#what-is-the-minimum-age)
     - [Is there a maximum age?](#is-there-a-maximum-age)
     - [What is the minimum level of English?](#what-is-the-minimum-level-of-english)
@@ -41,16 +46,82 @@
 
 ## FAQ about Escuela.dev
 
-### Why I'm building this?
+### Why I'm building this? / ¿Por qué estoy haciendo esto?
 
 After more than ten years working in the tech industry, I thought many students were doing one-on-one classes as mentors in Thinkful, an international online bootcamp.
 After moving to Malaga, Spain, at the end of 2022, I want to do what I'm passionate about: teaching and helping people better their lives through education.
 
-### What is our mission?
+---
 
-### What is our team?
+Después de más de diez años trabajando en la industria tecnológica, pensé que muchos estudiantes estaban tomando clases individuales con mentores en Thinkful, un bootcamp internacional en línea.
+Después de mudarme a Málaga, España, a finales de 2022, quiero hacer lo que me apasiona: enseñar y ayudar a las personas a mejorar sus vidas a través de la educación.
+
+<!-- ### What is our mission?
+
+### What is our team? -->
 
 ### What is our curriculum?
+
+The curriculum is designed to teach you the fundamentals of web development, including HTML, CSS, JavaScript, and React. You will also learn how to use Git and GitHub, as well as how to deploy your projects to the web.
+
+#### Web Development Foundations course
+
+- Extensive exploration of frontend web development essentials.
+- Equip yourself with diverse skills and tools for building responsive, user-friendly web interfaces.
+
+#### Developer Tools
+
+Utilized browser developer tools for inspecting and debugging web pages.
+Mastered troubleshooting and refining HTML and CSS.
+Ensured optimal visual appeal and responsiveness across devices.
+
+#### Introduction to Media Queries
+
+Gained understanding of crafting responsive web designs using media queries.
+Adapted websites to different screen sizes for seamless user experience.
+Adjusted layout, font size, and other elements based on screen size.
+
+#### Mobile First Development
+
+- Introduce to mobile-first approach in web design.
+- Emphasize starting design from the smallest screen, enhancing for larger screens.
+- Guarantee optimal user experience across all devices.
+
+#### Deeper with Flexbox
+
+- Learne to use CSS Flexbox for responsive and well-structured web layouts.
+- Explore various Flexbox properties for positioning, sizing, and ordering elements.
+- Enhance ability to design responsive, functional, and visually appealing layouts.
+
+#### Navigation
+
+- Hone skills in building responsive navigation menus.
+- Combine mobile-first approach with Flexbox and media queries.
+- Create navigational elements that adapt to different screen sizes.
+
+#### HTML Forms
+
+- Equippe with knowledge to construct HTML forms.
+- Understood various form elements and attributes for capturing user inputs.
+
+#### Fundamental Web Design Concepts
+
+- Introduce to UI/UX design principles and wireframing.
+- Explore essential web design principles.
+- Learn to create basic wireframes for effective communication with designers and stakeholders.
+
+#### Overall
+
+- Lay a solid foundation for a frontend web developer journey.
+- Provide skills and understanding for creating accessible, responsive, and user-centric web experiences.
+
+#### Extra
+
+Did you know that frontend developers make an average salary of more than <span style="color:red">€50000</span> a year? With the skills that you're learning, you're well on your way to becoming a frontend developer! In this module, you'll focus on adding developer skills to your skillset.
+
+#### Introduction to Python for Web Development
+
+TBD
 
 ## Courses
 
@@ -62,13 +133,7 @@ Hablas español? Tambien tenemos classes para ti!
 
 ## Course FAQ
 
-### How long is the course?
-
-### What is the cost?
-
-### What is the schedule?
-
-### What is the curriculum?
+<!-- ### How long is the course? -->
 
 ### What is the minimum age?
 
@@ -98,8 +163,8 @@ You will have a portfolio on GitHub with several Web projects! They will be able
 
 ### Requirements
 
-- A computer (Windows or Mac)
-- Living in Malaga 🇪🇸
+- A computer (Windows, Mac or Linux)
+- Living in Malaga 🇪🇸 or near by. I would recommend meeting in person at least 1 time per month.
 
 ## 🚀 Website Project Structure
 
