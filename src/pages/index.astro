@@ -1,4 +1,6 @@
 ---
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
 // import FAQSection from "@components/FAQSection";
 // import Embed from "@components/Embed";
 import PricingTable from "@components/PricingTable.astro";
@@ -6,23 +8,17 @@ import Layout from "@layouts/Layout.astro";
 // import Testimonials from "@components/Testimonials";
 import getGithubEditUrl from "@utils/getGithubEditUrl";
 
-const nextMonth = new Date(
-  new Date().getFullYear(),
-  new Date().getMonth() + 1,
-  1,
-);
-const nextMonthName = nextMonth.toLocaleDateString("en-GB", { month: "long" });
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <Layout githubEditUrl={getGithubEditUrl("/src/pages/index.astro")}>
   <!-- <link rel="dns-prefetch" href="https://blocksurvey.io" /> -->
   <main>
     <h1
-      class="text-gradient sm:leading-12 leading-11 my-10 text-center text-5xl sm:my-20 sm:tracking-tight"
+      class="text-gradient my-10 whitespace-break-spaces text-center text-5xl leading-tight sm:my-20 sm:leading-relaxed sm:tracking-tight"
     >
-      Welcome to Escuela.dev<br />A Coding school in Malaga, Spain<br />Enroll
-      for the next batch in {nextMonthName}
-      {new Date().getFullYear()}
+      {t("home.title")}
     </h1>
     <div>
       <!-- <Testimonials client:only /> -->
@@ -33,40 +29,21 @@ const nextMonthName = nextMonth.toLocaleDateString("en-GB", { month: "long" });
       <h2
         class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white"
       >
-        📜 Will I receive a certificate of completion?
+        {t("faq.q1.title")}
       </h2>
       <p class="font-sans leading-9">
-        No, instead of a certificate, we offer something more valuable.
-        Companies hiring software developers prioritise projects and code
-        samples over certificates. With our program, you'll build a robust
-        portfolio on GitHub, showcasing various web projects. This portfolio
-        will demonstrate your proficiency, enable potential employers to assess
-        your skills effectively and determine if you're a good fit for their
-        teams. 🤜🤛
+        {t("faq.q1.answer")}
       </p>
     </div>
     <div class="mx-auto mb-8 max-w-screen-md text-center lg:mb-12">
       <h2
         class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white"
       >
-        🛠️ What kind of projects will I learn how to build?
+        {t("faq.q2.title")}
       </h2>
-      <p class="font-sans leading-9">
-        1. 📚 <b>Interactive Quiz</b>: Build an interactive quiz application
-        with multiple-choice questions. Users can select their answers, and you
-        can provide instant feedback on their choices. JavaScript can be used to
-        manage the quiz and track scores.
-      </p>
-      <p class="font-sans leading-9">
-        2. ✨ <b>Animated Landing Page</b>: Design a visually appealing landing
-        page with animations and transitions. Use CSS animations or libraries
-        like Animate.css to add engaging effects.
-      </p>
-      <p class="font-sans leading-9">
-        3. 🎹 <b>Virtual Piano</b>: Create a virtual piano keyboard where users
-        can play musical notes and chords by clicking or pressing keys. You can
-        use JavaScript to handle the sound and interactivity.
-      </p>
+      <p class="font-sans leading-9" set:html={t("faq.q2.answer1")} />
+      <p class="font-sans leading-9" set:html={t("faq.q2.answer2")} />
+      <p class="font-sans leading-9" set:html={t("faq.q2.answer3")} />
     </div>
     <!-- <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
       <h2

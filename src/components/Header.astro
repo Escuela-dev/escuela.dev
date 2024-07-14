@@ -1,7 +1,26 @@
 ---
+import { getRelativeLocaleUrl } from "astro:i18n";
+
 import HeaderLink from "./HeaderLink.astro";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../i18n/utils";
 import { SITE } from "@config";
 import Hr from "./Hr.astro";
+
+const aboutURL = getRelativeLocaleUrl("es", "about");
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+
+import { languages } from "../i18n/i18n.config";
+
+const otherLanguage = Object.keys(languages).find(
+  (l) => l !== lang,
+) as keyof typeof languages;
 ---
 
 <header class="z-10">
@@ -27,25 +46,24 @@ import Hr from "./Hr.astro";
         </button>
         <ul id="menu-items" class="hidden sm:flex">
           <li>
-            <HeaderLink href="/">Home</HeaderLink>
+            <HeaderLink href={translatePath("/")}>{t("nav.home")}</HeaderLink>
           </li>
           <li>
-            <HeaderLink href="/blog/">Blog</HeaderLink>
+            <HeaderLink href={translatePath("/blog/")}
+              >{t("nav.blog")}</HeaderLink
+            >
           </li>
-          {
-            /*<li>
+          <!-- <li>
             <HeaderLink href="/contact">Contact</HeaderLink>
-          </li>
-          */
-          }
-          <li>
+          </li> -->
+          <!-- <li>
             <HeaderLink href="https://maven.com/escuela-dev/web-hybrid-malaga">
               Enroll
             </HeaderLink>
-          </li>
+          </li> -->
           <li>
-            <HeaderLink class="highlight" href="https://cal.com/escuela">
-              Enquire
+            <HeaderLink href="https://cal.com/escuela">
+              📞 {t("nav.call")}
             </HeaderLink>
           </li>
           {

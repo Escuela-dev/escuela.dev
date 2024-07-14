@@ -12,6 +12,10 @@ export default defineConfig({
   // Building a static site to be deploy to any static host.
   output: "static",
   site: "https://escuela.dev/",
+  i18n: {
+    defaultLocale: "en",
+    locales: ["es", "en"],
+  },
   integrations: [
     tailwind({
       config: {
