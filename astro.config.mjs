@@ -23,7 +23,15 @@ export default defineConfig({
       },
     }),
     react(),
-    sitemap(),
+    sitemap({
+      i18n: {
+        defaultLocale: "en",
+        locales: {
+          en: "en-GB",
+          es: "es-ES",
+        },
+      },
+    }),
     mdx(),
     // critters(),
     robotsTxt({
