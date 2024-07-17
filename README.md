@@ -1,8 +1,12 @@
-# Welcome to [Escuela.dev](https://escuela.dev) - Escuela de programación presencial en Malaga, España 🌞 ✨
+# Welcome to [Escuela.dev](https://escuela.dev) - Escuela de programación presencial en Malaga y Madrid, España 🌞 ✨
 
 <img src="https://github.com/Escuela-dev/.github/blob/main/coding-school-chatgpt-dec-28-small.jpeg" style="width:100%, height: auto" />
 
-> Quieres dominar las tecnologías y metodologías necesarias para crear una pagina web?! Quieres aprender los fundamentos de programación para iniciar tu carrera como programador web? Con nuestro bootcamp presencial aprenderás a programación web (front-end y back-end) mediante un recorrido educativo con temario propio, con un profesorado experto en programación, instrucción presencial individualizada y recursos educativos disponibles antes, durante y después del curso. ¡Apúntate ya a nuestras próximas convocatorias en Málaga!
+> Quieres dominar las tecnologías y metodologías necesarias para crear una pagina web?!<br/> Quieres aprender los fundamentos de programación para iniciar tu carrera como programador web?
+>
+> Con nuestro bootcamp presencial aprenderás a programación web (front-end y back-end) mediante un recorrido educativo con temario propio, con un profesorado experto en programación, instrucción presencial individualizada y recursos educativos disponibles antes, durante y después del curso.
+>
+> ¡Apúntate ya a nuestras próximas convocatorias en Málaga o Madrid!
 
 ---
 
