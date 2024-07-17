@@ -50,6 +50,8 @@ export const strings = {
     "pricingtable.plan3.buttonText": "Contact us",
     "pricingtable.plan3.feature.time": "From 10am to 5pm",
     "pricingtable.plan3.feature.lunch": "Lunch included",
+    "footer.copyright": "Escuela.dev – All rights reserved.",
+    "footer.edit": "Edit this page on GitHub",
   },
   es: {
     "site.description": "Escuela de programación en Málaga y Madrid, España",
@@ -85,5 +87,7 @@ export const strings = {
     "pricingtable.plan3.buttonText": "Contáctanos",
     "pricingtable.plan3.feature.time": "De 10am a 5pm",
     "pricingtable.plan3.feature.lunch": "Almuerzo incluido",
+    "footer.copyright": "Escuela.dev – Todos los derechos reservados.",
+    "footer.edit": "Edita esta página en GitHub",
   },
 };
