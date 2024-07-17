@@ -1,15 +1,14 @@
-const nextMonth = new Date(
-  new Date().getFullYear(),
-  new Date().getMonth() + 1,
-  1,
-);
-const nextMonthName = nextMonth.toLocaleDateString("en-GB", { month: "long" });
+// const nextMonth = new Date(
+//   new Date().getFullYear(),
+//   new Date().getMonth() + 1,
+//   1,
+// );
+// const nextMonthName = nextMonth.toLocaleDateString("en-GB", { month: "long" });
 
 export const SITE = {
   // websiteUrl: "https://escuela.dev/",
   author: "Gianfranco Palumbo",
-  desc: `A Coding school in Malaga, Spain - Enroll to the next batch in ${nextMonthName} ${new Date().getFullYear()} - Escuela de Programación y Desarrollo Web`,
-  seoTitle: "Escuela.dev - Coding school",
+  seoTitle: "Escuela.dev",
   title: "Escuela.dev",
   ogImage: "escuela.dev-coding-school.png",
   lightAndDarkMode: true,

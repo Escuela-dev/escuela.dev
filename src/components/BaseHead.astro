@@ -1,5 +1,9 @@
 ---
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
 import { SITE } from "@config";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 export interface Props {
   headProps?: HeadProps;
@@ -8,13 +12,13 @@ export interface Props {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const {
-  seoTitle = SITE.seoTitle,
   author = SITE.author,
-  description = SITE.desc,
   ogImage = SITE.ogImage,
   type = "website",
   publishDate,
 } = Astro.props.headProps || {};
+
+const seoTitle = `${SITE.seoTitle} - ${t("site.description")}`;
 
 const socialImageURL = new URL(
   // ogImage can be an empty string
@@ -41,13 +45,13 @@ const fallbackImageURL = new URL(SITE.ogImage, Astro.url.origin).href;
 <!-- Primary Meta Tags -->
 <title>{seoTitle}</title>
 <meta name="title" content={seoTitle} />
-<meta name="description" content={description} />
+<meta name="description" content={t("site.description")} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content={type} />
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={seoTitle} />
-<meta property="og:description" content={description} />
+<meta property="og:description" content={t("site.description")} />
 <meta property="og:image" content={socialImageURL} />
 {
   type === "article" && publishDate && (
@@ -62,7 +66,7 @@ const fallbackImageURL = new URL(SITE.ogImage, Astro.url.origin).href;
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={seoTitle} />
-<meta property="twitter:description" content={description} />
+<meta property="twitter:description" content={t("site.description")} />
 <meta
   property="twitter:image"
   content={socialImageURL.endsWith(".svg") ? fallbackImageURL : socialImageURL}
