@@ -74,6 +74,11 @@ const otherLanguage = Object.keys(languages).find(
           </li>*/
           }
           <li>
+            <a href={translatePath(Astro.url.pathname, otherLanguage)}>
+              {languages[otherLanguage]}
+            </a>
+          </li>
+          <li>
             {
               SITE.lightAndDarkMode && (
                 <button

@@ -52,7 +52,7 @@ export const strings = {
     "nav.call": "Llama",
     "nav.about": "À propos",
     "nav.twitter": "Twitter",
-    "home.title": `Bienvenid@s a Escuela.dev\nA Coding school in Malaga, Spain`,
+    "home.title": `Bienvenid@s a Escuela.dev\nA Coding school en Malaga, Spain`,
     "faq.q1.title": "📜 Will I receive a certificate of completion?",
     "faq.q1.answer":
       "No, instead of a certificate, we offer something more valuable.\nCompanies hiring software developers prioritise projects and code\nsamples over certificates. With our program, you'll build a robust\nportfolio on GitHub, showcasing various web projects. This portfolio\nwill demonstrate your proficiency, enable potential employers to assess\nyour skills effectively and determine if you're a good fit for their\nteams. 🤜🤛",
