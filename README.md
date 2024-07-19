@@ -18,7 +18,7 @@
 
 ---
 
-- [Welcome to Escuela.dev - Escuela de programación presencial en Malaga, España 🌞 ✨](#welcome-to-escueladev---escuela-de-programación-presencial-en-malaga-españa--)
+- [Welcome to Escuela.dev - Escuela de programación presencial en Malaga y Madrid, España 🌞 ✨](#welcome-to-escueladev---escuela-de-programación-presencial-en-malaga-y-madrid-españa--)
   - [FAQ about Escuela.dev](#faq-about-escueladev)
     - [Why I'm building this? / ¿Por qué estoy haciendo esto?](#why-im-building-this--por-qué-estoy-haciendo-esto)
     - [What is our curriculum?](#what-is-our-curriculum)
@@ -52,13 +52,11 @@
 
 ### Why I'm building this? / ¿Por qué estoy haciendo esto?
 
-After more than ten years working in the tech industry, I thought many students were doing one-on-one classes as mentors in Thinkful, an international online bootcamp.
-After moving to Malaga, Spain, at the end of 2022, I want to do what I'm passionate about: teaching and helping people better their lives through education.
+After many years teaching students with one-on-one classes as a mentor in Thinkful, an international online bootcamp, I want to do what I'm passionate about teaching and helping people better their lives through education.
 
 ---
 
-Después de más de diez años trabajando en la industria tecnológica, pensé que muchos estudiantes estaban tomando clases individuales con mentores en Thinkful, un bootcamp internacional en línea.
-Después de mudarme a Málaga, España, a finales de 2022, quiero hacer lo que me apasiona: enseñar y ayudar a las personas a mejorar sus vidas a través de la educación.
+Despues de muchos años enseñando a estudiantes con clases individuales como mentor en Thinkful, un bootcamp internacional online, quiero hacer lo que me apasiona enseñar y ayudar a las personas a mejorar sus vidas a través de la educación.
 
 <!-- ### What is our mission?
 
