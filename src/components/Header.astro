@@ -2,19 +2,12 @@
 import { getRelativeLocaleUrl } from "astro:i18n";
 
 import HeaderLink from "./HeaderLink.astro";
-import {
-  getLangFromUrl,
-  useTranslations,
-  useTranslatedPath,
-} from "../i18n/utils";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 import { SITE } from "@config";
 import Hr from "./Hr.astro";
 
-const aboutURL = getRelativeLocaleUrl("es", "about");
-
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const translatePath = useTranslatedPath(lang);
 
 import { languages } from "../i18n/i18n.config";
 
@@ -26,7 +19,7 @@ const otherLanguage = Object.keys(languages).find(
 <header class="z-10">
   <div class="nav-container">
     <div class="top-nav-wrap">
-      <a class="logo" href="/">
+      <a class="logo" href={getRelativeLocaleUrl(lang, "/")}>
         <h2 class="title">
           {SITE.title}
         </h2>
@@ -46,10 +39,12 @@ const otherLanguage = Object.keys(languages).find(
         </button>
         <ul id="menu-items" class="hidden sm:flex">
           <li>
-            <HeaderLink href={translatePath("/")}>{t("nav.home")}</HeaderLink>
+            <HeaderLink href={getRelativeLocaleUrl(lang, "/")}
+              >{t("nav.home")}</HeaderLink
+            >
           </li>
           <li>
-            <HeaderLink href={translatePath("/blog/")}
+            <HeaderLink href={getRelativeLocaleUrl(lang, "/blog/")}
               >{t("nav.blog")}</HeaderLink
             >
           </li>
@@ -76,7 +71,10 @@ const otherLanguage = Object.keys(languages).find(
           <li>
             <a
               lang={otherLanguage}
-              href={translatePath(Astro.url.pathname, otherLanguage)}
+              href={getRelativeLocaleUrl(
+                otherLanguage,
+                Astro.url.pathname.replace("/en", "").replace("/es", ""),
+              )}
             >
               {languages[otherLanguage]}
             </a>

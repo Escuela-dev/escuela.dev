@@ -1,22 +1,15 @@
 # TODO
 
 - try view transitions for /blog to individual blog posts <https://developer.chrome.com/docs/web-platform/view-transitions>
-(A) Add i18 localization <https://github.com/yassinedoghri/astro-i18next>
-    Add language switcher
-(A) Add FAQ
-(A) fix responsiveness in 1024px wide screens
-(A) Add book tech call free call for Startup Entrepreneurs
-    Should you build a mobile app or web app? Should you hire a consultancy agency?
-    Should you hire a contractor? How do I fix my WordPress, Webflow or Shopify website myself?
-    Empowerment for entrepreneurs
-(A) Add Español? button -> opens a modal with a form to request info in Spanish
-    Keywords en Español: aprendisaje
 (A) Add testimonials
     Ask for testimonial from Genevieve
         Waiting for response
     Ask for testimonial from Alex F
     Ask for testimonial from Logan
     Ask for testimonial from Bruce
+(A) Add FAQ
+(A) fix responsiveness in 1024px wide screens
+(A) Keywords en Español: aprendisaje
 (B) format blog articles for large desktop like openai.com (<https://openai.com/research/language-models-can-explain-neurons-in-language-models>)
 (B) RSS feed
     Add RSS feed to <https://app.daily.dev/>
@@ -43,7 +36,7 @@ Add logo?
 Project ideas
 
 - <https://css-tricks.com/how-to-animate-a-svg-with-border-image/>
-- 
+-
 
 Coding school in London my mom went to: <https://www.londonappbrewery.com/>
 

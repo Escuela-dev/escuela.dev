@@ -13,7 +13,7 @@ export interface Props {
   showWhatApp?: boolean;
   githubEditUrl?: string;
 }
-const { showWhatApp = false, githubEditUrl } = Astro.props;
+const { showWhatApp = false, githubEditUrl, headProps } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
 ---
@@ -21,7 +21,7 @@ const lang = getLangFromUrl(Astro.url);
 <!doctype html>
 <html lang={lang}>
   <head>
-    <BaseHead headProps={Astro.props.headProps} />
+    <BaseHead headProps={headProps} />
   </head>
   <body>
     <Header activeNav="posts" />

@@ -15,6 +15,9 @@ export default defineConfig({
   i18n: {
     defaultLocale: "en",
     locales: ["es", "en"],
+    routing: {
+      prefixDefaultLocale: false,
+    },
   },
   integrations: [
     tailwind({
