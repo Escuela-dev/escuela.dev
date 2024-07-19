@@ -19,6 +19,7 @@
     "@astrojs/sitemap": "3.1.6",
     "@astrojs/tailwind": "^5.1.0",
     "@tailwindcss/typography": "^0.5.9",
+    "@resvg/resvg-js": "^2.6.2",
     "@types/react": "^18.2.8",
     "@types/react-dom": "^18.2.4",
     "astro": "4.11.5",

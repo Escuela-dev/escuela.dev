@@ -38,5 +38,10 @@ export default defineConfig({
       sitemap: false,
     }),
   ],
+  vite: {
+    optimizeDeps: {
+      exclude: ["@resvg/resvg-js"],
+    },
+  },
   prefetch: true,
 });
