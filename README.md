@@ -47,6 +47,7 @@
   - [🧞 Commands](#-commands)
   - [👀 Want to learn more?](#-want-to-learn-more)
   - [Deploy wrangler on Cloudflare Pages](#deploy-wrangler-on-cloudflare-pages)
+  - [Social Media](#social-media)
 
 ## FAQ about Escuela.dev
 
@@ -197,3 +198,9 @@ Email Gianfranco at <gianfranco@escuela.com> or visit [Escuela.dev](https://escu
 ```bash
 wrangler publish
 ```
+
+## Social Media
+
+- [Twitter](https://twitter.com/escuela_dev_)
+- [LinkedIn](https://www.linkedin.com/company/escuela-dev/)
+- [Instagram](https://www.instagram.com/escuela.dev/)

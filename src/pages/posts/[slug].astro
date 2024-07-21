@@ -1,8 +1,10 @@
 ---
-import { CollectionEntry, getCollection } from "astro:content";
+import { type CollectionEntry, getCollection } from "astro:content";
+
 import Layout from "@layouts/Layout.astro";
 import getReadingTime from "@utils/getReadingTime";
 import getGithubEditUrl from "@utils/getGithubEditUrl";
+import { SITE } from "@config";
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -23,20 +25,35 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params;
 const { post } = Astro.props;
-const { title, author, description, ogImage, heroImage, publishDate, tags } =
-  post.data;
+const {
+  title: postTitle,
+  author,
+  ogImage,
+  heroImage,
+  publishDate,
+  tags,
+} = post.data;
+let { description } = post.data;
 
 const { Content } = await post.render();
 
 const readingTime = getReadingTime(post.body);
 
-const ogUrl = new URL(ogImage ? ogImage : `${title}.svg`, Astro.url.origin)
-  .href;
+const ogUrl = new URL(ogImage ? ogImage : `${slug}.svg`, Astro.url.origin).href;
+
+const seoTitle = `${postTitle} - ${SITE.seoTitle}`;
+const maxDescription = 160;
+
+// shorten with ellipsis without cutting off words
+if (description.length > maxDescription) {
+  const lastSpace = description.slice(0, maxDescription).lastIndexOf(" ");
+  description = `${description.slice(0, lastSpace)}...`;
+}
 ---
 
 <Layout
   headProps={{
-    title,
+    seoTitle,
     description,
     ogImage: ogUrl,
     type: "article",
@@ -63,7 +80,7 @@ const ogUrl = new URL(ogImage ? ogImage : `${title}.svg`, Astro.url.origin)
     class="prose mx-auto mb-4 mt-8 max-w-3xl px-3 sm:px-0"
   >
     {heroImage && <img src={heroImage} alt="" />}
-    <h1 class="title">{title}</h1>
+    <h1 class="title">{seoTitle}</h1>
     <div class="flex justify-between">
       {publishDate && <time>{publishDate}</time>}
       <span>{readingTime} minutes to read</span>
