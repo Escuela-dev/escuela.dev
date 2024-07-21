@@ -71,19 +71,24 @@ if (description.length > maxDescription) {
       border-top: 1px solid #ddd;
       margin: 1rem 0;
     }
-    time {
+    time,
+    readingtime {
       color: #a0a0a0;
+    }
+    html.dark time,
+    html.dark readingtime {
+      color: #9f9f9f;
     }
   </style>
   <article
     role="article"
     class="prose mx-auto mb-4 mt-8 max-w-3xl px-3 sm:px-0"
   >
-    {heroImage && <img src={heroImage} alt="" />}
-    <h1 class="title">{seoTitle}</h1>
+    {heroImage && <img src={heroImage} alt={postTitle} />}
+    <h1 class="title">{postTitle}</h1>
     <div class="flex justify-between">
       {publishDate && <time>{publishDate}</time>}
-      <span>{readingTime} minutes to read</span>
+      <readingtime>{readingTime} minutes to read</readingtime>
     </div>
     <hr />
     <Content />

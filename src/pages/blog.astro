@@ -24,15 +24,18 @@ export async function getStaticPaths() {
 }
 const sortedPosts = getSortedPosts(posts);
 
-const title = `Blog - ${SITE.title}`;
+const seoTitle = `Blog - ${SITE.title}`;
 ---
 
 <Layout
   githubEditUrl={getGithubEditUrl("/src/pages/blog.astro")}
-  headProps={{ title }}
+  headProps={{ seoTitle }}
 >
   <main class="py-12 lg:py-20">
-    <article class="mx-auto max-w-6xl px-3">
+    <div class="mx-auto max-w-6xl px-3">
+      <h1 class="text-center text-4xl font-bold">Blog</h1>
+    </div>
+    <div class="mx-auto max-w-6xl px-3">
       <section
         class="grid grid-cols-1 gap-6 py-8 md:grid-cols-2 lg:grid-cols-3"
         data-test="articles-section"
@@ -46,7 +49,7 @@ const title = `Blog - ${SITE.title}`;
           ))
         }
       </section>
-    </article>
+    </div>
 
     <style></style>
   </main>
