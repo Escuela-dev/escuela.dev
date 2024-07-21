@@ -1,31 +1,29 @@
 import { describe, it, expect } from "vitest";
 
-import { useTranslatedPath } from "./utils";
+import { getRelativeLocaleUrl } from "./utils";
 
 describe("useTranslatedPath", () => {
   describe("es", () => {
-    const translatePath = useTranslatedPath("es");
     it("should return the path with the language prefix", () => {
-      expect(translatePath("/")).toBe("/es/");
+      expect(getRelativeLocaleUrl("es", "/")).toBe("/es/");
     });
     it("should return the path with the language prefix", () => {
-      expect(translatePath("/es")).toBe("/es");
+      expect(getRelativeLocaleUrl("es", "/es")).toBe("/es/");
     });
     it("should return the path with the language prefix", () => {
-      expect(translatePath("/es/")).toBe("/es/");
+      expect(getRelativeLocaleUrl("es", "/es/")).toBe("/es/");
     });
   });
   // showDefaultLang = false
   describe("en", () => {
-    const translatePath = useTranslatedPath("en");
     it("should return the path with the language prefix", () => {
-      expect(translatePath("/")).toBe("/");
+      expect(getRelativeLocaleUrl("en", "/")).toBe("/");
     });
     it("should return the path with the language prefix", () => {
-      expect(translatePath("/en")).toBe("/");
+      expect(getRelativeLocaleUrl("en", "/en")).toBe("/");
     });
     it("should return the path with the language prefix", () => {
-      expect(translatePath("/en/")).toBe("/");
+      expect(getRelativeLocaleUrl("en", "/en/")).toBe("/");
     });
   });
 });

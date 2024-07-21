@@ -1,3 +1,5 @@
+import { getRelativeLocaleUrl as originalGetRelativeLocaleUrl } from "astro:i18n";
+
 import { strings, defaultLang } from "./i18n.config";
 
 type Language = keyof typeof strings;
@@ -19,3 +21,9 @@ export function useTranslations(lang: Language) {
     // return strings[lang][key].replace(/\n\s+/g, "\n") || strings[defaultLang][key].replace(/\n\s+/g, "\n");
   };
 }
+
+export const getRelativeLocaleUrl = (lang: string, path: string) =>
+  originalGetRelativeLocaleUrl(
+    lang,
+    path.replace("/en", "").replace("/es", ""),
+  );
