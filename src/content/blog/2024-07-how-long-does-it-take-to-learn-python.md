@@ -3,7 +3,7 @@ title: "How long does it take to learn Python?"
 blogSlug: "2024-07-how-long-does-it-take-to-learn-python"
 publishDate: "21 Jul 2024"
 heroImage: "/blog-imgs/2024-07-how-long-does-it-take-to-learn-python.jpeg"
-ogImage: "/blog-imgs/2024-07-how-long-does-it-take-to-learn-python.jpg"
+ogImage: "/blog-imgs/2024-07-how-long-does-it-take-to-learn-python.jpeg"
 description: "Find out how to get started with Python programming and how long it takes to become proficient in the language. Learn about the best resources and strategies"
 tags:
   - learning

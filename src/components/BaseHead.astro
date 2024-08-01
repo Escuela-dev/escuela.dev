@@ -29,7 +29,7 @@ const socialImageURL = new URL(
   ogImage,
   Astro.url.origin,
 ).href;
-const fallbackImageURL = new URL(SITE.ogImage, Astro.url.origin).href;
+const fallbackImageURL = new URL(ogImage, Astro.url.origin).href;
 ---
 
 <!-- Global Metadata -->
