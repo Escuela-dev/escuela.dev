@@ -1,10 +1,10 @@
-# Welcome to [Escuela.dev](https://escuela.dev) - Escuela de programación presencial en Malaga y Madrid, España 🌞 ✨
+# Welcome to [Escuela.dev](https://escuela.dev) - Escuela de programación en Malaga y Madrid, España 🌞 ✨
 
 <img src="https://github.com/Escuela-dev/.github/blob/main/coding-school-chatgpt-dec-28-small.jpeg" style="width:100%, height: auto" />
 
 > Quieres dominar las tecnologías y metodologías necesarias para crear una pagina web?!<br/> Quieres aprender los fundamentos de programación para iniciar tu carrera como programador web?
 >
-> Con nuestro bootcamp presencial aprenderás a programación web (front-end y back-end) mediante un recorrido educativo con temario propio, con un profesorado experto en programación, instrucción presencial individualizada y recursos educativos disponibles antes, durante y después del curso.
+> Con nuestro bootcamp aprenderás a programación web (front-end y back-end) mediante un recorrido educativo con temario propio, con un profesorado experto en programación, instrucción individualizada y recursos educativos disponibles antes, durante y después del curso.
 >
 > ¡Apúntate ya a nuestras próximas convocatorias en Málaga o Madrid!
 
@@ -18,7 +18,7 @@
 
 ---
 
-- [Welcome to Escuela.dev - Escuela de programación presencial en Malaga y Madrid, España 🌞 ✨](#welcome-to-escueladev---escuela-de-programación-presencial-en-malaga-y-madrid-españa--)
+- [Welcome to Escuela.dev - Escuela de programación en Malaga y Madrid, España 🌞 ✨](#welcome-to-escueladev---escuela-de-programación-en-malaga-y-madrid-españa--)
   - [FAQ about Escuela.dev](#faq-about-escueladev)
     - [Why I'm building this? / ¿Por qué estoy haciendo esto?](#why-im-building-this--por-qué-estoy-haciendo-esto)
     - [What is our curriculum?](#what-is-our-curriculum)
