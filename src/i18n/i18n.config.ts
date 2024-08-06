@@ -54,6 +54,11 @@ export const strings = {
     "footer.edit": "Edit this page on GitHub",
     "blog.minute": "minute",
     "blog.minutes": "minutes",
+    "teacher1.title": "Meet the teacher",
+    "teacher1.name": "Gianfranco",
+    "teacher1.description":
+      "Gianfranco is a software engineer with a passion for teaching. He has been teaching web development for over 10 years and has helped hundreds of students learn how to code.",
+    "teacher1.url": "https://twitter.com/gianfranco_dev",
   },
   es: {
     "site.description": "Escuela de programación en Málaga y Madrid, España",
@@ -83,7 +88,8 @@ export const strings = {
     "pricingtable.plan2.priceDescription": "/curso \n (19€ por hora)",
     "pricingtable.plan2.buttonText": "Consúltanos",
     "pricingtable.plan2.feature.people": "Hasta 4 personas",
-    "pricingtable.plan2.feature.course": "Curso de 4 semanas (3 horas por semana)",
+    "pricingtable.plan2.feature.course":
+      "Curso de 4 semanas (3 horas por semana)",
     "pricingtable.plan3.title": "Taller de 2 días",
     "pricingtable.plan3.priceDescription": "Precio personalizado",
     "pricingtable.plan3.buttonText": "Consúltanos",
@@ -93,5 +99,10 @@ export const strings = {
     "footer.edit": "Edita esta página en GitHub",
     "blog.minute": "minuto",
     "blog.minutes": "minutos",
+    "teacher1.title": "Conoce al profesor",
+    "teacher1.name": "Gianfranco",
+    "teacher1.description":
+      "Gianfranco es un ingeniero de software con pasión por la enseñanza. Ha estado enseñando desarrollo web durante más de 10 años y ha ayudado a cientos de estudiantes a aprender a programar.",
+    "teacher1.url": "https://twitter.com/gianfranco_dev",
   },
 };

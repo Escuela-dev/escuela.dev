@@ -1,12 +1,16 @@
 ---
+import { Image } from "astro:assets";
+
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import LinkedInIcon from "@icons/LinkedInIcon.svg";
 
 // import FAQSection from "@components/FAQSection";
 // import Embed from "@components/Embed";
 import PricingTable from "@components/PricingTable.astro";
 import Layout from "@layouts/Layout.astro";
-// import Testimonials from "@components/Testimonials";
+import Testimonials from "@components/Testimonials.astro";
 import getGithubEditUrl from "@utils/getGithubEditUrl";
+import Gianfranco from "@images/gianfranco.jpg";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -24,6 +28,31 @@ const t = useTranslations(lang);
       <!-- <Testimonials client:only /> -->
       <!-- <FAQSection /> -->
       <PricingTable />
+    </div>
+    <div class="mx-auto mb-8 max-w-screen-md text-center lg:mb-12">
+      <h2
+        class="text-center text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+      >
+        {t("teacher1.title")}
+      </h2>
+      <div class="mt-4">
+        <Image
+          src={Gianfranco}
+          alt="Gianfranco"
+          class="mx-auto h-20 w-20 rounded-full"
+        />
+        <p
+          class="mx-auto flex items-center justify-center gap-2 text-center font-semibold text-gray-900 dark:text-white"
+        >
+          <span class="mt-1">{t("teacher1.name")}</span>
+          <a href="https://linkedin.com/in/gianpaj" target="_blank">
+            <Image src={LinkedInIcon} alt="LinkedIn" class="size-4 min-w-4" />
+          </a>
+        </p>
+        <p class="font-sans leading-9">
+          {t("teacher1.description")}
+        </p>
+      </div>
     </div>
     <div class="mx-auto mb-8 max-w-screen-md text-center lg:mb-12">
       <h2
