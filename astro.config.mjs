@@ -6,6 +6,7 @@ import mdx from "@astrojs/mdx";
 // FIXME: background-color in .button in PricingTable.css is not dark in dark mode
 // import critters from "astro-critters";
 import robotsTxt from "astro-robots-txt";
+import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
@@ -40,6 +41,7 @@ export default defineConfig({
     robotsTxt({
       sitemap: false,
     }),
+    icon(),
   ],
   vite: {
     optimizeDeps: {

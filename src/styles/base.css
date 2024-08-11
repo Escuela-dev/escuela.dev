@@ -33,28 +33,11 @@
     );
   }
   body {
-    @apply flex min-h-screen flex-col bg-skin-fill font-mono text-skin-base 
-      selection:bg-skin-accent selection:bg-opacity-70 selection:text-skin-accent;
+    @apply flex min-h-screen flex-col bg-skin-fill font-mono text-skin-base;
     transition: background 0.4s ease;
   }
   .prose {
-    @apply prose-headings:!mb-3 prose-headings:!text-skin-base 
-    prose-h3:italic prose-p:!text-skin-base 
-    prose-a:!text-skin-base
-    prose-a:!decoration-dashed prose-a:underline-offset-8
-    hover:prose-a:text-skin-accent prose-blockquote:!border-l-skin-accent
-    prose-blockquote:border-opacity-50 prose-blockquote:opacity-80
-    prose-figcaption:!text-skin-base
-    prose-figcaption:opacity-70 prose-strong:!text-skin-base 
-    prose-code:rounded prose-code:bg-skin-card prose-code:bg-opacity-75 
-    prose-code:p-1 prose-code:!text-skin-base
-    prose-code:before:!content-[''] prose-code:after:!content-[''] 
-    prose-pre:!text-skin-base prose-ol:!text-skin-base prose-ul:overflow-x-clip
-    prose-ul:!text-skin-base prose-li:marker:!text-skin-accent
-    prose-table:text-skin-base prose-th:border 
-    prose-th:border-skin-line prose-td:border 
-    prose-td:border-skin-line prose-img:mx-auto 
-    prose-img:!mt-2 prose-hr:!border-skin-line;
+    @apply prose-headings:!mb-3 prose-headings:!text-skin-base prose-h3:italic prose-p:!text-skin-base prose-a:!text-skin-base prose-a:!decoration-dashed prose-a:underline-offset-8 hover:prose-a:text-skin-accent prose-blockquote:!border-l-skin-accent prose-blockquote:border-opacity-50 prose-blockquote:opacity-80 prose-figcaption:!text-skin-base prose-figcaption:opacity-70 prose-strong:!text-skin-base prose-code:rounded prose-code:bg-skin-card prose-code:bg-opacity-75 prose-code:p-1 prose-code:!text-skin-base prose-code:before:!content-[''] prose-code:after:!content-[''] prose-pre:!text-skin-base prose-ol:!text-skin-base prose-ul:overflow-x-clip prose-ul:!text-skin-base prose-li:marker:!text-skin-accent prose-table:text-skin-base prose-th:border prose-th:border-skin-line prose-td:border prose-td:border-skin-line prose-img:mx-auto prose-img:!mt-2 prose-hr:!border-skin-line;
     max-width: 56rem !important;
   }
   .prose a {

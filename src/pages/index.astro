@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
-import LinkedInIcon from "@icons/LinkedInIcon.svg";
+import { Icon } from "astro-icon/components";
 
 // import FAQSection from "@components/FAQSection";
 // import Embed from "@components/Embed";
@@ -31,48 +31,68 @@ const t = useTranslations(lang);
     </div>
     <div class="mx-auto mb-8 max-w-screen-md text-center lg:mb-12">
       <h2
-        class="text-center text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+        class="mb-8 text-center text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
       >
         {t("teacher1.title")}
       </h2>
-      <div class="mt-4">
+      <div class="mt-4 grid gap-4">
         <Image
           src={Gianfranco}
           alt="Gianfranco"
           class="mx-auto h-20 w-20 rounded-full"
         />
         <p
-          class="mx-auto flex items-center justify-center gap-2 text-center font-semibold text-gray-900 dark:text-white"
+          class="mx-auto flex items-end justify-center gap-2 text-center font-semibold text-gray-900 dark:text-white"
         >
-          <span class="mt-1">{t("teacher1.name")}</span>
+          <span class="mt-1 leading-none">{t("teacher1.name")}</span>
           <a href="https://linkedin.com/in/gianpaj" target="_blank">
-            <Image src={LinkedInIcon} alt="LinkedIn" class="size-4 min-w-4" />
+            <Icon name="bxl:linkedin-square" class="h-4 w-4" />
+          </a>
+          <a href="https://github.com/gianpaj" target="_blank">
+            <Icon name="bxl:github" class="h-4 w-4" />
+          </a>
+          <a href="https://gian.cool" target="_blank">
+            <Icon name="mdi:world-wide-web" class="h-4 w-4" />
           </a>
         </p>
-        <p class="font-sans leading-9">
+        <p class="text-left font-sans text-lg leading-7">
           {t("teacher1.description")}
         </p>
       </div>
     </div>
     <div class="mx-auto mb-8 max-w-screen-md text-center lg:mb-12">
       <h2
-        class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+        class="mb-8 text-center text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+      >
+        FAQ
+      </h2>
+      <h2
+        class="mb-6 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white"
       >
         {t("faq.q1.title")}
       </h2>
-      <p class="font-sans leading-9">
+      <p class="text-left font-sans text-lg leading-7">
         {t("faq.q1.answer")}
       </p>
     </div>
     <div class="mx-auto mb-8 max-w-screen-md text-center lg:mb-12">
       <h2
-        class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+        class="mb-6 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white"
       >
         {t("faq.q2.title")}
       </h2>
-      <p class="font-sans leading-9" set:html={t("faq.q2.answer1")} />
-      <p class="font-sans leading-9" set:html={t("faq.q2.answer2")} />
-      <p class="font-sans leading-9" set:html={t("faq.q2.answer3")} />
+      <p
+        class="mb-4 text-left font-sans text-lg leading-7"
+        set:html={t("faq.q2.answer1")}
+      />
+      <p
+        class="mb-4 text-left font-sans text-lg leading-7"
+        set:html={t("faq.q2.answer2")}
+      />
+      <p
+        class="mb-4 text-left font-sans text-lg leading-7"
+        set:html={t("faq.q2.answer3")}
+      />
     </div>
     <!-- <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
       <h2
