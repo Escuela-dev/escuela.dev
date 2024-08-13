@@ -1,0 +1,43 @@
+---
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+import Gianfranco from "@images/gianfranco.jpg";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div class="mx-auto mb-8 max-w-screen-md text-center lg:mb-12">
+  <h2
+    class="mb-8 text-center text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+  >
+    {t("teacher1.title")}
+  </h2>
+  <div class="mt-4 grid gap-4">
+    <Image
+      src={Gianfranco}
+      alt="Gianfranco"
+      class="mx-auto h-20 w-20 rounded-full"
+    />
+    <p
+      class="mx-auto flex items-end justify-center gap-2 text-center font-semibold text-gray-900 dark:text-white"
+    >
+      <span class="mt-1 leading-none">{t("teacher1.name")}</span>
+      <a href="https://linkedin.com/in/gianpaj" target="_blank">
+        <Icon name="bxl:linkedin-square" class="h-4 w-4" />
+      </a>
+      <a href="https://github.com/gianpaj" target="_blank">
+        <Icon name="bxl:github" class="h-4 w-4" />
+      </a>
+      <a href="https://gian.cool" target="_blank">
+        <Icon name="mdi:world-wide-web" class="h-4 w-4" />
+      </a>
+    </p>
+    <p class="text-left font-sans text-lg leading-7">
+      {t("teacher1.description")}
+    </p>
+  </div>
+</div>

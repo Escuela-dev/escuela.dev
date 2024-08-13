@@ -57,7 +57,7 @@ export const strings = {
     "teacher1.title": "Meet the teacher",
     "teacher1.name": "Gianfranco",
     "teacher1.description":
-      "Gianfranco is a software engineer with a passion for teaching. He has been teaching web development for over 10 years and has helped hundreds of students learn how to code.",
+      "Gianfranco is a seasoned software engineer and educator with over a decade of experience in web development. His deep expertise and passion for teaching have empowered a lot of students to master coding skills that translate directly into successful careers. Gianfranco’s hands-on, results-driven approach ensures his students not only learn to code but also excel in the competitive tech industry",
     "teacher1.url": "https://twitter.com/gianfranco_dev",
   },
   es: {
@@ -102,7 +102,7 @@ export const strings = {
     "teacher1.title": "Conoce al profesor",
     "teacher1.name": "Gianfranco",
     "teacher1.description":
-      "Gianfranco es un ingeniero de software con pasión por la enseñanza. Ha estado enseñando desarrollo web durante más de 10 años y ha ayudado a cientos de estudiantes a aprender a programar.",
+      "Gianfranco es un ingeniero de software y educador con más de 10 años de experiencia en desarrollo web. Su enfoque práctico y pasión por la enseñanza han ayudado a cientos de estudiantes a adquirir habilidades de programación que les permiten destacar en la industria tecnológica.",
     "teacher1.url": "https://twitter.com/gianfranco_dev",
   },
 };

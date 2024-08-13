@@ -1,0 +1,41 @@
+---
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div class="mx-auto mb-8 max-w-screen-md text-center lg:mb-12">
+  <h2
+    class="mb-8 text-center text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+  >
+    FAQ
+  </h2>
+  <h2
+    class="mb-6 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+  >
+    {t("faq.q1.title")}
+  </h2>
+  <p class="text-left font-sans text-lg leading-7">
+    {t("faq.q1.answer")}
+  </p>
+</div>
+<div class="mx-auto mb-8 max-w-screen-md text-center lg:mb-12">
+  <h2
+    class="mb-6 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+  >
+    {t("faq.q2.title")}
+  </h2>
+  <p
+    class="mb-4 text-left font-sans text-lg leading-7"
+    set:html={t("faq.q2.answer1")}
+  />
+  <p
+    class="mb-4 text-left font-sans text-lg leading-7"
+    set:html={t("faq.q2.answer2")}
+  />
+  <p
+    class="mb-4 text-left font-sans text-lg leading-7"
+    set:html={t("faq.q2.answer3")}
+  />
+</div>
