@@ -1,19 +1,17 @@
 # TODO
 
-- try view transitions for /blog to individual blog posts <https://developer.chrome.com/docs/web-platform/view-transitions>
+(A) Translate blog articles to Spanish
 (A) Add testimonials
-    Ask for testimonial from Genevieve
-        Waiting for response
-    Ask for testimonial from Alex F
-    Ask for testimonial from Logan
     Ask for testimonial from Bruce
 (A) Add FAQ
 (A) fix responsiveness in 1024px wide screens
 (A) Keywords en Español: aprendisaje
+(B) Add voice option for blog articles like <https://blog.google/products/gemini/gemini-live-extensions-language-expansion/> - "Listen to article"
 (B) format blog articles for large desktop like openai.com (<https://openai.com/research/language-models-can-explain-neurons-in-language-models>)
 (B) RSS feed
     Add RSS feed to <https://app.daily.dev/>
 (B) Fix speed <https://pagespeed.web.dev/report?url=https%3A%2F%2Fescuela.dev>
+(F) Try view transitions for /blog to individual blog posts <https://developer.chrome.com/docs/web-platform/view-transitions>
 (Z) Improve SEO
     Add meta tags {cm:2023-02-25}
     Add OpenGraph {cm:2023-02-25}
