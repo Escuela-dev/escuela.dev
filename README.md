@@ -1,26 +1,26 @@
-# Welcome to [Escuela.dev](https://escuela.dev) - Escuela de programación en Malaga y Madrid, España 🌞 ✨
+# Welcome to [Escuela.dev](https://escuela.dev) - Escuela de programación en Málaga y Madrid 🌞✨
 
 <img src="https://github.com/Escuela-dev/.github/blob/main/coding-school-chatgpt-dec-28-small.jpeg" style="width:100%, height: auto" />
 
-> Quieres dominar las tecnologías y metodologías necesarias para crear una pagina web?!<br/> Quieres aprender los fundamentos de programación para iniciar tu carrera como programador web?
->
-> Con nuestro bootcamp aprenderás a programación web (front-end y back-end) mediante un recorrido educativo con temario propio, con un profesorado experto en programación, instrucción individualizada y recursos educativos disponibles antes, durante y después del curso.
->
-> ¡Apúntate ya a nuestras próximas convocatorias en Málaga o Madrid!
+> **¿Quieres dominar las tecnologías y metodologías necesarias para crear una página web?**<br/>
+> **¿Quieres aprender los fundamentos de programación para iniciar tu carrera como programador web?**<br/>
+> Con nuestro bootcamp aprenderás programación web (frontend y backend) mediante un recorrido educativo con temario propio, profesorado experto en programación, instrucción individualizada y recursos educativos disponibles antes, durante y después del curso.
+
+**¡Apúntate ya a nuestras próximas convocatorias en Málaga o Madrid!**
+
+**<https://escuela.dev>**
 
 ---
 
-![cloudflare-pages](https://img.shields.io/endpoint?url=https://cloudflare-pages-badges.carrotbot.workers.dev/?projectName=escuela-dev) [![codeclimate](https://api.codeclimate.com/v1/badges/56ab88408d27c9d93190/maintainability)](https://codeclimate.com/github/Escuela-dev/escuela.dev/maintainability) [![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/15k07.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
+![Cloudflare Pages](https://img.shields.io/endpoint?url=https://cloudflare-pages-badges.carrotbot.workers.dev/?projectName=escuela-dev) [![Codeclimate maintainability](https://api.codeclimate.com/v1/badges/56ab88408d27c9d93190/maintainability)](https://codeclimate.com/github/Escuela-dev/escuela.dev/maintainability) ![Uptime](https://uptime.betterstack.com/status-badges/v1/monitor/15k07.svg)
 
-<!-- [![Twitter @escuela_dev_](https://img.shields.io/twitter/follow/escuela_dev_?style=social)](https://twitter.com/escuela_dev_) -->
-
-<!--[![Linkedin](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/company/escuela-dev/)](https://www.linkedin.com/company/escuela-dev/) -->
+[![Twitter @escuela_dev_](https://img.shields.io/twitter/follow/escuela_dev_?style=social)](https://twitter.com/escuela_dev_) [![Linkedin](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/company/escuela-dev/)](https://www.linkedin.com/company/escuela-dev/) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/escuela.dev/)
 
 ---
 
-- [Welcome to Escuela.dev - Escuela de programación en Malaga y Madrid, España 🌞 ✨](#welcome-to-escueladev---escuela-de-programación-en-malaga-y-madrid-españa--)
-  - [FAQ about Escuela.dev](#faq-about-escueladev)
-    - [Why I'm building this? / ¿Por qué estoy haciendo esto?](#why-im-building-this--por-qué-estoy-haciendo-esto)
+- [Welcome to Escuela.dev - Escuela de programación en Málaga y Madrid 🌞✨](#welcome-to-escueladev---escuela-de-programación-en-málaga-y-madrid-)
+  - [FAQ about Escuela.dev - English](#faq-about-escueladev---english)
+    - [Why do we exist?](#why-do-we-exist)
     - [What is our curriculum?](#what-is-our-curriculum)
       - [Web Development Foundations course](#web-development-foundations-course)
       - [Developer Tools](#developer-tools)
@@ -32,36 +32,37 @@
       - [Fundamental Web Design Concepts](#fundamental-web-design-concepts)
       - [Overall](#overall)
       - [Extra](#extra)
-      - [Introduction to Python for Web Development](#introduction-to-python-for-web-development)
-  - [Courses](#courses)
-    - [Web Development 101](#web-development-101)
   - [Course FAQ](#course-faq)
     - [What is the minimum age?](#what-is-the-minimum-age)
-    - [Is there a maximum age?](#is-there-a-maximum-age)
-    - [What is the minimum level of English?](#what-is-the-minimum-level-of-english)
-    - [What is the minimum level of Spanish?](#what-is-the-minimum-level-of-spanish)
     - [What is the minimum level of coding?](#what-is-the-minimum-level-of-coding)
     - [Do I get a certificate of completion?](#do-i-get-a-certificate-of-completion)
     - [Requirements](#requirements)
+  - [FAQ about Escuela.dev - Español](#faq-about-escueladev---español)
+    - [¿Por qué estamos construyendo esto?](#por-qué-estamos-construyendo-esto)
+    - [¿Cuál es nuestro plan de estudios?](#cuál-es-nuestro-plan-de-estudios)
+  - [Cursos Ofrecidos](#cursos-ofrecidos)
+    - [Curso de Fundamentos de Desarrollo Web](#curso-de-fundamentos-de-desarrollo-web)
+    - [En General](#en-general)
+  - [Preguntas Frecuentes del Curso](#preguntas-frecuentes-del-curso)
+    - [¿Cuál es la edad mínima?](#cuál-es-la-edad-mínima)
+    - [¿Cuál es el nivel mínimo de experiencia en programación?](#cuál-es-el-nivel-mínimo-de-experiencia-en-programación)
+    - [¿Recibo un certificado de finalización?](#recibo-un-certificado-de-finalización)
+    - [¿Cuáles son los requisitos para inscribirse?](#cuáles-son-los-requisitos-para-inscribirse)
   - [🚀 Website Project Structure](#-website-project-structure)
   - [🧞 Commands](#-commands)
   - [👀 Want to learn more?](#-want-to-learn-more)
   - [Deploy wrangler on Cloudflare Pages](#deploy-wrangler-on-cloudflare-pages)
   - [Social Media](#social-media)
 
-## FAQ about Escuela.dev
+## FAQ about Escuela.dev - English
 
-### Why I'm building this? / ¿Por qué estoy haciendo esto?
+### Why do we exist?
 
 After many years teaching students with one-on-one classes as a mentor in Thinkful, an international online bootcamp, I want to do what I'm passionate about teaching and helping people better their lives through education.
 
 ---
 
 Despues de muchos años enseñando a estudiantes con clases individuales como mentor en Thinkful, un bootcamp internacional online, quiero hacer lo que me apasiona enseñar y ayudar a las personas a mejorar sus vidas a través de la educación.
-
-<!-- ### What is our mission?
-
-### What is our team? -->
 
 ### What is our curriculum?
 
@@ -122,18 +123,6 @@ Adjusted layout, font size, and other elements based on screen size.
 
 Did you know that frontend developers make an average salary of more than <span style="color:red">€50000</span> a year? With the skills that you're learning, you're well on your way to becoming a frontend developer! In this module, you'll focus on adding developer skills to your skillset.
 
-#### Introduction to Python for Web Development
-
-TBD
-
-## Courses
-
-### Web Development 101
-
-*Is it the right course for you?*
-
-Hablas español? Tambien tenemos classes para ti!
-
 ## Course FAQ
 
 <!-- ### How long is the course? -->
@@ -148,13 +137,9 @@ For example, I interviewed young adults who wanted to learn how to code but didn
 
 Or maybe you're who want to change your career and better your job opportunities
 
-### Is there a maximum age?
-
-### What is the minimum level of English?
-
-### What is the minimum level of Spanish?
-
 ### What is the minimum level of coding?
+
+No prior programming experience is required. Our courses are designed for beginners who are eager to learn web development from scratch.
 
 ### Do I get a certificate of completion?
 
@@ -168,6 +153,63 @@ You will have a portfolio on GitHub with several Web projects! They will be able
 
 - A computer (Windows, Mac or Linux)
 - Living in Malaga 🇪🇸 or near by. I would recommend meeting in person at least 1 time per month.
+
+## FAQ about Escuela.dev - Español
+
+### ¿Por qué estamos construyendo esto?
+
+Después de muchos años enseñando a estudiantes con clases individuales como mentor en Thinkful, un bootcamp internacional en línea, queremos seguir nuestra pasión por la enseñanza y ayudar a las personas a mejorar sus vidas a través de la educación.
+
+### ¿Cuál es nuestro plan de estudios?
+
+Nuestro plan de estudios está diseñado para enseñarte los fundamentos del desarrollo web, incluyendo HTML, CSS, JavaScript y React. También aprenderás a usar Git y GitHub, además de desplegar tus proyectos en la web.
+
+## Cursos Ofrecidos
+
+### Curso de Fundamentos de Desarrollo Web
+
+- **Herramientas de Desarrollador**: Utiliza herramientas de desarrollo del navegador para inspeccionar y depurar páginas web. Domina la solución de problemas y el refinamiento de HTML y CSS para garantizar un aspecto visual óptimo y capacidad de respuesta en todos los dispositivos.
+
+- **Introducción a Media Queries**: Aprende a crear diseños web responsivos utilizando media queries. Adapta sitios web a diferentes tamaños de pantalla para una experiencia de usuario perfecta.
+
+- **Desarrollo Mobile-First**: Adopta el enfoque mobile-first en el diseño web, comenzando tu diseño desde la pantalla más pequeña y mejorándola para pantallas más grandes, garantizando una experiencia de usuario óptima en todos los dispositivos.
+
+- **Profundización en Flexbox**: Sumérgete en CSS Flexbox para crear diseños web responsivos y bien estructurados. Explora diversas propiedades de Flexbox para posicionamiento, dimensionamiento y ordenamiento de elementos.
+
+- **Navegación**: Desarrolla habilidades en la construcción de menús de navegación responsivos. Combina el enfoque mobile-first con Flexbox y media queries para crear elementos de navegación que se adapten a diferentes tamaños de pantalla.
+
+- **Formularios HTML**: Aprende a construir formularios HTML, entendiendo diversos elementos de formulario y atributos para capturar entradas de usuario eficazmente.
+
+- **Conceptos Fundamentales de Diseño Web**: Introducción a los principios de diseño UI/UX y wireframing. Explora principios esenciales de diseño web y aprende a crear wireframes básicos para una comunicación efectiva con diseñadores y partes interesadas.
+
+- **Introducción a Python para Desarrollo Web**: (Próximamente)
+
+### En General
+
+Nuestro curso establece una base sólida para tu camino como desarrollador web frontend. Adquirirás las habilidades y el entendimiento necesarios para crear experiencias web accesibles, responsivas y centradas en el usuario.
+
+---
+
+¿Sabías que los desarrolladores frontend ganan un salario promedio de más de **€50,000** al año? ¡Con las habilidades que estás aprendiendo, estás en el camino correcto para convertirte en un desarrollador frontend! En este curso, te enfocarás en agregar habilidades de desarrollo a tu conjunto de habilidades.
+
+## Preguntas Frecuentes del Curso
+
+### ¿Cuál es la edad mínima?
+
+Puedes tener entre 15 y 90 años, siempre que tengas la pasión por aprender y el deseo de cambiar tu vida. Los estudiantes exitosos están dispuestos a poner el trabajo y esfuerzo para aprender. Por ejemplo, hemos entrevistado a jóvenes que querían aprender a programar pero no querían seguir una carrera de cuatro años en ciencias de la computación, así como a personas que buscan cambiar de carrera y mejorar sus oportunidades laborales.
+
+### ¿Cuál es el nivel mínimo de experiencia en programación?
+
+No se requiere experiencia previa en programación. Nuestros cursos están diseñados para principiantes que están ansiosos por aprender desarrollo web desde cero.
+
+### ¿Recibo un certificado de finalización?
+
+No, ¡pero lo que obtienes es incluso mejor! Las empresas que buscan desarrolladores de software se preocupan más por tu capacidad para programar y los proyectos que has completado que por los certificados. Construirás un portafolio en GitHub con varios proyectos web que podrás mostrar a posibles empleadores. Esto les permitirá evaluar tu nivel de competencia y determinar si podrías encajar bien en su equipo.
+
+### ¿Cuáles son los requisitos para inscribirse?
+
+- **Una Computadora**: Necesitarás una computadora con Windows, macOS o Linux.
+- **Ubicación**: Estamos basados en Málaga, España 🇪🇸. Recomendamos reunirnos en persona al menos una vez al mes para mejorar la experiencia de aprendizaje.
 
 ## 🚀 Website Project Structure
 
