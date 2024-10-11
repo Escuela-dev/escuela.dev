@@ -45,7 +45,7 @@
   animation: animatedgradient 1.5s ease alternate infinite;
   animation-play-state: paused;
   background-size: 300% 300%;
-  transition: all 0.075s;
+  transition: all 150ms;
 }
 
 .gradient-border:hover {

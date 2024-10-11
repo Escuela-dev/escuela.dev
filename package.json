@@ -19,6 +19,7 @@
     "@astrojs/sitemap": "3.1.6",
     "@astrojs/tailwind": "^5.1.0",
     "@iconify-json/bxl": "^1.1.11",
+    "@iconify-json/line-md": "^1.2.2",
     "@iconify-json/mdi": "^1.1.68",
     "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/typography": "^0.5.13",

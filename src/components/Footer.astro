@@ -1,6 +1,8 @@
 ---
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import { Icon } from "astro-icon/components";
+
 import Hr from "./Hr.astro";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -26,27 +28,7 @@ const { githubEditUrl } = Astro.props;
         target="_blank"
         class="flex items-center gap-2 opacity-60 transition-opacity hover:opacity-100"
       >
-        <svg
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          class=""
-          data-icon="instagram"
-        >
-          <g
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-            color="currentColor"
-            ><path
-              d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12"
-            ></path><path
-              d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0m1.008-5.5h-.01"
-            ></path></g
-          >
-        </svg>
+        <Icon name="mdi:instagram" />
         <p>Instagram</p>
       </a>
     </li>
@@ -56,18 +38,7 @@ const { githubEditUrl } = Astro.props;
         target="_blank"
         class="flex items-center gap-2 opacity-60 transition-opacity hover:opacity-100"
       >
-        <svg
-          width="25"
-          height="25"
-          viewBox="0 0 1200 1227"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          role="none"
-        >
-          <path
-            d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"
-          ></path>
-        </svg>
+        <Icon name="line-md:twitter-x" />
         <p>Twitter</p>
       </a>
     </li>
@@ -77,31 +48,29 @@ const { githubEditUrl } = Astro.props;
         target="_blank"
         class="flex items-center gap-2 opacity-60 transition-opacity hover:opacity-100"
       >
-        <svg
-          width="25"
-          height="25"
-          viewBox="0 0 24 24"
-          data-icon="mdi:linkedin"
-        >
-          <symbol id="ai:mdi:linkedin"
-            ><path
-              fill="currentColor"
-              d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
-            ></path></symbol
-          ><use xlink:href="#ai:mdi:linkedin"></use>
-        </svg>
+        <Icon name="mdi:linkedin" />
         <p>LinkedIn</p>
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://discord.gg/5xPuDnSvV5"
+        target="_blank"
+        class="flex items-center gap-[0.35rem] opacity-60 transition-all duration-200 hover:text-[#5865f2] hover:opacity-100"
+      >
+        <Icon name="bxl:discord-alt" />
+        <p>Discord</p>
       </a>
     </li>
   </ul>
 
-  <p class="text-sm opacity-60">
+  <p class="text-xs opacity-60">
     &copy; {currentYear}
     {t("footer.copyright")}
   </p>
-  <ul>
-    {
-      githubEditUrl && (
+  {
+    githubEditUrl && (
+      <ul>
         <div class="mt-3">
           <a
             class="edit-on-github header-link w-100 depth-2 inline-flex opacity-60"
@@ -128,9 +97,9 @@ const { githubEditUrl } = Astro.props;
             <span class="text-xs">{t("footer.edit")}</span>
           </a>
         </div>
-      )
-    }
-  </ul>
+      </ul>
+    )
+  }
   <style>
     footer {
       @apply w-full;
@@ -138,8 +107,8 @@ const { githubEditUrl } = Astro.props;
       text-align: center;
     }
     svg {
-      width: 13px;
-      height: 13px;
+      width: 15px;
+      height: 15px;
     }
     a.header-link {
       gap: 0.5em;
@@ -148,6 +117,17 @@ const { githubEditUrl } = Astro.props;
       padding-bottom: 0.4rem;
       color: var(--theme-text-lighter);
       unicode-bidi: plaintext;
+    }
+    .ig-icon:hover {
+      background: linear-gradient(
+        45deg,
+        rgba(255, 221, 85, 0.8) 33%,
+        rgba(255, 84, 62, 0.9) 66%,
+        rgba(200, 55, 171, 1) 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: rgba(255, 221, 85, 0.8);
     }
   </style>
 </footer>
