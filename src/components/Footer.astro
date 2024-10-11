@@ -20,13 +20,13 @@ const { githubEditUrl } = Astro.props;
     <Hr noPadding />
   </div>
   <ul
-    class="my-6 flex flex-col items-center justify-center gap-5 text-sm sm:flex-row"
+    class="my-6 grid grid-flow-row justify-center justify-items-center gap-5 text-center text-sm sm:grid-flow-col"
   >
     <li>
       <a
         href="https://instagram.com/escuela.dev"
         target="_blank"
-        class="flex items-center gap-2 opacity-60 transition-opacity hover:opacity-100"
+        class="ig-icon flex items-center gap-[0.35rem] opacity-60 transition-all duration-200 hover:opacity-100"
       >
         <Icon name="mdi:instagram" />
         <p>Instagram</p>
@@ -36,7 +36,7 @@ const { githubEditUrl } = Astro.props;
       <a
         href="https://x.com/escuela_dev_"
         target="_blank"
-        class="flex items-center gap-2 opacity-60 transition-opacity hover:opacity-100"
+        class="flex items-center gap-[0.35rem] opacity-60 transition-all duration-200 hover:text-black hover:opacity-100"
       >
         <Icon name="line-md:twitter-x" />
         <p>Twitter</p>
@@ -46,7 +46,7 @@ const { githubEditUrl } = Astro.props;
       <a
         href="https://linkedin.com/company/escuela-dev"
         target="_blank"
-        class="flex items-center gap-2 opacity-60 transition-opacity hover:opacity-100"
+        class="flex items-center gap-[0.35rem] opacity-60 transition-all duration-200 hover:text-[#0a66c2] hover:opacity-100"
       >
         <Icon name="mdi:linkedin" />
         <p>LinkedIn</p>
