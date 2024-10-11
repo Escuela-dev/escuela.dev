@@ -16,14 +16,14 @@ export const showDefaultLang = false;
 
 export const strings = {
   en: {
-    "site.description": "Coding school in Malaga and Madrid, Spain",
+    "site.description": "Coding school in Malaga and Madrid",
     "nav.home": "Home",
     "nav.blog": "Blog",
     "nav.call": "Call",
     "nav.about": "About",
     "nav.twitter": "Twitter",
     "nav.whatsapp_abbr": "Join the WhatsApp Community",
-    "home.title": `Welcome to Escuela.dev\nA Coding school in\nMalaga and Madrid, Spain`,
+    "home.title": `Welcome to Escuela.dev\nA Coding school in\nMalaga, Madrid and online`,
     "faq.q1.title": "📜 Will I receive a certificate of completion?",
     "faq.q1.answer":
       "No, instead of a certificate, we offer something more valuable.\nCompanies hiring software developers prioritise projects and code\nsamples over certificates. With our program, you'll build a robust\nportfolio on GitHub, showcasing various web projects. This portfolio\nwill demonstrate your proficiency, enable potential employers to assess\nyour skills effectively and determine if you're a good fit for their\nteams. 🤜🤛",
@@ -70,14 +70,14 @@ export const strings = {
     "teacher1.url": "https://twitter.com/gianfranco_dev",
   },
   es: {
-    "site.description": "Escuela de programación en Málaga y Madrid, España",
+    "site.description": "Escuela de programación en Málaga y Madrid",
     "nav.home": "Inicio",
     "nav.blog": "Blog",
     "nav.call": "Llama",
     "nav.about": "Sobre",
     "nav.twitter": "Twitter",
     "nav.whatsapp_abbr": "Únete a la comunidad de WhatsApp",
-    "home.title": `Bienvenid@s a Escuela.dev\nUna escuela de programación en\nMalaga y Madrid, España`,
+    "home.title": `Bienvenid@s a Escuela.dev\nUna escuela de programación en\nMalaga, Madrid y online`,
     "faq.q1.title": "📜 ¿Recibiré un certificado de finalización?",
     "faq.q1.answer":
       "No, en lugar de un certificado, ofrecemos algo más valioso. Las empresas que contratan desarrolladores de software priorizan los proyectos y las muestras de código por encima de los certificados. Con nuestro curso, construirás un portafolio sólido en GitHub, que incluirá varios proyectos web. Este portafolio demostrará tu competencia y permitirá a los posibles empleadores evaluar tus habilidades de manera efectiva, determinando si eres un buen ajuste para sus equipos.🤜🤛",
