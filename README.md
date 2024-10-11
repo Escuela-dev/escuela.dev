@@ -14,7 +14,10 @@
 
 ![Cloudflare Pages](https://img.shields.io/endpoint?url=https://cloudflare-pages-badges.carrotbot.workers.dev/?projectName=escuela-dev) [![Codeclimate maintainability](https://api.codeclimate.com/v1/badges/56ab88408d27c9d93190/maintainability)](https://codeclimate.com/github/Escuela-dev/escuela.dev/maintainability) ![Uptime](https://uptime.betterstack.com/status-badges/v1/monitor/15k07.svg)
 
-[![Twitter @escuela_dev_](https://img.shields.io/twitter/follow/escuela_dev_?style=social)](https://twitter.com/escuela_dev_) [![Linkedin](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/company/escuela-dev/)](https://www.linkedin.com/company/escuela-dev/) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/escuela.dev/)
+[![Twitter
+@escuela_dev_](https://img.shields.io/twitter/follow/escuela_dev_?style=social)](https://twitter.com/escuela_dev_)
+[![Linkedin](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/company/escuela-dev/)](https://www.linkedin.com/company/escuela-dev/)
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/escuela.dev/) [![Discord](https://dcbadge.limes.pink/api/server/https://discord.gg/5xPuDnSvV5?style=social)](https://discord.gg/5xPuDnSvV5)
 
 ---
 
@@ -246,3 +249,4 @@ wrangler publish
 - [Twitter](https://twitter.com/escuela_dev_)
 - [LinkedIn](https://www.linkedin.com/company/escuela-dev/)
 - [Instagram](https://www.instagram.com/escuela.dev/)
+- [Discord server](https://discord.gg/5xPuDnSvV5)

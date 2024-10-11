@@ -1,4 +1,6 @@
 ---
+import { Icon } from "astro-icon/components";
+
 import HeaderLink from "./HeaderLink.astro";
 import {
   getLangFromUrl,
@@ -60,16 +62,20 @@ const otherLanguage = Object.keys(languages).find(
           </li> -->
           <li>
             <HeaderLink href="https://cal.com/escuela">
-              📞 {t("nav.call")}
+              📞&nbsp;{t("nav.call")}
             </HeaderLink>
           </li>
-          {
-            /*<li>
-            <HeaderLink href="https://twitter.com/gianpaj" target="_blank">
-              Twitter
+          <li>
+            <HeaderLink href="https://discord.gg/5xPuDnSvV5" target="_blank">
+              <div class="flex items-center">
+                <Icon
+                  name="bxl:discord-alt"
+                  style="color: #5865f2"
+                  class="h-6 w-6"
+                />&nbsp;Discord
+              </div>
             </HeaderLink>
-          </li>*/
-          }
+          </li>
           <li>
             <a
               lang={otherLanguage}
