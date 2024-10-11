@@ -15,10 +15,7 @@ export interface Props {
 const { githubEditUrl } = Astro.props;
 ---
 
-<footer>
-  <div class="mb-5">
-    <Hr noPadding />
-  </div>
+<footer class="mt-5">
   <ul
     class="my-6 grid grid-flow-row justify-center justify-items-center gap-5 text-center text-sm sm:grid-flow-col"
   >
@@ -131,3 +128,9 @@ const { githubEditUrl } = Astro.props;
     }
   </style>
 </footer>
+
+<style>
+  footer {
+    border-top: 1px solid rgba(var(--color-border));
+  }
+</style>

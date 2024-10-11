@@ -3,9 +3,8 @@
 (A) Translate blog articles to Spanish
 (A) Add support for Blog image caption. Markdown links should work
 (A) Add testimonials
-    Ask for testimonial from Bruce
+    Ask for testimonial from Bruce, Rose, Pierre, and others
 (B) Display tags under blog post title
-(A) fix responsiveness in 1024px wide screens
 (A) Keywords en Español: aprendisaje
 (B) Add voice option for blog articles like <https://blog.google/products/gemini/gemini-live-extensions-language-expansion/> - "Listen to article"
 (B) format blog articles for large desktop like openai.com (<https://openai.com/research/language-models-can-explain-neurons-in-language-models>)

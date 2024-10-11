@@ -8,7 +8,6 @@ import {
   getRelativeLocaleUrl,
 } from "../i18n/utils";
 import { SITE } from "@config";
-import Hr from "./Hr.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -111,9 +110,11 @@ const otherLanguage = Object.keys(languages).find(
       </nav>
     </div>
   </div>
-  <Hr noPadding />
 </header>
 <style>
+  header {
+    border-bottom: 1px solid rgba(var(--color-border));
+  }
   .nav-container {
     @apply mx-auto flex max-w-4xl flex-col items-center justify-between sm:flex-row;
   }
