@@ -17,6 +17,8 @@ import { languages } from "../i18n/i18n.config";
 const otherLanguage = Object.keys(languages).find(
   (l) => l !== lang,
 ) as keyof typeof languages;
+
+const langEmoji = otherLanguage === "es" ? "🇪🇸" : "🇬🇧";
 ---
 
 <header class="z-10">
@@ -84,6 +86,7 @@ const otherLanguage = Object.keys(languages).find(
                 Astro.url.pathname.replace("/en", "").replace("/es", ""),
               )}
             >
+              {langEmoji}
               {languages[otherLanguage]}
             </a>
           </li>
