@@ -62,10 +62,10 @@ export const strings = {
   },
   es: {
     "site.description": "Escuela de programación en Málaga y Madrid, España",
-    "nav.home": "Accueil",
+    "nav.home": "Inicio",
     "nav.blog": "Blog",
     "nav.call": "Llama",
-    "nav.about": "À propos",
+    "nav.about": "Sobre",
     "nav.twitter": "Twitter",
     "home.title": `Bienvenid@s a Escuela.dev\nUna escuela de programación en\nMalaga y Madrid, España`,
     "faq.q1.title": "📜 ¿Recibiré un certificado de finalización?",
