@@ -1,5 +1,12 @@
 # Welcome to [Escuela.dev](https://escuela.dev) - Escuela de programación en Málaga y Madrid 🌞✨
 
+![Cloudflare Pages](https://img.shields.io/endpoint?url=https://cloudflare-pages-badges.carrotbot.workers.dev/?projectName=escuela-dev) [![Codeclimate maintainability](https://api.codeclimate.com/v1/badges/56ab88408d27c9d93190/maintainability)](https://codeclimate.com/github/Escuela-dev/escuela.dev/maintainability) ![Uptime](https://uptime.betterstack.com/status-badges/v1/monitor/15k07.svg)
+
+[![Twitter @escuela_dev_](https://img.shields.io/badge/@escuela__dev__-gray?logo=x&logoColor=white)](https://x.com/escuela_dev_ "Twitter @escuela_dev_")
+[![Linkedin](https://img.shields.io/badge/Linkedin-blue?logo=Linkedin&logoColor=white)](https://www.linkedin.com/company/escuela-dev/ "Linkedin")
+[![Instagram @escuela.dev](https://img.shields.io/badge/@escuela.dev-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/escuela.dev/ "Instagram @escuela.dev")
+[![WhatApp Community](https://img.shields.io/badge/WhatsApp%20Communty-%231faf38.svg?logo=WhatsApp&logoColor=white)](https://chat.whatsapp.com/KLmG13RqLeSFJCBxkRegGP "Join WhatApp Community")
+
 <img src="https://github.com/Escuela-dev/.github/blob/main/coding-school-chatgpt-dec-28-small.jpeg" style="width:100%, height: auto" />
 
 > **¿Quieres dominar las tecnologías y metodologías necesarias para crear una página web?**<br/>
@@ -9,15 +16,6 @@
 **¡Apúntate ya a nuestras próximas convocatorias en Málaga o Madrid!**
 
 **<https://escuela.dev>**
-
----
-
-![Cloudflare Pages](https://img.shields.io/endpoint?url=https://cloudflare-pages-badges.carrotbot.workers.dev/?projectName=escuela-dev) [![Codeclimate maintainability](https://api.codeclimate.com/v1/badges/56ab88408d27c9d93190/maintainability)](https://codeclimate.com/github/Escuela-dev/escuela.dev/maintainability) ![Uptime](https://uptime.betterstack.com/status-badges/v1/monitor/15k07.svg)
-
-[![Twitter
-@escuela_dev_](https://img.shields.io/twitter/follow/escuela_dev_?style=social)](https://twitter.com/escuela_dev_)
-[![Linkedin](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/company/escuela-dev/)](https://www.linkedin.com/company/escuela-dev/)
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/escuela.dev/) [![Discord](https://dcbadge.limes.pink/api/server/https://chat.whatsapp.com/KLmG13RqLeSFJCBxkRegGP?style=social)](https://chat.whatsapp.com/KLmG13RqLeSFJCBxkRegGP)
 
 ---
 
