@@ -17,7 +17,7 @@
 [![Twitter
 @escuela_dev_](https://img.shields.io/twitter/follow/escuela_dev_?style=social)](https://twitter.com/escuela_dev_)
 [![Linkedin](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/company/escuela-dev/)](https://www.linkedin.com/company/escuela-dev/)
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/escuela.dev/) [![Discord](https://dcbadge.limes.pink/api/server/https://discord.gg/5xPuDnSvV5?style=social)](https://discord.gg/5xPuDnSvV5)
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/escuela.dev/) [![Discord](https://dcbadge.limes.pink/api/server/https://chat.whatsapp.com/KLmG13RqLeSFJCBxkRegGP?style=social)](https://chat.whatsapp.com/KLmG13RqLeSFJCBxkRegGP)
 
 ---
 
@@ -249,4 +249,4 @@ wrangler publish
 - [Twitter](https://twitter.com/escuela_dev_)
 - [LinkedIn](https://www.linkedin.com/company/escuela-dev/)
 - [Instagram](https://www.instagram.com/escuela.dev/)
-- [Discord server](https://discord.gg/5xPuDnSvV5)
+- [WhatApp Community](https://chat.whatsapp.com/KLmG13RqLeSFJCBxkRegGP) - En 🇪🇸 Español and 🇬🇧 English
