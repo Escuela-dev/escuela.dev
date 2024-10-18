@@ -4,6 +4,7 @@
 (A) Add support for Blog image caption. Markdown links should work
 (A) Add testimonials
     Ask for testimonial from Bruce, Rose, Pierre, and others
+x (A) Add FAQ JSON-LD schema
 (B) Display tags under blog post title
 (A) Keywords en Español: aprendisaje
 (B) Add voice option for blog articles like <https://blog.google/products/gemini/gemini-live-extensions-language-expansion/> - "Listen to article"

@@ -61,6 +61,9 @@ importers:
       astro-robots-txt:
         specifier: ^1.0.0
         version: 1.0.0
+      astro-seo-schema:
+        specifier: ^4.0.2
+        version: 4.0.2(astro@4.13.1(@types/node@20.12.12)(typescript@5.4.5))(schema-dts@1.1.2(typescript@5.4.5))
       flowbite:
         specifier: ^1.6.5
         version: 1.6.5
@@ -73,6 +76,9 @@ importers:
       satori:
         specifier: ^0.10.14
         version: 0.10.14
+      schema-dts:
+        specifier: ^1.1.2
+        version: 1.1.2(typescript@5.4.5)
       tailwindcss:
         specifier: ^3.4.6
         version: 3.4.6
@@ -1298,6 +1304,12 @@ packages:
 
   astro-robots-txt@1.0.0:
     resolution: {integrity: sha512-6JQSLid4gMhoWjOm85UHLkgrw0+hHIjnJVIUqxjU2D6feKlVyYukMNYjH44ZDZBK1P8hNxd33PgWlHzCASvedA==}
+
+  astro-seo-schema@4.0.2:
+    resolution: {integrity: sha512-OI9DWasORMpIzKsAmF4s6ghVX8F1INROla4JKBT8WDm/du25jxQsoQcJx99NY3gOQJ7Rv9a+cFPAfr17LsYXEg==}
+    peerDependencies:
+      astro: ^4.0.0
+      schema-dts: ^1.1.0
 
   astro@4.13.1:
     resolution: {integrity: sha512-VnMjAc+ykFsIVjgbu9Mt/EA1fMIcPMXbU89h3ATwGOzSIKDsQH72bDgfJkWiwk6u0OE90GeP5EPhAT28Twf9oA==}
@@ -3111,6 +3123,11 @@ packages:
   scheduler@0.23.2:
     resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
 
+  schema-dts@1.1.2:
+    resolution: {integrity: sha512-MpNwH0dZJHinVxk9bT8XUdjKTxMYrA5bLtrrGmFA6PTLwlOKnhi67XoRd6/ty+Djt6ZC0slR57qFhZDNMI6DhQ==}
+    peerDependencies:
+      typescript: '>=4.1.0'
+
   section-matter@1.0.0:
     resolution: {integrity: sha512-vfD3pmTzGpufjScBh50YHKzEu2lxBWhVEHsNGoEXmCmn2hKGfeNLYMzCJpe8cD7gqX7TJluOVpBkAequ6dgMmA==}
     engines: {node: '>=4'}
@@ -4917,6 +4934,11 @@ snapshots:
     dependencies:
       valid-filename: 4.0.0
       zod: 3.22.4
+
+  astro-seo-schema@4.0.2(astro@4.13.1(@types/node@20.12.12)(typescript@5.4.5))(schema-dts@1.1.2(typescript@5.4.5)):
+    dependencies:
+      astro: 4.13.1(@types/node@20.12.12)(typescript@5.4.5)
+      schema-dts: 1.1.2(typescript@5.4.5)
 
   astro@4.13.1(@types/node@20.12.12)(typescript@5.4.5):
     dependencies:
@@ -7224,6 +7246,10 @@ snapshots:
   scheduler@0.23.2:
     dependencies:
       loose-envify: 1.4.0
+
+  schema-dts@1.1.2(typescript@5.4.5):
+    dependencies:
+      typescript: 5.4.5
 
   section-matter@1.0.0:
     dependencies:

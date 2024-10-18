@@ -1,5 +1,8 @@
 ---
+import { Schema } from "astro-seo-schema";
+
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import { removeEmoji } from "@utils/strings";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -39,3 +42,30 @@ const t = useTranslations(lang);
     set:html={t("faq.q2.answer3")}
   />
 </div>
+
+<Schema
+  item={{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: removeEmoji(t("faq.q1.title")),
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: removeEmoji(t("faq.q1.answer")),
+        },
+      },
+      {
+        "@type": "Question",
+        name: removeEmoji(t("faq.q2.title")),
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: removeEmoji(
+            `${t("faq.q2.answer1")} ${t("faq.q2.answer2")} ${t("faq.q2.answer3")}`,
+          ),
+        },
+      },
+    ],
+  }}
+/>
