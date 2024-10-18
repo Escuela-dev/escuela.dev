@@ -55,6 +55,14 @@ export const strings = {
     "footer.edit": "Edit this page on GitHub",
     "blog.minute": "minute",
     "blog.minutes": "minutes",
+    "testimonials.title": "Testimonials",
+    "testimonials.subtitle": "What our students say",
+    "testimonials.quote1":
+      "I learned a lot with Gianfranco. Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
+    "testimonials.quote2":
+      "Working with Gianfranco was a pleasure. He is a great teacher and has a lot of patience. I would recommend him to anyone who wants to learn web development.",
+    "testimonials.quote3":
+      "The course was a great experience. I learned a lot and had a lot of fun. I would recommend it to anyone who wants to learn web development.",
     "teacher1.title": "Meet the teacher",
     "teacher1.name": "Gianfranco",
     "teacher1.description":
@@ -101,6 +109,14 @@ export const strings = {
     "footer.edit": "Edita esta página en GitHub",
     "blog.minute": "minuto",
     "blog.minutes": "minutos",
+    "testimonials.title": "Testimonios",
+    "testimonials.subtitle": "Lo que dicen nuestros estudiantes",
+    "testimonials.quote1":
+      "Aprendí mucho con Gianfranco. Flowbite es realmente genial. Contiene muchas páginas y componentes prediseñados, desde la pantalla de inicio de sesión hasta el panel complejo. ¡Perfecto para tu próxima aplicación SaaS!",
+    "testimonials.quote2":
+      "Trabajar con Gianfranco fue un placer. Es un gran profesor y tiene mucha paciencia. Lo recomendaría a cualquier persona que quiera aprender desarrollo web.",
+    "testimonials.quote3":
+      "El curso fue una gran experiencia. Aprendí mucho y tuve mucha diversión. Lo recomendaría a cualquier persona que quiera aprender desarrollo web.",
     "teacher1.title": "Conoce al profesor",
     "teacher1.name": "Gianfranco",
     "teacher1.description":
