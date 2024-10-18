@@ -22,6 +22,7 @@ export const strings = {
     "nav.call": "Call",
     "nav.about": "About",
     "nav.twitter": "Twitter",
+    "nav.whatsapp_abbr": "Join the WhatsApp Community",
     "home.title": `Welcome to Escuela.dev\nA Coding school in\nMalaga and Madrid, Spain`,
     "faq.q1.title": "📜 Will I receive a certificate of completion?",
     "faq.q1.answer":
@@ -67,6 +68,7 @@ export const strings = {
     "nav.call": "Llama",
     "nav.about": "Sobre",
     "nav.twitter": "Twitter",
+    "nav.whatsapp_abbr": "Únete a la comunidad de WhatsApp",
     "home.title": `Bienvenid@s a Escuela.dev\nUna escuela de programación en\nMalaga y Madrid, España`,
     "faq.q1.title": "📜 ¿Recibiré un certificado de finalización?",
     "faq.q1.answer":
