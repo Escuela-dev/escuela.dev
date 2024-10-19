@@ -120,7 +120,7 @@ export const strings = {
     "teacher1.title": "Conoce al profesor",
     "teacher1.name": "Gianfranco",
     "teacher1.description":
-      "Gianfranco es un ingeniero de software y educador con más de 10 años de experiencia en desarrollo web. Su enfoque práctico y pasión por la enseñanza han ayudado a cientos de estudiantes a adquirir habilidades de programación que les permiten destacar en la industria tecnológica.",
+      "Gianfranco es un ingeniero de software y profesor con más de 10 años de experiencia en desarrollo de software. Su enfoque práctico y pasión por la enseñanza han ayudado a muchos de estudiantes a adquirir habilidades de programación que les permiten destacar en la industria tecnológica.",
     "teacher1.url": "https://twitter.com/gianfranco_dev",
   },
 };
