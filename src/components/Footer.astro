@@ -15,7 +15,7 @@ export interface Props {
 const { githubEditUrl } = Astro.props;
 ---
 
-<footer class="mt-5">
+<footer>
   <ul
     class="my-6 grid grid-flow-row justify-center justify-items-center gap-5 text-center text-sm sm:grid-flow-col"
   >
@@ -23,7 +23,7 @@ const { githubEditUrl } = Astro.props;
       <a
         href="https://instagram.com/escuela.dev"
         target="_blank"
-        class="ig-icon flex items-center gap-[0.35rem] opacity-60 transition-all duration-200 hover:opacity-100"
+        class="ig-icon hover:opacity-100"
       >
         <Icon name="mdi:instagram" />
         <p>Instagram</p>
@@ -33,7 +33,7 @@ const { githubEditUrl } = Astro.props;
       <a
         href="https://x.com/escuela_dev_"
         target="_blank"
-        class="flex items-center gap-[0.35rem] opacity-60 transition-all duration-200 hover:text-black hover:opacity-100"
+        class="hover:text-black"
       >
         <Icon name="line-md:twitter-x" />
         <p>Twitter</p>
@@ -43,7 +43,7 @@ const { githubEditUrl } = Astro.props;
       <a
         href="https://linkedin.com/company/escuela-dev"
         target="_blank"
-        class="flex items-center gap-[0.35rem] opacity-60 transition-all duration-200 hover:text-[#0a66c2] hover:opacity-100"
+        class="hover:text-[#0a66c2]"
       >
         <Icon name="mdi:linkedin" />
         <p>LinkedIn</p>
@@ -67,70 +67,66 @@ const { githubEditUrl } = Astro.props;
   </p>
   {
     githubEditUrl && (
-      <ul>
-        <div class="mt-3">
-          <a
-            class="edit-on-github header-link w-100 depth-2 inline-flex opacity-60"
-            href={githubEditUrl}
-            target="_blank"
+      <div class="mt-3">
+        <a
+          class="edit-on-github header-link w-100 depth-2 inline-flex opacity-60"
+          href={githubEditUrl}
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="pen"
+            class="opacity-60"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            height="1em"
+            width="1em"
           >
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fas"
-              data-icon="pen"
-              class="opacity-60"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              height="1em"
-              width="1em"
-            >
-              <path
-                fill="currentColor"
-                d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
-              />
-            </svg>
-            <span class="text-xs">{t("footer.edit")}</span>
-          </a>
-        </div>
-      </ul>
+            <path
+              fill="currentColor"
+              d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
+            />
+          </svg>
+          <span class="text-xs">{t("footer.edit")}</span>
+        </a>
+      </div>
     )
   }
-  <style>
-    footer {
-      @apply w-full;
-      padding: 25px;
-      text-align: center;
-    }
-    svg {
-      width: 15px;
-      height: 15px;
-    }
-    a.header-link {
-      gap: 0.5em;
-      font: inherit;
-      padding-top: 0.4rem;
-      padding-bottom: 0.4rem;
-      color: var(--theme-text-lighter);
-      unicode-bidi: plaintext;
-    }
-    .ig-icon:hover {
-      background: linear-gradient(
-        45deg,
-        rgba(255, 221, 85, 0.8) 33%,
-        rgba(255, 84, 62, 0.9) 66%,
-        rgba(200, 55, 171, 1) 100%
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      color: rgba(255, 221, 85, 0.8);
-    }
-  </style>
 </footer>
 
 <style>
   footer {
+    @apply mt-5 w-full text-center;
+    padding: 25px;
     border-top: 1px solid rgba(var(--color-border));
+  }
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+  ul a {
+    @apply flex items-center gap-[0.35rem] opacity-100 transition-all duration-200 hover:opacity-100 sm:opacity-80;
+  }
+  a.header-link {
+    gap: 0.5em;
+    font: inherit;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    color: var(--theme-text-lighter);
+    unicode-bidi: plaintext;
+  }
+  .ig-icon:hover {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 221, 85, 0.8) 33%,
+      rgba(255, 84, 62, 0.9) 66%,
+      rgba(200, 55, 171, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgba(255, 221, 85, 0.8);
   }
 </style>

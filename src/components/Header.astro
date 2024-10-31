@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon/components";
 
 import HeaderLink from "./HeaderLink.astro";
+import ToggleTheme from "./ToggleTheme.astro";
 import {
   getLangFromUrl,
   useTranslations,
@@ -118,6 +119,7 @@ const langEmoji = otherLanguage === "es" ? "🇪🇸" : "🇬🇧";
     </div>
   </div>
 </header>
+<ToggleTheme />
 <style>
   header {
     border-bottom: 1px solid rgba(var(--color-border));

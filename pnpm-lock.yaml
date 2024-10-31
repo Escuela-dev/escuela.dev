@@ -52,6 +52,9 @@ importers:
       astro:
         specifier: 4.13.1
         version: 4.13.1(@types/node@20.12.12)(typescript@5.4.5)
+      astro-compressor:
+        specifier: ^0.4.1
+        version: 0.4.1
       astro-critters:
         specifier: ^2.1.10
         version: 2.1.10(@types/node@20.12.12)(typescript@5.4.5)
@@ -1291,6 +1294,9 @@ packages:
   astring@1.8.6:
     resolution: {integrity: sha512-ISvCdHdlTDlH5IpxQJIex7BWBywFWgjJSVdwst+/iQCoEYnyOaQ95+X1JGshuBjGp6nxKUy1jMgE3zPqN7fQdg==}
     hasBin: true
+
+  astro-compressor@0.4.1:
+    resolution: {integrity: sha512-IAgYAlxYRMolaptsFB9quH7RxX4eUeC4UfULCPhT+ILcg7m1kbaxuyUKqGg9Hh+KZ+FNPPDAz7DqUfl+HDWhQg==}
 
   astro-critters@2.1.10:
     resolution: {integrity: sha512-eOKq/DKoPgBymHHFV+ZLaWMFqe1DJDhTQ7rTPFJuYJup+T5BAz2dCQ39styNWNihhixXfTJEUxAkOPSGgRVo4w==}
@@ -4883,6 +4889,8 @@ snapshots:
   assertion-error@2.0.1: {}
 
   astring@1.8.6: {}
+
+  astro-compressor@0.4.1: {}
 
   astro-critters@2.1.10(@types/node@20.12.12)(typescript@5.4.5):
     dependencies:

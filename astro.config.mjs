@@ -7,6 +7,7 @@ import mdx from "@astrojs/mdx";
 // import critters from "astro-critters";
 import robotsTxt from "astro-robots-txt";
 import icon from "astro-icon";
+import compressor from "astro-compressor";
 
 // https://astro.build/config
 export default defineConfig({
@@ -42,6 +43,7 @@ export default defineConfig({
       sitemap: false,
     }),
     icon(),
+    compressor(),
   ],
   vite: {
     optimizeDeps: {
