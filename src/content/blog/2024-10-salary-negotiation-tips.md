@@ -4,6 +4,8 @@ blogSlug: "2024-10-salary-negotiation-tips"
 publishDate: "5 Oct 2024"
 heroImage: "/blog-imgs/2024-10-salary-negotiation-tips.avif"
 ogImage: "/blog-imgs/2024-10-salary-negotiation-tips.jpg"
+imageCaption: "Generated using (Ideogram.ai)[https://ideogram.ai/g/GsUwlfoFTuigZ-YEL_8TaQ/1]"
+imagePromptfile: "/blog-imgs/2024-10-salary-negotiation-tips.promptfile"
 description: Maximize your job offer with expert salary negotiation tips. Overcome fears, highlight your value, and confidently secure the compensation you deserve. Empower your career today
 tags:
   - career

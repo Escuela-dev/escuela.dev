@@ -11,6 +11,8 @@ export const blogSchema = z
     tags: z.array(z.string()).default(["others"]),
     heroImage: z.string().optional(),
     ogImage: z.string().optional(),
+    imageCaption: z.string().optional(),
+    imagePromptfile: z.string().optional(),
     description: z.string(),
   })
   .strict();
