@@ -21,19 +21,28 @@ const t = useTranslations(lang);
       src={Gianfranco}
       alt="Gianfranco"
       class="mx-auto h-20 w-20 rounded-full"
+      loading="eager"
     />
     <p
       class="mx-auto flex items-end justify-center gap-2 text-center font-semibold text-gray-900 dark:text-white"
     >
       <span class="mt-1 leading-none">{t("teacher1.name")}</span>
       <a href="https://linkedin.com/in/gianpaj" target="_blank">
-        <Icon name="bxl:linkedin-square" class="h-4 w-4" />
+        <Icon
+          title="Linkedin profile"
+          name="bxl:linkedin-square"
+          class="h-4 w-4"
+        />
       </a>
       <a href="https://github.com/gianpaj" target="_blank">
-        <Icon name="bxl:github" class="h-4 w-4" />
+        <Icon title="GitHub profile" name="bxl:github" class="h-4 w-4" />
       </a>
       <a href="https://gian.cool" target="_blank">
-        <Icon name="mdi:world-wide-web" class="h-4 w-4" />
+        <Icon
+          title="Personal website"
+          name="mdi:world-wide-web"
+          class="h-4 w-4"
+        />
       </a>
     </p>
     <p class="text-left font-sans text-lg leading-7">
