@@ -16,14 +16,18 @@ export const showDefaultLang = false;
 
 export const strings = {
   en: {
+    "banner.title": "First 30 mins session is free! 4 classes for €1̵2̵8̵, €96",
+    "banner.linkTitle": "Book now",
     "site.description": "Coding school in Malaga and Madrid, Spain",
     "nav.home": "Home",
     "nav.blog": "Blog",
-    "nav.call": "Call",
+    "nav.call": "Book",
     "nav.about": "About",
     "nav.twitter": "Twitter",
     "nav.whatsapp_abbr": "Join the WhatsApp Community",
     "home.title": `Welcome to Escuela.dev\nA Coding school in\nMalaga and Madrid, Spain`,
+    "home.subtitle":
+      "Get personalized one-one classes through online video sessions. Get instant feedback and guidance through the curriculum. Learn modern JavaScript, HTML, CSS, Git and Node.js.",
     "faq.q1.title": "📜 Will I receive a certificate of completion?",
     "faq.q1.answer":
       "No, instead of a certificate, we offer something more valuable.\nCompanies hiring software developers prioritise projects and code\nsamples over certificates. With our program, you'll build a robust\nportfolio on GitHub, showcasing various web projects. This portfolio\nwill demonstrate your proficiency, enable potential employers to assess\nyour skills effectively and determine if you're a good fit for their\nteams. 🤜🤛",
@@ -66,18 +70,23 @@ export const strings = {
     "teacher1.title": "Meet the teacher",
     "teacher1.name": "Gianfranco",
     "teacher1.description":
-      "Gianfranco is a seasoned software engineer and educator with over a decade of experience in web development. His deep expertise and passion for teaching have empowered a lot of students to master coding skills that translate directly into successful careers. Gianfranco’s hands-on, results-driven approach ensures his students not only learn to code but also excel in the competitive tech industry",
+      "Gianfranco is a seasoned software engineer and educator with over a decade of experience in web and mobile app development. His deep expertise and passion for teaching have empowered a lot of students to master coding skills that translate directly into successful careers. Gianfranco’s hands-on, results-driven approach ensures his students not only learn to code but also excel in the competitive tech industry",
     "teacher1.url": "https://twitter.com/gianfranco_dev",
   },
   es: {
-    "site.description": "Escuela de programación en Málaga y Madrid, España",
+    "banner.title": "Primera clase de 30 mi gratis! 4 clases por €1̵2̵8̵, €96",
+    "banner.linkTitle": "Pide cita",
+    "site.description":
+      "Clases particulares de programación en Madrid, Malaga, online",
     "nav.home": "Inicio",
     "nav.blog": "Blog",
-    "nav.call": "Llama",
+    "nav.call": "Pide cita",
     "nav.about": "Sobre",
     "nav.twitter": "Twitter",
     "nav.whatsapp_abbr": "Únete a la comunidad de WhatsApp",
-    "home.title": `Bienvenid@s a Escuela.dev\nUna escuela de programación en\nMalaga y Madrid, España`,
+    "home.title": `Bienvenid@s a Escuela.dev\nUna escuela de programación en\nMalaga, Madrid y Online`,
+    "home.subtitle":
+      "Aprende con clases particulares y personalizadas a través de sesiones de video en línea. Aprende con ayuda y sigue un currículum. Aprende JavaScript moderno, HTML, CSS, Git y Node.js.",
     "faq.q1.title": "📜 ¿Recibiré un certificado de finalización?",
     "faq.q1.answer":
       "No, en lugar de un certificado, ofrecemos algo más valioso. Las empresas que contratan desarrolladores de software priorizan los proyectos y las muestras de código por encima de los certificados. Con nuestro curso, construirás un portafolio sólido en GitHub, que incluirá varios proyectos web. Este portafolio demostrará tu competencia y permitirá a los posibles empleadores evaluar tus habilidades de manera efectiva, determinando si eres un buen ajuste para sus equipos.🤜🤛",
@@ -120,7 +129,7 @@ export const strings = {
     "teacher1.title": "Conoce al profesor",
     "teacher1.name": "Gianfranco",
     "teacher1.description":
-      "Gianfranco es un ingeniero de software y profesor con más de 10 años de experiencia en desarrollo de software. Su enfoque práctico y pasión por la enseñanza han ayudado a muchos de estudiantes a adquirir habilidades de programación que les permiten destacar en la industria tecnológica.",
+      "Gianfranco es un ingeniero de software y profesor con más de 10 años de experiencia en desarrollo de software en la web y en aplicaciones móviles. Su enfoque práctico y pasión por la enseñanza han ayudado a muchos de estudiantes a adquirir habilidades de programación que les permiten destacar en la industria tecnológica.",
     "teacher1.url": "https://twitter.com/gianfranco_dev",
   },
 };
