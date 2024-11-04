@@ -27,7 +27,7 @@ export const strings = {
     "nav.whatsapp_abbr": "Join the WhatsApp Community",
     "home.title": `Welcome to Escuela.dev\nA Coding school in\nMalaga and Madrid, Spain`,
     "home.subtitle":
-      "Get personalized one-one classes through online video sessions. Get instant feedback and guidance through the curriculum. Learn modern JavaScript, HTML, CSS, Git and Node.js.",
+      "Get personalized one-on-one classes through online video sessions. Get instant feedback and guidance through the curriculum. Learn modern JavaScript, HTML, CSS, Git and Node.js.",
     "faq.q1.title": "📜 Will I receive a certificate of completion?",
     "faq.q1.answer":
       "No, instead of a certificate, we offer something more valuable.\nCompanies hiring software developers prioritise projects and code\nsamples over certificates. With our program, you'll build a robust\nportfolio on GitHub, showcasing various web projects. This portfolio\nwill demonstrate your proficiency, enable potential employers to assess\nyour skills effectively and determine if you're a good fit for their\nteams. 🤜🤛",
