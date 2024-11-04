@@ -18,14 +18,14 @@ export const strings = {
   en: {
     "banner.title": "First 30 mins session is free! 4 classes for €1̵2̵8̵, €96",
     "banner.linkTitle": "Book now",
-    "site.description": "Coding school in Malaga and Madrid, Spain",
+    "site.description": "Coding school in Malaga, Madrid and online",
     "nav.home": "Home",
     "nav.blog": "Blog",
     "nav.call": "Book",
     "nav.about": "About",
     "nav.twitter": "Twitter",
     "nav.whatsapp_abbr": "Join the WhatsApp Community",
-    "home.title": `Welcome to Escuela.dev\nA Coding school in\nMalaga and Madrid, Spain`,
+    "home.title": `Welcome to Escuela.dev\nA Coding school in\nMalaga, Madrid and online`,
     "home.subtitle":
       "Get personalized one-on-one classes through online video sessions. Get instant feedback and guidance through the curriculum. Learn modern JavaScript, HTML, CSS, Git and Node.js.",
     "faq.q1.title": "📜 Will I receive a certificate of completion?",
