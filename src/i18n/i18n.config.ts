@@ -76,7 +76,7 @@ export const strings = {
   },
   es: {
     "banner.title":
-      "Primera clase de 30 min gratis! 4 clases por <s>€128</s>, €96",
+      "Primera clase de 30 min es gratis! 4 clases por <s>€128</s>, €96",
     "banner.linkTitle": "Pide cita",
     "site.description":
       "Clases particulares de programación en Madrid, Malaga, online",
