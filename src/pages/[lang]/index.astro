@@ -1,0 +1,101 @@
+---
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+// import Embed from "@components/Embed";
+import FAQSection from "@components/FAQSection.astro";
+import PricingTable from "@components/PricingTable.astro";
+import MeetTheTeachers from "@components/MeetTheTeachers.astro";
+// import Testimonials from "@components/Testimonials.astro";
+import Layout from "@layouts/Base.astro";
+import getGithubEditUrl from "@utils/getGithubEditUrl";
+import { languages } from "@i18n/i18n.config";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+export const getStaticPaths = () =>
+  Object.keys(languages).map((lang) => ({
+    params: { lang },
+  }));
+---
+
+<Layout githubEditUrl={getGithubEditUrl("/src/pages/index.astro")}>
+  <!-- <link rel="dns-prefetch" href="https://blocksurvey.io" /> -->
+  <main class="max-w-screen-md">
+    <h1
+      class="text-gradient my-10 whitespace-break-spaces text-center text-4xl font-bold leading-tight sm:my-20 sm:text-5xl sm:leading-relaxed sm:tracking-tight"
+    >
+      {t("home.title")}
+    </h1>
+    <h2
+      class="whitespace-break-spaces pt-8 text-center font-sans text-2xl leading-9 sm:text-xl sm:leading-8"
+    >
+      {t("home.subtitle")}
+    </h2>
+    <div>
+      <!-- <Testimonials /> -->
+    </div>
+    <div class="py-8 lg:pb-8 lg:pt-16">
+      <MeetTheTeachers />
+    </div>
+    <FAQSection />
+    <!-- <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+      <h2
+        class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+      >
+        Fill the form below to learn more
+      </h2>
+    </div> -->
+    <!-- <Embed
+      client:visible
+      src="https://blocksurvey.io/survey/t/4c0715c3-e28d-4dc8-b80f-a3f8210f1f24"
+      style={{ width: "100%", height: "100vh" }}
+    /> -->
+  </main>
+  <div class="pt-4 lg:py-8">
+    <PricingTable />
+  </div>
+</Layout>
+
+<style scoped>
+  main {
+    margin: auto;
+    padding: 1.5rem;
+  }
+  h1 {
+    margin: 0;
+  }
+
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: rgba(var(--color-fill));
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 12%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+</style>

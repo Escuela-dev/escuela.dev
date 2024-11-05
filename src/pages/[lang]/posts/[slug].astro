@@ -1,10 +1,11 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
 
-import Layout from "@layouts/Layout.astro";
+import Layout from "@layouts/Base.astro";
 import getReadingTime from "@utils/getReadingTime";
 import getGithubEditUrl from "@utils/getGithubEditUrl";
 import { SITE } from "@config";
+import { getLangFromUrl } from "@i18n/utils";
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -12,19 +13,19 @@ export interface Props {
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog", ({ data }) => !data.draft);
-  const postResult = posts.map((post) => ({
-    params: { slug: post.slug },
-    props: { post },
-  }));
-  // const pagePaths = getPageNumbers(posts.length).map(pageNum => ({
-  //   params: { slug: String(pageNum) },
-  // }));
-  // return [...postResult, ...pagePaths];
-  return [...postResult];
+  return posts.map((post) => {
+    const [lang, ...slug] = post.slug.split("/");
+    return {
+      params: { lang, slug: slug.join("/") || undefined },
+      props: { post },
+    };
+  });
 }
 
+const lang = getLangFromUrl(Astro.url);
 const { slug } = Astro.params;
 const { post } = Astro.props;
+
 const {
   title: postTitle,
   author,
@@ -63,30 +64,23 @@ if (description.length > maxDescription) {
   }}
   githubEditUrl={getGithubEditUrl("/src/pages/posts/[slug].astro")}
 >
-  <style>
-    .title {
-      font-size: 2em;
-      margin: 0.25em 0 0;
-    }
-    hr {
-      border-top: 1px solid #ddd;
-      margin: 1rem 0;
-    }
-    time,
-    readingtime {
-      color: #a0a0a0;
-    }
-    html.dark time,
-    html.dark readingtime {
-      color: #9f9f9f;
-    }
-  </style>
   <article class="prose mx-auto mb-4 mt-8 max-w-3xl px-3 sm:px-0">
     {heroImage && <img src={heroImage} alt={postTitle} />}
     {imageCaption && <span class="sr-only">{imageCaption}</span>}
     <h1 class="title">{postTitle}</h1>
     <div class="flex justify-between">
-      {publishDate && <time>{publishDate}</time>}
+      {
+        publishDate && (
+          <time datetime={new Date(publishDate).toISOString()}>
+            {new Date(publishDate).toLocaleDateString(lang, {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            })}
+          </time>
+        )
+      }
+      <!-- TODO: translate "minutes to read" -->
       <readingtime>{readingTime} minutes to read</readingtime>
     </div>
     <hr />
@@ -96,3 +90,22 @@ if (description.length > maxDescription) {
     </ul> -->
   </article>
 </Layout>
+
+<style>
+  .title {
+    font-size: 2em;
+    margin: 0.25em 0 0;
+  }
+  hr {
+    border-top: 1px solid #ddd;
+    margin: 1rem 0;
+  }
+  time,
+  readingtime {
+    color: #a0a0a0;
+  }
+  html.dark time,
+  html.dark readingtime {
+    color: #9f9f9f;
+  }
+</style>
