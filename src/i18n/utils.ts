@@ -14,7 +14,6 @@ export function useTranslations(lang: Language) {
   return function t(key: keyof (typeof strings)[typeof defaultLang]) {
     const translatedString = strings[lang][key] || strings[defaultLang][key];
 
-    // TODO make bold
     return translatedString;
 
     // TODO: make it work for indentation in the template strings

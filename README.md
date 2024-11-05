@@ -215,7 +215,7 @@ No, ¡pero lo que obtienes es incluso mejor! Las empresas que buscan desarrollad
 ## 🚀 Website Project Structure
 
 > Website built with Astro :rocket:
-<https://astro.build/themes/details/astro-paper/>
+<https://astro.build/themes/details/astropaper/>
 
 ## 🧞 Commands
 
