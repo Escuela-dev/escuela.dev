@@ -19,7 +19,7 @@ export const strings = {
     "banner.title":
       "First 30 mins session is free! 4 classes for <s>€128</s>, €96",
     "banner.linkTitle": "Book now",
-    "site.description": "Coding school in Malaga, Madrid and online",
+    "site.description": "One-on-one coding school in Malaga, Madrid and online",
     "nav.home": "Home",
     "nav.blog": "Blog",
     "nav.call": "Book",
