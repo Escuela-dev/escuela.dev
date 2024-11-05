@@ -16,7 +16,8 @@ export const showDefaultLang = false;
 
 export const strings = {
   en: {
-    "banner.title": "First 30 mins session is free! 4 classes for €1̵2̵8̵, €96",
+    "banner.title":
+      "First 30 mins session is free! 4 classes for <s>€128</s>, €96",
     "banner.linkTitle": "Book now",
     "site.description": "Coding school in Malaga, Madrid and online",
     "nav.home": "Home",
@@ -74,7 +75,8 @@ export const strings = {
     "teacher1.url": "https://twitter.com/gianfranco_dev",
   },
   es: {
-    "banner.title": "Primera clase de 30 mi gratis! 4 clases por €1̵2̵8̵, €96",
+    "banner.title":
+      "Primera clase de 30 mi gratis! 4 clases por <s>€128</s>, €96",
     "banner.linkTitle": "Pide cita",
     "site.description":
       "Clases particulares de programación en Madrid, Malaga, online",

@@ -32,9 +32,7 @@ const banner = {
   <div
     class="mx-auto max-w-screen-xl scroll-py-32 items-center justify-center gap-x-4 px-3 py-4 text-white sm:flex sm:py-3 md:px-8"
   >
-    <p class="pb-2 font-medium sm:py-2">
-      {banner.title}
-    </p>
+    <p class="pb-2 font-medium sm:py-2" set:html={banner.title} />
     <a
       href={banner.linkHref}
       class="mt-3 inline-block w-full flex-none rounded-lg bg-white px-3 py-2 text-center font-medium text-indigo-600 duration-150 hover:bg-gray-100 active:bg-gray-200 sm:mt-0 sm:w-auto sm:text-sm"
