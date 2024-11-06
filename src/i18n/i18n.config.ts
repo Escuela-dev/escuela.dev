@@ -5,8 +5,6 @@ export const languages = {
 
 export const defaultLang = "en";
 
-export const showDefaultLang = false;
-
 // const nextMonth = new Date(
 //   new Date().getFullYear(),
 //   new Date().getMonth() + 1,

@@ -17,13 +17,11 @@ x (A) Add FAQ JSON-LD schema
     Add meta tags {cm:2023-02-25}
     Add OpenGraph {cm:2023-02-25}
     Add Twitter Cards {cm:2023-02-25}
-    Add sitemap generation
-    Add robots.txt
+    xAdd sitemap generation
+    xAdd robots.txt
     Add canonical links
-    Add structured data?
-    Add JSON-LD?
     Add Analytics (not Google Analytics. For example Matomo)
-    Add Google Search Console
+    xAdd Google Search Console
     Add Google Tag Manager
     Add Facebook Pixel
     Add Bing Webmaster Tools
