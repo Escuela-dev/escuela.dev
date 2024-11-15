@@ -1,4 +1,5 @@
 ---
+import { sentences as splitBySentences } from "sbd";
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
 
 // import Embed from "@components/Embed";
@@ -24,7 +25,16 @@ const t = useTranslations(lang);
     <h2
       class="whitespace-break-spaces pt-8 text-center font-sans text-2xl leading-9 sm:text-xl sm:leading-8"
     >
-      {t("home.subtitle")}
+      {splitBySentences(t("home.subtitle")).map((s, i, a) =>
+      i < a.length - 1 ? (
+        <>
+          <span>{s}</span>
+          <br />
+        </>
+      ) : (
+        <span>{s}</span>
+      )
+    )}
     </h2>
     <div>
       <!-- <Testimonials /> -->
