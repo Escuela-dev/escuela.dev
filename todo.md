@@ -20,7 +20,7 @@ x (A) Add FAQ JSON-LD schema
     xAdd sitemap generation
     xAdd robots.txt
     Add canonical links
-    Add Analytics (not Google Analytics. For example Matomo)
+    Add Analytics (not Google Analytics. For example Matomo or PathHog)
     xAdd Google Search Console
     Add Google Tag Manager
     Add Facebook Pixel
