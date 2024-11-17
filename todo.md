@@ -1,5 +1,6 @@
 # TODO
 
+x(A) Add Free Class page (see <https://www.shecodes.io/free-class>)
 (A) Translate blog articles to Spanish
 (A) Add support for Blog image caption. Markdown links should work
 (A) Add testimonials

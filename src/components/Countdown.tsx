@@ -10,10 +10,8 @@ export default function Countdown({datetime}: Props ) {
   const [minutes, setMinutes] = useState('0');
   const [seconds, setSeconds] = useState('0');
 
-  console.log("updateCountdown");
   useEffect(() => {
     const updateCountdown = () => {
-      console.log("updateCountdown");
       const date = new Date(datetime);
       const now = new Date();
       const distance = date.getTime() - now.getTime();

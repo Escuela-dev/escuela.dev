@@ -38,6 +38,7 @@ export const strings = {
     "faq.q2.answer3":
       "3. 🎹 <b>Virtual Piano</b>: Create a virtual piano keyboard where users\ncan play musical notes and chords by clicking or pressing keys. You can\nuse JavaScript to handle the sound and interactivity.",
     // "faq.q2.answer2": "2. 🎥 <b>Video Player</b>: Create a custom video player with\nplayback speed controls, volume adjustment, and a full-screen option.\nYou can also add a skip forward and backward feature, and display the\nvideo's current time and duration. This project will help you learn\nhow to manipulate the HTML5 video element with JavaScript.",
+    "free-class.seoTitle": "FREE Coding Class | Escuela.dev",
     "free-class.title": "Join Escuela.dev <span class='text-indigo-600'>Free</span> Class<br/>With Gianfranco",
     "free-class.usp1": "Online",
     "free-class.ups2": "45 minutes",
@@ -109,6 +110,7 @@ export const strings = {
       "2. ✨ <b>Página de aterrizaje animada</b>: Diseña una página de aterrizaje visualmente atractiva con animaciones y transiciones. Utiliza animaciones CSS o bibliotecas como Animate.css para agregar efectos llamativos.",
     "faq.q2.answer3":
       "3. 🎹 <b>Piano virtual</b>: Crea un teclado de piano virtual donde los usuarios puedan tocar notas musicales y acordes haciendo clic o presionando teclas. Puedes usar JavaScript para manejar el sonido y la interactividad.",
+    "free-class.seoTitle": "Clase de programación GRATIS | Escuela.dev",
     "free-class.title": "Únete a Escuela.dev <span class='text-indigo-600'>Gratis</span> Clase<br/>Con Gianfranco",
     "free-class.usp1": "Online",
     "free-class.ups2": "45 minutos",
