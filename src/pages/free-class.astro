@@ -1,0 +1,101 @@
+---
+import { Image } from "astro:assets";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+import Layout from "@layouts/Layout.astro";
+import Countdown from "@components/Countdown";
+import {nextClassDateTime} from "@utils/countdownUtil"
+
+import Gianfranco from "@images/gianfranco.jpg";
+
+const nextClassDateTimeStr = nextClassDateTime()?.toISOString();
+---
+
+<Layout>
+  <main class="lg:max-w-screen-lg max-w-screen-md">
+    <h1 class="text-gradient mt-10 whitespace-break-spaces text-center text-4xl font-bold leading-tight sm:mt-20 sm:mb-5 sm:text-5xl sm:leading-relaxed sm:tracking-tight"
+      set:html={t("free-class.title")}></h1>
+    <Image
+      src={Gianfranco}
+      alt="Gianfranco"
+      class="mx-auto h-40 w-40 rounded-full border-8 dark:border-gray-400 border-gray-200"
+      loading="eager"
+      format="avif"
+      width={540}
+    />
+    {nextClassDateTimeStr && <Countdown datetime={nextClassDateTimeStr} client:only="react"/>}
+
+    <div class="text-center text-lg mt-4">
+      <p class="">
+      📍 {t("free-class.usp1")}
+      </p>
+      <p class="">
+      ⏰ {t("free-class.ups2")}
+      </p>
+      <p class="">
+      💰 {t("free-class.usp3")}
+      </p>
+    </div>
+
+    <div class="text-center mt-8">
+      <a class="bg-gradient-to-r from-indigo-600 to-indigo-500 text-white font-medium text-sm px-5 py-2.5 rounded-full hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:focus:ring-indigo-800" href="https://cal.com/gianpaj/free-class">
+        {t("free-class.buttonText")}
+      </a>
+    </div>
+
+    <h1
+      class="text-gradient my-10 whitespace-break-spaces text-center text-4xl font-bold leading-tight sm:my-20 sm:text-5xl sm:leading-relaxed sm:tracking-tight"
+    >{t("free-class.what-you-ll-learn")}</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="card">
+        <p class="emoji">💻</p>
+        <p>{t("free-class.card1.text")}</p>
+      </div>
+
+      <div class="card">
+        <p class="emoji">📈</p>
+        <p>{t("free-class.card2.text")}</p>
+      </div>
+
+      <div class="card">
+        <p class="emoji">👩‍💼</p>
+        <p>{t("free-class.card3.text")}</p>
+      </div>
+
+      <div class="card">
+        <p class="emoji">👩‍💻</p>
+        <p>{t("free-class.card4.text")}</p>
+      </div>
+
+      <div class="card">
+        <p class="emoji">❓</p>
+        <p>{t("free-class.card5.text")}</p>
+      </div>
+
+      <div class="card">
+        <p class="emoji">🛑</p>
+        <p>{t("free-class.card6.text")}</p>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style scoped>
+  main {
+    margin: auto;
+    padding: 1.5rem;
+  }
+  .card {
+    @apply flex flex-col items-center justify-center p-4 border rounded-lg border-gray-200 shadow-md text-center;
+    .emoji {
+      @apply text-5xl leading-[4.25rem];
+    }
+
+    p:not(.emoji){
+      @apply text-sm mt-4;
+    }
+  }
+</style>
