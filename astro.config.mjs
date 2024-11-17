@@ -8,6 +8,7 @@ import mdx from "@astrojs/mdx";
 import robotsTxt from "astro-robots-txt";
 import icon from "astro-icon";
 import compressor from "astro-compressor";
+import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
@@ -27,7 +28,7 @@ export default defineConfig({
         applyBaseStyles: false,
       },
     }),
-    // react(),
+    react(),
     sitemap({
       i18n: {
         defaultLocale: "en",
