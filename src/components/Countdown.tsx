@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(new URL(window.location.href));
+const t = useTranslations(lang);
 
 interface Props {
   datetime: string;
@@ -35,23 +39,23 @@ export default function Countdown({datetime}: Props ) {
     <div className="flex flex-col items-center justify-center">
       <div className="mt-4 mb-5 inline-block">
         <div className="countdown-item float-start">
-          <div className="text-5xl p-2 bg-background rounded-lg leading-[3rem]">{days}</div>
-          <div className="uppercase text-sm mt-4">Days</div>
+          <div className="digit">{days}</div>
+          <div className="unit">{t("countdown.days")}</div>
         </div>
-        <span className="text-4xl p-3 float-left">:</span>
+        <span className="separator">:</span>
         <div className="countdown-item float-start">
-          <div className="text-5xl p-2 bg-background rounded-lg leading-[3rem]">{hours}</div>
-          <div className="uppercase text-sm mt-4">Hours</div>
+          <div className="digit">{hours}</div>
+          <div className="unit">{t("countdown.hours")}</div>
         </div>
-        <span className="text-4xl p-3 float-left">:</span>
+        <span className="separator">:</span>
         <div className="countdown-item float-start ">
-          <div className="text-5xl p-2 bg-background rounded-lg leading-[3rem]">{minutes}</div>
-          <div className="uppercase text-sm mt-4">Minutes</div>
+          <div className="digit">{minutes}</div>
+          <div className="unit">{t("countdown.minutes")}</div>
         </div>
-        <span className="text-4xl p-3 float-left">:</span>
+        <span className="separator">:</span>
         <div className="countdown-item float-start">
-          <div className="text-5xl p-2 bg-background rounded-lg leading-[3rem]">{seconds}</div>
-          <div className="uppercase text-sm mt-4">Seconds</div>
+          <div className="digit">{seconds}</div>
+          <div className="unit">{ t("countdown.seconds")}</div>
         </div>
       </div>
     </div>

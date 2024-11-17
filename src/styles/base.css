@@ -61,6 +61,12 @@
   .prose h2#table-of-contents + p {
     @apply hidden;
   }
+  .cta-button {
+    @apply bg-gradient-to-r from-indigo-600 to-indigo-500 text-white font-medium text-base sm:px-10 px-5 py-2.5 sm:py-5 rounded-full hover:from-indigo-700 hover:to-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:focus:ring-indigo-800;
+  }
+  a, button {
+    @apply transition-colors duration-200;
+  }
 }
 
 @layer components {
