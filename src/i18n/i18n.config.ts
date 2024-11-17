@@ -69,7 +69,7 @@ export const strings = {
     "teacher1.title": "Meet the teacher",
     "teacher1.name": "Gianfranco",
     "teacher1.description":
-      "Gianfranco is a seasoned software engineer and educator with over a decade of experience in web and mobile app development. His deep expertise and passion for teaching have empowered a lot of students to master coding skills that translate directly into successful careers. Gianfranco’s hands-on, results-driven approach ensures his students not only learn to code but also excel in the competitive tech industry",
+      "Gianfranco is a seasoned software engineer and educator with over a decade of experience in web and mobile app development.<br/><br/>Originally from 🇫🇷 Italy, he had a Start-up in 🇺🇦 Ukraine and now lives in 🇪🇸 Malanga, Spain, has a Computer Science degree from 🇮🇪 Ireland and has taught many students how to code while working at Thinkful (now Chegg), a US based online bootcamp",
     "teacher1.url": "https://twitter.com/gianfranco_dev",
   },
   es: {

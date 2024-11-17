@@ -47,8 +47,7 @@ const t = useTranslations(lang);
         />
       </a>
     </p>
-    <p class="text-left font-sans text-lg leading-7">
-      {t("teacher1.description")}
+    <p class="text-left font-sans text-lg leading-7" set:html={t("teacher1.description")} />
     </p>
   </div>
 </div>

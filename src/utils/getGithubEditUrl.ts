@@ -8,7 +8,7 @@ export default function getGithubEditUrl(
   url: Readonly<AstroGlobal> | string,
 ) {
   if (typeof url !== "string") {
-    return null;
+    return;
   }
   // Special handling for URLs containing brackets '[' that need encoding like `[slug].astro`
   // Splits URL into directory path and filename, encoding only the filename portion

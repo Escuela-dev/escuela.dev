@@ -67,4 +67,4 @@ Ready to start learning Python? Check out these resources to help you get starte
 
 ## About the author
 
-Gianfranco is a software developer with over 10 years of experience. He is passionate about teaching others how to code and sharing his knowledge with the world. In his free time, he enjoys hiking, reading, and [DJing](https://gian.cool/dj-mixes.html).
+Gianfranco is a software developer with over 10 years of experience. He is passionate about teaching others how to code and sharing his knowledge with the world. In his free time, he enjoys hiking, reading, and [DJing](https://gian.cool/dj-mixes).
