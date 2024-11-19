@@ -72,7 +72,7 @@ export const strings = {
       plan1: {
         title: "One on one",
         priceDescription: "/hour",
-        buttonText: "Call"
+        buttonText: "Book"
       },
       feature: {
         online: "Online",
@@ -82,7 +82,7 @@ export const strings = {
       plan2: {
         title: "Group class",
         priceDescription: "/course \n (€19 per hour)",
-        buttonText: "Call",
+        buttonText: "Book",
         feature: {
           people: "up to 4 people",
           course: "4-week course (3h per week)"
@@ -91,7 +91,7 @@ export const strings = {
       plan3: {
         title: "2-day Workshop",
         priceDescription: "Custom pricing",
-        buttonText: "Call",
+        buttonText: "Book",
         feature: {
           time: "From 10am to 5pm",
           lunch: "Lunch included"
@@ -178,7 +178,7 @@ export const strings = {
       plan1: {
         title: "Clase individual",
         priceDescription: "/hora",
-        buttonText: "Consúltanos"
+        buttonText: "Reserva"
       },
       feature: {
         online: "Online",
@@ -188,7 +188,7 @@ export const strings = {
       plan2: {
         title: "Clase en grupo",
         priceDescription: "/curso \n (19€ por hora)",
-        buttonText: "Consúltanos",
+        buttonText: "Reserva",
         feature: {
           people: "Hasta 4 personas",
           course: "Curso de 4 semanas (3 horas por semana)"
@@ -197,7 +197,7 @@ export const strings = {
       plan3: {
         title: "Taller de 2 días",
         priceDescription: "Precio personalizado",
-        buttonText: "Consúltanos",
+        buttonText: "Reserva",
         feature: {
           time: "De 10am a 5pm",
           lunch: "Almuerzo incluido"
