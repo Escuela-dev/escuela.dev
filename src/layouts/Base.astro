@@ -10,11 +10,18 @@ import { getLangFromUrl } from "@i18n/utils";
 // import WhatsAppButton from "@components/WhatsAppButton.astro";
 
 export interface Props {
+  title?: string;
   headProps?: HeadProps;
   showWhatApp?: boolean;
   githubEditUrl?: string;
 }
-const { showWhatApp = false, githubEditUrl, headProps } = Astro.props;
+const { showWhatApp = false, githubEditUrl, title } = Astro.props;
+let { headProps } = Astro.props;
+
+headProps = {
+  ...headProps,
+  seoTitle: title,
+}
 
 const lang = getLangFromUrl(Astro.url);
 ---

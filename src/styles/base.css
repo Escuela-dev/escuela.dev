@@ -37,7 +37,8 @@
     transition: background 0.4s ease;
   }
   .prose {
-    @apply prose-headings:!mb-3 prose-headings:!text-skin-base prose-h3:italic prose-p:!text-skin-base prose-a:!text-skin-base prose-a:!decoration-dashed prose-a:underline-offset-8 hover:prose-a:text-skin-accent prose-blockquote:!border-l-skin-accent prose-blockquote:border-opacity-50 prose-blockquote:opacity-80 prose-figcaption:!text-skin-base prose-figcaption:opacity-70 prose-strong:!text-skin-base prose-code:rounded prose-code:bg-skin-card prose-code:bg-opacity-75 prose-code:p-1 prose-code:!text-skin-base prose-code:before:!content-[''] prose-code:after:!content-[''] prose-pre:!text-skin-base prose-ol:!text-skin-base prose-ul:overflow-x-clip prose-ul:!text-skin-base prose-li:marker:!text-skin-accent prose-table:text-skin-base prose-th:border prose-th:border-skin-line prose-td:border prose-td:border-skin-line prose-img:mx-auto prose-img:!mt-2 prose-hr:!border-skin-line;
+    @apply font-sans prose-headings:!mb-3 prose-headings:!text-skin-base prose-h3:italic prose-p:!text-skin-base prose-a:!text-skin-base prose-a:!decoration-dashed prose-a:underline-offset-8 hover:prose-a:text-skin-accent prose-blockquote:!border-l-skin-accent prose-blockquote:border-opacity-50 prose-blockquote:opacity-80 prose-figcaption:!text-skin-base prose-figcaption:opacity-70 prose-strong:!text-skin-base prose-code:rounded prose-code:bg-skin-card prose-code:bg-opacity-75 prose-code:p-1 prose-code:!text-skin-base prose-code:before:!content-[''] prose-code:after:!content-[''] prose-pre:!text-skin-base prose-ol:!text-skin-base prose-ul:overflow-x-clip prose-ul:!text-skin-base prose-li:marker:!text-skin-accent prose-table:text-skin-base prose-th:border prose-th:border-skin-line prose-td:border prose-td:border-skin-line prose-img:mx-auto prose-img:!mt-2 prose-hr:!border-skin-line;
+    @apply !text-xl !leading-8 font-light;
     max-width: 56rem !important;
   }
   .prose a {
@@ -59,6 +60,12 @@
   }
   .prose h2#table-of-contents + p {
     @apply hidden;
+  }
+  .cta-button {
+    @apply bg-gradient-to-r from-indigo-600 to-indigo-500 text-white font-medium text-base sm:px-10 px-5 py-2.5 sm:py-5 rounded-full hover:from-indigo-700 hover:to-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:focus:ring-indigo-800;
+  }
+  a, button {
+    @apply transition-colors duration-200;
   }
 }
 

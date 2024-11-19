@@ -1,6 +1,6 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-// import react from "@astrojs/react";
+import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 // FIXME: background-color in .button in PricingTable.css is not dark in dark mode
@@ -27,7 +27,7 @@ export default defineConfig({
         applyBaseStyles: false,
       },
     }),
-    // react(),
+    react(),
     sitemap({
       i18n: {
         defaultLocale: "en",

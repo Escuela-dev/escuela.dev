@@ -5,16 +5,21 @@ import type { AstroGlobal } from "astro";
  * Gets the URL to edit the page on GitHub
  */
 export default function getGithubEditUrl(
-  Astro: Readonly<AstroGlobal> | string,
+  url: Readonly<AstroGlobal> | string,
 ) {
-  if (typeof Astro === "string") {
-    return `https://github.com/Escuela-dev/escuela.dev/blob/master${Astro}`;
+  if (typeof url !== "string") {
+    return;
   }
-  // const { content = {} } = Astro.props;
-  // const currentPage = Astro.url.pathname;
-  // // const lang = getLanguageFromURL(currentPage);
-  // const filePath = `src/content/docs${currentPage.replace(/\/$/, '')}.mdx`;
-  // return content.githubURL
-  //     ? `${content.githubURL}${content.hasREADME ? 'README.md' : ''}`
-  //     : `https://github.com/Escuela-dev/escuela.dev/blob/master/${filePath}`;
+  // Special handling for URLs containing brackets '[' that need encoding like `[slug].astro`
+  // Splits URL into directory path and filename, encoding only the filename portion
+  if (url.includes('[')) {
+    const urlParts = url.split('/');
+    // Get directory path up to last segment and append trailing slash
+    const dirPath = `${urlParts.slice(0, -1).join('/')}/`;
+    // Get and encode only the filename portion
+    const fileName = encodeURIComponent(urlParts[urlParts.length - 1]);
+    return `https://github.com/Escuela-dev/escuela.dev/blob/master${dirPath}${fileName}`;
+  }
+
+  return `https://github.com/Escuela-dev/escuela.dev/blob/master${url}`;
 }

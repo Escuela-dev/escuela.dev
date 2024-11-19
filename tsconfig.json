@@ -5,6 +5,8 @@
     "baseUrl": "src",
     "paths": {
       "@*": ["./*"]
-    }
+    },
+    "experimentalDecorators": true,
+    "jsxImportSource": "react"
   }
 }

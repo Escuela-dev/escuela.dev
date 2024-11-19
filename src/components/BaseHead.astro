@@ -1,8 +1,9 @@
 ---
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import { getLangFromUrl, getLocalePaths, getOGLocale, getOtherOGLocales, useTranslations } from "@i18n/utils";
 import { SITE } from "@config";
 
 const lang = getLangFromUrl(Astro.url);
+const ogLocale = getOGLocale(lang);
 const t = useTranslations(lang);
 
 export interface Props {
@@ -29,7 +30,8 @@ const socialImageURL = new URL(
   ogImage,
   Astro.url.origin,
 ).href;
-const fallbackImageURL = new URL(ogImage, Astro.url.origin).href;
+// const fallbackImageURL = new URL(ogImage, Astro.url.origin).href;
+
 ---
 
 <!-- Global Metadata -->
@@ -56,6 +58,9 @@ const fallbackImageURL = new URL(ogImage, Astro.url.origin).href;
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={socialImageURL} />
+<meta property="og:locale" content={ogLocale} />
+{getOtherOGLocales(lang).map(fourLetterLocale => <meta property="og:locale:alternate" content={fourLetterLocale} />)}
+
 {
   type === "article" && publishDate && (
     <meta
@@ -70,10 +75,17 @@ const fallbackImageURL = new URL(ogImage, Astro.url.origin).href;
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta
-  property="twitter:image"
-  content={socialImageURL.endsWith(".svg") ? fallbackImageURL : socialImageURL}
-/>
+<meta property="twitter:image" content={socialImageURL}/>
+
+{
+  getLocalePaths(Astro.url).map((path) => (
+    <link
+      rel="alternate"
+      hreflang={getOGLocale(path.lang, '-')}
+      href={Astro.site?.origin + path.path}
+    />
+  ))
+}
 
 <!-- Google Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -81,4 +93,5 @@ const fallbackImageURL = new URL(ogImage, Astro.url.origin).href;
 <link
   href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
 />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400&family=Outfit:wght@600&display=swap" rel="stylesheet">
 <link rel="sitemap" href="/sitemap-index.xml" />
