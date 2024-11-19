@@ -11,10 +11,10 @@ tags:
   - mastery
   - quote
   - book
-draft: true
+draft: false
 ---
 
-Este es un extracto del libro de Robert Greene, (Las leyes para todos los días: Meditaciones sobre poder, seducción, maestría, estrategia y naturaleza humana)[https://www.goodreads.com/book/show/63853650-las-leyes-para-todos-los-d-as]
+Este es un extracto del libro de Robert Greene, [Las leyes para todos los días: Meditaciones sobre poder, seducción, maestría, estrategia y naturaleza humana](https://www.goodreads.com/book/show/63853650-las-leyes-para-todos-los-d-as)
 
 ## 30 de ENERO
 
