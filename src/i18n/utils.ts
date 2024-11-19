@@ -11,13 +11,14 @@ export function getLangFromUrl(url: URL) {
 }
 
 export function useTranslations(lang: Language) {
-  return function t(key: keyof (typeof strings)[typeof defaultLang]) {
-    const translatedString = strings[lang][key] || strings[defaultLang][key];
+  return function t(key: string) {
+    const keys = key.split('.');
+    // @ts-expect-error - type error
+    const translatedString: string = keys.reduce((obj, key) => obj?.[key], strings[lang]) ||
+    // @ts-expect-error - type error
+                          keys.reduce((obj, key) => obj?.[key], strings[defaultLang] as Record<string, string>);
 
-    return translatedString;
-
-    // TODO: make it work for indentation in the template strings
-    // return strings[lang][key].replace(/\n\s+/g, "\n") || strings[defaultLang][key].replace(/\n\s+/g, "\n");
+    return translatedString || "";
   };
 }
 
