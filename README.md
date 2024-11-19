@@ -248,3 +248,8 @@ wrangler publish
 - [LinkedIn](https://www.linkedin.com/company/escuela-dev/)
 - [Instagram](https://www.instagram.com/escuela.dev/)
 - [WhatApp Community](https://chat.whatsapp.com/KLmG13RqLeSFJCBxkRegGP) - En 🇪🇸 Español and 🇬🇧 English
+
+## Resources
+
+- [Iconify - Open Source Icon Sets](https://icon-sets.iconify.design/)
+- [Astro Icon](https://github.com/natemoo-re/astro-icon)
