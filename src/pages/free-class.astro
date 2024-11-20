@@ -7,11 +7,8 @@ const t = useTranslations(lang);
 
 import Layout from "@layouts/Layout.astro";
 import Countdown from "@components/Countdown";
-import {nextClassDateTime} from "@utils/countdownUtil"
 
 import Gianfranco from "@images/gianfranco.jpg";
-
-const nextClassDateTimeStr = nextClassDateTime()?.toISOString();
 ---
 
 <Layout title={t("free-class.seoTitle")}>
@@ -26,7 +23,7 @@ const nextClassDateTimeStr = nextClassDateTime()?.toISOString();
       format="avif"
       width={540}
     />
-    {nextClassDateTimeStr && <Countdown datetime={nextClassDateTimeStr} client:only="react"/>}
+    <Countdown client:only="react"/>
 
     <div class="text-center text-lg mt-4">
       <p class="">
