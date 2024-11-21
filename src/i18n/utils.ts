@@ -2,7 +2,7 @@ import { getRelativeLocaleUrl as originalGetRelativeLocaleUrl } from "astro:i18n
 
 import { strings, defaultLang, languages } from "./i18n.config";
 
-type Language = keyof typeof strings;
+export type Language = keyof typeof strings;
 
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split("/");

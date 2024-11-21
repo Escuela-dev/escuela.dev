@@ -12,10 +12,10 @@ import { getLangFromUrl } from "@i18n/utils";
 export interface Props {
   title?: string;
   headProps?: HeadProps;
-  showWhatApp?: boolean;
+  showWhatsApp?: boolean;
   githubEditUrl?: string;
 }
-const { showWhatApp = false, githubEditUrl, title } = Astro.props;
+const { showWhatsApp = false, githubEditUrl, title } = Astro.props;
 let { headProps } = Astro.props;
 
 headProps = {
@@ -52,6 +52,6 @@ const lang = getLangFromUrl(Astro.url);
           monospace;
       }
     </style>
-    <!-- {showWhatApp && <WhatsAppButton />} -->
+    <!-- {showWhatsApp && <WhatsAppButton />} -->
   </body>
 </html>
