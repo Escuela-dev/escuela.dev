@@ -103,8 +103,7 @@ export const strings = {
       edit: "Edit this page on GitHub"
     },
     blog: {
-      minute: "minute",
-      minutes: "minutes"
+      minutesToRead: "minutes to read"
     },
     testimonials: {
       title: "Testimonials",
@@ -132,7 +131,6 @@ export const strings = {
       blog: "Blog",
       "free-coding-class": "Tu clase GRATIS",
       about: "Sobre",
-      twitter: "Twitter",
       whatsapp_abbr: "Únete a la comunidad de WhatsApp"
     },
     home: {
@@ -210,8 +208,7 @@ export const strings = {
       edit: "Edita esta página en GitHub"
     },
     blog: {
-      minute: "minuto",
-      minutes: "minutos"
+      minutesToRead: "minutos para leer"
     },
     testimonials: {
       title: "Testimonios",
