@@ -1,18 +1,22 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import { type CollectionEntry } from "astro:content";
 
 import Layout from "@layouts/Base.astro";
 import getReadingTime from "@utils/getReadingTime";
 import getGithubEditUrl from "@utils/getGithubEditUrl";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import { getPublishedPosts } from "@utils/blog";
 import { SITE } from "@config";
-import { getLangFromUrl } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 export interface Props {
   post: CollectionEntry<"blog">;
 }
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  const posts = await getPublishedPosts() ;
   return posts.map((post) => {
     const [lang, ...slug] = post.slug.split("/");
     return {
@@ -22,7 +26,6 @@ export async function getStaticPaths() {
   });
 }
 
-const lang = getLangFromUrl(Astro.url);
 const { slug } = Astro.params;
 const { post } = Astro.props;
 
@@ -80,8 +83,7 @@ if (description.length > maxDescription) {
           </time>
         )
       }
-      <!-- TODO: translate "minutes to read" -->
-      <readingtime>{readingTime} minutes to read</readingtime>
+      <readingtime>{readingTime} {t('blog.minutesToRead')}</readingtime>
     </div>
     <hr />
     <Content />

@@ -1,0 +1,82 @@
+---
+import { getCollection } from "astro:content";
+
+import Layout from "@layouts/Base.astro";
+import Card from "@components/Card.astro";
+
+import { getSortedPosts } from "@utils/blog";
+import getGithubEditUrl from "@utils/getGithubEditUrl";
+import { getLangFromUrl } from "@i18n/utils";
+import { languages } from "@i18n/i18n.config";
+
+import { SITE } from "@config";
+const lang = getLangFromUrl(Astro.url);
+
+const { tag } = Astro.params;
+
+const posts = (await getCollection("blog")).filter(
+  (post) => post.slug.split("/")[0] === lang,
+)
+
+const filteredPosts =  posts.filter(({ data }) => data.tags.includes(tag));
+
+const sortedPosts = getSortedPosts(filteredPosts, lang)
+
+type TagsInfo = { tag: string, count: number }
+
+// const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
+
+export const getStaticPaths = async () => {
+
+  const posts = (await getCollection("blog", ({ data }) => !data.draft)).filter(post => post.slug.split("/")[0] === 'en')
+  // count the number of posts for each tag
+  let allTagsInfo = posts.reduce<TagsInfo[]>((acc, { data }) => {
+    data.tags.forEach(tag => {
+      const existingTag = acc.find(t => t.tag === tag);
+      if (existingTag) {
+        existingTag.count++;
+      } else {
+        acc.push({ tag, count: 1 });
+      }
+    });
+    return acc;
+  }, []);
+  allTagsInfo = allTagsInfo.sort((tagInfoA, tagInfoB) => tagInfoB.count - tagInfoA.count);
+  let allTags = allTagsInfo.flatMap(tagInfo => tagInfo.tag);
+  allTags = [...new Set(allTags)];
+
+  return allTags.flatMap((tag) =>
+    Object.keys(languages).map((lang) => ({
+      params: { lang, tag },
+    }))
+  );
+}
+
+
+const seoTitle = `Blog - ${SITE.title}`;
+---
+
+<Layout
+  githubEditUrl={getGithubEditUrl("/src/pages/blog.astro")}
+  headProps={{ seoTitle }}
+>
+  <main class="py-12 lg:py-20">
+    <div class="mx-auto max-w-6xl px-3">
+      <h1 class="text-center text-4xl font-bold">Blog</h1>
+    </div>
+    <div class="mx-auto max-w-6xl px-3">
+      <section
+        class="grid grid-cols-1 gap-6 py-8 md:grid-cols-2 lg:grid-cols-3 font-sans"
+        data-test="articles-section"
+      >
+        {
+          sortedPosts.map(({ data, url }) => (
+            <div class="col-span-1">
+              <Card lang={lang} frontmatter={{ ...data, url }} />
+            </div>
+          ))
+        }
+      </section>
+    </div>
+  </main>
+</Layout>
