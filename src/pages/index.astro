@@ -3,60 +3,83 @@
 // Basically, you don't need to edit this file.
 
 import { languages, defaultLang } from "@i18n/i18n.config";
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import { getLangFromUrl, useTranslations, getLocalePaths } from "@i18n/utils";
+import { SITE } from "@config";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const langs = Object.keys(languages);
 const baseUrl = import.meta.env.PROD ? Astro.site : "/";
-const defaultLocale = defaultLang;
+
+const title = `${SITE.seoTitle} - ${t("site.description")}`;
+const description = t("site.description");
+
+const socialImageURL = new URL(SITE.ogImage,Astro.url.origin).href;
 ---
 
 <html lang={defaultLang}>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+    <meta name="generator" content={Astro.generator} />
+
+    <meta name="author" content={SITE.author} />
+
+    <!-- Canonical URL ?? -->
+    <!-- <link rel="canonical" href={canonicalURL} /> -->
+
     <title>redirect...</title>
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <meta name="generator" content={Astro.generator} />
     {
-      getLocalePaths(Astro.url).map((props) => (
+      getLocalePaths(Astro.url).map((path) => (
         <link
           rel="alternate"
-          hreflang={LOCALES[props.lang].lang || props.lang}
-          href={Astro.site?.origin + props.path}
+          hreflang={path.lang}
+          href={Astro.site?.origin + path.path}
         />
       ))
     }
 
-    <!-- icon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" sizes="192x192" href="/android-chrome.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="color-scheme" content="light dark" />
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
 
-    <!-- OGP -->
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content={t(SITE_TITLE)} />
-    <meta property="og:site_name" content={t(SITE_TITLE)} />
-    <meta property="og:description" content={t(SITE_DESCRIPTION)} />
-    <meta property="og:image" content={Astro.site + "ogp.png"} />
+    <!-- <meta property="og:site_name" content={t(SITE_TITLE)} /> -->
     <meta property="og:url" content={Astro.url} />
-    <meta property="og:locale" content={DEFAULT_LOCALE} />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content={t(X_ACCOUNT)} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={Astro.site + "ogp.png"} />
+    <meta property="og:locale" content={defaultLang} />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="@escuela_dev_" />
+    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={socialImageURL}/>
+
+    <!--
+      The page supports both dark and light color schemes,
+      and the page author prefers dark.
+    -->
+    <meta name="color-scheme" content="light dark" />
 
     <noscript>
       <meta
         http-equiv="refresh"
-        content={`0;url=${baseUrl + DEFAULT_LOCALE}/`}
+        content={`0;url=${baseUrl + defaultLang}/`}
       />
     </noscript>
 
-    <script is:inline define:vars={{ langs, baseUrl, defaultLocale }}>
-      if (
-        localStorage.selectedLang &&
-        langs.includes(localStorage.selectedLang)
-      ) {
+    <script is:inline define:vars={{ langs, baseUrl, defaultLang }}>
+      const selectedLang = localStorage.getItem("selectedLang");
+      if (selectedLang && langs.includes(selectedLang)) {
         location.href = `${baseUrl + localStorage.selectedLang}/`;
       } else {
         const browserLang = navigator.language.toLowerCase();
@@ -66,7 +89,7 @@ const defaultLocale = defaultLang;
         } else if (langs.includes(browserLang.split("-")[0])) {
           location.href = `${baseUrl + browserLang.split("-")[0]}/`;
         } else {
-          location.href = `${baseUrl + defaultLocale}/`;
+          location.href = `${baseUrl + defaultLang}/`;
         }
       }
     </script>
