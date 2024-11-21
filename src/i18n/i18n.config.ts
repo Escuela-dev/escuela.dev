@@ -116,7 +116,7 @@ export const strings = {
     teacher1: {
       title: "Meet the teacher",
       name: "Gianfranco",
-      description: "Gianfranco is a seasoned software engineer and educator with over a decade of experience in web and mobile app development.<br/><br/>Originally from 🇮🇹 Italy, he had a Start-up in 🇺🇦 Ukraine and now lives in 🇪🇸 Malaga, Spain. He has a Computer Science degree from 🇮🇪 Ireland and has taught many students how to code while working at Thinkful (now Chegg), a US based online bootcamp.",
+      description: "Gianfranco is a seasoned software engineer and educator with over a decade of experience in web, backend and mobile app development.<br/><br/>Originally from 🇮🇹 Italy, he had a Start-up in 🇺🇦 Ukraine and now lives in 🇪🇸 Malaga, Spain. He has a Computer Science degree from 🇮🇪 Ireland and has taught many students how to code while working at Thinkful (now Chegg), a US based online bootcamp.",
     }
   },
   es: {
@@ -222,7 +222,7 @@ export const strings = {
     teacher1: {
       title: "Conoce al profesor",
       name: "Gianfranco",
-      description: "Gianfranco es un ingeniero de software y educador con más de una década de experiencia en el desarrollo de aplicaciones web y móviles.<br/><br/>Originario de 🇮🇹 Italia, tuvo una Start-up en 🇺🇦 Ucrania y ahora vive en 🇪🇸 Málaga, España. Tiene un título en Informática de 🇮🇪 Irlanda y ha enseñado a programar a muchos estudiantes mientras trabajaba en Thinkful (ahora Chegg), un bootcamp online estadounidense",
+      description: "Gianfranco es un ingeniero de software y educador con más de una década de experiencia en el desarrollo de aplicaciones web, backend y móviles.<br/><br/>Originario de 🇮🇹 Italia, tuvo una Start-up en 🇺🇦 Ucrania y ahora vive en 🇪🇸 Málaga, España. Tiene un título en Informática de 🇮🇪 Irlanda y ha enseñado a programar a muchos estudiantes mientras trabajaba en Thinkful (ahora Chegg), un bootcamp online estadounidense",
     }
   }
 };
