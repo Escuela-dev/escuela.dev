@@ -148,7 +148,8 @@ export const strings = {
         title: "🛠️ ¿Qué tipo de proyectos aprenderé a construir?",
         answer1: "1. 📚 <b>Quiz interactivo</b>: Construye una aplicación de quiz interactivo con preguntas de opción múltiple. Los usuarios pueden seleccionar sus respuestas, y tú puedes proporcionar retroalimentación instantánea sobre sus elecciones. Puedes utilizar JavaScript para administrar el quiz y rastrear las puntuaciones.",
         answer2: "2. ✨ <b>Página de aterrizaje animada</b>: Diseña una página de aterrizaje visualmente atractiva con animaciones y transiciones. Utiliza animaciones CSS o bibliotecas como Animate.css para agregar efectos llamativos.",
-        answer3: "3. 🎹 <b>Piano virtual</b>: Crea un teclado de piano virtual donde los usuarios puedan tocar notas musicales y acordes haciendo clic o presionando teclas. Puedes usar JavaScript para manejar el sonido y la interactividad."
+        answer3: "3. 🎹 <b>Piano virtual</b>: Crea un teclado de piano virtual donde los usuarios puedan tocar notas musicales y acordes haciendo clic o presionando teclas. Puedes usar JavaScript para manejar el sonido y la interactividad.",
+        answer4: "4. 💡 <b>Elige tu aventura</b>: Elige un proyecto que te interese y empieza a desarrollarlo. Puedes utilizar cualquier lenguaje de programación con el que te sientas cómodo y divertirte explorando nuevas tecnologías."
       }
     },
     "free-class": {
