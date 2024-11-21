@@ -1,13 +1,15 @@
 # TODO
 
 x(A) Add Free Class page (see <https://www.shecodes.io/free-class>)
+(A) Fix redirect if 404 page (e.g. /free-class)
+(A) Start courses page (see <https://vschool.io/admissions/web-development-foundation/>)
 (A) Translate blog articles to Spanish
-(A) Add support for Blog image caption. Markdown links should work
 (A) Add testimonials
     Ask for testimonial from Bruce, Rose, Pierre, and others
-x (A) Add FAQ JSON-LD schema
+x(A) Add FAQ JSON-LD schema
 (B) Display tags under blog post title
 (A) Keywords en Español: aprendisaje
+(C) Add support for Blog image caption. Markdown links should work
 (B) Add voice option for blog articles like <https://blog.google/products/gemini/gemini-live-extensions-language-expansion/> - "Listen to article"
 (B) format blog articles for large desktop like openai.com (<https://openai.com/research/language-models-can-explain-neurons-in-language-models>)
 (B) RSS feed
@@ -31,10 +33,25 @@ Change favicon
 Add logo?
     Logo with the letter 'E'?
 
-Project ideas
+## Cool Design UI/UX
+
+- https://www.lemonsqueezy.com/pricing (FAQ accordion transition)
+
+## Project ideas
 
 - <https://css-tricks.com/how-to-animate-a-svg-with-border-image/>
--
+
+### Holiday themed projects
+
+- Add Christmas Snow flakes on your website ☃️ / Añade copos de nieve por Navidad en tu pagina web ☃️
+- survey?
+
+## Small CodeAcademy / FreeCodeCamp REPL-type Tutorials
+
+- https://lit.dev/tutorials/intro-to-lit
+- https://github.com/lit/lit.dev
+- https://salehmubashar.com/blog/sandpack-react-code-editor
+- https://github.com/jsjoeio/awesome-interactive-course-platforms
 
 Coding school in London my mom went to: <https://www.londonappbrewery.com/>
 
