@@ -3,6 +3,6 @@ declare interface HeadProps {
   author?: string;
   description?: string;
   ogImage?: string;
-  type?: "website" | "article";
+  type?: 'website' | 'article';
   publishDate?: string;
 }

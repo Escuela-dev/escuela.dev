@@ -1,13 +1,11 @@
-import type { AstroGlobal } from "astro";
+import type { AstroGlobal } from 'astro';
 // import { getLanguageFromURL } from '../util';
 
 /**
  * Gets the URL to edit the page on GitHub
  */
-export default function getGithubEditUrl(
-  url: Readonly<AstroGlobal> | string,
-) {
-  if (typeof url !== "string") {
+export default function getGithubEditUrl(url: Readonly<AstroGlobal> | string) {
+  if (typeof url !== 'string') {
     return;
   }
   // Special handling for URLs containing brackets '[' that need encoding like `[slug].astro`

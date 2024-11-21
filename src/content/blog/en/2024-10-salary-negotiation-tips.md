@@ -20,18 +20,17 @@ Salary negotiation can feel intimidating, especially after receiving a job offer
 
 Misconceptions can hinder your ability to negotiate effectively. Here are some common myths and the truths behind them:
 
-- *Myth 1*: Negotiating Means You’re Being Unreasonable
+- _Myth 1_: Negotiating Means You’re Being Unreasonable
 
-- *Reality*: Negotiation is a normal and professional part of the hiring process. It shows that you understand your worth and are committed to finding a mutually beneficial agreement.
+- _Reality_: Negotiation is a normal and professional part of the hiring process. It shows that you understand your worth and are committed to finding a mutually beneficial agreement.
 
-- *Myth 2*: You Have No Leverage to Negotiate
+- _Myth 2_: You Have No Leverage to Negotiate
 
-- *Reality*: Even if you believe you lack leverage, your skills, experience, and the value you bring to the company provide a strong foundation for negotiation. Additionally, the fact that you’ve received a job offer indicates that the company sees potential in you.
+- _Reality_: Even if you believe you lack leverage, your skills, experience, and the value you bring to the company provide a strong foundation for negotiation. Additionally, the fact that you’ve received a job offer indicates that the company sees potential in you.
 
-- *Myth 3*: Negotiation Will Make the Employer View You Negatively
+- _Myth 3_: Negotiation Will Make the Employer View You Negatively
 
-- *Reality*: When approached respectfully and professionally, negotiation can enhance your relationship with your future employer. It demonstrates your confidence and commitment to your career.
-
+- _Reality_: When approached respectfully and professionally, negotiation can enhance your relationship with your future employer. It demonstrates your confidence and commitment to your career.
 
 ## Why Do So Many People Skip Negotiation?
 

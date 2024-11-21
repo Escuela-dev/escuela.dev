@@ -1,31 +1,25 @@
 ---
-import { Icon } from "astro-icon/components";
+import { Icon } from 'astro-icon/components';
 
-import HeaderLink from "./HeaderLink.astro";
-import ToggleTheme from "./ToggleTheme.astro";
-import {
-  getLangFromUrl,
-  useTranslations,
-  getRelativeLocaleUrl,
-} from "../i18n/utils";
-import { SITE } from "@config";
+import HeaderLink from './HeaderLink.astro';
+import ToggleTheme from './ToggleTheme.astro';
+import { getLangFromUrl, useTranslations, getRelativeLocaleUrl } from '../i18n/utils';
+import { SITE } from '@config';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-import { languages } from "../i18n/i18n.config";
+import { languages } from '../i18n/i18n.config';
 
-const otherLanguage = Object.keys(languages).find(
-  (l) => l !== lang,
-) as keyof typeof languages;
+const otherLanguage = Object.keys(languages).find((l) => l !== lang) as keyof typeof languages;
 
-const langEmoji = otherLanguage === "es" ? "🇪🇸" : "🇬🇧";
+const langEmoji = otherLanguage === 'es' ? '🇪🇸' : '🇬🇧';
 ---
 
 <header class="z-10">
   <div class="nav-container">
     <div class="top-nav-wrap">
-      <a class="logo" href={getRelativeLocaleUrl(lang, "/")}>
+      <a class="logo" href={getRelativeLocaleUrl(lang, '/')}>
         <h2 class="title">
           {SITE.title}
         </h2>
@@ -45,14 +39,10 @@ const langEmoji = otherLanguage === "es" ? "🇪🇸" : "🇬🇧";
         </button>
         <ul id="menu-items" class="hidden sm:flex">
           <li>
-            <HeaderLink href={getRelativeLocaleUrl(lang, "/")}
-              >{t("nav.home")}</HeaderLink
-            >
+            <HeaderLink href={getRelativeLocaleUrl(lang, '/')}>{t('nav.home')}</HeaderLink>
           </li>
           <li>
-            <HeaderLink href={getRelativeLocaleUrl(lang, "/blog/")}
-              >{t("nav.blog")}</HeaderLink
-            >
+            <HeaderLink href={getRelativeLocaleUrl(lang, '/blog/')}>{t('nav.blog')}</HeaderLink>
           </li>
           <!-- <li>
             <HeaderLink href="/contact">Contact</HeaderLink>
@@ -64,21 +54,15 @@ const langEmoji = otherLanguage === "es" ? "🇪🇸" : "🇬🇧";
           </li> -->
           <li>
             <HeaderLink href="/free-class">
-              {t("nav.free-coding-class")}
+              {t('nav.free-coding-class')}
             </HeaderLink>
           </li>
           <li>
-            <HeaderLink
-              href="https://chat.whatsapp.com/KLmG13RqLeSFJCBxkRegGP"
-              target="_blank"
-            >
-              <div
-                class="flex items-center hover:text-[#1faf38] dark:hover:text-[#60d669]"
-              >
-                <Icon
-                  name="bxl:whatsapp"
-                  class="h-6 w-6 text-[#1faf38] dark:text-[#60d669]"
-                />&nbsp;<abbr title={t("nav.whatsapp_abbr")}>WhatsApp</abbr>
+            <HeaderLink href="https://chat.whatsapp.com/KLmG13RqLeSFJCBxkRegGP" target="_blank">
+              <div class="flex items-center hover:text-[#1faf38] dark:hover:text-[#60d669]">
+                <Icon name="bxl:whatsapp" class="h-6 w-6 text-[#1faf38] dark:text-[#60d669]" />&nbsp;<abbr
+                  title={t('nav.whatsapp_abbr')}>WhatsApp</abbr
+                >
               </div>
             </HeaderLink>
           </li>
@@ -86,10 +70,7 @@ const langEmoji = otherLanguage === "es" ? "🇪🇸" : "🇬🇧";
             <a
               data-languageAhref
               data-lang={otherLanguage}
-              href={getRelativeLocaleUrl(
-                otherLanguage,
-                Astro.url.pathname.replace("/en", "").replace("/es", ""),
-              )}
+              href={getRelativeLocaleUrl(otherLanguage, Astro.url.pathname.replace('/en', '').replace('/es', ''))}
             >
               {langEmoji}
               {languages[otherLanguage]}
@@ -121,12 +102,12 @@ const langEmoji = otherLanguage === "es" ? "🇪🇸" : "🇬🇧";
   </div>
 </header>
 <script is:inline>
-  const languageAhref = document.querySelector("[data-languageAhref]");
+  const languageAhref = document.querySelector('[data-languageAhref]');
 
-  languageAhref.addEventListener("click", (event) => {
+  languageAhref.addEventListener('click', (event) => {
     console.log(event.target?.dataset.lang);
     // used for 404 page
-    localStorage.setItem("selectedLang", event.target?.dataset.lang);
+    localStorage.setItem('selectedLang', event.target?.dataset.lang);
     location.href = event.target?.value;
   });
 </script>
@@ -162,11 +143,11 @@ const langEmoji = otherLanguage === "es" ? "🇪🇸" : "🇬🇧";
     @apply scale-125 transition hover:rotate-12 sm:scale-100;
   }
   #sun-svg,
-  html[data-theme="dark"] #moon-svg {
+  html[data-theme='dark'] #moon-svg {
     display: none;
   }
   #moon-svg,
-  html[data-theme="dark"] #sun-svg {
+  html[data-theme='dark'] #sun-svg {
     display: block;
   }
   nav {
@@ -225,40 +206,40 @@ const langEmoji = otherLanguage === "es" ? "🇪🇸" : "🇬🇧";
 
 <script>
   // Toggle menu
-  const menuBtn = document.querySelector(".hamburger-menu");
-  const menuItems = document.querySelector("#menu-items")?.classList;
+  const menuBtn = document.querySelector('.hamburger-menu');
+  const menuItems = document.querySelector('#menu-items')?.classList;
 
-  const iconContainer = document.querySelector(".icon-container")?.classList;
-  const firstLine = document.querySelector("#first-line")?.classList;
-  const secondLine = document.querySelector("#second-line ")?.classList;
-  const thirdLine = document.querySelector("#third-line")?.classList;
+  const iconContainer = document.querySelector('.icon-container')?.classList;
+  const firstLine = document.querySelector('#first-line')?.classList;
+  const secondLine = document.querySelector('#second-line ')?.classList;
+  const thirdLine = document.querySelector('#third-line')?.classList;
 
-  menuBtn!.addEventListener("click", function () {
-    const menuExpanded = menuBtn?.getAttribute("aria-expanded");
-    if (menuExpanded === "false") {
-      menuBtn?.setAttribute("aria-expanded", "true");
-      menuBtn?.setAttribute("aria-label", "Close Menu");
-      menuItems?.remove("hidden");
-      menuItems?.add("grid");
+  menuBtn!.addEventListener('click', function () {
+    const menuExpanded = menuBtn?.getAttribute('aria-expanded');
+    if (menuExpanded === 'false') {
+      menuBtn?.setAttribute('aria-expanded', 'true');
+      menuBtn?.setAttribute('aria-label', 'Close Menu');
+      menuItems?.remove('hidden');
+      menuItems?.add('grid');
 
       // icon animation
-      iconContainer?.remove("flex");
-      iconContainer?.add("relative");
-      firstLine?.add("rotate-45", "absolute", "bottom-1/2");
-      thirdLine?.add("hidden");
-      secondLine?.add("!w-full", "-rotate-45", "absolute", "bottom-1/2");
+      iconContainer?.remove('flex');
+      iconContainer?.add('relative');
+      firstLine?.add('rotate-45', 'absolute', 'bottom-1/2');
+      thirdLine?.add('hidden');
+      secondLine?.add('!w-full', '-rotate-45', 'absolute', 'bottom-1/2');
     } else {
-      menuBtn?.setAttribute("aria-expanded", "false");
-      menuBtn?.setAttribute("aria-label", "Open Menu");
-      menuItems?.add("hidden");
-      menuItems?.remove("flex");
+      menuBtn?.setAttribute('aria-expanded', 'false');
+      menuBtn?.setAttribute('aria-label', 'Open Menu');
+      menuItems?.add('hidden');
+      menuItems?.remove('flex');
 
       // icon animation
-      iconContainer?.add("flex");
-      iconContainer?.remove("relative");
-      firstLine?.remove("rotate-45", "absolute", "bottom-1/2");
-      thirdLine?.remove("hidden");
-      secondLine?.remove("!w-full", "-rotate-45", "absolute", "bottom-1/2");
+      iconContainer?.add('flex');
+      iconContainer?.remove('relative');
+      firstLine?.remove('rotate-45', 'absolute', 'bottom-1/2');
+      thirdLine?.remove('hidden');
+      secondLine?.remove('!w-full', '-rotate-45', 'absolute', 'bottom-1/2');
     }
   });
 </script>

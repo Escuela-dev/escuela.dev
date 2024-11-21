@@ -1,14 +1,14 @@
 ---
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import { getLangFromUrl, useTranslations } from '@i18n/utils';
 
 // import Embed from "@components/Embed";
-import FAQSection from "@components/FAQSection.astro";
-import PricingTable from "@components/PricingTable.astro";
-import MeetTheTeachers from "@components/MeetTheTeachers.astro";
+import FAQSection from '@components/FAQSection.astro';
+import PricingTable from '@components/PricingTable.astro';
+import MeetTheTeachers from '@components/MeetTheTeachers.astro';
 // import Testimonials from "@components/Testimonials.astro";
-import Layout from "@layouts/Base.astro";
-import getGithubEditUrl from "@utils/getGithubEditUrl";
-import { languages } from "@i18n/i18n.config";
+import Layout from '@layouts/Base.astro';
+import getGithubEditUrl from '@utils/getGithubEditUrl';
+import { languages } from '@i18n/i18n.config';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -19,18 +19,16 @@ export const getStaticPaths = () =>
   }));
 ---
 
-<Layout githubEditUrl={getGithubEditUrl("/src/pages/index.astro")}>
+<Layout githubEditUrl={getGithubEditUrl('/src/pages/index.astro')}>
   <!-- <link rel="dns-prefetch" href="https://blocksurvey.io" /> -->
   <main class="max-w-screen-md">
     <h1
       class="text-gradient my-10 whitespace-break-spaces text-center text-4xl font-bold leading-tight sm:my-20 sm:text-5xl sm:leading-relaxed sm:tracking-tight"
     >
-      {t("home.title")}
+      {t('home.title')}
     </h1>
-    <h2
-      class="whitespace-break-spaces pt-8 text-center font-sans text-2xl leading-9 sm:text-xl sm:leading-8"
-    >
-      {t("home.subtitle")}
+    <h2 class="whitespace-break-spaces pt-8 text-center font-sans text-2xl leading-9 sm:text-xl sm:leading-8">
+      {t('home.subtitle')}
     </h2>
     <div>
       <!-- <Testimonials /> -->

@@ -17,6 +17,7 @@ draft: true
 Bombed a technical test in a coding interview? Don't sweat it! Even top developers have been there. Here's how to turn that setback into your comeback.
 
 > It takes courage to tell yourself something is not working. It takes courage to accept feedback that bruises your self-image.
+
 by [Shane Parrish](https://x.com/shaneaparrish) - Clear Thinking: Turning Ordinary Moments into Extraordinary Results
 
 ## The Emotional Rollercoaster of Interview Failure
@@ -46,7 +47,6 @@ Before you can improve, you need to understand what went wrong. There could be s
 
 Identifying the root cause will help you create a targeted plan for improvement.
 
-
 1. **Allow yourself to feel disappointed** - It's okay to be upset. Give yourself time to process the emotions.
 
 2. **Reflect on the experience** - While it's fresh in your mind, jot down notes about the questions you struggled with and areas where you felt unprepared.
@@ -62,18 +62,23 @@ Identifying the root cause will help you create a targeted plan for improvement.
 Now that you've taken the immediate steps, it's time to focus on long-term growth:
 
 ### 1. Create a structured study plan
+
 Identify your weak areas and create a schedule to address them. Use resources like LeetCode, HackerRank, or Codewars to practice coding problems regularly.
 
 ### 2. Enhance your problem-solving skills
+
 Practice breaking down complex problems into smaller, manageable parts. This skill is crucial for technical interviews.
 
 ### 3. Work on projects
+
 Build real-world projects that demonstrate your skills and fill gaps in your knowledge.
 
 ### 4. Seek mentorship
+
 Find a more experienced developer who can guide you and provide insights into the interview process.
 
 ### 5. Mock interviews
+
 Conduct practice interviews with friends or use platforms like Pramp to simulate real interview conditions.
 
 ## Approaching Your Next Technical Interview
@@ -102,6 +107,7 @@ Feeling embarrassed, disappointed, or full of self-doubt? That's normal. Remembe
 ## Why Did You Stumble?
 
 Common reasons for technical test fails:
+
 - Lack of prep
 - Nerves
 - Misunderstanding questions

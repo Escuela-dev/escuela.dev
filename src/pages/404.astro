@@ -15,19 +15,13 @@ const baseUrl = import.meta.env.PROD ? Astro.site : '/';
       <h1 aria-label="404 Not Found">404</h1>
       <span aria-hidden="true">¯\_(ツ)_/¯</span>
       <p>Page Not Found</p>
-      <LinkButton
-        href="/"
-        className="my-6 text-lg underline decoration-dashed underline-offset-8"
-      >
+      <LinkButton href="/" className="my-6 text-lg underline decoration-dashed underline-offset-8">
         Go back home
       </LinkButton>
     </div>
   </main>
   <noscript>
-    <meta
-      http-equiv="refresh"
-      content={`0;url=${baseUrl + defaultLang}/404/`}
-    />
+    <meta http-equiv="refresh" content={`0;url=${baseUrl + defaultLang}/404/`} />
   </noscript>
 
   <script is:inline define:vars={{ languages, baseUrl, defaultLang }}>

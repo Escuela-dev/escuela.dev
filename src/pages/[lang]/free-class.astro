@@ -1,15 +1,15 @@
 ---
-import { Image } from "astro:assets";
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import { Image } from 'astro:assets';
+import { getLangFromUrl, useTranslations } from '@i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-import Layout from "@layouts/Base.astro";
-import Countdown from "@components/Countdown";
-import { languages } from "@i18n/i18n.config";
+import Layout from '@layouts/Base.astro';
+import Countdown from '@components/Countdown';
+import { languages } from '@i18n/i18n.config';
 
-import Gianfranco from "@images/gianfranco.jpg";
+import Gianfranco from '@images/gianfranco.jpg';
 
 export const getStaticPaths = () =>
   Object.keys(languages).map((lang) => ({
@@ -17,103 +17,106 @@ export const getStaticPaths = () =>
   }));
 ---
 
-<Layout title={t("free-class.seoTitle")}>
-  <main class="lg:max-w-screen-lg max-w-screen-md">
-    <h1 class="text-gradient my-10 sm:mt-20 whitespace-break-spaces text-center text-4xl font-bold leading-tight sm:text-5xl sm:leading-relaxed sm:tracking-tight"
-      set:html={t("free-class.title")}></h1>
+<Layout title={t('free-class.seoTitle')}>
+  <main class="max-w-screen-md lg:max-w-screen-lg">
+    <h1
+      class="text-gradient my-10 whitespace-break-spaces text-center text-4xl font-bold leading-tight sm:mt-20 sm:text-5xl sm:leading-relaxed sm:tracking-tight"
+      set:html={t('free-class.title')}
+    />
     <Image
       src={Gianfranco}
       alt="Gianfranco"
-      class="mx-auto h-40 w-40 rounded-full border-8 dark:border-gray-400 border-gray-200"
+      class="mx-auto h-40 w-40 rounded-full border-8 border-gray-200 dark:border-gray-400"
       loading="eager"
       format="avif"
       width={540}
     />
-    <Countdown client:only="react"/>
+    <Countdown client:only="react" />
 
-    <div class="text-center text-lg mt-4">
+    <div class="mt-4 text-center text-lg">
       <p class="">
-      📍 {t("free-class.usp1")}
+        📍 {t('free-class.usp1')}
       </p>
       <p class="">
-      ⏰ {t("free-class.ups2")}
+        ⏰ {t('free-class.ups2')}
       </p>
       <p class="">
-      💰 {t("free-class.usp3")}
+        💰 {t('free-class.usp3')}
       </p>
     </div>
 
-    <div class="text-center my-10">
+    <div class="my-10 text-center">
       <a class="cta-button" href="https://cal.com/gianpaj/free-class">
-        {t("free-class.buttonText")}
+        {t('free-class.buttonText')}
       </a>
     </div>
 
     <h1
-      class="text-gradient my-10 whitespace-break-spaces text-center text-3xl sm:text-4xl font-bold leading-tight sm:my-20 sm:leading-relaxed sm:tracking-tight"
-    >{t("free-class.what-you-ll-learn")}</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      class="text-gradient my-10 whitespace-break-spaces text-center text-3xl font-bold leading-tight sm:my-20 sm:text-4xl sm:leading-relaxed sm:tracking-tight"
+    >
+      {t('free-class.what-you-ll-learn')}
+    </h1>
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
       <div class="card">
         <p class="emoji">💻</p>
-        <p>{t("free-class.cards.text1")}</p>
+        <p>{t('free-class.cards.text1')}</p>
       </div>
 
       <div class="card">
         <p class="emoji">📈</p>
-        <p>{t("free-class.cards.text2")}</p>
+        <p>{t('free-class.cards.text2')}</p>
       </div>
 
       <div class="card">
         <p class="emoji">👩‍💼</p>
-        <p>{t("free-class.cards.text3")}</p>
+        <p>{t('free-class.cards.text3')}</p>
       </div>
 
       <div class="card">
         <p class="emoji">👩‍💻</p>
-        <p>{t("free-class.cards.text4")}</p>
+        <p>{t('free-class.cards.text4')}</p>
       </div>
 
       <div class="card">
         <p class="emoji">❓</p>
-        <p>{t("free-class.cards.text5")}</p>
+        <p>{t('free-class.cards.text5')}</p>
       </div>
 
       <div class="card">
         <p class="emoji">🛑</p>
-        <p>{t("free-class.card6.text")}</p>
+        <p>{t('free-class.card6.text')}</p>
       </div>
     </div>
   </main>
 </Layout>
-<style is:global >
-  .separator{
-    @apply text-3xl sm:text-4xl p-2 sm:p-3 float-left;
+<style is:global>
+  .separator {
+    @apply float-left p-2 text-3xl sm:p-3 sm:text-4xl;
   }
-  .countdown-item{
+  .countdown-item {
     text-align: center;
     .digit {
-      @apply text-4xl sm:text-5xl p-1 sm:p-2 rounded-lg leading-[3rem];
+      @apply rounded-lg p-1 text-4xl leading-[3rem] sm:p-2 sm:text-5xl;
     }
     .unit {
-      @apply uppercase text-xs sm:text-sm mt-1 sm:mt-4;
+      @apply mt-1 text-xs uppercase sm:mt-4 sm:text-sm;
     }
   }
-
-  </style>
+</style>
 <style scoped>
   main {
     margin: auto;
     padding: 1.5rem;
   }
   .card {
-    @apply flex flex-col items-center justify-center p-4 border rounded-lg border-gray-200 shadow-md text-center;
+    @apply flex flex-col items-center justify-center rounded-lg border border-gray-200 p-4 text-center shadow-md;
 
     .emoji {
       @apply text-5xl leading-[4.25rem];
     }
 
-    p:not(.emoji){
-      @apply text-base sm:text-sm mt-4;
+    p:not(.emoji) {
+      @apply mt-4 text-base sm:text-sm;
     }
   }
 </style>

@@ -2,19 +2,19 @@
 // Redirect to Top page for user's system locale
 // Basically, you don't need to edit this file.
 
-import { languages, defaultLang } from "@i18n/i18n.config";
-import { getLangFromUrl, useTranslations, getLocalePaths } from "@i18n/utils";
-import { SITE } from "@config";
+import { languages, defaultLang } from '@i18n/i18n.config';
+import { getLangFromUrl, useTranslations, getLocalePaths } from '@i18n/utils';
+import { SITE } from '@config';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const langs = Object.keys(languages);
-const baseUrl = import.meta.env.PROD ? Astro.site : "/";
+const baseUrl = import.meta.env.PROD ? Astro.site : '/';
 
-const title = `${SITE.seoTitle} - ${t("site.description")}`;
-const description = t("site.description");
+const title = `${SITE.seoTitle} - ${t('site.description')}`;
+const description = t('site.description');
 
-const socialImageURL = new URL(SITE.ogImage,Astro.url.origin).href;
+const socialImageURL = new URL(SITE.ogImage, Astro.url.origin).href;
 ---
 
 <html lang={defaultLang}>
@@ -35,11 +35,7 @@ const socialImageURL = new URL(SITE.ogImage,Astro.url.origin).href;
     <link rel="sitemap" href="/sitemap-index.xml" />
     {
       getLocalePaths(Astro.url).map((path) => (
-        <link
-          rel="alternate"
-          hreflang={path.lang}
-          href={Astro.site?.origin + path.path}
-        />
+        <link rel="alternate" hreflang={path.lang} href={Astro.site?.origin + path.path} />
       ))
     }
 
@@ -54,7 +50,7 @@ const socialImageURL = new URL(SITE.ogImage,Astro.url.origin).href;
     <meta property="og:url" content={Astro.url} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={Astro.site + "ogp.png"} />
+    <meta property="og:image" content={Astro.site + 'ogp.png'} />
     <meta property="og:locale" content={defaultLang} />
 
     <meta property="twitter:card" content="summary_large_image" />
@@ -62,7 +58,7 @@ const socialImageURL = new URL(SITE.ogImage,Astro.url.origin).href;
     <meta property="twitter:url" content={Astro.url} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={socialImageURL}/>
+    <meta property="twitter:image" content={socialImageURL} />
 
     <!--
       The page supports both dark and light color schemes,
@@ -71,14 +67,11 @@ const socialImageURL = new URL(SITE.ogImage,Astro.url.origin).href;
     <meta name="color-scheme" content="light dark" />
 
     <noscript>
-      <meta
-        http-equiv="refresh"
-        content={`0;url=${baseUrl + defaultLang}/`}
-      />
+      <meta http-equiv="refresh" content={`0;url=${baseUrl + defaultLang}/`} />
     </noscript>
 
     <script is:inline define:vars={{ langs, baseUrl, defaultLang }}>
-      const selectedLang = localStorage.getItem("selectedLang");
+      const selectedLang = localStorage.getItem('selectedLang');
       if (selectedLang && langs.includes(selectedLang)) {
         location.href = `${baseUrl + localStorage.selectedLang}/`;
       } else {
@@ -86,8 +79,8 @@ const socialImageURL = new URL(SITE.ogImage,Astro.url.origin).href;
 
         if (langs.includes(browserLang)) {
           location.href = `${baseUrl + browserLang}/`;
-        } else if (langs.includes(browserLang.split("-")[0])) {
-          location.href = `${baseUrl + browserLang.split("-")[0]}/`;
+        } else if (langs.includes(browserLang.split('-')[0])) {
+          location.href = `${baseUrl + browserLang.split('-')[0]}/`;
         } else {
           location.href = `${baseUrl + defaultLang}/`;
         }

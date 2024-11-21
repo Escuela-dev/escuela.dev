@@ -1,13 +1,13 @@
 ---
-import { getLangFromUrl, getRelativeLocaleUrl, useTranslations } from "@i18n/utils";
+import { getLangFromUrl, getRelativeLocaleUrl, useTranslations } from '@i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const banner = {
-  title: t("banner.title"),
-  linkTitle: t("banner.linkTitle"),
-  linkHref: getRelativeLocaleUrl(lang, '/free-class')
+  title: t('banner.title'),
+  linkTitle: t('banner.linkTitle'),
+  linkHref: getRelativeLocaleUrl(lang, '/free-class'),
 };
 ---
 

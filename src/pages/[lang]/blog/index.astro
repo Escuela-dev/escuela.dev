@@ -1,20 +1,18 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection } from 'astro:content';
 
-import Layout from "@layouts/Base.astro";
-import Card from "@components/Card.astro";
+import Layout from '@layouts/Base.astro';
+import Card from '@components/Card.astro';
 
-import { getSortedPosts } from "@utils/blog";
-import getGithubEditUrl from "@utils/getGithubEditUrl";
-import { getLangFromUrl } from "@i18n/utils";
-import { languages } from "@i18n/i18n.config";
+import { getSortedPosts } from '@utils/blog';
+import getGithubEditUrl from '@utils/getGithubEditUrl';
+import { getLangFromUrl } from '@i18n/utils';
+import { languages } from '@i18n/i18n.config';
 
-import { SITE } from "@config";
+import { SITE } from '@config';
 const lang = getLangFromUrl(Astro.url);
 
-const posts = (await getCollection("blog")).filter(
-  (post) => post.slug.split("/")[0] === lang,
-);
+const posts = (await getCollection('blog')).filter((post) => post.slug.split('/')[0] === lang);
 
 // const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 
@@ -28,19 +26,13 @@ const sortedPosts = getSortedPosts(posts, lang);
 const seoTitle = `Blog - ${SITE.title}`;
 ---
 
-<Layout
-  githubEditUrl={getGithubEditUrl("/src/pages/blog.astro")}
-  headProps={{ seoTitle }}
->
+<Layout githubEditUrl={getGithubEditUrl('/src/pages/blog.astro')} headProps={{ seoTitle }}>
   <main class="py-12 lg:py-20">
     <div class="mx-auto max-w-6xl px-3">
       <h1 class="text-center text-4xl font-bold">Blog</h1>
     </div>
     <div class="mx-auto max-w-6xl px-3">
-      <section
-        class="grid grid-cols-1 gap-6 py-8 md:grid-cols-2 lg:grid-cols-3 font-sans"
-        data-test="articles-section"
-      >
+      <section class="grid grid-cols-1 gap-6 py-8 font-sans md:grid-cols-2 lg:grid-cols-3" data-test="articles-section">
         {
           sortedPosts.map(({ data, url }) => (
             <div class="col-span-1">

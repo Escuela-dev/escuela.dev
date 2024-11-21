@@ -7,10 +7,10 @@
 
 export const SITE = {
   // websiteUrl: "https://escuela.dev/",
-  author: "Gianfranco Palumbo",
-  seoTitle: "Escuela.dev",
-  title: "Escuela.dev",
-  ogImage: "escuela.dev-coding-school.png",
+  author: 'Gianfranco Palumbo',
+  seoTitle: 'Escuela.dev',
+  title: 'Escuela.dev',
+  ogImage: 'escuela.dev-coding-school.png',
   lightAndDarkMode: true,
   postPerPage: 3,
 };

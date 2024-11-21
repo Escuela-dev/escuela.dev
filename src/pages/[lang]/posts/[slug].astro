@@ -1,26 +1,26 @@
 ---
-import { type CollectionEntry } from "astro:content";
+import { type CollectionEntry } from 'astro:content';
 
-import Layout from "@layouts/Base.astro";
-import getReadingTime from "@utils/getReadingTime";
-import getGithubEditUrl from "@utils/getGithubEditUrl";
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
-import { getPublishedPosts } from "@utils/blog";
-import { SITE } from "@config";
+import Layout from '@layouts/Base.astro';
+import getReadingTime from '@utils/getReadingTime';
+import getGithubEditUrl from '@utils/getGithubEditUrl';
+import { getLangFromUrl, useTranslations } from '@i18n/utils';
+import { getPublishedPosts } from '@utils/blog';
+import { SITE } from '@config';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 export interface Props {
-  post: CollectionEntry<"blog">;
+  post: CollectionEntry<'blog'>;
 }
 
 export async function getStaticPaths() {
-  const posts = await getPublishedPosts() ;
+  const posts = await getPublishedPosts();
   return posts.map((post) => {
-    const [lang, ...slug] = post.slug.split("/");
+    const [lang, ...slug] = post.slug.split('/');
     return {
-      params: { lang, slug: slug.join("/") || undefined },
+      params: { lang, slug: slug.join('/') || undefined },
       props: { post },
     };
   });
@@ -51,7 +51,7 @@ const maxDescription = 160;
 
 // shorten with ellipsis without cutting off words
 if (description.length > maxDescription) {
-  const lastSpace = description.slice(0, maxDescription).lastIndexOf(" ");
+  const lastSpace = description.slice(0, maxDescription).lastIndexOf(' ');
   description = `${description.slice(0, lastSpace)}...`;
 }
 ---
@@ -61,11 +61,11 @@ if (description.length > maxDescription) {
     seoTitle,
     description,
     ogImage: ogUrl,
-    type: "article",
+    type: 'article',
     publishDate,
     author,
   }}
-  githubEditUrl={getGithubEditUrl("/src/pages/posts/[slug].astro")}
+  githubEditUrl={getGithubEditUrl('/src/pages/posts/[slug].astro')}
 >
   <article class="prose mx-auto mb-4 mt-8 max-w-3xl px-3 sm:px-0">
     {heroImage && <img src={heroImage} alt={postTitle} />}
@@ -76,9 +76,9 @@ if (description.length > maxDescription) {
         publishDate && (
           <time datetime={new Date(publishDate).toISOString()}>
             {new Date(publishDate).toLocaleDateString(lang, {
-              year: "numeric",
-              month: "short",
-              day: "numeric",
+              year: 'numeric',
+              month: 'short',
+              day: 'numeric',
             })}
           </time>
         )

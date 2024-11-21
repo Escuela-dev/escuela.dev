@@ -5,7 +5,7 @@ type Props = {
 
 const { features } = Astro.props;
 
-import CheckIcon from "./CheckIcon.astro";
+import CheckIcon from './CheckIcon.astro';
 ---
 
 <ul class="space-y-5">
@@ -15,9 +15,7 @@ import CheckIcon from "./CheckIcon.astro";
         {feature.isAvailable ? (
           <>
             <CheckIcon />
-            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
-              {feature.title}
-            </span>
+            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">{feature.title}</span>
           </>
         ) : (
           <>

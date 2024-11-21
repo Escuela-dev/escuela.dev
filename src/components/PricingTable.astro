@@ -1,83 +1,83 @@
 ---
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
-import PricingFeature from "./PricingFeature.astro";
+import { getLangFromUrl, useTranslations } from '@i18n/utils';
+import PricingFeature from './PricingFeature.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-import "./PricingTable.css";
+import './PricingTable.css';
 
 const plans = [
   {
-    title: t("pricingtable.plan1.title"),
+    title: t('pricingtable.plan1.title'),
     price: 32,
-    priceDescription: t("pricingtable.plan1.priceDescription"),
-    link: "/book",
-    buttonText: t("pricingtable.plan1.buttonText"),
+    priceDescription: t('pricingtable.plan1.priceDescription'),
+    link: '/book',
+    buttonText: t('pricingtable.plan1.buttonText'),
     features: [
       {
-        title: t("pricingtable.feature.online"),
+        title: t('pricingtable.feature.online'),
         isAvailable: true,
       },
       {
-        title: t("pricingtable.feature.inPerson"),
+        title: t('pricingtable.feature.inPerson'),
         isAvailable: true,
       },
       {
-        title: t("pricingtable.feature.session"),
+        title: t('pricingtable.feature.session'),
         isAvailable: true,
       },
     ],
   },
   {
-    title: t("pricingtable.plan2.title"),
+    title: t('pricingtable.plan2.title'),
     price: 228,
-    priceDescription: t("pricingtable.plan2.priceDescription"),
-    link: "/book",
-    buttonText: t("pricingtable.plan2.buttonText"),
+    priceDescription: t('pricingtable.plan2.priceDescription'),
+    link: '/book',
+    buttonText: t('pricingtable.plan2.buttonText'),
     features: [
       {
-        title: t("pricingtable.feature.online"),
+        title: t('pricingtable.feature.online'),
         isAvailable: true,
       },
       {
-        title: t("pricingtable.feature.inPerson"),
+        title: t('pricingtable.feature.inPerson'),
         isAvailable: true,
       },
       {
-        title: t("pricingtable.feature.session"),
+        title: t('pricingtable.feature.session'),
         isAvailable: true,
       },
       {
-        title: t("pricingtable.plan2.feature.people"),
+        title: t('pricingtable.plan2.feature.people'),
         isAvailable: true,
       },
       {
-        title: t("pricingtable.plan2.feature.course"),
+        title: t('pricingtable.plan2.feature.course'),
         isAvailable: true,
       },
     ],
   },
   {
-    title: t("pricingtable.plan3.title"),
-    priceDescription: t("pricingtable.plan3.priceDescription"),
-    link: "/book",
-    buttonText: t("pricingtable.plan3.buttonText"),
+    title: t('pricingtable.plan3.title'),
+    priceDescription: t('pricingtable.plan3.priceDescription'),
+    link: '/book',
+    buttonText: t('pricingtable.plan3.buttonText'),
     features: [
       {
-        title: t("pricingtable.feature.online"),
+        title: t('pricingtable.feature.online'),
         isAvailable: true,
       },
       {
-        title: t("pricingtable.feature.inPerson"),
+        title: t('pricingtable.feature.inPerson'),
         isAvailable: true,
       },
       {
-        title: t("pricingtable.plan3.feature.time"),
+        title: t('pricingtable.plan3.feature.time'),
         isAvailable: true,
       },
       {
-        title: t("pricingtable.plan3.feature.lunch"),
+        title: t('pricingtable.plan3.feature.lunch'),
         isAvailable: true,
       },
     ],
@@ -92,20 +92,12 @@ const plans = [
     {
       plans.map((plan) => (
         <div class="z-10 mx-auto grid w-full max-w-sm grid-cols-subgrid gap-6 rounded-lg border border-gray-200 bg-white p-4 shadow dark:border-gray-700 dark:bg-gray-800 sm:row-span-full sm:grid-rows-subgrid sm:p-8">
-          <h3 class="text-xl font-medium text-gray-500 dark:text-gray-400">
-            {plan.title}
-          </h3>
+          <h3 class="text-xl font-medium text-gray-500 dark:text-gray-400">{plan.title}</h3>
           <div class="flex items-baseline text-gray-900 dark:text-white">
             <span class="whitespace-pre-line text-3xl font-semibold">
-              {plan.price ? (
-                <>&euro;</>
-              ) : (
-                plan.priceDescription && <>{plan.priceDescription}</>
-              )}
+              {plan.price ? <>&euro;</> : plan.priceDescription && <>{plan.priceDescription}</>}
             </span>
-            <span class="text-5xl font-extrabold tracking-tight">
-              {plan.price}
-            </span>
+            <span class="text-5xl font-extrabold tracking-tight">{plan.price}</span>
             {plan.price && plan.priceDescription && (
               <span class="text-l ml-1 whitespace-pre-line font-normal text-gray-500 dark:text-gray-400 sm:text-xl">
                 {plan.priceDescription}
@@ -113,7 +105,7 @@ const plans = [
             )}
           </div>
           <a
-            href={plan.link.includes("@") ? `mailto:${plan.link}` : plan.link}
+            href={plan.link.includes('@') ? `mailto:${plan.link}` : plan.link}
             class="button gradient-border dark:text-white"
           >
             {plan.buttonText}

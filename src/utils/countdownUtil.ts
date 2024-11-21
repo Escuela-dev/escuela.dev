@@ -1,6 +1,6 @@
 // https://cal.com/gianpaj/free-class
 // TODO: retrieve the available class (and num of slots available)
-export function nextClassDateTime(){
+export function nextClassDateTime() {
   // assume that there's a next class every Mon-Sat at 11:30 am Spain's time & 19:30
   const now = new Date();
   const times = ['11:30', '19:30'];
