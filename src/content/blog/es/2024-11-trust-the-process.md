@@ -1,9 +1,9 @@
 ---
-title: "Confía en el proceso"
-blogSlug: "2024-11-trust-the-process"
-publishDate: "15 Nov 2024"
-heroImage: "/blog-imgs/2024-11-trust-the-process.jpg"
-ogImage: "/blog-imgs/2024-11-trust-the-process.jpg"
+title: "Confía en el proceso – Robert Greene"
+blogSlug: "2024-11-trust-the-process-robert-greene"
+publishDate: "19 Nov 2024"
+heroImage: "/blog-imgs/2024-11-trust-the-process-robert-greene.jpg"
+ogImage: "/blog-imgs/2024-11-trust-the-process-robert-greene.jpg"
 description: "Desde el libro de Robert Greene 'Las leyes para todos los días'. Aprender algo nuevo, como el piano, comienza con dificultad y confusión. Con práctica, se dominan las bases, surge confianza y se alcanza la maestría."
 tags:
   - learning
