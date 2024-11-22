@@ -1,4 +1,5 @@
-import { z } from "astro:content";
+import { reference, z } from 'astro:content';
+
 
 export const blogSchema = z
   .object({
@@ -8,12 +9,14 @@ export const blogSchema = z
     blogSlug: z.string().optional(),
     featured: z.boolean().optional(),
     draft: z.boolean().optional(),
-    tags: z.array(z.string()).default(["others"]),
+    tags: z.array(z.string()).max(5).default(["others"]),
     heroImage: z.string().optional(),
     ogImage: z.string().optional(),
     imageCaption: z.string().optional(),
     imagePromptfile: z.string().optional(),
-    description: z.string(),
+    description: z.string()
+    // Reference an array of related posts from the `blog` collection by `slug`
+    // relatedPosts: z.array(reference('blog')),
   })
   .strict();
 
