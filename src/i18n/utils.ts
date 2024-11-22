@@ -18,7 +18,10 @@ export function useTranslations(lang: Language) {
     // @ts-expect-error - type error
                           keys.reduce((obj, key) => obj?.[key], strings[defaultLang] as Record<string, string>);
 
-    return translatedString || "";
+    if (!translatedString) {
+      throw new Error(`Missing translation for key ${key}`);
+    }
+    return translatedString
   };
 }
 
