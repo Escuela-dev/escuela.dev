@@ -80,12 +80,11 @@ export const strings = {
         session: "1h sessions"
       },
       plan2: {
-        title: "Group class",
-        priceDescription: "/course \n (€19 per hour)",
+        title: "8 sessions",
+        priceDescription: "/course \n (€28.5 per hour)",
         buttonText: "Call",
         feature: {
-          people: "up to 4 people",
-          course: "4-week course (3h per week)"
+          course: "4-week course (2h session + 1h on your own per week)"
         }
       },
       plan3: {
@@ -186,12 +185,11 @@ export const strings = {
         session: "Sesiones de 1h"
       },
       plan2: {
-        title: "Clase en grupo",
-        priceDescription: "/curso \n (19€ por hora)",
+        title: "8 sessiones",
+        priceDescription: "/curso \n (28.5€ por hora)",
         buttonText: "Consúltanos",
         feature: {
-          people: "Hasta 4 personas",
-          course: "Curso de 4 semanas (3 horas por semana)"
+          course: "Curso de 4 semanas (2 horas de clase + 1 hora de tu propio tiempo por semana)"
         }
       },
       plan3: {
