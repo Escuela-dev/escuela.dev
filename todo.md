@@ -34,7 +34,7 @@ Add logo?
 Project ideas
 
 - <https://css-tricks.com/how-to-animate-a-svg-with-border-image/>
--
+- Scrape cute rescue dogs from <https://dogs.ie/sale>
 
 Coding school in London my mom went to: <https://www.londonappbrewery.com/>
 

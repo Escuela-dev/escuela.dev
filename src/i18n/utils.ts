@@ -25,8 +25,15 @@ export function useTranslations(lang: Language) {
   };
 }
 
-export const getRelativeLocaleUrl = (lang: string, path: string) =>
-  originalGetRelativeLocaleUrl(
-    lang,
-    path.replace("/en", "").replace("/es", ""),
-  );
+export const getRelativeLocaleUrl = (lang: string, path: string) => {
+  // Remove any existing language prefixes
+  const cleanPath = path.replace(/^\/(en|es)\/?/, "/");
+
+  // For the default language (es), just return the clean path
+  if (lang === defaultLang) {
+    return cleanPath === "/" ? cleanPath : cleanPath.replace(/\/$/, "");
+  }
+
+  // For other languages (en), add the language prefix
+  return `/en${cleanPath === "/" ? "" : cleanPath}`.replace(/\/$/, "");
+};

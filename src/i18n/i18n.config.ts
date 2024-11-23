@@ -3,7 +3,7 @@ export const languages = {
   es: "Español",
 };
 
-export const defaultLang = "en";
+export const defaultLang = "es";
 
 // const nextMonth = new Date(
 //   new Date().getFullYear(),

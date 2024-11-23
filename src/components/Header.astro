@@ -87,7 +87,7 @@ const langEmoji = otherLanguage === "es" ? "🇪🇸" : "🇬🇧";
               lang={otherLanguage}
               href={getRelativeLocaleUrl(
                 otherLanguage,
-                Astro.url.pathname.replace("/en", "").replace("/es", ""),
+                Astro.url.pathname,
               )}
             >
               {langEmoji}
