@@ -30,7 +30,7 @@ export const strings = {
     },
     home: {
       title: `Welcome to Escuela.dev\nA Coding school in\nMalaga, Madrid and online`,
-      subtitle: "Get personalized one-on-one classes through online video sessions. Get instant feedback and guidance through the curriculum. Learn modern JavaScript, HTML, CSS, Git and Node.js.",
+      subtitle: "Get personalized one-on-one classes through online video sessions. Get instant feedback and guidance through the curriculum. Learn modern JavaScript, TypeScript, HTML, CSS, Git, Python and Node.js.",
       recentPosts: "Recent posts"
     },
     faq: {
@@ -137,7 +137,7 @@ export const strings = {
     },
     home: {
       title: `Bienvenid@s a Escuela.dev\nUna escuela de programación en\nMalaga, Madrid y Online`,
-      subtitle: "Aprende con clases particulares y personalizadas a través de sesiones de video en línea. Aprende con ayuda y sigue un currículum. Aprende JavaScript moderno, HTML, CSS, Git y Node.js.",
+      subtitle: "Aprende con clases particulares y personalizadas a través de sesiones de video en línea. Aprende con ayuda y sigue un currículum. Aprende JavaScript moderno, TypeScript, HTML, CSS, Git, Python y Node.js.",
       recentPosts: "Últimos posts"
     },
     faq: {
