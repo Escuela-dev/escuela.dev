@@ -109,9 +109,9 @@ export const strings = {
     testimonials: {
       title: "Testimonials",
       subtitle: "What our students say",
-      quote1: "I learned a lot with Gianfranco. Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
+      quote1: "Gian is always helpful and sincere! I love every bit of advice. Also being able to point out unforeseen items that I might run into. Looking forward to working with Gian again!!",
       quote2: "Working with Gianfranco was a pleasure. He is a great teacher and has a lot of patience. I would recommend him to anyone who wants to learn web development.",
-      quote3: "The course was a great experience. I learned a lot and had a lot of fun. I would recommend it to anyone who wants to learn web development."
+      quote3: "Gian is very sincere, and is always helpful. He understood the challenges I'm trying to solve really quick and is able to explain in a way that I'm able to understand and practice resolving challenges on individual. I always appreciate his help and am looking forward to working with him again :))"
     },
     teacher1: {
       title: "Meet the teacher",
@@ -215,9 +215,9 @@ export const strings = {
     testimonials: {
       title: "Testimonios",
       subtitle: "Lo que dicen nuestros estudiantes",
-      quote1: "Aprendí mucho con Gianfranco. Flowbite es realmente genial. Contiene muchas páginas y componentes prediseñados, desde la pantalla de inicio de sesión hasta el panel complejo. ¡Perfecto para tu próxima aplicación SaaS!",
+      quote1: "Gian es siempre útil y sincero! Me encanta todo lo que puedo ofrecer. También poder decir a los que me encontré que no sabía lo que estaba buscando. ¡Espero que siga trabajando con él!",
       quote2: "Trabajar con Gianfranco fue un placer. Es un gran profesor y tiene mucha paciencia. Lo recomendaría a cualquier persona que quiera aprender desarrollo web.",
-      quote3: "El curso fue una gran experiencia. Aprendí mucho y tuve mucha diversión. Lo recomendaría a cualquier persona que quiera aprender desarrollo web."
+      quote3: "Gian es muy sincero y siempre está dispuesto a ayudar. Entendió muy rápido los desafíos que estoy tratando de resolver y es capaz de explicar de una manera que puedo entender y practicar para resolverlos por mi cuenta. Siempre agradezco su ayuda y espero poder trabajar con él nuevamente :))"
     },
     teacher1: {
       title: "Conoce al profesor",

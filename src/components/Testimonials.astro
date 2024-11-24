@@ -1,61 +1,59 @@
 ---
-import { Icon } from "astro-icon/components";
+import { Image } from 'astro:assets';
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
+import johnn from '../assets/testimonials/johnn.jpg';
+import alexf from '../assets/testimonials/alexf.jpg';
+import andrewr from '../assets/testimonials/andrewr.jpeg';
+
 const testimonials = [
   {
-    name: "Genevieve Kuzak",
-    title: "Web Developer at Hearst Magazines",
-    socialMedia: "https://www.linkedin.com/in/genevieve-kuzak-7aa677238/",
+    name: "John N",
+    // title: "Web Developer at Hearst Magazines",
+    // socialMedia: "https://www.linkedin.com/in/genevieve-kuzak-7aa677238/",
     quote: t("testimonials.quote1"),
-    image: "https://via.placeholder.com/150",
+    image: johnn
   },
   {
     name: "Alex Ferguson",
-    title: "Senior User Experience Designer at Bath & Body Works",
+    title: "Senior User Experience Designer",
     socialMedia: "https://www.linkedin.com/in/aferguson17/",
     quote: t("testimonials.quote2"),
-    image: "https://via.placeholder.com/150",
+    image: alexf
   },
   {
-    name: "Logan Sroufe",
-    title: "Front-End Developer at UC Health",
-    socialMedia: "https://www.linkedin.com/in/logansroufe/",
+    name: "Andrew Royce",
+    title: "Senior Mobile Engineer",
+    socialMedia: "https://www.linkedin.com/in/andrewwroyce/",
     quote: t("testimonials.quote3"),
-    image: "https://via.placeholder.com/150",
+    image: andrewr
   },
 ];
 ---
 
-<div class="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16">
+<div class="mx-auto max-w-screen-xl">
   <h2
     class="text-center text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
   >
     {t("testimonials.title")}
   </h2>
   <p class="mt-4 text-center text-gray-500">{t("testimonials.subtitle")}</p>
-  <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
+  <div class="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-3">
     {
       testimonials.map((t) => (
-        <section class="relative isolate mx-auto max-w-sm overflow-hidden">
-          <figcaption class="rounded-lg bg-gray-100 p-10 dark:bg-gray-800 sm:min-h-[18.5rem]">
-            {/* <img
-              src={t.image}
-              alt={t.name}
-              class="mx-auto h-10 w-10 rounded-full"
-            /> */}
-
-            <blockquote class="border-0 text-center font-semibold text-gray-900 dark:text-gray-300">
+        <section class="">
+          <figcaption class="rounded-lg bg-gray-100 px-4 py-8 dark:bg-gray-800 grid lg:grid-rows-[minmax(auto,150px),1fr] grid-rowss-2 gap-8">
+            <blockquote class="p-0 border-0 text-center font-semibold text-gray-900 dark:text-gray-300">
               <p class="text-sm not-italic">"{t.quote}"</p>
             </blockquote>
-            <div class="mt-4 flex items-center justify-center space-x-3 divide-x-2 divide-gray-500 text-base dark:divide-gray-700">
-              <div class="flex items-center gap-2 text-center font-semibold text-gray-900 dark:text-white">
+            <div class="flex items-center justify-center space-x-3 text-base">
+              <div class="flex items-center text-center font-semibold text-gray-900 dark:text-white">
                 {t.name}
-                <a href={t.socialMedia} class="text-gray-500">
+                <!-- <a href={t.socialMedia} class="text-gray-500">
                   {t.socialMedia.startsWith("https://twitter.com/") ? (
                     "Twitter"
                   ) : t.socialMedia.startsWith(
@@ -63,7 +61,7 @@ const testimonials = [
                     ) ? (
                     <Icon name="bxl:linkedin-square" class="size-4 min-w-4" />
                   ) : null}
-                </a>
+                </a> -->
               </div>
               {/* <svg
                 viewBox="0 0 2 2"
@@ -74,9 +72,14 @@ const testimonials = [
               >
                 <circle cx="1" cy="1" r="1" />
               </svg> */}
-              <div class="pl-3 text-sm text-gray-600 dark:text-gray-400">
+              <Image
+                src={t.image}
+                alt={t.name}
+                class="mx-auto h-10 w-10 rounded-full"
+              />
+              <!-- <div class="pl-3 text-sm text-gray-600 dark:text-gray-400">
                 {t.title}
-              </div>
+              </div> -->
             </div>
           </figcaption>
         </section>
