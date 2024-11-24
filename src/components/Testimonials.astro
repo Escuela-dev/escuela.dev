@@ -1,4 +1,5 @@
 ---
+// import { Icon } from "astro-icon/components";
 import { Image } from 'astro:assets';
 
 import { getLangFromUrl, useTranslations } from "@i18n/utils";
@@ -19,19 +20,19 @@ const testimonials = [
     image: johnn
   },
   {
-    name: "Alex Ferguson",
-    title: "Senior User Experience Designer",
-    socialMedia: "https://www.linkedin.com/in/aferguson17/",
-    quote: t("testimonials.quote2"),
-    image: alexf
-  },
-  {
     name: "Andrew Royce",
     title: "Senior Mobile Engineer",
-    socialMedia: "https://www.linkedin.com/in/andrewwroyce/",
+    // socialMedia: "https://www.linkedin.com/in/andrewwroyce/",
     quote: t("testimonials.quote3"),
     image: andrewr
   },
+  {
+    name: "Alex Ferguson",
+    title: "Senior User Experience Designer",
+    // socialMedia: "https://www.linkedin.com/in/aferguson17/",
+    quote: t("testimonials.quote2"),
+    image: alexf
+  }
 ];
 ---
 
@@ -53,7 +54,7 @@ const testimonials = [
             <div class="flex items-center justify-center space-x-3 text-base">
               <div class="flex items-center text-center font-semibold text-gray-900 dark:text-white">
                 {t.name}
-                <!-- <a href={t.socialMedia} class="text-gray-500">
+                <!-- {<a href={t.socialMedia} class="text-gray-500">
                   {t.socialMedia.startsWith("https://twitter.com/") ? (
                     "Twitter"
                   ) : t.socialMedia.startsWith(
@@ -61,7 +62,7 @@ const testimonials = [
                     ) ? (
                     <Icon name="bxl:linkedin-square" class="size-4 min-w-4" />
                   ) : null}
-                </a> -->
+                </a>} -->
               </div>
               {/* <svg
                 viewBox="0 0 2 2"
