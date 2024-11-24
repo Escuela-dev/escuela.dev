@@ -1,71 +1,63 @@
 ---
-import { Schema } from "astro-seo-schema";
+import { Schema } from 'astro-seo-schema';
 
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
-import { removeEmoji } from "@utils/strings";
+import { getLangFromUrl, useTranslations } from '@i18n/utils';
+import { removeEmoji } from '@utils/strings';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<div class="mx-auto mb-8 text-center lg:mb-12">
-  <h2
-    class="mb-8 text-center text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
-  >
-    FAQ
-  </h2>
-  <h2
-    class="mb-6 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white"
-  >
-    {t("faq.q1.title")}
-  </h2>
-  <p class="text-left font-sans text-lg leading-7">
-    {t("faq.q1.answer")}
-  </p>
-</div>
-<div class="mx-auto mb-8 text-center lg:mb-12">
-  <h2
-    class="mb-6 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white"
-  >
-    {t("faq.q2.title")}
-  </h2>
-  <p
-    class="mb-4 text-left font-sans text-lg leading-7"
-    set:html={t("faq.q2.answer1")}
-  />
-  <p
-    class="mb-4 text-left font-sans text-lg leading-7"
-    set:html={t("faq.q2.answer2")}
-  />
-  <p
-    class="mb-4 text-left font-sans text-lg leading-7"
-    set:html={t("faq.q2.answer3")}
-  />
+<div class="grid grid-cols-1 gap-16">
+  <div class="mx-auto text-center">
+    <h2 class="mb-8 text-center text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">FAQ</h2>
+    <h2 class="question">
+      {t('faq.q1.title')}
+    </h2>
+    <p class="answer">
+      {t('faq.q1.answer')}
+    </p>
+  </div>
+  <div class="mx-auto text-center">
+    <h2 class="question">
+      {t('faq.q2.title')}
+    </h2>
+    <p class="answer" set:html={t('faq.q2.answer1')} />
+    <p class="answer" set:html={t('faq.q2.answer2')} />
+    <p class="answer" set:html={t('faq.q2.answer3')} />
+  </div>
 </div>
 
 <Schema
   item={{
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
     mainEntity: [
       {
-        "@type": "Question",
-        name: removeEmoji(t("faq.q1.title")),
+        '@type': 'Question',
+        name: removeEmoji(t('faq.q1.title')),
         acceptedAnswer: {
-          "@type": "Answer",
-          text: removeEmoji(t("faq.q1.answer")),
+          '@type': 'Answer',
+          text: removeEmoji(t('faq.q1.answer')),
         },
       },
       {
-        "@type": "Question",
-        name: removeEmoji(t("faq.q2.title")),
+        '@type': 'Question',
+        name: removeEmoji(t('faq.q2.title')),
         acceptedAnswer: {
-          "@type": "Answer",
-          text: removeEmoji(
-            `${t("faq.q2.answer1")} ${t("faq.q2.answer2")} ${t("faq.q2.answer3")}`,
-          ),
+          '@type': 'Answer',
+          text: removeEmoji(`${t('faq.q2.answer1')} ${t('faq.q2.answer2')} ${t('faq.q2.answer3')}`),
         },
       },
     ],
   }}
 />
+
+<style scoped>
+  .question {
+    @apply mb-6 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white;
+  }
+  .answer {
+    @apply mb-6 text-left font-sans text-lg leading-7;
+  }
+</style>
