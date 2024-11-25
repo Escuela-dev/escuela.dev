@@ -1,12 +1,13 @@
 ---
-import "../styles/base.css";
+import '../styles/base.css';
 
 // import { SITE } from "@config";
-import Banner from "@components/Banner.astro";
-import BaseHead from "@components/BaseHead.astro";
-import Header from "@components/Header.astro";
-import Footer from "@components/Footer.astro";
-import { getLangFromUrl } from "@i18n/utils";
+import Banner from '@components/Banner.astro';
+import BaseHead from '@components/BaseHead.astro';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+import Posthog from '@components/Posthog.astro';
+import { getLangFromUrl } from '@i18n/utils';
 // import WhatsAppButton from "@components/WhatsAppButton.astro";
 
 export interface Props {
@@ -21,7 +22,7 @@ let { headProps } = Astro.props;
 headProps = {
   ...headProps,
   seoTitle: title,
-}
+};
 
 const lang = getLangFromUrl(Astro.url);
 ---
@@ -30,6 +31,7 @@ const lang = getLangFromUrl(Astro.url);
 <html lang={lang}>
   <head>
     <BaseHead headProps={headProps} />
+    <Posthog />
   </head>
   <body>
     <Banner />

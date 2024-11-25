@@ -21,7 +21,7 @@ x (A) Add FAQ JSON-LD schema
     xAdd sitemap generation
     xAdd robots.txt
     Add canonical links
-    Add Analytics (not Google Analytics. For example Matomo or PathHog)
+    Add Analytics (not Google Analytics. For example Matomo or PostHog)
     xAdd Google Search Console
     Add Google Tag Manager
     Add Facebook Pixel
@@ -38,36 +38,37 @@ Project ideas
 
 Coding school in London my mom went to: <https://www.londonappbrewery.com/>
 
-Coding school in Paris: <https://www.42.fr/>
-Coding school in Paris: <https://www.42lyon.fr/>
-Coding school in London my friend went to: <https://www.lighthouselabs.ca/>
-Coding school in London: <https://www.hackyourfuture.net/>
-Coding school in London: <https://www.hackreactor.com/>
-Coding school in London: <https://www.hackwagon.com/>
-Coding school in London: <https://www.hackbrightacademy.com/>
-Coding school in Paris: <https://www.wildcodeschool.com/fr-FR>
-Coding school in Paris: <https://www.lereacteur.io/>
-Coding school in London: <https://www.lewagon.com/>
-Coding school in London: <https://www.makers.tech/>
-Coding school in London: <https://www.thefoundersfactory.com/>
-Coding school in London: <https://www.thinkful.com/>
-Coding school in London: <https://www.codingnomads.co/>
-Coding school in London: <https://www.codingbootcamp.co.uk/>
-Coding school in London: <https://www.codingdojo.com/>
-Coding school in London: <https://www.codinghouse.co.uk/>
-Coding school in Madrid: <https://www.ironhack.com/en>
-Coding school in Madrid: <https://www.neoland.es/>
-Coding school in Madrid: <https://www.soyhenry.com/>
-Coding school in Madrid: <https://www.acamica.com/>
-Coding school in Madrid: <https://www.bedu.org/>
-Coding school in Madrid: <https://www.4geeksacademy.co/>
-Coding school in Madrid: <https://www.campusmvp.es/>
-Coding school in Barcelona: <https://www.soyhenry.com/>
-Coding school in Milan: <https://www.boolean.careers/>
-Coding school in Milan: <https://www.lamolisana.it/>
-Coding school in Europe: <https://www.coding-academy.org/>
-Coding school in Italy: <https://www.unicampania.it/>
-Coding school in Italy: <https://www.unicam.it/>
+Coding schools
+  in Paris: <https://www.42.fr/>
+  in Paris: <https://www.42lyon.fr/>
+  in London my friend went to: <https://www.lighthouselabs.ca/>
+  in London: <https://www.hackyourfuture.net/>
+  in London: <https://www.hackreactor.com/>
+  in London: <https://www.hackwagon.com/>
+  in London: <https://www.hackbrightacademy.com/>
+  in Paris: <https://www.wildcodeschool.com/fr-FR>
+  in Paris: <https://www.lereacteur.io/>
+  in London: <https://www.lewagon.com/>
+  in London: <https://www.makers.tech/>
+  in London: <https://www.thefoundersfactory.com/>
+  in London: <https://www.thinkful.com/>
+  in London: <https://www.codingnomads.co/>
+  in London: <https://www.codingbootcamp.co.uk/>
+  in London: <https://www.codingdojo.com/>
+  in London: <https://www.codinghouse.co.uk/>
+  in Madrid: <https://www.ironhack.com/en>
+  in Madrid: <https://www.neoland.es/>
+  in Madrid: <https://www.soyhenry.com/>
+  in Madrid: <https://www.acamica.com/>
+  in Madrid: <https://www.bedu.org/>
+  in Madrid: <https://www.4geeksacademy.co/>
+  in Madrid: <https://www.campusmvp.es/>
+  in Barcelona: <https://www.soyhenry.com/>
+  in Milan: <https://www.boolean.careers/>
+  in Milan: <https://www.lamolisana.it/>
+  in Europe: <https://www.coding-academy.org/>
+  in Italy: <https://www.unicampania.it/>
+  in Italy: <https://www.unicam.it/>
 
 School my kids go to: <https://www.lespetitschamps.com/>
 School my mom works at: <https://www.ecole-lespetitschamps.com/>
