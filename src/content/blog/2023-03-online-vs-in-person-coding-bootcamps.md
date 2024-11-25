@@ -5,6 +5,9 @@ blogSlug: "2023-03-online-vs-in-person-coding-bootcamps"
 heroImage: "/blog-imgs/2023-03-online-vs-in-person-coding-bootcamps.jpg"
 ogImage: "/blog-imgs/2023-03-online-vs-in-person-coding-bootcamps.jpg"
 description: "Unsure which coding bootcamp to choose? Online is flexible but requires self-discipline. In-person provides structure and mentorship but is less flexible"
+tags:
+  - learning
+  - design
 draft: false
 ---
 
