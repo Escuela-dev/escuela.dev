@@ -16,35 +16,21 @@ const { githubEditUrl } = Astro.props;
 ---
 
 <footer>
-  <ul
-    class="my-6 grid grid-flow-row justify-center justify-items-center gap-5 text-center text-sm sm:grid-flow-col"
-  >
+  <ul class="my-6 grid grid-flow-row justify-center justify-items-center gap-5 text-center text-sm sm:grid-flow-col">
     <li>
-      <a
-        href="https://instagram.com/escuela.dev"
-        target="_blank"
-        class="ig-icon hover:opacity-100"
-      >
+      <a href="https://instagram.com/escuela.dev" target="_blank" class="ig-icon hover:opacity-100">
         <Icon name="mdi:instagram" />
         <p>Instagram</p>
       </a>
     </li>
     <li>
-      <a
-        href="https://x.com/escuela_dev_"
-        target="_blank"
-        class="hover:text-black"
-      >
+      <a href="https://x.com/escuela_dev_" target="_blank" class="hover:text-black dark:hover:text-white">
         <Icon name="line-md:twitter-x" />
         <p>Twitter</p>
       </a>
     </li>
     <li>
-      <a
-        href="https://linkedin.com/company/escuela-dev"
-        target="_blank"
-        class="hover:text-[#0a66c2]"
-      >
+      <a href="https://linkedin.com/company/escuela-dev" target="_blank" class="hover:text-[#0a66c2]">
         <Icon name="mdi:linkedin" />
         <p>LinkedIn</p>
       </a>
@@ -59,20 +45,26 @@ const { githubEditUrl } = Astro.props;
         <p>WhatsApp Community</p>
       </a>
     </li>
+    <li>
+      <a
+        href="mailto:gianfranco@escuela.dev"
+        target="_blank"
+        class="flex items-center gap-[0.35rem] opacity-60 transition-all duration-200 hover:text-skin-accent hover:opacity-100"
+      >
+        <Icon name="mdi:email" />
+        <p>{t('footer.emailContact')}</p>
+      </a>
+    </li>
   </ul>
 
   <p class="text-xs opacity-60">
     &copy; {currentYear}
-    {t("footer.copyright")}
+    {t('footer.copyright')}
   </p>
   {
     githubEditUrl && (
       <div class="mt-3">
-        <a
-          class="edit-on-github header-link w-100 depth-2 inline-flex opacity-60"
-          href={githubEditUrl}
-          target="_blank"
-        >
+        <a class="edit-on-github header-link w-100 depth-2 inline-flex opacity-60" href={githubEditUrl} target="_blank">
           <svg
             aria-hidden="true"
             focusable="false"
@@ -90,7 +82,7 @@ const { githubEditUrl } = Astro.props;
               d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
             />
           </svg>
-          <span class="text-xs">{t("footer.edit")}</span>
+          <span class="text-xs">{t('footer.edit')}</span>
         </a>
       </div>
     )
