@@ -3,6 +3,7 @@ import { Schema } from 'astro-seo-schema';
 
 import { getLangFromUrl, useTranslations } from '@i18n/utils';
 import { removeEmoji } from '@utils/strings';
+import { FAQAccordion } from '@components/FAQAccordion';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

@@ -1,19 +1,20 @@
 # TODO
 
+(A) Improve FAQ questions.
 x(A) Add Free Class page (see <https://www.shecodes.io/free-class>)
+(A) Add 'Web development course page' see
+(B) Use Learning Management System like <https://github.com/shuding/nextra/tree/v4-v2> <https://frappe.io/learning>
 (A) Translate blog articles to Spanish
 (A) Add support for Blog image caption. Markdown links should work
 (A) Add testimonials
     Ask for testimonial from Bruce, Rose, Pierre, and others
-x (A) Add FAQ JSON-LD schema
-(B) Display tags under blog post title
-(A) Keywords en Español: aprendisaje
-(B) Add voice option for blog articles like <https://blog.google/products/gemini/gemini-live-extensions-language-expansion/> - "Listen to article"
+(B) Display tags under blog post title (dropdown)
 (B) format blog articles for large desktop like openai.com (<https://openai.com/research/language-models-can-explain-neurons-in-language-models>)
-(B) RSS feed
-    Add RSS feed to <https://app.daily.dev/>
-(B) Fix speed <https://pagespeed.web.dev/report?url=https%3A%2F%2Fescuela.dev>
+(B) Improve speed <https://pagespeed.web.dev/report?url=https%3A%2F%2Fescuela.dev>
 (F) Try view transitions for /blog to individual blog posts <https://developer.chrome.com/docs/web-platform/view-transitions>
+(X) Add voice option for blog articles like <https://blog.google/products/gemini/gemini-live-extensions-language-expansion/> - "Listen to article"
+(X) RSS feed
+    Add RSS feed to <https://app.daily.dev/>
 (Z) Improve SEO
     Add meta tags {cm:2023-02-25}
     Add OpenGraph {cm:2023-02-25}
@@ -29,9 +30,10 @@ x (A) Add FAQ JSON-LD schema
     Google Site Verification
 Change favicon
 Add logo?
-    Logo with the letter 'E'?
+    Logo with the letter 'ED'?
 
-Project ideas
+
+## Project ideas
 
 - <https://css-tricks.com/how-to-animate-a-svg-with-border-image/>
 - Scrape cute rescue dogs from <https://dogs.ie/sale>
