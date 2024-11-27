@@ -99,6 +99,7 @@ export const strings = {
       }
     },
     footer: {
+      "emailContact": "Email Gianfranco",
       copyright: "Escuela.dev – All rights reserved.",
       edit: "Edit this page on GitHub"
     },
@@ -111,7 +112,7 @@ export const strings = {
       subtitle: "What our students say",
       quote1: "Gian is always helpful and sincere! I love every bit of advice. Also being able to point out unforeseen items that I might run into. Looking forward to learn with Gian again!!",
       quote2: "Working with Gianfranco was a pleasure. He is a great teacher and has a lot of patience. I would recommend him to anyone who wants to learn web development.",
-      quote3: "Gian is very sincere, and is always helpful. He understood the challenges I'm trying to solve really quick and is able to explain in a way that I'm able to understand and practice resolving challenges on individual. I always appreciate his help and am looking forward to working with him again :))"
+      quote3: "Gian is very sincere, and is always helpful. He understood the challenges I'm trying to solve really quick and is able to explain in a way that I'm able to understand and practice resolving challenges on individual. I always appreciate his help  :))"
     },
     teacher1: {
       title: "Meet the teacher",
@@ -205,6 +206,7 @@ export const strings = {
       }
     },
     footer: {
+      "emailContact": "Email Gianfranco",
       copyright: "Escuela.dev – Todos los derechos reservados.",
       edit: "Edita esta página en GitHub"
     },
@@ -217,7 +219,7 @@ export const strings = {
       subtitle: "Lo que dicen nuestros estudiantes",
       quote1: "Gian siempre es servicial y sincero! Me encanta cada uno de sus consejos. Además, tiene la habilidad de señalar aspectos imprevistos con los que podría encontrarme. Estoy deseando aprender con Gian de nuevo!",
       quote2: "Trabajar con Gianfranco fue un placer. Es un gran profesor y tiene mucha paciencia. Lo recomendaría a cualquier persona que quiera aprender desarrollo web.",
-      quote3: "Gian es muy sincero y siempre está dispuesto a ayudar. Entendió muy rápido los desafíos que estoy tratando de resolver y es capaz de explicar de una manera que puedo entender y practicar para resolverlos por mi cuenta. Siempre agradezco su ayuda y espero poder trabajar con él nuevamente :))"
+      quote3: "Gian es muy sincero y siempre está dispuesto a ayudar. Entendió muy rápido los desafíos que estoy tratando de resolver y es capaz de explicar de una manera que puedo entender y practicar para resolverlos por mi cuenta. Siempre agradezco su ayuda :))"
     },
     teacher1: {
       title: "Conoce al profesor",
