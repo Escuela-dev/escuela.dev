@@ -1,5 +1,7 @@
 # TODO
 
+(A) Improve FAQ questions.
+(D) Use CS-only for Accordion <https://developer.chrome.com/docs/css-ui/animate-to-height-auto#animate_the_details_element>
 x(A) Add Free Class page (see <https://www.shecodes.io/free-class>)
 (A) Translate blog articles to Spanish
 (A) Add support for Blog image caption. Markdown links should work

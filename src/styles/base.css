@@ -140,3 +140,11 @@ blockquote {
   margin: 0px;
   font-style: italic;
 }
+
+/*
+  Opt-in the whole page to animating to/from intrinsic sizing .cta-button
+  Used to animate the nav.ul in small screens
+*/
+:root {
+  interpolate-size: allow-keywords;
+}
