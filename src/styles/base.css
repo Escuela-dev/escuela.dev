@@ -4,33 +4,23 @@
 
 @layer base {
   :root,
-  html[data-theme="light"] {
+  html[data-theme='light'] {
     --color-fill: 251, 254, 251;
     --color-text-base: 40, 39, 40;
     --color-card: 230, 230, 230;
     --color-card-muted: 205, 205, 205;
     --color-border: 236, 233, 233;
     --accent: 0, 108, 172;
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(var(--accent)),
-      #da62c4 30%,
-      white 60%
-    );
+    --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
   }
-  html[data-theme="dark"] {
+  html[data-theme='dark'] {
     --color-fill: 47, 55, 65;
     --color-text-base: 230, 230, 230;
     --color-accent: 26, 217, 217;
     --color-card: 63, 75, 90;
     --color-card-muted: 89, 107, 129;
     --color-border: 59, 70, 85;
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(var(--accent)),
-      #da62c4 30%,
-      black 60%
-    );
+    --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, black 60%);
   }
   body {
     @apply flex min-h-screen flex-col bg-skin-fill font-mono text-skin-base;
@@ -38,7 +28,7 @@
   }
   .prose {
     @apply font-sans prose-headings:!mb-3 prose-headings:!text-skin-base prose-h3:italic prose-p:!text-skin-base prose-a:!text-skin-base prose-a:!decoration-dashed prose-a:underline-offset-8 hover:prose-a:text-skin-accent prose-blockquote:!border-l-skin-accent prose-blockquote:border-opacity-50 prose-blockquote:opacity-80 prose-figcaption:!text-skin-base prose-figcaption:opacity-70 prose-strong:!text-skin-base prose-code:rounded prose-code:bg-skin-card prose-code:bg-opacity-75 prose-code:p-1 prose-code:!text-skin-base prose-code:before:!content-[''] prose-code:after:!content-[''] prose-pre:!text-skin-base prose-ol:!text-skin-base prose-ul:overflow-x-clip prose-ul:!text-skin-base prose-li:marker:!text-skin-accent prose-table:text-skin-base prose-th:border prose-th:border-skin-line prose-td:border prose-td:border-skin-line prose-img:mx-auto prose-img:!mt-2 prose-hr:!border-skin-line;
-    @apply !text-xl !leading-8 font-light;
+    @apply !text-xl font-light !leading-8;
     max-width: 56rem !important;
   }
   .prose a {
@@ -62,9 +52,10 @@
     @apply hidden;
   }
   .cta-button {
-    @apply bg-gradient-to-r from-indigo-600 to-indigo-500 text-white font-medium text-base sm:px-10 px-5 py-2.5 sm:py-5 rounded-full hover:from-indigo-700 hover:to-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 dark:focus:ring-indigo-800;
+    @apply rounded-full bg-gradient-to-r from-indigo-600 to-indigo-500 px-5 py-2.5 text-base font-medium text-white hover:from-indigo-700 hover:to-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 dark:focus:ring-indigo-800 sm:px-10 sm:py-5;
   }
-  a, button {
+  a,
+  button {
     @apply transition-colors duration-200;
   }
 }
