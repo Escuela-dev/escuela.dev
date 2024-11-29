@@ -11,6 +11,7 @@ x(A) Add Free Class page (see <https://www.shecodes.io/free-class>)
 (B) Display tags under blog post title (dropdown)
 (B) format blog articles for large desktop like openai.com (<https://openai.com/research/language-models-can-explain-neurons-in-language-models>)
 (B) Improve speed <https://pagespeed.web.dev/report?url=https%3A%2F%2Fescuela.dev>
+(C) Use markdown for translation strings.
 (F) Try view transitions for /blog to individual blog posts <https://developer.chrome.com/docs/web-platform/view-transitions>
 (X) Add voice option for blog articles like <https://blog.google/products/gemini/gemini-live-extensions-language-expansion/> - "Listen to article"
 (X) RSS feed
@@ -32,6 +33,9 @@ Change favicon
 Add logo?
     Logo with the letter 'ED'?
 
+## Project repos
+
+- [Interactive Quiz](https://github.com/escuela-dev/interactive-quiz)
 
 ## Project ideas
 

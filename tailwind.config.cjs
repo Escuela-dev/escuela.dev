@@ -59,8 +59,8 @@ module.exports = {
         },
       },
       animation: {
-        'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out',
+        'accordion-down': 'accordion-down 0.3s ease-in-out',
+        'accordion-up': 'accordion-up 0.3s ease-in-out',
       },
       textColor: {
         skin: {
@@ -127,17 +127,6 @@ module.exports = {
       },
       backdropBlur: ({ theme }) => theme('blur'),
       gradientColorStops: ({ theme }) => theme('colors'),
-      backgroundImage: {
-        none: 'none',
-        'gradient-to-t': 'linear-gradient(to top, var(--tw-gradient-stops))',
-        'gradient-to-tr': 'linear-gradient(to top right, var(--tw-gradient-stops))',
-        'gradient-to-r': 'linear-gradient(to right, var(--tw-gradient-stops))',
-        'gradient-to-br': 'linear-gradient(to bottom right, var(--tw-gradient-stops))',
-        'gradient-to-b': 'linear-gradient(to bottom, var(--tw-gradient-stops))',
-        'gradient-to-bl': 'linear-gradient(to bottom left, var(--tw-gradient-stops))',
-        'gradient-to-l': 'linear-gradient(to left, var(--tw-gradient-stops))',
-        'gradient-to-tl': 'linear-gradient(to top left, var(--tw-gradient-stops))',
-      },
     },
   },
   plugins: [require('@tailwindcss/typography'), require('flowbite/plugin'), require('tailwindcss-animate')],
