@@ -1,17 +1,25 @@
 ---
+import { getCollection } from 'astro:content';
+import { sentences as splitBySentences } from 'sbd';
 import { getLangFromUrl, useTranslations } from '@i18n/utils';
 
 // import Embed from "@components/Embed";
 import FAQSection from '@components/FAQSection.astro';
 import PricingTable from '@components/PricingTable.astro';
+import Card from '@components/Card.astro';
 import MeetTheTeachers from '@components/MeetTheTeachers.astro';
-// import Testimonials from "@components/Testimonials.astro";
+import Testimonials from '@components/Testimonials.astro';
 import Layout from '@layouts/Base.astro';
 import getGithubEditUrl from '@utils/getGithubEditUrl';
+import { getSortedPosts } from '@utils/blog';
 import { languages } from '@i18n/i18n.config';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+const posts = await getCollection('blog');
+
+const recentPosts = getSortedPosts(posts, lang).slice(0, 3);
 
 export const getStaticPaths = () =>
   Object.keys(languages).map((lang) => ({
@@ -21,47 +29,80 @@ export const getStaticPaths = () =>
 
 <Layout githubEditUrl={getGithubEditUrl('/src/pages/index.astro')}>
   <!-- <link rel="dns-prefetch" href="https://blocksurvey.io" /> -->
-  <main class="max-w-screen-md">
+  <main class="max-w-screen-md lg:max-w-screen-lg">
     <h1
-      class="text-gradient my-10 whitespace-break-spaces text-center text-4xl font-bold leading-tight sm:my-20 sm:text-5xl sm:leading-relaxed sm:tracking-tight"
+      class="text-gradient my-5 whitespace-break-spaces text-center text-4xl font-bold leading-tight sm:my-10 sm:text-5xl sm:leading-relaxed sm:tracking-tight"
     >
       {t('home.title')}
     </h1>
     <h2 class="whitespace-break-spaces pt-8 text-center font-sans text-2xl leading-9 sm:text-xl sm:leading-8">
-      {t('home.subtitle')}
+      {
+        splitBySentences(t('home.subtitle')).map((s, i, a) =>
+          i < a.length - 1 ? (
+            <>
+              <span>{s}</span>
+              <br />
+            </>
+          ) : (
+            <span>{s}</span>
+          ),
+        )
+      }
     </h2>
-    <div>
-      <!-- <Testimonials /> -->
-    </div>
-    <div class="py-8 lg:pb-8 lg:pt-16">
-      <MeetTheTeachers />
-    </div>
-    <FAQSection />
-    <!-- <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+  </main>
+  <div class="px-6 py-8 lg:px-0 lg:pb-8 lg:pt-16">
+    <Testimonials />
+  </div>
+  <div class="mx-auto max-w-screen-lg px-6 py-8 lg:px-0 lg:pb-8 lg:pt-16">
+    <MeetTheTeachers />
+  </div>
+  <!-- <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
       <h2
         class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
       >
         Fill the form below to learn more
       </h2>
     </div> -->
-    <!-- <Embed
+  <!-- <Embed
       client:visible
       src="https://blocksurvey.io/survey/t/4c0715c3-e28d-4dc8-b80f-a3f8210f1f24"
       style={{ width: "100%", height: "100vh" }}
     /> -->
-  </main>
-  <div class="pt-4 lg:py-8">
+  <div class="px-6 pb-12 pt-4 sm:px-4 lg:py-12 xl:px-0">
     <PricingTable />
   </div>
+  <div class="w-full bg-primary/10">
+    <div class="mx-auto max-w-screen-md px-6 py-8 sm:px-4 lg:max-w-screen-md">
+      <FAQSection />
+    </div>
+  </div>
+  {
+    lang == 'en' && (
+      <div class="px-6 pt-8 lg:py-8 xl:px-0">
+        <div class="mx-auto max-w-screen-xl px-4 font-sans lg:px-6">
+          <h2 class="mb-4 text-center text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+            {t('home.recentPosts')}
+          </h2>
+          <section
+            class="grid grid-cols-1 gap-8 px-0 py-8 font-sans sm:gap-6 sm:px-16 lg:grid-cols-3 xl:px-0"
+            data-test="articles-section"
+          >
+            {recentPosts.map(({ data }) => (
+              <div class="col-span-1">
+                <Card frontmatter={data} />
+              </div>
+            ))}
+          </section>
+        </div>
+      </div>
+    )
+  }
 </Layout>
 
 <style scoped>
   main {
     margin: auto;
     padding: 1.5rem;
-  }
-  h1 {
-    margin: 0;
   }
 
   .text-gradient {

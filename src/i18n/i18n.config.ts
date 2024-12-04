@@ -3,7 +3,7 @@ export const languages = {
   es: 'Español',
 };
 
-export const defaultLang = 'en';
+export const defaultLang = 'es';
 
 // const nextMonth = new Date(
 //   new Date().getFullYear(),
@@ -31,24 +31,43 @@ export const strings = {
     home: {
       title: `Welcome to Escuela.dev\nA Coding school in\nMalaga, Madrid and online`,
       subtitle:
-        'Get personalized one-on-one classes through online video sessions. Get instant feedback and guidance through the curriculum. Learn modern JavaScript, HTML, CSS, Git and Node.js.',
+        'Get personalized one-on-one classes through online video sessions. Get instant feedback and guidance through the curriculum. Learn modern JavaScript, TypeScript, HTML, CSS, Git, Python and Node.js.',
+      recentPosts: 'Recent posts',
     },
     faq: {
       q1: {
+        title: '👨‍🏫 What are the advantages of learning with Escuela.dev?',
+        answer: `Personalized classes: Tailored to your needs and goals.<br/><br/>
+- <b>Discipline and progress</b>: Weekly sessions help establish a consistent routine.<br/>
+- <b>Expert mentorship</b>: Learn from experienced engineers who share practical tips and industry tricks.<br/>
+- <b>Real productivity</b>: Discover key tools like VSCode shortcuts and efficient workflows.<br/>
+<br/>
+At Escuela.dev, you learn like a professional from day one!`,
+      },
+      q2: {
+        title: '🤔 What should I know before starting?',
+        answer: `You don’t need prior knowledge. Since the teaching is personalized, we’ll assess your current level together and define the best starting point based on your goals.
+
+I’ll guide you step-by-step to ensure you progress steadily from the beginning.
+The first module includes 4 classes designed to build a solid foundation for your learning.`,
+      },
+      q3: {
+        title: '📆 How much time do I need to learn programming?',
+        answer: `If you’re starting from scratch, on average, you’ll need 6 months, dedicating 2 hours per week to personalized classes and 3 additional hours to practice on your own.
+
+The exact time may vary depending on your pace and dedication, but with consistency and proper support, you’ll make solid progress and be ready for more complex projects.`,
+      },
+      q4: {
         title: '📜 Will I receive a certificate of completion?',
         answer:
           "No, instead of a certificate, we offer something more valuable.\nCompanies hiring software developers prioritise projects and code\nsamples over certificates. With our program, you'll build a robust\nportfolio on GitHub, showcasing various web projects. This portfolio\nwill demonstrate your proficiency, enable potential employers to assess\nyour skills effectively and determine if you're a good fit for their\nteams. 🤜🤛",
       },
-      q2: {
+      q5: {
         title: '🛠️ What kind of projects will I learn how to build?',
-        answer1:
-          '1. 📚 <b>Interactive Quiz</b>: Build an interactive quiz application\nwith multiple-choice questions. Users can select their answers, and you\ncan provide instant feedback on their choices. JavaScript can be used to\nmanage the quiz and track scores.',
-        answer2:
-          '2. ✨ <b>Animated Landing Page</b>: Design a visually appealing landing\npage with animations and transitions. Use CSS animations or libraries\nlike Animate.css to add engaging effects.',
-        answer3:
-          '3. 🎹 <b>Virtual Piano</b>: Create a virtual piano keyboard where users\ncan play musical notes and chords by clicking or pressing keys. You can\nuse JavaScript to handle the sound and interactivity.',
-        answer4:
-          "4. 💡 <b>Pick your adventure</b>: Choose a project that interests you and start\ndeveloping it. You can use any programming language you're comfortable with\nand have fun exploring new technologies.",
+        answer: `1. 📚 <b>Interactive Quiz</b>: Build an interactive quiz application\nwith multiple-choice questions. Users can select their answers, and you\ncan provide instant feedback on their choices. JavaScript can be used to\nmanage the quiz and track scores.<br/><br/>
+2. ✨ <b>Animated Landing Page</b>: Design a visually appealing landing\npage with animations and transitions. Use CSS animations or libraries\nlike Animate.css to add engaging effects.<br/><br/>
+3. 🎹 <b>Virtual Piano</b>: Create a virtual piano keyboard where users\ncan play musical notes and chords by clicking or pressing keys. You can\nuse JavaScript to handle the sound and interactivity.<br/><br/>
+4. 💡 <b>Pick your adventure</b>: Choose a project that interests you and start\ndeveloping it. You can use any programming language you're comfortable with\nand have fun exploring new technologies.`,
       },
     },
     'free-class': {
@@ -79,7 +98,7 @@ export const strings = {
       plan1: {
         title: 'One on one',
         priceDescription: '/hour',
-        buttonText: 'Book',
+        buttonText: 'Call',
       },
       feature: {
         online: 'Online',
@@ -87,18 +106,17 @@ export const strings = {
         session: '1h sessions',
       },
       plan2: {
-        title: 'Group class',
-        priceDescription: '/course \n (€19 per hour)',
-        buttonText: 'Book',
+        title: '8 sessions',
+        priceDescription: '/course \n (€28.5 per hour)',
+        buttonText: 'Call',
         feature: {
-          people: 'up to 4 people',
-          course: '4-week course (3h per week)',
+          course: '4-week course (2h session + 1h on your own per week)',
         },
       },
       plan3: {
         title: '2-day Workshop',
         priceDescription: 'Custom pricing',
-        buttonText: 'Book',
+        buttonText: 'Call',
         feature: {
           time: 'From 10am to 5pm',
           lunch: 'Lunch included',
@@ -106,27 +124,26 @@ export const strings = {
       },
     },
     footer: {
-      copyright: 'Escuela.dev – All rights reserved.',
-      edit: 'Edit this page on GitHub',
+      "emailContact": "Email Gianfranco",
+      copyright: "Escuela.dev – All rights reserved.",
+      edit: "Edit this page on GitHub"
     },
     blog: {
-      minutesToRead: 'minutes to read',
+      minute: 'minute',
+      minutes: 'minutes',
     },
     testimonials: {
-      title: 'Testimonials',
-      subtitle: 'What our students say',
-      quote1:
-        'I learned a lot with Gianfranco. Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.',
-      quote2:
-        'Working with Gianfranco was a pleasure. He is a great teacher and has a lot of patience. I would recommend him to anyone who wants to learn web development.',
-      quote3:
-        'The course was a great experience. I learned a lot and had a lot of fun. I would recommend it to anyone who wants to learn web development.',
+      title: "Testimonials",
+      subtitle: "What our students say",
+      quote1: "Gian is always helpful and sincere! I love every bit of advice. Also being able to point out unforeseen items that I might run into. Looking forward to learn with Gian again!!",
+      quote2: "Working with Gianfranco was a pleasure. He is a great teacher and has a lot of patience. I would recommend him to anyone who wants to learn web development.",
+      quote3: "Gian is very sincere, and is always helpful. He understood the challenges I'm trying to solve really quick and is able to explain in a way that I'm able to understand and practice resolving challenges on individual. I always appreciate his help  :))"
     },
     teacher1: {
       title: 'Meet the teacher',
       name: 'Gianfranco',
       description:
-        'Gianfranco is a seasoned software engineer and educator with over a decade of experience in web, backend and mobile app development.<br/><br/>Originally from 🇮🇹 Italy, he had a Start-up in 🇺🇦 Ukraine and now lives in 🇪🇸 Malaga, Spain. He has a Computer Science degree from 🇮🇪 Ireland and has taught many students how to code while working at Thinkful (now Chegg), a US based online bootcamp.',
+        'Gianfranco is a seasoned software engineer and educator with over a decade of experience in web and mobile app development.<br/><br/>Originally from 🇮🇹 Italy, he had a Start-up in 🇺🇦 Ukraine and now lives in 🇪🇸 Malaga, Spain. He has a Computer Science degree from 🇮🇪 Ireland and has taught many students how to code while working at Thinkful (now Chegg), a US based online bootcamp.',
     },
   },
   es: {
@@ -142,29 +159,50 @@ export const strings = {
       blog: 'Blog',
       'free-coding-class': 'Tu clase GRATIS',
       about: 'Sobre',
+      twitter: 'Twitter',
       whatsapp_abbr: 'Únete a la comunidad de WhatsApp',
     },
     home: {
       title: `Bienvenid@s a Escuela.dev\nUna escuela de programación en\nMalaga, Madrid y Online`,
       subtitle:
-        'Aprende con clases particulares y personalizadas a través de sesiones de video en línea. Aprende con ayuda y sigue un currículum. Aprende JavaScript moderno, HTML, CSS, Git y Node.js.',
+        'Aprende con clases particulares y personalizadas a través de sesiones de video en línea. Aprende con ayuda y sigue un currículum. Aprende JavaScript moderno, TypeScript, HTML, CSS, Git, Python y Node.js.',
+      recentPosts: 'Últimos posts',
     },
     faq: {
       q1: {
-        title: '📜 ¿Recibiré un certificado de finalización?',
-        answer:
-          'No, en lugar de un certificado, ofrecemos algo más valioso. Las empresas que contratan desarrolladores de software priorizan los proyectos y las muestras de código por encima de los certificados. Con nuestro curso, construirás un portafolio sólido en GitHub, que incluirá varios proyectos web. Este portafolio demostrará tu competencia y permitirá a los posibles empleadores evaluar tus habilidades de manera efectiva, determinando si eres un buen ajuste para sus equipos.🤜🤛',
+        title: '👨‍🏫 ¿Cual es la ventaja de aprender con Escuela.dev?',
+        answer: `Clases personalizadas: Adaptadas a tus necesidades y objetivos.<br/><br/>
+- <b>Disciplina y progreso</b>: Las sesiones semanales fomentan una rutina constante.<br/>
+- <b>Mentoría de expertos</b>: Aprende de ingenieros con experiencia que comparten consejos prácticos y trucos del sector.<br/>
+- <b>Productividad real</b>: Descubre herramientas clave como atajos en VSCode y flujos de trabajo eficaces.<br/>
+<br/>
+¡En Escuela.dev aprendes como un profesional desde el primer día!`,
       },
       q2: {
+        title: '🤔 ¿Qué debo saber antes de empezar?',
+        answer: `No necesitas conocimientos previos. Como la enseñanza es personalizada, evaluaremos juntos tu nivel actual y definiremos el mejor punto de partida según tus objetivos.
+
+Te guiaré paso a paso para asegurarnos de que avanzas de manera sólida desde el principio.
+El primer módulo incluye 4 clases diseñadas para sentar las bases de tu aprendizaje.`,
+      },
+      q3: {
+        title: '📆 ¿Cuánto tiempo necesito para aprender a programar?',
+        answer: `Si empiezas desde cero, en promedio necesitarás 6 meses, dedicando 2 horas semanales a clases personalizadas y 3 horas adicionales para practicar por tu cuenta.
+
+El tiempo puede variar según tu ritmo y dedicación, pero con constancia y el apoyo adecuado, lograrás avances sólidos y estarás listo para proyectos más complejos.`,
+      },
+      q4: {
+        title: '📜 ¿Recibiré un certificado de finalización?',
+        answer: `No, en lugar de un certificado, ofrecemos algo más valioso. Las empresas que contratan desarrolladores de software priorizan los proyectos y las muestras de código por encima de los certificados.
+
+Con nuestro curso, construirás un portafolio sólido en GitHub, que incluirá varios proyectos web. Este portafolio demostrará tu competencia y permitirá a los posibles empleadores evaluar tus habilidades de manera efectiva, determinando si eres un buen ajuste para sus equipos.🤜🤛`,
+      },
+      q5: {
         title: '🛠️ ¿Qué tipo de proyectos aprenderé a construir?',
-        answer1:
-          '1. 📚 <b>Quiz interactivo</b>: Construye una aplicación de quiz interactivo con preguntas de opción múltiple. Los usuarios pueden seleccionar sus respuestas, y tú puedes proporcionar retroalimentación instantánea sobre sus elecciones. Puedes utilizar JavaScript para administrar el quiz y rastrear las puntuaciones.',
-        answer2:
-          '2. ✨ <b>Página de aterrizaje animada</b>: Diseña una página de aterrizaje visualmente atractiva con animaciones y transiciones. Utiliza animaciones CSS o bibliotecas como Animate.css para agregar efectos llamativos.',
-        answer3:
-          '3. 🎹 <b>Piano virtual</b>: Crea un teclado de piano virtual donde los usuarios puedan tocar notas musicales y acordes haciendo clic o presionando teclas. Puedes usar JavaScript para manejar el sonido y la interactividad.',
-        answer4:
-          '4. 💡 <b>Elige tu aventura</b>: Elige un proyecto que te interese y empieza a desarrollarlo. Puedes utilizar cualquier lenguaje de programación con el que te sientas cómodo y divertirte explorando nuevas tecnologías.',
+        answer: `1. 📚 <b>Quiz interactivo</b>: Construye una aplicación de quiz interactivo con preguntas de opción múltiple. Los usuarios pueden seleccionar sus respuestas, y tú puedes proporcionar retroalimentación instantánea sobre sus elecciones. Puedes utilizar JavaScript para administrar el quiz y rastrear las puntuaciones.<br/><br/>
+2. ✨ <b>Página de aterrizaje animada</b>: Diseña una página de aterrizaje visualmente atractiva con animaciones y transiciones. Utiliza animaciones CSS o bibliotecas como Animate.css para agregar efectos llamativos.<br/><br/>
+3. 🎹 <b>Piano virtual</b>: Crea un teclado de piano virtual donde los usuarios puedan tocar notas musicales y acordes haciendo clic o presionando teclas. Puedes usar JavaScript para manejar el sonido y la interactividad.<br/><br/>
+4. 💡 <b>Elige tu aventura</b>: Escoge un proyecto que te interese y comienza a desarrollarlo. Puedes utilizar cualquier lenguaje de programación con el que te sientas cómodo y divertirte explorando nuevas tecnologías.`,
       },
     },
     'free-class': {
@@ -195,7 +233,7 @@ export const strings = {
       plan1: {
         title: 'Clase individual',
         priceDescription: '/hora',
-        buttonText: 'Reserva',
+        buttonText: 'Consúltanos',
       },
       feature: {
         online: 'Online',
@@ -203,18 +241,17 @@ export const strings = {
         session: 'Sesiones de 1h',
       },
       plan2: {
-        title: 'Clase en grupo',
-        priceDescription: '/curso \n (19€ por hora)',
-        buttonText: 'Reserva',
+        title: '8 sessiones',
+        priceDescription: '/curso \n (28.5€ por hora)',
+        buttonText: 'Consúltanos',
         feature: {
-          people: 'Hasta 4 personas',
-          course: 'Curso de 4 semanas (3 horas por semana)',
+          course: 'Curso de 4 semanas (2 horas de clase + 1 hora de tu propio tiempo por semana)',
         },
       },
       plan3: {
         title: 'Taller de 2 días',
         priceDescription: 'Precio personalizado',
-        buttonText: 'Reserva',
+        buttonText: 'Consúltanos',
         feature: {
           time: 'De 10am a 5pm',
           lunch: 'Almuerzo incluido',
@@ -222,27 +259,26 @@ export const strings = {
       },
     },
     footer: {
-      copyright: 'Escuela.dev – Todos los derechos reservados.',
-      edit: 'Edita esta página en GitHub',
+      "emailContact": "Email Gianfranco",
+      copyright: "Escuela.dev – Todos los derechos reservados.",
+      edit: "Edita esta página en GitHub"
     },
     blog: {
-      minutesToRead: 'minutos para leer',
+      minute: 'minuto',
+      minutes: 'minutos',
     },
     testimonials: {
-      title: 'Testimonios',
-      subtitle: 'Lo que dicen nuestros estudiantes',
-      quote1:
-        'Aprendí mucho con Gianfranco. Flowbite es realmente genial. Contiene muchas páginas y componentes prediseñados, desde la pantalla de inicio de sesión hasta el panel complejo. ¡Perfecto para tu próxima aplicación SaaS!',
-      quote2:
-        'Trabajar con Gianfranco fue un placer. Es un gran profesor y tiene mucha paciencia. Lo recomendaría a cualquier persona que quiera aprender desarrollo web.',
-      quote3:
-        'El curso fue una gran experiencia. Aprendí mucho y tuve mucha diversión. Lo recomendaría a cualquier persona que quiera aprender desarrollo web.',
+      title: "Testimonios",
+      subtitle: "Lo que dicen nuestros estudiantes",
+      quote1: "Gian siempre es servicial y sincero! Me encanta cada uno de sus consejos. Además, tiene la habilidad de señalar aspectos imprevistos con los que podría encontrarme. Estoy deseando aprender con Gian de nuevo!",
+      quote2: "Trabajar con Gianfranco fue un placer. Es un gran profesor y tiene mucha paciencia. Lo recomendaría a cualquier persona que quiera aprender desarrollo web.",
+      quote3: "Gian es muy sincero y siempre está dispuesto a ayudar. Entendió muy rápido los desafíos que estoy tratando de resolver y es capaz de explicar de una manera que puedo entender y practicar para resolverlos por mi cuenta. Siempre agradezco su ayuda :))"
     },
     teacher1: {
       title: 'Conoce al profesor',
       name: 'Gianfranco',
       description:
-        'Gianfranco es un ingeniero de software y educador con más de una década de experiencia en el desarrollo de aplicaciones web, backend y móviles.<br/><br/>Originario de 🇮🇹 Italia, tuvo una Start-up en 🇺🇦 Ucrania y ahora vive en 🇪🇸 Málaga, España. Tiene un título en Informática de 🇮🇪 Irlanda y ha enseñado a programar a muchos estudiantes mientras trabajaba en Thinkful (ahora Chegg), un bootcamp online estadounidense',
+        'Gianfranco es un ingeniero de software y educador con más de una década de experiencia en el desarrollo de aplicaciones web y móviles.<br/><br/>Originario de 🇮🇹 Italia, tuvo una Start-up en 🇺🇦 Ucrania y ahora vive en 🇪🇸 Málaga, España. Tiene un título en Informática de 🇮🇪 Irlanda y ha enseñado a programar a muchos estudiantes mientras trabajaba en Thinkful (ahora Chegg), un bootcamp online estadounidense',
     },
   },
 };

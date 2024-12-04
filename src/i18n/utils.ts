@@ -1,12 +1,12 @@
 import { getRelativeLocaleUrl as originalGetRelativeLocaleUrl } from 'astro:i18n';
 
-import { strings, defaultLang, languages } from './i18n.config';
+import { strings, defaultLang, languages } from "./i18n.config";
 
 export type Language = keyof typeof strings;
 
 export function getLangFromUrl(url: URL) {
-  const [, lang] = url.pathname.split('/');
-  if (lang in strings) return lang as Language;
+  const [, lang] = url.pathname.split("/");
+  if (lang in languages) return lang as Language;
   return defaultLang;
 }
 
@@ -31,7 +31,10 @@ export function useTranslations(lang: Language) {
       // @ts-expect-error - type error
       keys.reduce((obj, key) => obj?.[key], strings[defaultLang] as Record<string, string>);
 
-    return translatedString || '';
+        if (!translatedString) {
+      throw new Error(`Missing translation for key ${key}`);
+    }
+    return translatedString
   };
 }
 

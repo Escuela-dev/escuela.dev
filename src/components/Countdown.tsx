@@ -1,14 +1,11 @@
-import { useEffect, useState } from 'react';
-import { getLangFromUrl, useTranslations } from '@i18n/utils';
+import { useEffect, useState } from "react";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+import { nextClassDateTime } from "@utils/countdownUtil"
 
 const lang = getLangFromUrl(new URL(window.location.href));
 const t = useTranslations(lang);
 
-interface Props {
-  datetime: string;
-}
-
-export default function Countdown({ datetime }: Props) {
+export default function Countdown( ) {
   const [days, setDays] = useState('0');
   const [hours, setHours] = useState('0');
   const [minutes, setMinutes] = useState('0');
@@ -16,6 +13,7 @@ export default function Countdown({ datetime }: Props) {
 
   useEffect(() => {
     const updateCountdown = () => {
+      const datetime = nextClassDateTime()?.toISOString() || '';
       const date = new Date(datetime);
       const now = new Date();
       const distance = date.getTime() - now.getTime();

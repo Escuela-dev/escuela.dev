@@ -3,28 +3,38 @@ import { Schema } from 'astro-seo-schema';
 
 import { getLangFromUrl, useTranslations } from '@i18n/utils';
 import { removeEmoji } from '@utils/strings';
+import { FAQAccordion } from '@components/FAQAccordion';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<div class="mx-auto mb-8 text-center lg:mb-12">
-  <h2 class="mb-8 text-center text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">FAQ</h2>
-  <h2 class="mb-6 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-    {t('faq.q1.title')}
-  </h2>
-  <p class="text-left font-sans text-lg leading-7">
-    {t('faq.q1.answer')}
-  </p>
-</div>
-<div class="mx-auto mb-8 text-center lg:mb-12">
-  <h2 class="mb-6 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-    {t('faq.q2.title')}
-  </h2>
-  <p class="mb-4 text-left font-sans text-lg leading-7" set:html={t('faq.q2.answer1')} />
-  <p class="mb-4 text-left font-sans text-lg leading-7" set:html={t('faq.q2.answer2')} />
-  <p class="mb-4 text-left font-sans text-lg leading-7" set:html={t('faq.q2.answer3')} />
-  <p class="mb-4 text-left font-sans text-lg leading-7" set:html={t('faq.q2.answer4')} />
+<div class="w-full font-sans sm:w-[48rem]">
+  <FAQAccordion
+    client:only="react"
+    faqs={[
+      {
+        title: t('faq.q1.title'),
+        answer: t('faq.q1.answer'),
+      },
+      {
+        title: t('faq.q2.title'),
+        answer: t('faq.q2.answer'),
+      },
+      {
+        title: t('faq.q3.title'),
+        answer: t('faq.q3.answer'),
+      },
+      {
+        title: t('faq.q4.title'),
+        answer: t('faq.q4.answer'),
+      },
+      {
+        title: t('faq.q5.title'),
+        answer: t('faq.q5.answer'),
+      },
+    ]}
+  />
 </div>
 
 <Schema
@@ -45,9 +55,42 @@ const t = useTranslations(lang);
         name: removeEmoji(t('faq.q2.title')),
         acceptedAnswer: {
           '@type': 'Answer',
-          text: removeEmoji(`${t('faq.q2.answer1')} ${t('faq.q2.answer2')} ${t('faq.q2.answer3')}`),
+          text: removeEmoji(t('faq.q2.answer')),
+        },
+      },
+      {
+        '@type': 'Question',
+        name: removeEmoji(t('faq.q3.title')),
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: removeEmoji(t('faq.q3.answer')),
+        },
+      },
+      {
+        '@type': 'Question',
+        name: removeEmoji(t('faq.q4.title')),
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: removeEmoji(t('faq.q4.answer')),
+        },
+      },
+      {
+        '@type': 'Question',
+        name: removeEmoji(t('faq.q5.title')),
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: removeEmoji(t('faq.q5.answer')),
         },
       },
     ],
   }}
 />
+
+<style scoped>
+  .question {
+    @apply mb-6 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white;
+  }
+  .answer {
+    @apply mb-6 text-left font-sans text-lg leading-7;
+  }
+</style>

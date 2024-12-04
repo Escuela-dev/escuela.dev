@@ -1,21 +1,25 @@
 # TODO
 
+(A) Improve FAQ questions.
 x(A) Add Free Class page (see <https://www.shecodes.io/free-class>)
-(A) Fix redirect if 404 page (e.g. /free-class)
-(A) Start courses page (see <https://vschool.io/admissions/web-development-foundation/>)
 (A) Translate blog articles to Spanish
-(A) Add testimonials
-    Ask for testimonial from Bruce, Rose, Pierre, and others
+x(A) Add testimonials
+(B) Display tags under blog post title (dropdown)
+(A) Fix redirect if 404 page (e.g. /free-class)
+(A) Add 'Web development course page' see
+    Use Learning Management System like <https://github.com/shuding/nextra/tree/v4-v2> <https://frappe.io/learning> <https://vschool.io/admissions/web-development-foundation/>
 x(A) Add FAQ JSON-LD schema
-(B) Display tags under blog post title
 (A) Keywords en Español: aprendisaje
 (C) Add support for Blog image caption. Markdown links should work
 (B) Add voice option for blog articles like <https://blog.google/products/gemini/gemini-live-extensions-language-expansion/> - "Listen to article"
 (B) format blog articles for large desktop like openai.com (<https://openai.com/research/language-models-can-explain-neurons-in-language-models>)
-(B) RSS feed
-    Add RSS feed to <https://app.daily.dev/>
-(B) Fix speed <https://pagespeed.web.dev/report?url=https%3A%2F%2Fescuela.dev>
+(B) Improve speed <https://pagespeed.web.dev/report?url=https%3A%2F%2Fescuela.dev>
+(C) Use markdown for translation strings.
+(D) Use CSS-only for Accordion <https://developer.chrome.com/docs/css-ui/animate-to-height-auto#animate_the_details_element>
 (F) Try view transitions for /blog to individual blog posts <https://developer.chrome.com/docs/web-platform/view-transitions>
+(X) Add voice option for blog articles like <https://blog.google/products/gemini/gemini-live-extensions-language-expansion/> - "Listen to article"
+(X) RSS feed
+    Add RSS feed to <https://app.daily.dev/>
 (Z) Improve SEO
     Add meta tags {cm:2023-02-25}
     Add OpenGraph {cm:2023-02-25}
@@ -23,7 +27,7 @@ x(A) Add FAQ JSON-LD schema
     xAdd sitemap generation
     xAdd robots.txt
     Add canonical links
-    Add Analytics (not Google Analytics. For example Matomo or PathHog)
+    Add Analytics (not Google Analytics. For example Matomo or PostHog)
     xAdd Google Search Console
     Add Google Tag Manager
     Add Facebook Pixel
@@ -31,7 +35,11 @@ x(A) Add FAQ JSON-LD schema
     Google Site Verification
 Change favicon
 Add logo?
-    Logo with the letter 'E'?
+    Logo with the letters 'ED'?
+
+## Project repos
+
+- [Interactive Quiz](https://github.com/escuela-dev/interactive-quiz)
 
 ## Cool Design UI/UX
 
@@ -40,6 +48,7 @@ Add logo?
 ## Project ideas
 
 - <https://css-tricks.com/how-to-animate-a-svg-with-border-image/>
+- Scrape cute rescue dogs from <https://dogs.ie/sale>
 
 ### Holiday themed projects
 
@@ -55,36 +64,37 @@ Add logo?
 
 Coding school in London my mom went to: <https://www.londonappbrewery.com/>
 
-Coding school in Paris: <https://www.42.fr/>
-Coding school in Paris: <https://www.42lyon.fr/>
-Coding school in London my friend went to: <https://www.lighthouselabs.ca/>
-Coding school in London: <https://www.hackyourfuture.net/>
-Coding school in London: <https://www.hackreactor.com/>
-Coding school in London: <https://www.hackwagon.com/>
-Coding school in London: <https://www.hackbrightacademy.com/>
-Coding school in Paris: <https://www.wildcodeschool.com/fr-FR>
-Coding school in Paris: <https://www.lereacteur.io/>
-Coding school in London: <https://www.lewagon.com/>
-Coding school in London: <https://www.makers.tech/>
-Coding school in London: <https://www.thefoundersfactory.com/>
-Coding school in London: <https://www.thinkful.com/>
-Coding school in London: <https://www.codingnomads.co/>
-Coding school in London: <https://www.codingbootcamp.co.uk/>
-Coding school in London: <https://www.codingdojo.com/>
-Coding school in London: <https://www.codinghouse.co.uk/>
-Coding school in Madrid: <https://www.ironhack.com/en>
-Coding school in Madrid: <https://www.neoland.es/>
-Coding school in Madrid: <https://www.soyhenry.com/>
-Coding school in Madrid: <https://www.acamica.com/>
-Coding school in Madrid: <https://www.bedu.org/>
-Coding school in Madrid: <https://www.4geeksacademy.co/>
-Coding school in Madrid: <https://www.campusmvp.es/>
-Coding school in Barcelona: <https://www.soyhenry.com/>
-Coding school in Milan: <https://www.boolean.careers/>
-Coding school in Milan: <https://www.lamolisana.it/>
-Coding school in Europe: <https://www.coding-academy.org/>
-Coding school in Italy: <https://www.unicampania.it/>
-Coding school in Italy: <https://www.unicam.it/>
+Coding schools
+  in Paris: <https://www.42.fr/>
+  in Paris: <https://www.42lyon.fr/>
+  in London my friend went to: <https://www.lighthouselabs.ca/>
+  in London: <https://www.hackyourfuture.net/>
+  in London: <https://www.hackreactor.com/>
+  in London: <https://www.hackwagon.com/>
+  in London: <https://www.hackbrightacademy.com/>
+  in Paris: <https://www.wildcodeschool.com/fr-FR>
+  in Paris: <https://www.lereacteur.io/>
+  in London: <https://www.lewagon.com/>
+  in London: <https://www.makers.tech/>
+  in London: <https://www.thefoundersfactory.com/>
+  in London: <https://www.thinkful.com/>
+  in London: <https://www.codingnomads.co/>
+  in London: <https://www.codingbootcamp.co.uk/>
+  in London: <https://www.codingdojo.com/>
+  in London: <https://www.codinghouse.co.uk/>
+  in Madrid: <https://www.ironhack.com/en>
+  in Madrid: <https://www.neoland.es/>
+  in Madrid: <https://www.soyhenry.com/>
+  in Madrid: <https://www.acamica.com/>
+  in Madrid: <https://www.bedu.org/>
+  in Madrid: <https://www.4geeksacademy.co/>
+  in Madrid: <https://www.campusmvp.es/>
+  in Barcelona: <https://www.soyhenry.com/>
+  in Milan: <https://www.boolean.careers/>
+  in Milan: <https://www.lamolisana.it/>
+  in Europe: <https://www.coding-academy.org/>
+  in Italy: <https://www.unicampania.it/>
+  in Italy: <https://www.unicam.it/>
 
 School my kids go to: <https://www.lespetitschamps.com/>
 School my mom works at: <https://www.ecole-lespetitschamps.com/>

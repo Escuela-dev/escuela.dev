@@ -24,7 +24,7 @@ const { githubEditUrl } = Astro.props;
       </a>
     </li>
     <li>
-      <a href="https://x.com/escuela_dev_" target="_blank" class="hover:text-black">
+      <a href="https://x.com/escuela_dev_" target="_blank" class="hover:text-black dark:hover:text-white">
         <Icon name="line-md:twitter-x" />
         <p>Twitter</p>
       </a>
@@ -43,6 +43,16 @@ const { githubEditUrl } = Astro.props;
       >
         <Icon name="bxl:whatsapp" />
         <p>WhatsApp Community</p>
+      </a>
+    </li>
+    <li>
+      <a
+        href="mailto:gianfranco@escuela.dev"
+        target="_blank"
+        class="flex items-center gap-[0.35rem] opacity-60 transition-all duration-200 hover:text-skin-accent hover:opacity-100"
+      >
+        <Icon name="mdi:email" />
+        <p>{t('footer.emailContact')}</p>
       </a>
     </li>
   </ul>
@@ -81,9 +91,8 @@ const { githubEditUrl } = Astro.props;
 
 <style>
   footer {
-    @apply mt-5 w-full text-center;
+    @apply w-full text-center;
     padding: 25px;
-    border-top: 1px solid rgba(var(--color-border));
   }
   svg {
     width: 15px;
