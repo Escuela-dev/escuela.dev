@@ -52,7 +52,7 @@ export const blogSchema = z
     blogSlug: z.string().optional(),
     featured: z.boolean().optional(),
     draft: z.boolean().optional(),
-    tags: z.array(z.string()).max(5).default(["others"]),
+    tags: z.array(z.string()).max(5).default(['others']),
     // tags: z.array(tagSchema).max(5),
     heroImage: z.string().optional(),
     ogImage: z.string().optional(),

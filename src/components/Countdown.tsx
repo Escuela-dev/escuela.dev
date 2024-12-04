@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
-import { getLangFromUrl, useTranslations } from "@i18n/utils";
-import { nextClassDateTime } from "@utils/countdownUtil"
+import { useEffect, useState } from 'react';
+import { getLangFromUrl, useTranslations } from '@i18n/utils';
+import { nextClassDateTime } from '@utils/countdownUtil';
 
 const lang = getLangFromUrl(new URL(window.location.href));
 const t = useTranslations(lang);
 
-export default function Countdown( ) {
+export default function Countdown() {
   const [days, setDays] = useState('0');
   const [hours, setHours] = useState('0');
   const [minutes, setMinutes] = useState('0');

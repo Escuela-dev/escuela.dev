@@ -13,42 +13,40 @@ import andrewr from '../assets/testimonials/andrewr.jpeg';
 
 const testimonials = [
   {
-    name: "John N",
+    name: 'John N',
     // title: "Web Developer at Hearst Magazines",
     // socialMedia: "https://www.linkedin.com/in/genevieve-kuzak-7aa677238/",
-    quote: t("testimonials.quote1"),
-    image: johnn
+    quote: t('testimonials.quote1'),
+    image: johnn,
   },
   {
-    name: "Andrew Royce",
-    title: "Senior Mobile Engineer",
+    name: 'Andrew Royce',
+    title: 'Senior Mobile Engineer',
     // socialMedia: "https://www.linkedin.com/in/andrewwroyce/",
-    quote: t("testimonials.quote3"),
-    image: andrewr
+    quote: t('testimonials.quote3'),
+    image: andrewr,
   },
   {
-    name: "Alex Ferguson",
-    title: "Senior User Experience Designer",
+    name: 'Alex Ferguson',
+    title: 'Senior User Experience Designer',
     // socialMedia: "https://www.linkedin.com/in/aferguson17/",
-    quote: t("testimonials.quote2"),
-    image: alexf
-  }
+    quote: t('testimonials.quote2'),
+    image: alexf,
+  },
 ];
 ---
 
 <div class="mx-auto max-w-screen-xl">
-  <h2
-    class="text-center text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
-  >
-    {t("testimonials.title")}
+  <h2 class="text-center text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+    {t('testimonials.title')}
   </h2>
-  <p class="mt-4 text-center text-gray-500">{t("testimonials.subtitle")}</p>
+  <p class="mt-4 text-center text-gray-500">{t('testimonials.subtitle')}</p>
   <div class="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-3">
     {
       testimonials.map((t) => (
         <section class="">
-          <figcaption class="rounded-lg bg-gray-100 px-4 py-8 dark:bg-gray-800 grid lg:grid-rows-[minmax(auto,150px),1fr] grid-rowss-2 gap-8">
-            <blockquote class="p-0 border-0 text-center font-semibold text-gray-900 dark:text-gray-300">
+          <figcaption class="grid-rowss-2 grid gap-8 rounded-lg bg-gray-100 px-4 py-8 dark:bg-gray-800 lg:grid-rows-[minmax(auto,150px),1fr]">
+            <blockquote class="border-0 p-0 text-center font-semibold text-gray-900 dark:text-gray-300">
               <p class="text-sm not-italic">"{t.quote}"</p>
             </blockquote>
             <div class="flex items-center justify-center space-x-3 text-base">
@@ -73,14 +71,7 @@ const testimonials = [
               >
                 <circle cx="1" cy="1" r="1" />
               </svg> */}
-              <Image
-                src={t.image}
-                alt={t.name}
-                class="mx-auto h-10 w-10 rounded-full"
-              />
-              <!-- <div class="pl-3 text-sm text-gray-600 dark:text-gray-400">
-                {t.title}
-              </div> -->
+              <Image src={t.image} alt={t.name} class="mx-auto h-10 w-10 rounded-full" />
             </div>
           </figcaption>
         </section>
