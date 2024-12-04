@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 // import dayjs from 'dayjs'
 import type { BlogFrontmatter } from '@content/_schemas';
 export interface Props {
@@ -15,13 +16,40 @@ if (post.publishDate) {
     day: 'numeric',
   });
 }
+// Find the greatest common divisor (GCD)
+function gcd(a: number, b: number): number {
+  return b === 0 ? a : gcd(b, a % b);
+}
+function calculateAspectRatio(width: number, height: number) {
+  // Calculate GCD of width and height
+  const divisor = gcd(width, height);
+
+  // Divide both width and height by GCD
+  const simplifiedWidth = width / divisor;
+  const simplifiedHeight = height / divisor;
+
+  // Return the aspect ratio as a string
+  return `${simplifiedWidth}:${simplifiedHeight}`;
+}
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/blog-imgs/*.{jpeg,jpg,png,gif,avif}');
+
+const imagePath = `/src/assets${post.heroImage}`;
+if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
+const localImage = images[imagePath]();
+
+const file = (await localImage).default;
+
+const aspectRatio = calculateAspectRatio(file.width, file.height);
+const ratios = aspectRatio.split(':').map(parseFloat);
+const ratio = Number(Number(ratios[0] / ratios[1]).toFixed(2));
+// console.log({ imagePath, aspectRatio, ratio });
 ---
 
 <a
   class="relative top-0 block h-full overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-75 ease-in-out hover:-top-2 hover:shadow-xl"
   href={post.url}
 >
-  <img class="squiggle" src={post.heroImage} alt={post.title} width="360" height="192" />
+  <Image class={ratio < 1.5 ? 'top-aligned' : ''} src={localImage} alt={post.title} width="360" height="168" />
   <div class="px-6 py-6">
     <h2 class="text-2xl font-bold leading-tight dark:text-black">
       {post.title}
@@ -32,10 +60,13 @@ if (post.publishDate) {
   </div>
 </a>
 
-<style>
+<style scoped>
   img {
     width: 100%;
     aspect-ratio: 15/7;
     object-fit: cover;
+  }
+  .top-aligned {
+    object-position: top;
   }
 </style>

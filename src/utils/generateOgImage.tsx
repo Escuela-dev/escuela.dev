@@ -1,6 +1,10 @@
 import satori from 'satori';
 import type { SatoriOptions } from 'satori';
-import { SITE } from '@config';
+import { Resvg } from '@resvg/resvg-js';
+
+import { SITE } from '../config';
+import loadGoogleFonts, { type FontOptions } from './loadGoogleFont';
+import { CollectionEntry } from 'astro:content';
 
 const fetchFonts = async () => {
   // Regular Font
@@ -106,26 +110,41 @@ const ogImage = (text: string) => {
   );
 };
 
-const options: SatoriOptions = {
-  width: 1200,
-  height: 630,
-  embedFont: true,
-  fonts: [
-    {
-      name: 'IBM Plex Mono',
-      data: fontRegular,
-      weight: 400,
-      style: 'normal',
-    },
-    {
-      name: 'IBM Plex Mono',
-      data: fontBold,
-      weight: 600,
-      style: 'normal',
-    },
-  ],
+function svgBufferToPngBuffer(svg: string) {
+  const resvg = new Resvg(svg);
+  const pngData = resvg.render();
+  return pngData.asPng();
+}
+
+// const generateOgImage = async (mytext = SITE.title) => await satori(ogImage(mytext), options);
+
+// export default generateOgImage;
+//
+const postOgImage = async (post: CollectionEntry<'blog'>) => {
+  const options: SatoriOptions = {
+    width: 1200,
+    height: 630,
+    embedFont: true,
+    fonts: (await loadGoogleFonts(post.title + SITE.author + SITE.title + 'by')) as FontOptions[],
+    // fonts: [
+    //   {
+    //     name: 'IBM Plex Mono',
+    //     data: fontRegular,
+    //     weight: 400,
+    //     style: 'normal',
+    //   },
+    //   {
+    //     name: 'IBM Plex Mono',
+    //     data: fontBold,
+    //     weight: 600,
+    //     style: 'normal',
+    //   },
+    // ],
+  };
+  return await satori(ogImage(post.title), options);
 };
 
-const generateOgImage = async (mytext = SITE.title) => await satori(ogImage(mytext), options);
-
-export default generateOgImage;
+export async function generateOgImageForPost(post: CollectionEntry<'blog'>) {
+  const svg = await postOgImage(post);
+  return svgBufferToPngBuffer(svg);
+}

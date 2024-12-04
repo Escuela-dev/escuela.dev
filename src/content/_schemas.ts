@@ -53,7 +53,7 @@ export const blogSchema = z
     draft: z.boolean().optional(),
     tags: z.array(z.string()).max(5).default(['others']),
     // tags: z.array(tagSchema).max(5),
-    heroImage: z.string().optional(),
+    heroImage: z.string(),
     ogImage: z.string().optional(),
     imageCaption: z.string().optional(),
     imagePromptfile: z.string().optional(),
