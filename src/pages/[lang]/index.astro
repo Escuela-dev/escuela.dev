@@ -1,5 +1,4 @@
 ---
-import { getCollection } from 'astro:content';
 import { sentences as splitBySentences } from 'sbd';
 import { getLangFromUrl, useTranslations } from '@i18n/utils';
 
@@ -11,15 +10,13 @@ import MeetTheTeachers from '@components/MeetTheTeachers.astro';
 import Testimonials from '@components/Testimonials.astro';
 import Layout from '@layouts/Base.astro';
 import getGithubEditUrl from '@utils/getGithubEditUrl';
-import { getSortedPosts } from '@utils/blog';
+import { getPublishedPostsByLang, getSortedPosts } from '@utils/blog';
 import { languages } from '@i18n/i18n.config';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const posts = await getCollection('blog');
-
-const recentPosts = getSortedPosts(posts, lang).slice(0, 3);
+const recentPosts = getSortedPosts(await getPublishedPostsByLang(lang)).slice(0, 3);
 
 export const getStaticPaths = () =>
   Object.keys(languages).map((lang) => ({
@@ -76,27 +73,26 @@ export const getStaticPaths = () =>
       <FAQSection />
     </div>
   </div>
-  {
-    lang == 'en' && (
-      <div class="px-6 pt-8 lg:py-8 xl:px-0">
-        <div class="mx-auto max-w-screen-xl px-4 font-sans lg:px-6">
-          <h2 class="mb-4 text-center text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-            {t('home.recentPosts')}
-          </h2>
-          <section
-            class="grid grid-cols-1 gap-8 px-0 py-8 font-sans sm:gap-6 sm:px-16 lg:grid-cols-3 xl:px-0"
-            data-test="articles-section"
-          >
-            {recentPosts.map(({ data }) => (
-              <div class="col-span-1">
-                <Card frontmatter={data} />
-              </div>
-            ))}
-          </section>
-        </div>
-      </div>
-    )
-  }
+
+  <div class="px-6 pt-8 lg:py-8 xl:px-0">
+    <div class="mx-auto max-w-screen-xl px-4 font-sans lg:px-6">
+      <h2 class="mb-4 text-center text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+        {t('home.recentPosts')}
+      </h2>
+      <section
+        class="grid grid-cols-1 gap-8 px-0 py-8 font-sans sm:gap-6 sm:px-16 lg:grid-cols-3 xl:px-0"
+        data-test="articles-section"
+      >
+        {
+          recentPosts.map(({ data, url }) => (
+            <div class="col-span-1">
+              <Card lang={lang} frontmatter={{ ...data, url }} />
+            </div>
+          ))
+        }
+      </section>
+    </div>
+  </div>
 </Layout>
 
 <style scoped>

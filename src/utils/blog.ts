@@ -1,7 +1,7 @@
 import type { Language } from '@i18n/utils';
 import { getCollection, type CollectionEntry } from 'astro:content';
 
-export const getSortedPosts = (posts: CollectionEntry<'blog'>[], locale: 'en' | 'es') =>
+export const getSortedPosts = (posts: CollectionEntry<'blog'>[], locale?: 'en' | 'es') =>
   posts
     .filter(({ data }) => !data.draft)
     .sort(
@@ -10,10 +10,10 @@ export const getSortedPosts = (posts: CollectionEntry<'blog'>[], locale: 'en' | 
         Math.floor(new Date(a.data.publishDate!).getTime() / 1000),
     )
     .map((post) => {
-      const [, ...slug] = post.slug.split('/');
+      const [lang, ...slug] = post.slug.split('/');
       return {
         ...post,
-        url: `/${locale}/posts/${slug.join('/')}/`,
+        url: `/${lang || locale}/posts/${slug.join('/')}`,
         slug: slug.join('/'),
       };
     });

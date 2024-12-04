@@ -2,12 +2,11 @@
 // import dayjs from 'dayjs'
 import type { BlogFrontmatter } from '@content/_schemas';
 export interface Props {
-  href?: string;
   lang: string;
   frontmatter: BlogFrontmatter & { url: string };
 }
 
-const { frontmatter: post, href, lang } = Astro.props;
+const { frontmatter: post, lang } = Astro.props;
 
 if (post.publishDate) {
   post.publishDate = new Date(post.publishDate).toLocaleDateString(lang, {
@@ -19,9 +18,8 @@ if (post.publishDate) {
 ---
 
 <a
-  href={href || post.url}
   class="relative top-0 block h-full overflow-hidden rounded-xl bg-white shadow-lg transition-all duration-75 ease-in-out hover:-top-2 hover:shadow-xl"
-  data-test="article-card"
+  href={post.url}
 >
   <img class="squiggle" src={post.heroImage} alt={post.title} width="360" height="192" />
   <div class="px-6 py-6">

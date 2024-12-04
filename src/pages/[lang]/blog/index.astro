@@ -1,10 +1,8 @@
 ---
-import { getCollection } from 'astro:content';
-
 import Layout from '@layouts/Base.astro';
 import Card from '@components/Card.astro';
 
-import { getSortedPosts } from '@utils/blog';
+import { getPublishedPostsByLang, getSortedPosts } from '@utils/blog';
 import getGithubEditUrl from '@utils/getGithubEditUrl';
 import { getLangFromUrl } from '@i18n/utils';
 import { languages } from '@i18n/i18n.config';
@@ -12,7 +10,9 @@ import { languages } from '@i18n/i18n.config';
 import { SITE } from '@config';
 const lang = getLangFromUrl(Astro.url);
 
-const posts = (await getCollection('blog')).filter((post) => post.slug.split('/')[0] === lang);
+const posts = await getPublishedPostsByLang(lang);
+
+const sortedPosts = getSortedPosts(posts);
 
 // const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 
@@ -20,8 +20,6 @@ export const getStaticPaths = () =>
   Object.keys(languages).map((lang) => ({
     params: { lang },
   }));
-
-const sortedPosts = getSortedPosts(posts, lang);
 
 const seoTitle = `Blog - ${SITE.title}`;
 ---

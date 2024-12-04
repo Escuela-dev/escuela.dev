@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content';
 import Layout from '@layouts/Base.astro';
 import Card from '@components/Card.astro';
 
-import { getSortedPosts } from '@utils/blog';
+import { getPublishedPostsByLang, getSortedPosts } from '@utils/blog';
 import getGithubEditUrl from '@utils/getGithubEditUrl';
 import { getLangFromUrl } from '@i18n/utils';
 import { languages } from '@i18n/i18n.config';
@@ -14,11 +14,11 @@ const lang = getLangFromUrl(Astro.url);
 
 const { tag } = Astro.params;
 
-const posts = (await getCollection('blog')).filter((post) => post.slug.split('/')[0] === lang);
+const posts = await getPublishedPostsByLang(lang);
 
 const filteredPosts = posts.filter(({ data }) => data.tags.includes(tag));
 
-const sortedPosts = getSortedPosts(filteredPosts, lang);
+const sortedPosts = getSortedPosts(filteredPosts);
 
 type TagsInfo = { tag: string; count: number };
 
