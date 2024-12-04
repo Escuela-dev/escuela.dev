@@ -36,10 +36,7 @@ const seoTitle = `Blog - ${SITE.title}`;
       <h1 class="text-center text-4xl font-bold">Blog</h1>
     </div>
     <div class="mx-auto max-w-6xl px-3">
-      <section
-        class="grid grid-cols-1 gap-6 py-8 md:grid-cols-2 lg:grid-cols-3 font-sans"
-        data-test="articles-section"
-      >
+      <section class="grid grid-cols-1 gap-8 py-8 font-sans sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
         {
           sortedPosts.map(({ data }) => (
             <div class="col-span-1">

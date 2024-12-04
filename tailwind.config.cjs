@@ -9,7 +9,7 @@ function withOpacity(variableName) {
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{astro,html,md,mdx,ts,tsx}', './node_modules/flowbite/**/*.js'],
-  darkMode: 'class', // or 'class'
+  darkMode: 'class',
   theme: {
     // Remove the following screen breakpoint or add other breakpoints
     // if one breakpoint is not enough for you
@@ -22,7 +22,7 @@ module.exports = {
     },
     colors: ({ colors }) => ({
       // ...colors,
-      primary: '#9333EA',
+      primary: withOpacity('--color-primary'),
       secondary: '#ff7e33',
       info: '#0C63E7',
       gray: {

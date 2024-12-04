@@ -62,21 +62,23 @@ const recentPosts = getSortedPosts(posts).slice(0, 3);
       src="https://blocksurvey.io/survey/t/4c0715c3-e28d-4dc8-b80f-a3f8210f1f24"
       style={{ width: "100%", height: "100vh" }}
     /> -->
-  <div class="px-6 pt-4 sm:px-4 lg:py-8 xl:px-0">
+  <div class="px-6 pb-12 pt-4 sm:px-4 lg:py-12 xl:px-0">
     <PricingTable />
   </div>
-  <div class="mx-auto max-w-screen-md px-6 py-8 sm:px-4 lg:max-w-screen-md">
-    <FAQSection />
+  <div class="w-full bg-primary/10">
+    <div class="mx-auto max-w-screen-md px-6 py-8 sm:px-4 lg:max-w-screen-md">
+      <FAQSection />
+    </div>
   </div>
   {
     lang == 'en' && (
-      <div class="px-6 pt-4 lg:py-8 xl:px-0">
+      <div class="px-6 pt-8 lg:py-8 xl:px-0">
         <div class="mx-auto max-w-screen-xl px-4 font-sans lg:px-6">
           <h2 class="mb-4 text-center text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
             {t('home.recentPosts')}
           </h2>
           <section
-            class="grid grid-cols-1 gap-6 px-0 py-8 font-sans sm:px-16 lg:grid-cols-3 xl:px-0"
+            class="grid grid-cols-1 gap-8 px-0 py-8 font-sans sm:gap-6 sm:px-16 lg:grid-cols-3 xl:px-0"
             data-test="articles-section"
           >
             {recentPosts.map(({ data }) => (

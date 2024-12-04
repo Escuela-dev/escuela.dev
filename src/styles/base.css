@@ -5,6 +5,7 @@
 @layer base {
   :root,
   html[data-theme='light'] {
+    --color-primary: 147, 51, 234;
     --color-fill: 251, 254, 251;
     --color-text-base: 40, 39, 40;
     --color-card: 230, 230, 230;
@@ -14,6 +15,7 @@
     --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
   }
   html[data-theme='dark'] {
+    --color-primary: 40, 13, 64;
     --color-fill: 47, 55, 65;
     --color-text-base: 230, 230, 230;
     --color-accent: 26, 217, 217;
