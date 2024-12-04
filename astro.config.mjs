@@ -15,8 +15,8 @@ export default defineConfig({
   output: "static",
   site: "https://escuela.dev/",
   i18n: {
-    defaultLocale: "en",
     locales: ["es", "en"],
+    defaultLocale: 'es',
     routing: {
       prefixDefaultLocale: true,
     },
@@ -30,7 +30,7 @@ export default defineConfig({
     react(),
     sitemap({
       i18n: {
-        defaultLocale: "en",
+        defaultLocale: 'es',
         locales: {
           en: "en-GB",
           es: "es-ES",
