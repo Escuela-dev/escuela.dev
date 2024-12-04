@@ -74,9 +74,11 @@ const socialImageURL = new URL(
 <meta property="twitter:image" content={socialImageURL} />
 
 {
-  getLocalePaths(Astro.url).map((path) => (
-    <link rel="alternate" hreflang={getOGLocale(path.lang, '-')} href={Astro.site?.origin + path.path} />
-  ))
+  getLocalePaths(Astro.url)
+    .filter((path) => path.lang !== lang)
+    .map((path) => (
+      <link rel="alternate" hreflang={getOGLocale(path.lang, '-')} href={Astro.site?.origin + path.path} />
+    ))
 }
 
 <!--
