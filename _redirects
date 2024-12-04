@@ -1,1 +1,4 @@
-book https://cal.com/escuela
+/book https://cal.com/escuela
+/free-class /es/free-class
+/blog /es/blog
+/posts/* /es/posts/:splat
