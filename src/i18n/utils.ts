@@ -1,12 +1,12 @@
 import { getRelativeLocaleUrl as originalGetRelativeLocaleUrl } from "astro:i18n";
 
-import { strings, defaultLang } from "./i18n.config";
+import { strings, defaultLang, languages } from "./i18n.config";
 
 type Language = keyof typeof strings;
 
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split("/");
-  if (lang in strings) return lang as Language;
+  if (lang in languages) return lang as Language;
   return defaultLang;
 }
 
