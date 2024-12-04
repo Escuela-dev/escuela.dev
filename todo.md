@@ -1,14 +1,11 @@
 # TODO
 
-(A) Improve FAQ questions.
-x(A) Add Free Class page (see <https://www.shecodes.io/free-class>)
+x(A) Improve FAQ questions.
 (A) Translate blog articles to Spanish
-x(A) Add testimonials
 (B) Display tags under blog post title (dropdown)
 (A) Fix redirect if 404 page (e.g. /free-class)
 (A) Add 'Web development course page' see
     Use Learning Management System like <https://github.com/shuding/nextra/tree/v4-v2> <https://frappe.io/learning> <https://vschool.io/admissions/web-development-foundation/>
-x(A) Add FAQ JSON-LD schema
 (A) Keywords en Español: aprendisaje
 (C) Add support for Blog image caption. Markdown links should work
 (B) Add voice option for blog articles like <https://blog.google/products/gemini/gemini-live-extensions-language-expansion/> - "Listen to article"
