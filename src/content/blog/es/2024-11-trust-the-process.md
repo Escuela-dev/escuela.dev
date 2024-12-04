@@ -1,6 +1,5 @@
 ---
 title: "Confía en el proceso – Robert Greene"
-blogSlug: "2024-11-trust-the-process-robert-greene"
 publishDate: "19 Nov 2024"
 heroImage: "/blog-imgs/2024-11-trust-the-process-robert-greene.jpg"
 ogImage: "/blog-imgs/2024-11-trust-the-process-robert-greene.jpg"

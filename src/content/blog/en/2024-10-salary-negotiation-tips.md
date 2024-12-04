@@ -1,6 +1,5 @@
 ---
 title: "Win Big After the Offer: Top Salary Negotiation Tips for Job Seekers"
-blogSlug: "2024-10-salary-negotiation-tips"
 publishDate: "5 Oct 2024"
 heroImage: "/blog-imgs/2024-10-salary-negotiation-tips.avif"
 ogImage: "/blog-imgs/2024-10-salary-negotiation-tips.jpg"

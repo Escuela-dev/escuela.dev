@@ -49,7 +49,6 @@ export const blogSchema = z
     author: z.string().optional(),
     publishDate: z.string().optional(),
     title: z.string(),
-    blogSlug: z.string().optional(),
     featured: z.boolean().optional(),
     draft: z.boolean().optional(),
     tags: z.array(z.string()).max(5).default(['others']),

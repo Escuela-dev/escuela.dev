@@ -1,6 +1,5 @@
 ---
 title: "Better TypeScript Errors with this VSCode Extension"
-blogSlug: "2024-12-01-better-typescript-errors-with-this-vscode-extension"
 publishDate: "22 Dec 2024"
 heroImage: "/blog-imgs/2024-12-01-better-typescript-errors-with-this-vscode-extension.jpg"
 ogImage: "/blog-imgs/2024-12-01-better-typescript-errors-with-this-vscode-extension.jpg"

@@ -1,6 +1,5 @@
 ---
 title: "LeetCode beginner's JavaScript problem - Steps to reduce a Number to Zero"
-blogSlug: "2024-11-22-leetcode-beginners-javascript-problem"
 publishDate: "22 Nov 2024"
 heroImage: "/blog-imgs/2024-11-22-leetcode-beginners-javascript-problem.jpg"
 ogImage: "/blog-imgs/2024-11-22-leetcode-beginners-javascript-problem.jpg"

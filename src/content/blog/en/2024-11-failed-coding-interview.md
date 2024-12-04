@@ -1,6 +1,5 @@
 ---
 title: "Bouncing Back: Acing Your Next Coding Interview After a Fail"
-blogSlug: "2024-11-failed-coding-interview"
 publishDate: "5 Nov 2024"
 heroImage: "/blog-imgs/2024-11-failed-coding-intervire.avif"
 ogImage: "/blog-imgs/2024-11-failed-coding-intervire.jpg"

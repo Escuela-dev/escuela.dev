@@ -1,6 +1,5 @@
 ---
 title: "Deberia aprender a programar?"
-blogSlug: "2023-02-should-i-learn-how-to-code"
 publishDate: "24 Feb 2023"
 heroImage: "/blog-imgs/2023-02-should-i-learn-how-to-code.jpg"
 ogImage: "/blog-imgs/2023-02-should-i-learn-how-to-code.jpg"
