@@ -33,7 +33,7 @@ const socialImageURL = new URL(
 // const fallbackImageURL = new URL(ogImage, Astro.url.origin).href;
 ---
 
-<!-- Global Metadata -->
+{/* Global Metadata */}
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" href="/favicon.ico" />
@@ -43,15 +43,15 @@ const socialImageURL = new URL(
 
 <meta name="author" content={author} />
 
-<!-- Canonical URL -->
+{/* Canonical URL */}
 <link rel="canonical" href={canonicalURL} />
 
-<!-- Primary Meta Tags -->
+{/* Primary Meta Tags*/}
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 
-<!-- Open Graph / Facebook -->
+{/* Open Graph / Facebook */}
 <meta property="og:type" content={type} />
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
@@ -66,7 +66,7 @@ const socialImageURL = new URL(
   )
 }
 
-<!-- Twitter -->
+{/* Twitter/X */}
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
@@ -81,10 +81,10 @@ const socialImageURL = new URL(
     ))
 }
 
-<!--
-  The page supports both dark and light color schemes,
-  and the page author prefers dark.
--->
+{
+  /* The page supports both dark and light color schemes,
+  and the page author prefers dark. */
+}
 <meta name="color-scheme" content="light dark" />
 
 <!-- Google Font -->
