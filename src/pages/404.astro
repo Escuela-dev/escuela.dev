@@ -25,6 +25,8 @@ const baseUrl = import.meta.env.PROD ? Astro.site : '/';
   </noscript>
 
   <script is:inline define:vars={{ languages, baseUrl, defaultLang }}>
+    const langs = Object.keys(languages);
+
     const urlHasLang = langs.includes(location.pathname.split('/')[1]);
     const selectedLang = localStorage.getItem('selectedLang');
     const localStorageHasLang = selectedLang && langs.includes(selectedLang);
@@ -35,12 +37,12 @@ const baseUrl = import.meta.env.PROD ? Astro.site : '/';
 
     if (urlHasLang) {
       localStorage.setItem('userAccessPath', location.pathname);
-      location.href = `${baseUrl + location.pathname.split('/')[1]}/404/`;
+      // location.href = `${baseUrl + location.pathname.split('/')[1]}/404/`;
     } else if (localStorageHasLang) {
       location.href = baseUrl + selectedLang + location.pathname;
     } else if (referrerHasLang) {
       const referrerLang = new URL(document.referrer).pathname.split('/')[1];
-      location.href = baseUrl + referrerLang + location.pathname;
+      // location.href = baseUrl + referrerLang + location.pathname;
     } else {
       location.href = baseUrl + defaultLocale + location.pathname;
     }

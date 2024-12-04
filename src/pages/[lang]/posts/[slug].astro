@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import { type CollectionEntry } from 'astro:content';
 
 import Layout from '@layouts/Base.astro';
@@ -54,6 +55,12 @@ if (description.length > maxDescription) {
   const lastSpace = description.slice(0, maxDescription).lastIndexOf(' ');
   description = `${description.slice(0, lastSpace)}...`;
 }
+
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/blog-imgs/*.{jpeg,jpg,png,gif,avif}');
+
+const imagePath = `/src/assets${heroImage}`;
+if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
+const localImage = images[imagePath]();
 ---
 
 <Layout
@@ -68,7 +75,7 @@ if (description.length > maxDescription) {
   githubEditUrl={getGithubEditUrl('/src/pages/posts/[slug].astro')}
 >
   <article class="prose mx-auto mb-4 mt-8 max-w-3xl px-3 sm:px-0">
-    {heroImage && <img src={heroImage} alt={postTitle} />}
+    <Image src={localImage} alt={postTitle} width="900" height="500" />
     {imageCaption && <span class="sr-only">{imageCaption}</span>}
     <h1 class="title">{postTitle}</h1>
     <div class="flex justify-between">

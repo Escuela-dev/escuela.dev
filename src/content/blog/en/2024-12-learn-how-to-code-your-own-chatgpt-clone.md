@@ -1,8 +1,8 @@
 ---
 title: "Learn how to code your own ChatGPT clone"
 publishDate: "19 Nov 2024"
-heroImage: "/blog-imgs/2024-12-learn-how-to-code-your-own-chatgpt-clone.jpg"
-ogImage: "/blog-imgs/2024-12-learn-how-to-code-your-own-chatgpt-clone.jpg"
+heroImage: "/blog-imgs/2024-12-learn-how-to-code-your-own-chatgpt-clone.png"
+ogImage: "/blog-imgs/2024-12-learn-how-to-code-your-own-chatgpt-clone.png"
 description: "In this tutorial, we will learn how to code your own ChatGPT clone using Next.js and the OpenAI API."
 featured: true
 tags:
@@ -19,7 +19,7 @@ In this tutorial, we will learn how to code your own ChatGPT clone using Next.js
 
 ## What is ChatGPT?
 
-ChatGPT is a language model developed by OpenAI. It is a large language model that can generate human-like text in response to a prompt. It is trained on a massive amount of text data and can generate responses that are coherent and contextually relevant.
+ChatGPT service developed by OpenAI. Behind it there are large language models that can generate human-like text in response to a prompt. They are  trained on a massive amount of text data and can generate responses that are coherent and contextually relevant.
 
 ## What is Next.js?
 
@@ -100,7 +100,7 @@ export default async function handler(req, res) {
 7. In the `prompt.js` file, add the following:
 
 ```javascript
-# Create an assistant with the specified instructions, persona, and behavior – also called System Message.
+// Create an assistant with the specified instructions, persona, and behavior – also called System Message.
 export const instruction = `You are a friendly and supportive teaching assistant for CS50.
 You are also a rubber duck.
 Answer student questions only about CS50 and the field of computer science;
@@ -113,19 +113,19 @@ Do not provide full answers to problem sets, as this would violate academic hone
 ```diff TODO
 import { instruction } from "../../prompt";
 
-const response = await client.chat.completions.create({
-  model: OPENAI_MODEL,
-  messages: [
-    {
-      role: 'system',
-      content: instructions
-      },
-    {
-      role: 'user',
-      content: prompt
-    }
-  ],
-});
++ const response = await client.chat.completions.create({
++   model: OPENAI_MODEL,
++   messages: [
++     {
++       role: 'system',
++       content: instructions
++       },
++     {
++       role: 'user',
++       content: prompt
++     }
++   ],
++ });
 
 res.status(200).json(response.data);
 ```
@@ -174,7 +174,7 @@ export default async function handler(req, res) {
 
 See more Error codes in the [OpenAI Node.js SDK README](https://github.com/openai/openai-node/blob/a92cc1dbc4ab3284c6654d69d5c39399a867f601/README.md#handling-errors).
 
-![2024-12-learn-how-to-code-your-own-chatgpt-clone.png](/blog-imgs/2024-12-learn-how-to-code-your-own-chatgpt-clone-rubber-duck-screenshot.png)
+![2024-12-learn-how-to-code-your-own-chatgpt-clone.png](/blog-imgs/2024-12-learn-how-to-code-your-own-chatgpt-clone.png)
 
 Taken inpiration from Harvard CS50 Computer Science Course's [Rubber Duck tool](https://cs50.ai). [Code on GitHub](https://github.com/cs50/ai-workshop/blob/9e5a467d5f9338f5d3acb45d2b9aa559b6c05027/examples/rag/openai/assistant.py#L42)
 
