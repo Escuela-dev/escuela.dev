@@ -15,7 +15,7 @@ export const defaultLang = 'es';
 export const strings = {
   en: {
     banner: {
-      title: 'First 45 mins session is free! 4 classes for <s>€128</s>, €96',
+      title: 'First 45 mins session is free!',
       linkTitle: 'Free class',
     },
     site: {
@@ -29,14 +29,14 @@ export const strings = {
       whatsapp_abbr: 'Join the WhatsApp Community',
     },
     home: {
-      title: `Welcome to Escuela.dev\nA Coding school in\nMalaga, Madrid and online`,
+      title: `Welcome to Escuela.dev\n\n<small>Live, personal mentorship from industry experts</small>`,
       subtitle:
         'Get personalized one-on-one classes through online video sessions. Get instant feedback and guidance through the curriculum. Learn modern JavaScript, TypeScript, HTML, CSS, Git, Python and Node.js.',
       recentPosts: 'Recent posts',
     },
     faq: {
       q1: {
-        title: '👨‍🏫 What are the advantages of learning with Escuela.dev?',
+        title: '👨‍🏫 What are the advantages of learning with a mentor from Escuela.dev?',
         answer: `Personalized classes: Tailored to your needs and goals.<br/><br/>
 - <b>Discipline and progress</b>: Weekly sessions help establish a consistent routine.<br/>
 - <b>Expert mentorship</b>: Learn from experienced engineers who share practical tips and industry tricks.<br/>
@@ -96,9 +96,12 @@ The exact time may vary depending on your pace and dedication, but with consiste
     },
     pricingtable: {
       plan1: {
-        title: 'One on one',
-        priceDescription: '/hour',
+        title: '4 sessions',
+        priceDescription: '',
         buttonText: 'Call',
+        feature: {
+          course: '4-week course (2x 1h sessions + 1h on your own per week)',
+        },
       },
       feature: {
         online: 'Online',
@@ -107,10 +110,10 @@ The exact time may vary depending on your pace and dedication, but with consiste
       },
       plan2: {
         title: '8 sessions',
-        priceDescription: '/course \n (€28.5 per hour)',
+        priceDescription: '',
         buttonText: 'Call',
         feature: {
-          course: '4-week course (2h session + 1h on your own per week)',
+          course: '8-week course (2x 1h sessions + 1h on your own per week)',
         },
       },
       plan3: {
@@ -150,11 +153,11 @@ The exact time may vary depending on your pace and dedication, but with consiste
   },
   es: {
     banner: {
-      title: 'Primera clase de 45 min es gratis! 4 clases por <s>€128</s>, €96',
+      title: 'Primera clase de 45 min es gratis!',
       linkTitle: 'Clase gratis',
     },
     site: {
-      description: 'Clases particulares de programación en Madrid, Malaga, online',
+      description: 'Clases particulares de programación en Madrid, Malaga y online',
     },
     nav: {
       home: 'Inicio',
@@ -165,14 +168,14 @@ The exact time may vary depending on your pace and dedication, but with consiste
       whatsapp_abbr: 'Únete a la comunidad de WhatsApp',
     },
     home: {
-      title: `Bienvenid@s a Escuela.dev\nUna escuela de programación en\nMalaga, Madrid y Online`,
+      title: `Bienvenid@s a Escuela.dev\n\n<small>Mentoría personal y en vivo de expertos de industria</small>`,
       subtitle:
         'Aprende con clases particulares y personalizadas a través de sesiones de video en línea. Aprende con ayuda y sigue un currículum. Aprende JavaScript moderno, TypeScript, HTML, CSS, Git, Python y Node.js.',
       recentPosts: 'Últimos posts',
     },
     faq: {
       q1: {
-        title: '👨‍🏫 ¿Cual es la ventaja de aprender con Escuela.dev?',
+        title: '👨‍🏫 ¿Cual es la ventaja de aprender con un mentor de Escuela.dev?',
         answer: `Clases personalizadas: Adaptadas a tus necesidades y objetivos.<br/><br/>
 - <b>Disciplina y progreso</b>: Las sesiones semanales fomentan una rutina constante.<br/>
 - <b>Mentoría de expertos</b>: Aprende de ingenieros con experiencia que comparten consejos prácticos y trucos del sector.<br/>
@@ -233,9 +236,12 @@ Con nuestro curso, construirás un portafolio sólido en GitHub, que incluirá v
     },
     pricingtable: {
       plan1: {
-        title: 'Clase individual',
-        priceDescription: '/hora',
+        title: '4 semanas',
+        priceDescription: '',
         buttonText: 'Consúltanos',
+        feature: {
+          course: 'Curso de 4 semanas (2 horas de clase + 1 hora de tu propio tiempo por semana)',
+        },
       },
       feature: {
         online: 'Online',
@@ -243,11 +249,11 @@ Con nuestro curso, construirás un portafolio sólido en GitHub, que incluirá v
         session: 'Sesiones de 1h',
       },
       plan2: {
-        title: '8 sessiones',
-        priceDescription: '/curso \n (28.5€ por hora)',
+        title: '8 semanas',
+        priceDescription: '',
         buttonText: 'Consúltanos',
         feature: {
-          course: 'Curso de 4 semanas (2 horas de clase + 1 hora de tu propio tiempo por semana)',
+          course: 'Curso de 8 semanas (2 horas de clase + 1 hora de tu propio tiempo por semana)',
         },
       },
       plan3: {

@@ -8,7 +8,7 @@ const t = useTranslations(lang);
 const plans = [
   {
     title: t('pricingtable.plan1.title'),
-    price: 32,
+    price: 240,
     priceDescription: t('pricingtable.plan1.priceDescription'),
     link: '/book',
     buttonText: t('pricingtable.plan1.buttonText'),
@@ -25,11 +25,17 @@ const plans = [
         title: t('pricingtable.feature.session'),
         isAvailable: true,
       },
+      {
+        title: t('pricingtable.plan1.feature.course'),
+        isAvailable: true,
+      },
     ],
   },
+
   {
     title: t('pricingtable.plan2.title'),
-    price: 228,
+    price: 450,
+    popular: true,
     priceDescription: t('pricingtable.plan2.priceDescription'),
     link: '/book',
     buttonText: t('pricingtable.plan2.buttonText'),
@@ -84,13 +90,18 @@ const plans = [
 >
   {
     plans.map((plan) => (
-      <div class="z-10 grid w-full max-w-sm grid-cols-subgrid gap-6 rounded-lg border border-gray-200 bg-white px-6 py-8 shadow dark:border-gray-700 dark:bg-gray-800 sm:row-span-full sm:grid-rows-subgrid sm:p-8">
+      <div
+        class={`${plan.popular ? 'border-2 border-pink-500' : ''} z-10 grid w-full max-w-sm grid-cols-subgrid gap-6 rounded-lg border border-gray-200 bg-white px-6 py-8 shadow dark:border-gray-700 dark:bg-gray-800 sm:row-span-full sm:grid-rows-subgrid sm:p-8`}
+      >
         <h3 class="text-xl font-medium text-gray-500 dark:text-gray-400">{plan.title}</h3>
         <div class="flex items-baseline text-gray-900 dark:text-white">
           <span class="whitespace-pre-line text-3xl font-semibold">
-            {plan.price ? <>&euro;</> : plan.priceDescription && <>{plan.priceDescription}</>}
+            {!plan.price ? plan.priceDescription && <>{plan.priceDescription}</> : null}
           </span>
-          <span class="text-5xl font-extrabold tracking-tight">{plan.price}</span>
+          <span class="text-5xl font-extrabold tracking-tight">
+            <!-- no-prettier -->
+            {plan.price}{Number.isInteger(plan.price)&& <span class="whitespace-pre-line text-3xl font-semibold">&euro;</span>}
+          </span>
           {plan.price && plan.priceDescription && (
             <span class="text-l ml-1 whitespace-pre-line font-normal text-gray-500 dark:text-gray-400 sm:text-xl">
               {plan.priceDescription}

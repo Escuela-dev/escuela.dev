@@ -46,6 +46,7 @@ Add logo?
 
 - <https://css-tricks.com/how-to-animate-a-svg-with-border-image/>
 - Scrape cute rescue dogs from <https://dogs.ie/sale>
+- [Flappy Bird game using Canvas](https://github.com/aaarafat/JS-Flappy-Bird)
 
 ### Holiday themed projects
 

@@ -1,19 +1,21 @@
 ---
 import { sentences as splitBySentences } from 'sbd';
+import { Image, getImage } from 'astro:assets';
 
-import { SITE } from '@/config';
-import { getLangFromUrl, useTranslations } from '@i18n/utils';
-
-// import Embed from "@components/Embed";
 import FAQSection from '@components/FAQSection.astro';
 import PricingTable from '@components/PricingTable.astro';
 import Card from '@components/Card.astro';
 import MeetTheTeachers from '@components/MeetTheTeachers.astro';
 import Testimonials from '@components/Testimonials.astro';
-import Layout from '@layouts/Base.astro';
+import Base from '@layouts/Base.astro';
+
+import { getLangFromUrl, useTranslations } from '@i18n/utils';
 import getGithubEditUrl from '@utils/getGithubEditUrl';
 import { getPublishedPostsByLang, getSortedPosts } from '@utils/blog';
 import { languages } from '@i18n/i18n.config';
+import { SITE } from '@config';
+
+const womanBgDesktop = await getImage({ src: '/src/assets/woman-bg-desktop.webp', width: 1440, height: 720 });
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -28,28 +30,42 @@ export const getStaticPaths = () =>
 const ogImage = SITE.ogImage.replace('en.jpg', lang + '.jpg');
 ---
 
-<Layout githubEditUrl={getGithubEditUrl('/src/pages/index.astro')} headProps={{ ogImage }}>
-  {/* <link rel="dns-prefetch" href="https://blocksurvey.io" /> */}
-  <main class="max-w-screen-md lg:max-w-screen-lg">
-    <h1
-      class="text-gradient my-5 whitespace-break-spaces text-center text-4xl font-bold leading-tight sm:my-10 sm:text-5xl sm:leading-relaxed sm:tracking-tight"
-    >
-      {t('home.title')}
-    </h1>
-    <h2 class="whitespace-break-spaces pt-8 text-center font-sans text-2xl leading-9 sm:text-xl sm:leading-8">
-      {
-        splitBySentences(t('home.subtitle')).map((s, i, a) =>
+<Base headProps={{ ogImage }} githubEditUrl={getGithubEditUrl('/src/pages/index.astro')}>
+  <main class="relative w-full md:h-[calc(100vh-100px)] lg:min-h-[700px]">
+    <div class={`md:absolute inset-0 h-[${womanBgDesktop.attributes.height}px] sm:h-full w-full`}>
+      <div class="hero-bg-gradient absolute inset-0 -z-10 h-full w-full opacity-70">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+      <div style={`background-image: url(${womanBgDesktop.src});`} class="hero-bg hidden md:block"></div>
+      <Image
+        src={'/src/assets/woman-bg-mobile.webp'}
+        alt=""
+        style={'margin-bottom: 0%;'}
+        class="-mr-4 block h-full w-full object-cover object-top md:hidden"
+        width={342}
+        height={440}
+      />
+    </div>
+    <div class="mx-auto max-w-[clamp(768px,100%,1536px)]">
+      <div class="relative px-0 py-8 sm:px-4 md:py-20 lg:ml-8 lg:w-[60%]">
+        <!-- prettier-ignore -->
+        <h1
+        class="my-5 whitespace-break-spaces text-left text-[2rem] font-bold leading-tight dark:text-[#e3e5e8] sm:my-0 sm:text-5xl sm:leading-none sm:tracking-tight"
+        set:html={t('home.title')}></h1>
+        <!-- prettier-ignore -->
+        <h2 class="whitespace-break-spaces pt-8 text-left font-sans text-2xl leading-9 dark:text-[#e3e5e8] sm:text-xl sm:leading-8 sm:max-w-lg">{
+          splitBySentences(t('home.subtitle')).map((s, i, a) =>
           i < a.length - 1 ? (
-            <>
-              <span>{s}</span>
-              <br />
-            </>
+            <><span>{s}</span><br /></>
           ) : (
             <span>{s}</span>
           ),
         )
-      }
-    </h2>
+      }</h2>
+      </div>
+    </div>
   </main>
   <div class="px-6 py-8 lg:px-0 lg:pb-8 lg:pt-16">
     <Testimonials />
@@ -99,20 +115,12 @@ const ogImage = SITE.ogImage.replace('en.jpg', lang + '.jpg');
       </section>
     </div>
   </div>
-</Layout>
+</Base>
 
 <style scoped>
   main {
     margin: auto;
     padding: 1.5rem;
-  }
-
-  .text-gradient {
-    background-image: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400%;
-    background-position: 0%;
   }
   .instructions {
     line-height: 1.6;
@@ -138,5 +146,83 @@ const ogImage = SITE.ogImage.replace('en.jpg', lang + '.jpg');
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
     gap: 1rem;
     padding: 0;
+  }
+
+  @media (min-width: 1024px) {
+    .hero-bg {
+      @apply absolute inset-0 -mr-4 h-full w-full bg-no-repeat object-cover object-top;
+      background-position: right -100px center;
+    }
+  }
+  /* inspired by <https://codepen.io/baarbaracrr/pen/KKovmGb> */
+  .hero-bg-gradient {
+    background: linear-gradient(
+      90deg,
+      rgba(134, 3, 110, 1) 0%,
+      rgba(25, 0, 89, 1) 20%,
+      rgba(25, 25, 90, 1) 40%,
+      rgba(42, 140, 159, 1) 60%,
+      rgba(247, 163, 10, 1) 80%,
+      rgba(255, 148, 0, 1) 100%
+    );
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    overflow: hidden;
+  }
+  html[data-theme='light'] .hero-bg-gradient {
+    background: linear-gradient(
+      90deg,
+      rgb(245, 193, 210) 0%,
+      rgb(206, 206, 238) 20%,
+      rgb(181, 215, 233) 40%,
+      #25b3b2 60%,
+      rgb(244, 231, 171) 80%,
+      rgb(243, 222, 129) 100%
+    );
+  }
+  .wave {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 1000% 1000% 0 0;
+    position: absolute;
+    width: 200%;
+    height: 20em;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: -5em;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    animation: waveMove 10s reverse infinite;
+  }
+  .wave:nth-of-type(2) {
+    bottom: -1.25em;
+    opacity: 0.8;
+    animation-duration: 18s;
+    animation-delay: -3s;
+  }
+
+  .wave:nth-of-type(3) {
+    bottom: -2.5em;
+    opacity: 0.9;
+    animation-duration: 20s;
+    animation-delay: -6s;
+  }
+
+  @keyframes waveMove {
+    2% {
+      transform: translateX(1);
+    }
+    25% {
+      transform: translateX(-25%);
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+    75% {
+      transform: translateX(-25%);
+    }
+    100% {
+      transform: translateX(1);
+    }
   }
 </style>
