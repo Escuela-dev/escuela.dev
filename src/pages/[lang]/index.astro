@@ -1,6 +1,7 @@
 ---
 import { sentences as splitBySentences } from 'sbd';
 import { Image, getImage } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
 
 import FAQSection from '@components/FAQSection.astro';
 import PricingTable from '@components/PricingTable.astro';
@@ -27,11 +28,26 @@ export const getStaticPaths = () =>
     params: { lang },
   }));
 
+const techIcons = [
+  { icon: 'bxl:javascript', title: 'JavaScript' },
+  { icon: 'bxl:typescript', title: 'TypeScript' },
+  { icon: 'bxl:html5', title: 'HTML5' },
+  { icon: 'bxl:css3', title: 'CSS3' },
+  // { icon: 'bxl:git', title: 'Git' },
+  { icon: 'bxl:react', title: 'React' },
+  // { icon: 'devicon-plain:nextjs', title: 'NextJS' },
+  // { icon: 'bxl:tailwindcss', title: 'TailwindCSS' },
+  // { icon: 'bxl:mongodb', title: 'MongoDB' },
+  { icon: 'bxl:nodejs', title: 'NodeJS' },
+  { icon: 'bxl:python', title: 'Python' },
+  { icon: 'devicon-plain:raspberrypi', title: 'Raspberry Pi' },
+];
+
 const ogImage = SITE.ogImage.replace('en.jpg', lang + '.jpg');
 ---
 
 <Base headProps={{ ogImage }} githubEditUrl={getGithubEditUrl('/src/pages/index.astro')}>
-  <main class="relative w-full md:h-[calc(100vh-100px)] lg:min-h-[700px]">
+  <main class="relative w-full md:h-[calc(100vh-100px)] md:min-h-[700px]">
     <div class={`md:absolute inset-0 h-[${womanBgDesktop.attributes.height}px] sm:h-full w-full`}>
       <div class="hero-bg-gradient absolute inset-0 -z-10 h-full w-full opacity-70">
         <div class="wave"></div>
@@ -58,12 +74,15 @@ const ogImage = SITE.ogImage.replace('en.jpg', lang + '.jpg');
         <h2 class="whitespace-break-spaces pt-8 text-left font-sans text-2xl leading-9 dark:text-[#e3e5e8] sm:text-xl sm:leading-8 sm:max-w-lg">{
           splitBySentences(t('home.subtitle')).map((s, i, a) =>
           i < a.length - 1 ? (
-            <><span>{s}</span><br /></>
+            <><span set:html={s}/><br /></>
           ) : (
-            <span>{s}</span>
+            <span set:html={s}/>
           ),
         )
       }</h2>
+        <div class={`mb-8 mt-8 grid grid-rows-2 sm:grid-rows-1 grid-flow-col gap-4 w-fit text-center`}>
+          {techIcons.map(({ icon, title }) => <Icon title={title} name={icon} class="h-8 w-8" />)}
+        </div>
       </div>
     </div>
   </main>
