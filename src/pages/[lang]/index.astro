@@ -1,5 +1,7 @@
 ---
 import { sentences as splitBySentences } from 'sbd';
+
+import { SITE } from '@/config';
 import { getLangFromUrl, useTranslations } from '@i18n/utils';
 
 // import Embed from "@components/Embed";
@@ -22,9 +24,11 @@ export const getStaticPaths = () =>
   Object.keys(languages).map((lang) => ({
     params: { lang },
   }));
+
+const ogImage = SITE.ogImage.replace('en.jpg', lang + '.jpg');
 ---
 
-<Layout githubEditUrl={getGithubEditUrl('/src/pages/index.astro')}>
+<Layout githubEditUrl={getGithubEditUrl('/src/pages/index.astro')} headProps={{ ogImage }}>
   {/* <link rel="dns-prefetch" href="https://blocksurvey.io" /> */}
   <main class="max-w-screen-md lg:max-w-screen-lg">
     <h1

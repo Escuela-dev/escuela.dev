@@ -10,7 +10,7 @@ export const SITE = {
   author: 'Gianfranco Palumbo',
   seoTitle: 'Escuela.dev',
   title: 'Escuela.dev',
-  ogImage: 'escuela.dev-coding-school.png',
+  ogImage: 'escuela.dev-coding-school-en.jpg',
   lightAndDarkMode: true,
   postPerPage: 3,
 };
