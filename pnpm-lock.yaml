@@ -31,6 +31,9 @@ importers:
       '@iconify-json/bxl':
         specifier: ^1.1.11
         version: 1.1.11
+      '@iconify-json/devicon-plain':
+        specifier: ^1.2.7
+        version: 1.2.7
       '@iconify-json/line-md':
         specifier: ^1.2.2
         version: 1.2.2
@@ -827,6 +830,9 @@ packages:
 
   '@iconify-json/bxl@1.1.11':
     resolution: {integrity: sha512-VOsPggoCBpLgyWiA4L9h404IT6xl5Bv0LdlM7qhRQeAQyFiiSPWEq5HBEtxlrVf3tx92zA+Vz9ySJy2KbQOdUQ==}
+
+  '@iconify-json/devicon-plain@1.2.7':
+    resolution: {integrity: sha512-O2b7dEpzVHLCbAMeVxQd+RSwRX5dnZxDyHSBM/tHU7VVBgC1VC84uO4lKUl8ZDEIdBXQfu9qxNcjWuLic/EA5A==}
 
   '@iconify-json/line-md@1.2.2':
     resolution: {integrity: sha512-UCYTTO5aARoVbOOPCaomOoXDC8maSolIV8KVDmK9VuzfjpqkMg/vJo/nWaoQPIf310SZjdvAqHvIwsbzr6J+sw==}
@@ -4954,6 +4960,10 @@ snapshots:
   '@humanwhocodes/object-schema@2.0.3': {}
 
   '@iconify-json/bxl@1.1.11':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/devicon-plain@1.2.7':
     dependencies:
       '@iconify/types': 2.0.0
 

@@ -31,7 +31,7 @@ export const strings = {
     home: {
       title: `Welcome to Escuela.dev\n\n<small>A coding school in\nMalaga, Madrid and online</small>`,
       subtitle:
-        'Get personalized one-on-one classes through online video sessions. Get instant feedback and guidance through the curriculum. Learn modern JavaScript, TypeScript, HTML, CSS, Git, Python and Node.js.',
+        'Get personalized one-on-one classes through online video sessions. Get instant feedback and guidance through the curriculum.<br/><br/>Learn JavaScript, TypeScript, HTML, CSS, Git, Python and Node.js.',
       recentPosts: 'Recent posts',
     },
     faq: {
@@ -167,7 +167,7 @@ The exact time may vary depending on your pace and dedication, but with consiste
     home: {
       title: `Bienvenid@s a Escuela.dev\n\n<small>Una escuela de programación en\nMalaga, Madrid y Online</small>`,
       subtitle:
-        'Aprende con clases particulares y personalizadas a través de sesiones de video en línea. Aprende con ayuda y sigue un currículum. Aprende JavaScript moderno, TypeScript, HTML, CSS, Git, Python y Node.js.',
+        'Aprende con clases particulares y personalizadas a través de sesiones de video en línea. Aprende con ayuda y sigue un currículum.<br/><br/>Aprende JavaScript, TypeScript, HTML, CSS, Git, Python y Node.js.',
       recentPosts: 'Últimos posts',
     },
     faq: {
