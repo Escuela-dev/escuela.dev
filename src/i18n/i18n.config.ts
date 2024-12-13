@@ -107,7 +107,7 @@ The exact time may vary depending on your pace and dedication, but with consiste
       },
       plan2: {
         title: '8 sessions',
-        priceDescription: '/course \n (€28.5 per hour)',
+        priceDescription: '/course \n (€25 per hour)',
         buttonText: 'Call',
         feature: {
           course: '4-week course (2h session + 1h on your own per week)',
@@ -244,7 +244,7 @@ Con nuestro curso, construirás un portafolio sólido en GitHub, que incluirá v
       },
       plan2: {
         title: '8 sessiones',
-        priceDescription: '/curso \n (28.5€ por hora)',
+        priceDescription: '/curso \n (25€ por hora)',
         buttonText: 'Consúltanos',
         feature: {
           course: 'Curso de 4 semanas (2 horas de clase + 1 hora de tu propio tiempo por semana)',
