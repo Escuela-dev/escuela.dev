@@ -8,7 +8,7 @@ import Header from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
 import Posthog from '@components/Posthog.astro';
 import { getLangFromUrl } from '@i18n/utils';
-// import WhatsAppButton from "@components/WhatsAppButton.astro";
+import WhatsAppButton from '@components/WhatsAppButton.astro';
 
 export interface Props {
   title?: string;
@@ -16,7 +16,7 @@ export interface Props {
   showWhatsApp?: boolean;
   githubEditUrl?: string;
 }
-const { showWhatsApp = false, githubEditUrl, title } = Astro.props;
+const { showWhatsApp = true, githubEditUrl, title } = Astro.props;
 let { headProps } = Astro.props;
 
 headProps = {
@@ -54,6 +54,12 @@ const lang = getLangFromUrl(Astro.url);
           monospace;
       }
     </style>
-    {/* {showWhatsApp && <WhatsAppButton />} */}
+    {
+      showWhatsApp && (
+        <div class="block sm:hidden">
+          <WhatsAppButton />
+        </div>
+      )
+    }
   </body>
 </html>
