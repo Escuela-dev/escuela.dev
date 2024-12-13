@@ -177,7 +177,7 @@ const ogImage = SITE.ogImage.replace('en.jpg', lang + '.jpg');
   .hero-bg-gradient {
     background: linear-gradient(
       90deg,
-      rgba(134, 3, 110, 1) 0%,
+      rgba(125, 0, 102, 1) 0%,
       rgba(25, 0, 89, 1) 20%,
       rgba(25, 25, 90, 1) 40%,
       rgba(42, 140, 159, 1) 60%,
@@ -198,6 +198,37 @@ const ogImage = SITE.ogImage.replace('en.jpg', lang + '.jpg');
       rgb(244, 231, 171) 80%,
       rgb(243, 222, 129) 100%
     );
+    background-size: 400% 400%;
+    background-attachment: fixed;
+  }
+  @media (max-width: 768px) {
+    .hero-bg-gradient {
+      background: linear-gradient(
+        120deg,
+        rgba(125, 0, 102, 1) 0%,
+        rgba(25, 0, 89, 1) 20%,
+        rgba(25, 25, 90, 1) 40%,
+        rgba(42, 140, 159, 1) 60%,
+        rgba(247, 163, 10, 1) 80%,
+        rgba(255, 148, 0, 1) 100%
+      );
+
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+    html[data-theme='light'] .hero-bg-gradient {
+      background: linear-gradient(
+        30deg,
+        rgb(245, 193, 210) 0%,
+        rgb(206, 206, 238) 20%,
+        rgb(181, 215, 233) 40%,
+        #25b3b2 60%,
+        rgb(244, 231, 171) 80%,
+        rgb(243, 222, 129) 100%
+      );
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
   }
   .wave {
     background: rgba(255, 255, 255, 0.2);
