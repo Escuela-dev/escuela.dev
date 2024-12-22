@@ -28,8 +28,8 @@ export function getStaticPaths() {
         props: { ...data, lang: slug?.split('/')[0] },
       };
     });
-  console.dir({ postImportResult }, { depth: 2 });
-  console.dir({ a }, { depth: 3 });
+  // console.dir({ postImportResult }, { depth: 2 });
+  // console.dir({ a }, { depth: 3 });
 
   return a;
 }
