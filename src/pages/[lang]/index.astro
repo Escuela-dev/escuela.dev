@@ -16,7 +16,7 @@ import { getPublishedPostsByLang, getSortedPosts } from '@utils/blog';
 import { languages } from '@i18n/i18n.config';
 import { SITE } from '@config';
 
-const womanBgDesktop = await getImage({ src: '/src/assets/woman-bg-desktop.webp', width: 1440, height: 720 });
+// const womanBgDesktop = await getImage({ src: '/src/assets/woman-bg-desktop.avif', width: 1440, height: 720 });
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -48,15 +48,16 @@ const ogImage = SITE.ogImage.replace('en.jpg', lang + '.jpg');
 
 <Base headProps={{ ogImage }} githubEditUrl={getGithubEditUrl('/src/pages/index.astro')}>
   <main class="relative w-full md:h-[calc(100vh-100px)] md:min-h-[700px]">
-    <div class={`md:absolute inset-0 h-[${womanBgDesktop.attributes.height}px] sm:h-full w-full`}>
+    <!-- <div class={`md:absolute inset-0 h-[${womanBgDesktop.attributes.height}px] sm:h-full w-full`}> -->
+    <div class={`md:absolute inset-0 h-[${720}px] sm:h-full w-full`}>
       <div class="hero-bg-gradient absolute inset-0 -z-10 h-full w-full opacity-70">
         <div class="wave"></div>
         <div class="wave"></div>
         <div class="wave"></div>
       </div>
-      <div style={`background-image: url(${womanBgDesktop.src});`} class="hero-bg hidden md:block"></div>
+      <div style={`background-image: url('/woman-bg-desktop.avif');`} class="hero-bg hidden md:block"></div>
       <Image
-        src={'/src/assets/woman-bg-mobile.webp'}
+        src={'/woman-bg-mobile.avif'}
         alt=""
         style={'margin-bottom: 0%;'}
         class="-mr-4 block h-full w-full object-cover object-top md:hidden"
