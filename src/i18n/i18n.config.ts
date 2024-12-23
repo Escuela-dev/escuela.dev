@@ -168,7 +168,7 @@ The exact time may vary depending on your pace and dedication, but with consiste
       whatsapp_abbr: 'Únete a la comunidad de WhatsApp',
     },
     home: {
-      title: `Bienvenid@s a Escuela.dev\n\n<small>Mentoría personal y en vivo de expertos de industria</small>`,
+      title: `Bienvenid@s a Escuela.dev\n\n<small>Mentoría personal y en vivo con expertos de industria</small>`,
       subtitle:
         'Aprende con clases particulares y personalizadas a través de sesiones de video en línea. Aprende con ayuda y sigue un currículum.<br/><br/>Aprende JavaScript, TypeScript, HTML, CSS, Git, Python y Node.js.',
       recentPosts: 'Últimos posts',
