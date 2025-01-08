@@ -96,24 +96,23 @@ The exact time may vary depending on your pace and dedication, but with consiste
     },
     pricingtable: {
       plan1: {
-        title: '4 sessions',
+        title: '4 weeks',
         priceDescription: '',
         buttonText: 'Call',
         feature: {
-          course: '4-week course (2x 1h sessions + 1h on your own per week)',
+          online: 'Online',
+          inPerson: 'or in person (in Malaga or Madrid)',
+          session: '8x 1h sessions',
         },
       },
-      feature: {
-        online: 'Online',
-        inPerson: 'In person (in Malaga or Madrid)',
-        session: '1h sessions',
-      },
       plan2: {
-        title: '8 sessions',
+        title: '8 weeks',
         priceDescription: '',
         buttonText: 'Call',
         feature: {
-          course: '8-week course (2x 1h sessions + 1h on your own per week)',
+          online: 'Online',
+          inPerson: 'or in person (in Malaga or Madrid)',
+          session: '16x 1h sessions',
         },
       },
       plan3: {
@@ -121,6 +120,7 @@ The exact time may vary depending on your pace and dedication, but with consiste
         priceDescription: 'Custom pricing',
         buttonText: 'Call',
         feature: {
+          inPerson: 'En persona (en Málaga o Madrid)',
           time: 'From 10am to 5pm',
           lunch: 'Lunch included',
         },
@@ -240,20 +240,19 @@ Con nuestro curso, construirás un portafolio sólido en GitHub, que incluirá v
         priceDescription: '',
         buttonText: 'Consúltanos',
         feature: {
-          course: 'Curso de 4 semanas (2 horas de clase + 1 hora de tu propio tiempo por semana)',
+          online: 'Online',
+          inPerson: 'En persona (en Málaga o Madrid)',
+          session: '8 sessiones de 1h',
         },
-      },
-      feature: {
-        online: 'Online',
-        inPerson: 'En persona (en Málaga o Madrid)',
-        session: 'Sesiones de 1h',
       },
       plan2: {
         title: '8 semanas',
         priceDescription: '',
         buttonText: 'Consúltanos',
         feature: {
-          course: 'Curso de 8 semanas (2 horas de clase + 1 hora de tu propio tiempo por semana)',
+          online: 'Online',
+          inPerson: 'En persona (en Málaga o Madrid)',
+          session: '16 sessiones de 1h',
         },
       },
       plan3: {
@@ -261,6 +260,7 @@ Con nuestro curso, construirás un portafolio sólido en GitHub, que incluirá v
         priceDescription: 'Precio personalizado',
         buttonText: 'Consúltanos',
         feature: {
+          inPerson: 'En persona (en Málaga o Madrid)',
           time: 'De 10am a 5pm',
           lunch: 'Almuerzo incluido',
         },
