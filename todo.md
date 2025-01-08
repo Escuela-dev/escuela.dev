@@ -2,6 +2,7 @@
 
 x(A) Improve FAQ questions.
 (A) Translate blog articles to Spanish
+(A) add links to projects to build (Interactive Quiz, Animated landing page, Virtual piano)
 (B) Display tags under blog post title (dropdown)
 (A) Fix redirect if 404 page (e.g. /free-class)
 (A) Add 'Web development course page' see

@@ -38,29 +38,29 @@ export const strings = {
       q1: {
         title: '👨‍🏫 What are the advantages of learning with a mentor from Escuela.dev?',
         answer: `Personalized classes: Tailored to your needs and goals.<br/><br/>
-- <b>Discipline and progress</b>: Weekly sessions help establish a consistent routine.<br/>
-- <b>Expert mentorship</b>: Learn from experienced engineers who share practical tips and industry tricks.<br/>
-- <b>Real productivity</b>: Discover key tools like VSCode shortcuts and efficient workflows.<br/>
+- <b>Discipline and progress</b>: Weekly sessions help you establish a consistent routine.<br/>
+- <b>Expert mentorship</b>: Learn from experienced engineers who will share practical tips and industry tricks with you.<br/>
+- <b>Real productivity</b>: Discover VSCode shortcuts, Command-line aliases and efficient workflows.<br/>
 <br/>
-At Escuela.dev, you learn like a professional from day one!`,
+At Escuela.dev, you'll learn with a seasoned engineer from day one!`,
       },
       q2: {
         title: '🤔 What should I know before starting?',
         answer: `You don’t need prior knowledge. Since the teaching is personalized, we’ll assess your current level together and define the best starting point based on your goals.
 
-I’ll guide you step-by-step to ensure you progress steadily from the beginning.
-The first module includes 4 classes designed to build a solid foundation for your learning.`,
+We’ll guide you step-by-step to ensure you progress steadily from the beginning.
+The first module includes 8 classes designed to build a solid foundation for your learning.`,
       },
       q3: {
         title: '📆 How much time do I need to learn programming?',
         answer: `If you’re starting from scratch, on average, you’ll need 6 months, dedicating 2 hours per week to personalized classes and 3 additional hours to practice on your own.
 
-The exact time may vary depending on your pace and dedication, but with consistency and proper support, you’ll make solid progress and be ready for more complex projects.`,
+The exact time may vary depending on your pace and dedication, but with consistency and proper support, you’ll make solid progress and be ready for more complex projects in no time!`,
       },
       q4: {
         title: '📜 Will I receive a certificate of completion?',
         answer:
-          "No, instead of a certificate, we offer something more valuable.\nCompanies hiring software developers prioritise projects and code\nsamples over certificates. With our program, you'll build a robust\nportfolio on GitHub, showcasing various web projects. This portfolio\nwill demonstrate your proficiency, enable potential employers to assess\nyour skills effectively and determine if you're a good fit for their\nteams. 🤜🤛",
+          "No, instead of a certificate, we offer something more valuable.\nCompanies hiring software developers prioritise projects and code samples over certificates. With our program, you'll build a robust portfolio on GitHub, showcasing various front-end and back-end projects. Your portfolio will demonstrate your proficiency, enable potential employers to assess your skills effectively and determine if you're a good fit for their teams. 🤜🤛",
       },
       q5: {
         title: '🛠️ What kind of projects will I learn how to build?',
