@@ -7,17 +7,17 @@ import { getLangFromUrl, useTranslations } from '@i18n/utils';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-import johnn from '../assets/testimonials/johnn.jpg';
+import dennis from '../assets/testimonials/dennis.jpeg';
 import alexf from '../assets/testimonials/alexf.jpg';
 import andrewr from '../assets/testimonials/andrewr.jpeg';
 
 const testimonials = [
   {
-    name: 'John N',
+    name: 'Dennis N',
     // title: "Web Developer at Hearst Magazines",
     // socialMedia: "https://www.linkedin.com/in/genevieve-kuzak-7aa677238/",
     quote: t('testimonials.quote1'),
-    image: johnn,
+    image: dennis,
   },
   {
     name: 'Andrew Royce',
@@ -71,7 +71,7 @@ const testimonials = [
               >
                 <circle cx="1" cy="1" r="1" />
               </svg> */}
-              <Image src={t.image} alt={t.name} class="mx-auto h-10 w-10 rounded-full" />
+              <Image src={t.image} alt={t.name} width={80} height={80} class="mx-auto h-10 w-10 rounded-full" />
             </div>
           </figcaption>
         </section>

@@ -29,7 +29,7 @@ export const strings = {
       whatsapp_abbr: 'Join the WhatsApp Community',
     },
     home: {
-      title: `Welcome to Escuela.dev\n\n<small>Live, personal mentorship from industry experts</small>`,
+      title: 'Welcome to Escuela.dev\n\n<small>Live, personal mentorship from industry experts</small>',
       subtitle:
         'Get personalized one-on-one classes through online video sessions. Get instant feedback and guidance through the curriculum.<br/><br/>Learn JavaScript, TypeScript, HTML, CSS, Git, Python and Node.js.',
       recentPosts: 'Recent posts',
@@ -138,7 +138,7 @@ The exact time may vary depending on your pace and dedication, but with consiste
       title: 'Testimonials',
       subtitle: 'What our students say',
       quote1:
-        'Gian is always helpful and sincere! I love every bit of advice. Also being able to point out unforeseen items that I might run into. Looking forward to learn with Gian again!!',
+        "The best mentor I've worked with so far. Gianfranco is a good teacher, a real professional who knows his stuff and a fun person to work with.",
       quote2:
         'Working with Gianfranco was a pleasure. He is a great teacher and has a lot of patience. I would recommend him to anyone who wants to learn web development.',
       quote3:
@@ -168,7 +168,7 @@ The exact time may vary depending on your pace and dedication, but with consiste
       whatsapp_abbr: 'Únete a la comunidad de WhatsApp',
     },
     home: {
-      title: `Bienvenid@s a Escuela.dev\n\n<small>Mentoría personal y en vivo con expertos de industria</small>`,
+      title: 'Bienvenid@s a Escuela.dev\n\n<small>Mentoría personal y en vivo con expertos de industria</small>',
       subtitle:
         'Aprende con clases particulares y personalizadas a través de sesiones de video en línea. Aprende con ayuda y sigue un currículum.<br/><br/>Aprende JavaScript, TypeScript, HTML, CSS, Git, Python y Node.js.',
       recentPosts: 'Últimos posts',
@@ -278,7 +278,7 @@ Con nuestro curso, construirás un portafolio sólido en GitHub, que incluirá v
       title: 'Testimonios',
       subtitle: 'Lo que dicen nuestros estudiantes',
       quote1:
-        'Gian siempre es servicial y sincero! Me encanta cada uno de sus consejos. Además, tiene la habilidad de señalar aspectos imprevistos con los que podría encontrarme. Estoy deseando aprender con Gian de nuevo!',
+        'El mejor mentor con el que he trabajado hasta ahora. Gianfranco es un buen maestro, un verdadero profesional que sabe lo que hace y una persona divertida con la que trabajar.',
       quote2:
         'Trabajar con Gianfranco fue un placer. Es un gran profesor y tiene mucha paciencia. Lo recomendaría a cualquier persona que quiera aprender desarrollo web.',
       quote3:
