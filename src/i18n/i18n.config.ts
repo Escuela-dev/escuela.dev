@@ -96,23 +96,21 @@ The exact time may vary depending on your pace and dedication, but with consiste
     },
     pricingtable: {
       plan1: {
-        title: '4 weeks',
+        title: '4 lessons',
         priceDescription: '',
         buttonText: 'Call',
         feature: {
           online: 'Online',
           inPerson: 'or in person (in Malaga or Madrid)',
-          session: '8x 1h sessions',
         },
       },
       plan2: {
-        title: '8 weeks',
+        title: '8 lessons',
         priceDescription: '',
         buttonText: 'Call',
         feature: {
           online: 'Online',
           inPerson: 'or in person (in Malaga or Madrid)',
-          session: '16x 1h sessions',
         },
       },
       plan3: {
@@ -236,23 +234,21 @@ Con nuestro curso, construirás un portafolio sólido en GitHub, que incluirá v
     },
     pricingtable: {
       plan1: {
-        title: '4 semanas',
+        title: '4 lecciones',
         priceDescription: '',
         buttonText: 'Consúltanos',
         feature: {
           online: 'Online',
           inPerson: 'En persona (en Málaga o Madrid)',
-          session: '8 sessiones de 1h',
         },
       },
       plan2: {
-        title: '8 semanas',
+        title: '8 lecciones',
         priceDescription: '',
         buttonText: 'Consúltanos',
         feature: {
           online: 'Online',
           inPerson: 'En persona (en Málaga o Madrid)',
-          session: '16 sessiones de 1h',
         },
       },
       plan3: {
