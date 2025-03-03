@@ -16,7 +16,7 @@ export interface Props {
   showWhatsApp?: boolean;
   githubEditUrl?: string;
 }
-const { showWhatsApp = true, githubEditUrl, title } = Astro.props;
+const { showWhatsApp = false, githubEditUrl, title } = Astro.props;
 let { headProps } = Astro.props;
 
 headProps = {
