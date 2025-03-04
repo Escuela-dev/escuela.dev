@@ -15,8 +15,10 @@ export const defaultLang = 'es';
 export const strings = {
   en: {
     banner: {
-      title: 'First 45 mins session is free!',
-      linkTitle: 'Free class',
+      title: 'Free Frontend Web Developer Foundations class',
+      // title: 'First 45 mins session is free!',
+      linkTitle: 'Learn',
+      // linkTitle: 'Free class',
     },
     site: {
       description: 'One-on-one coding school in Malaga, Madrid and online',
@@ -151,8 +153,10 @@ The exact time may vary depending on your pace and dedication, but with consiste
   },
   es: {
     banner: {
-      title: 'Primera clase de 45 min es gratis!',
-      linkTitle: 'Clase gratis',
+      title: 'Curso gratuito de Fundamentos para Desarrolladores Web Frontend',
+      // title: 'Primera clase de 45 min es gratis!',
+      linkTitle: 'Curso gratis',
+      // linkTitle: 'Clase gratis',
     },
     site: {
       description: 'Clases particulares de programación en Madrid, Malaga y online',
