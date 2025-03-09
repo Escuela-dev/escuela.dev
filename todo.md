@@ -97,3 +97,13 @@ Coding schools
 
 School my kids go to: <https://www.lespetitschamps.com/>
 School my mom works at: <https://www.ecole-lespetitschamps.com/>
+
+
+## Text
+
+Put your future career first.
+
+Live, personal mentorship from industry experts
+
+6 months of professional career coaching
+Online learning built to help you launch a career in tech. Apply now to take a free intro course.

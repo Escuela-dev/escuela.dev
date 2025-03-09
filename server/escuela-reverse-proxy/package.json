@@ -1,0 +1,29 @@
+{
+  "name": "escuela-reverse-proxy",
+  "version": "1.0.0",
+  "description": "Reverse proxy analytics for Posthog",
+  "main": "src/index.ts",
+  "scripts": {
+    "format": "prettier --write  '*.{json,js}' 'src/**/*.{js,ts}'",
+    "lint": "eslint --max-warnings=0 src && prettier --check '*.{json,js}' 'src/**/*.{js,ts}'",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "typescript",
+      "prettier"
+    ]
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250224.0",
+    "@types/service-worker-mock": "^2.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-typescript": "^3.0.0",
+    "prettier": "^2.3.0",
+    "typescript": "^4.3.2"
+  }
+}

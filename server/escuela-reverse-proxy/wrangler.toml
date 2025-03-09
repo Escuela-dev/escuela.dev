@@ -1,0 +1,7 @@
+name = "escuela-reverse-proxy"
+workers_dev = true
+main = "src/index.ts"
+compatibility_date = "2024-11-11"
+
+[build]
+command = "pnpm install"
