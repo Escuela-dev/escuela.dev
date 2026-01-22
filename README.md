@@ -7,7 +7,8 @@
 [![Instagram @escuela.dev](https://img.shields.io/badge/@escuela.dev-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/escuela.dev/ "Instagram @escuela.dev")
 [![WhatApp Community](https://img.shields.io/badge/WhatsApp%20Communty-%231faf38.svg?logo=WhatsApp&logoColor=white)](https://chat.whatsapp.com/KLmG13RqLeSFJCBxkRegGP "Join WhatApp Community")
 
-<img src="https://github.com/Escuela-dev/.github/blob/main/coding-school-chatgpt-dec-28-small.jpeg" style="width:100%, height: auto" />
+<img width="700" alt="coding school" src="https://github.com/user-attachments/assets/b45e17b9-5dc4-4fad-92ca-3629edb235f7" />
+
 
 > **¿Quieres dominar las tecnologías y metodologías necesarias para crear una página web?**<br/>
 > **¿Quieres aprender los fundamentos de programación para iniciar tu carrera como programador web?**<br/>
@@ -232,7 +233,7 @@ All commands are run from the root of the project from a terminal:
 
 ## 👀 Want to learn more?
 
-Email Gianfranco at <gianfranco@escuela.com> or visit [Escuela.dev](https://escuela.dev)
+Email Gianfranco at <gianfranco@escuela.dev> or visit [Escuela.dev](https://escuela.dev)
 
 ## Deploy wrangler on Cloudflare Pages
 
