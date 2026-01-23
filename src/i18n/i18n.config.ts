@@ -288,7 +288,7 @@ Con nuestro curso, construirás un portafolio sólido en GitHub, que incluirá v
       title: 'Conoce al profesor',
       name: 'Gianfranco',
       description:
-        'Gianfranco es un ingeniero de software y educador con más de una década de experiencia en el desarrollo de aplicaciones web y móviles.<br/><br/>Originario de 🇮🇹 Italia, tuvo una Start-up en 🇺🇦 Ucrania y ahora vive en 🇪🇸 Málaga, España. Tiene un título en Informática de 🇮🇪 Irlanda y ha enseñado a programar a muchos estudiantes mientras trabajaba en Thinkful (ahora Chegg), un bootcamp online estadounidense',
+        'Gianfranco es un ingeniero de software y educador con más de una década de experiencia en el desarrollo de aplicaciones web y móviles.<br/><br/>Originario de 🇮🇹 Italia, fundó una start-up en 🇺🇦 Ucrania y ahora vive en 🇪🇸 Málaga, España. Tiene un título en Informática de 🇮🇪 Irlanda y ha enseñado a programar a muchos estudiantes mientras trabajaba en Thinkful (ahora Chegg), un bootcamp online estadounidense',
     },
   },
 };
