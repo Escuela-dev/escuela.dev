@@ -59,7 +59,7 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.5",
     "typescript-eslint": "^7.6",
-    "vitest": "^2.1.5",
+    "vitest": "^2.1.9",
     "wrangler": "^3.114.17"
   },
   "pnpm": {
