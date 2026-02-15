@@ -72,7 +72,7 @@ const localImage = images[imagePath]();
     publishDate,
     author,
   }}
-  githubEditUrl={getGithubEditUrl('/src/pages/posts/[slug].astro')}
+  githubEditUrl={getGithubEditUrl(`/src/content/blog/${post.id}`)}
 >
   <article class="prose mx-auto mb-4 mt-8 max-w-3xl px-3 sm:px-0">
     <Image src={localImage} alt={postTitle} width="900" height="500" />
