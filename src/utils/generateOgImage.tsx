@@ -4,21 +4,21 @@ import { Resvg } from '@resvg/resvg-js';
 
 import { SITE } from '../config';
 import loadGoogleFonts, { type FontOptions } from './loadGoogleFont';
-import { CollectionEntry } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 
-const fetchFonts = async () => {
-  // Regular Font
-  const fontFileRegular = await fetch('https://www.1001fonts.com/download/font/ibm-plex-mono.regular.ttf');
-  const fontRegular: ArrayBuffer = await fontFileRegular.arrayBuffer();
+// const fetchFonts = async () => {
+//   // Regular Font
+//   const fontFileRegular = await fetch('https://www.1001fonts.com/download/font/ibm-plex-mono.regular.ttf');
+//   const fontRegular: ArrayBuffer = await fontFileRegular.arrayBuffer();
 
-  // Bold Font
-  const fontFileBold = await fetch('https://www.1001fonts.com/download/font/ibm-plex-mono.bold.ttf');
-  const fontBold: ArrayBuffer = await fontFileBold.arrayBuffer();
+//   // Bold Font
+//   const fontFileBold = await fetch('https://www.1001fonts.com/download/font/ibm-plex-mono.bold.ttf');
+//   const fontBold: ArrayBuffer = await fontFileBold.arrayBuffer();
 
-  return { fontRegular, fontBold };
-};
+//   return { fontRegular, fontBold };
+// };
 
-const { fontRegular, fontBold } = await fetchFonts();
+// const { fontRegular, fontBold } = await fetchFonts();
 
 const ogImage = (text: string) => {
   return (
@@ -125,7 +125,7 @@ const postOgImage = async (post: CollectionEntry<'blog'>) => {
     width: 1200,
     height: 630,
     embedFont: true,
-    fonts: (await loadGoogleFonts(post.title + SITE.author + SITE.title + 'by')) as FontOptions[],
+    fonts: (await loadGoogleFonts(post.data.title + SITE.author + SITE.title + 'by')) as FontOptions[],
     // fonts: [
     //   {
     //     name: 'IBM Plex Mono',
@@ -141,7 +141,7 @@ const postOgImage = async (post: CollectionEntry<'blog'>) => {
     //   },
     // ],
   };
-  return await satori(ogImage(post.title), options);
+  return await satori(ogImage(post.data.title), options);
 };
 
 export async function generateOgImageForPost(post: CollectionEntry<'blog'>) {
