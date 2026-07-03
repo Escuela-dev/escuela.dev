@@ -1,5 +1,6 @@
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
+import { getPostSlugParts } from '../../utils/blog';
 import { generateOgImageForPost } from '../../utils/generateOgImage';
 // import generateOgImage from '@utils/generateOgImage';
 // import type { APIRoute } from "astro/dist/@types/astro";
@@ -21,11 +22,11 @@ const postImportResult = await getCollection('blog', ({ data }) => !data.draft);
 export function getStaticPaths() {
   const a = postImportResult
     .filter(({ data }) => data.ogImage)
-    .map(({ data, slug }) => {
-      const [lang, ...slugNoLang] = slug.split('/');
+    .map((post) => {
+      const [lang, ...slugNoLang] = getPostSlugParts(post);
       return {
         params: { lang, ogTitle: slugNoLang.join('/') || undefined },
-        props: { ...data, lang: slug?.split('/')[0] },
+        props: post,
       };
     });
   // console.dir({ postImportResult }, { depth: 2 });

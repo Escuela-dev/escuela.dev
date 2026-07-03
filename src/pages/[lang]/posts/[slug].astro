@@ -1,12 +1,12 @@
 ---
 import { Image } from 'astro:assets';
-import { type CollectionEntry } from 'astro:content';
+import { render, type CollectionEntry } from 'astro:content';
 
 import Layout from '@layouts/Base.astro';
 import getReadingTime from '@utils/getReadingTime';
 import getGithubEditUrl from '@utils/getGithubEditUrl';
 import { getLangFromUrl, useTranslations } from '@i18n/utils';
-import { getPublishedPosts } from '@utils/blog';
+import { getPostSlugParts, getPublishedPosts } from '@utils/blog';
 import { SITE } from '@config';
 
 const lang = getLangFromUrl(Astro.url);
@@ -19,7 +19,7 @@ export interface Props {
 export async function getStaticPaths() {
   const posts = await getPublishedPosts();
   return posts.map((post) => {
-    const [lang, ...slug] = post.slug.split('/');
+    const [lang, ...slug] = getPostSlugParts(post);
     return {
       params: { lang, slug: slug.join('/') || undefined },
       props: { post },
@@ -41,9 +41,9 @@ const {
 } = post.data;
 let { description } = post.data;
 
-const { Content } = await post.render();
+const { Content } = await render(post);
 
-const readingTime = getReadingTime(post.body);
+const readingTime = getReadingTime(post.body ?? '');
 
 const ogUrl = new URL(ogImage ? ogImage : `${slug}.svg`, Astro.url.origin).href;
 
