@@ -1,2 +1,8 @@
+allowBuilds:
+  esbuild: true
+  sharp: true
+  workerd: true
 minimumReleaseAgeExclude:
   - '@tootallnate/once@2.0.1'
+  - miniflare@4.20260701.0
+  - wrangler@4.107.0

@@ -22,7 +22,7 @@ You must add the following secrets to your Workers runtime in order for the Work
 To deploy this project:
 
 1. Clone this git repo
-1. Install [wrangler2](https://developers.cloudflare.com/workers/wrangler/get-started/).
+1. Install [wrangler](https://developers.cloudflare.com/workers/wrangler/install-and-update/).
 1. Run `wrangler publish`
 1. Take note of the `workers.dev` URL you are given.
 1. Go to the Cloudflare Dashboard, get your account ID and an [API token](#generating-api-tokens).
