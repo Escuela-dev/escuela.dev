@@ -1,0 +1,12 @@
+allowBuilds:
+  esbuild: true
+  sharp: true
+  workerd: true
+
+overrides:
+  semver@>=7.0.0 <7.5.2: '>=7.5.2'
+  undici@<5.26.2: '>=5.26.2'
+  undici@<=5.28.2: '>=5.28.3'
+  undici@<5.28.4: '>=5.28.4'
+  vite@>=5.1.0 <=5.1.6: '>=5.1.7'
+  '@iconify/tools': ^4.0.4
