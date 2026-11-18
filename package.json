@@ -14,7 +14,7 @@
     "lint": "eslint src"
   },
   "dependencies": {
-    "@astrojs/mdx": "4.3.7",
+    "@astrojs/mdx": "8.1.6",
     "@astrojs/react": "^4.4.0",
     "@astrojs/sitemap": "3.7.3",
     "@astrojs/tailwind": "^5.1.5",
